@@ -25,17 +25,18 @@ class Template extends React.Component {
         </Link>
         <ul style={{ listStyle: `none`, float: `right` }}>
           <Link style={{ marginRight: `15px` }} to="/">Home</Link>
+          <Link style={{ marginRight: `15px` }} to="/">Notes</Link>
+          <Link style={{ marginRight: `15px` }} to="/">Pics</Link>
           <Link to="/about/">About</Link>
         </ul>
-      </header>
+      </header> 
     )
-
     return (
       <div
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(30),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
