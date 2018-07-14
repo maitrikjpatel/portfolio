@@ -27,9 +27,9 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
+          <strong>Hey! I am Maitrik Patel.</strong>
+          A Front-End Developer / UX Designer Who Designs and Develops Pixel Perfect Interface Designs, Interfaces and Experiences.
+          <a href="https://twitter.com/maitrikjpate">
             You should follow him on Twitter
           </a>
         </p>
