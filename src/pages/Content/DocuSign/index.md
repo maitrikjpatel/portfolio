@@ -1,6 +1,12 @@
 ---
 title: DocuSign
-date: "2015-05-01T22:12:03.284Z"
+role: "" 
+tools: "" 
+link: "" 
+time: "" 
+domain: "" 
+draft: "" 
+date:  "2015-05-01T22:12:03.284Z"
 ---
 
 This is my first post on my new fake blog! How exciting!

@@ -1,6 +1,12 @@
 ---
 title: SkillMil
-date: "2015-05-28T22:40:32.169Z"
+role: "" 
+tools: "" 
+link: "" 
+time: "" 
+domain: "" 
+draft: "" 
+date:  "2015-05-28T22:40:32.169Z"
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

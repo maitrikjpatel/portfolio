@@ -1,107 +1,39 @@
 ---
 title: OpenText
-date: "2015-05-28T22:40:32.169Z"
+role: "" 
+tools: "" 
+link: "" 
+time: "" 
+domain: "" 
+draft: "" 
+date:  "2015-05-28T22:40:32.169Z"
 ---
 
-Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.
+### OpenText Information Hub (iHub)
 
-## On deer horse aboard tritely yikes and much
+URL: https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub/?utm_source=actuate&utm_medium=redirect
+Role: Development | Design System
+Tools: HTML | Bootstrap 3 | AngularJS | SCSS
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+- iHub is the commercial platform for all BIRT content. It is a deployment server that helps developer managing report content. Moreover it provides visualization tools and gives control of users and users group to system administrator. The viewing capability of iHub is superb. It allows interactivity; sorting, filtering, and exporting.
 
-* This however showed weasel
-* Well uncritical so misled
-  * this is very interesting
-* Goodness much until that fluid owl
+- Athena is a standard framework offering developers access to a revised design framework employed in multiple products.
 
-When she reached the first hills of the **Italic Mountains**, she had a last
-view back on the skyline of her hometown _Bookmarksgrove_, the headline of
-[Alphabet Village](http://google.com) and the subline of her own road, the Line
-Lane. Pityful a rethoric question ran over her cheek, then she continued her
-way. On her way she met a copy.
+- Responsibilities: I was working as part of UX team to provide collaborative environment between visual designer and engineers through UI refresh, and improved certain functionalities to make sure that users find what they need. All this time I was working very closely with UX team, PM, product marketing, and engineering team. I involved heavily in day-to-day agile standup meetings during the implementation phase, and involved in usability testing.
 
-### Overlaid the jeepers uselessly much excluding
+- Athena was the home for our in-house design framework.  Built and maintained by the UX team, it included visual assets (such as icons and buttons), layouts, and prototypes. Developers could access these libraries to pull down Bootstrap-based elements and code to build or revise product screens as necessary.
 
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-[Longe and Parole](http://google.com) and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.
+- Providing usable elements rather than just static specifications helped streamline the development process and also allowed the UX team to quickly publish updates to engineers across the company’s far-flung locations.
 
-> Far far away, behind the word mountains, far from the countries Vokalia and
-> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-> right at the coast of the Semantics, a large language ocean.
+- The site was so successful that it also became the home for the company’s brand guidelines and assets.
 
-It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.
+- Athena eventually split into two sites (blue and green), one offering the standard framework and the other offering developers access to a revised design framework employed in certain products.
 
-### According a funnily until pre-set or arrogant well cheerful
+### WaxMan – Hybrid Web App
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+Role: UX Prototyping | Development
+Tools: HTML | Bootstrap 3 | AngularJS
 
-1.  So baboon this
-2.  Mounted militant weasel gregariously admonishingly straightly hey
-3.  Dear foresaw hungry and much some overhung
-4.  Rash opossum less because less some amid besides yikes jeepers frenetic
-    impassive fruitlessly shut
+This prototype was designed to show how a data-rich enterprise application could still employ beautiful and contemporary visual design.  Built for a fictitious chain of high-end supermarkets in Southern California, the application allows a store owner to find, dynamically filter, and compare sales and demographic data across a number of locations.
 
-When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rethoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.
-
-> The copy warned the Little Blind Text, that where it came from it would have
-> been rewritten a thousand times and everything that was left from its origin
-> would be the word "and" and the Little Blind Text should turn around and
-> return to its own, safe country.
-
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.
-
-#### Silent delightfully including because before one up barring chameleon
-
-Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.
-
-Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
-
-##### Wherever far wow thus a squirrel raccoon jeez jaguar this from along
-
-She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rethoric question ran over her cheek, then she continued her way. On her way she
-met a copy.
-
-###### Slapped cozy a that lightheartedly and far
-
-The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word "and" and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.
+This was intended as an internal tool to help educate engineers and sales folk on the direction data-rich applications are taking — it’s no longer enough to simply allow users to easily access data; today their expectations include modern interactive models (dynamic filtering, drag-and-drop functionality, etc.) and compelling visual design.

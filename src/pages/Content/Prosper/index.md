@@ -1,13 +1,21 @@
 ---
 title: Prosper
+role: ""
+tools: ""
+link: ""
+time: ""
+domain: ""
+draft: ""
 date: "2015-05-06T23:46:37.121Z"
 ---
 
-Wow! I love blogging so much already.
+### Redesigning finance
 
-Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich."?
-([Wikipedia Link](http://en.wikipedia.org/wiki/Salted_duck_egg))
+- Launching a new brand, a responsive redesign and a re-imagined customer experience that explored the pleasure points of paying bills — in under 12 months.
 
-Yeah, I didn't either.
+- Prosper.com is an online marketplace lending platform that provides convenient and low-cost loans to consumers — and allows individuals to invest in these loans. When I joined the company as the third hire in a brand-new UX department, there was a large backlog of urgent work: translating a new logo into a new brand that captured who we wanted to be as a company, defining what that meant, implementing the new visual language across the site, responding to the needs of a growing mobile user base with a responsive redesign, and fixing the pain points, confusion and clutter resulting from multiple pivots and years of operating without UX help. At the same time, my teams wanted to launch aggressive testing programs to optimize the project, learn about who our customers were and use those insights to push the product in bold new directions. It would be a busy year.
+
+- Styleguide
+
+- https://blog.prosper.com/2016/06/22/prosper-unveils-new-retail-investor-experience/
+- https://techcrunch.com/2016/03/10/prosper-marketplace-relaunches-its-billguard-app-under-the-prosper-brand/
