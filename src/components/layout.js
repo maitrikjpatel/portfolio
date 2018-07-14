@@ -7,51 +7,29 @@ class Template extends React.Component {
   render() {
     const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const footer = (
+      <footer>
+        <ul style={{ listStyle: `none`, textAlign: `center` }}>
+          <a href="" style={{ marginRight: `15px` }}>Dribble</a>
+          <a href="" style={{ marginRight: `15px` }}>Twitter</a>
+          <a href="" style={{ marginRight: `15px` }}>Linkedin</a>
+          <a href="" style={{ marginRight: `15px` }}>Github</a>
+          <a href="">Instagram</a>
+        </ul>    
+      </footer>
+    )
+    const header = (
+      <header style={{ marginBottom: `1.5rem` }}>
+        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
+          <h3 style={{ display: `inline` }}>MPCom</h3>
+        </Link>
+        <ul style={{ listStyle: `none`, float: `right` }}>
+          <Link style={{ marginRight: `15px` }} to="/">Home</Link>
+          <Link to="/about/">About</Link>
+        </ul>
+      </header>
+    )
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            MPCom
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            MPCom
-          </Link>
-        </h3>
-      )
-    }
     return (
       <div
         style={{
@@ -62,12 +40,10 @@ class Template extends React.Component {
         }}
       >
         {header}
-        <img src="https://source.unsplash.com/random/400x200" alt="" />
         <br />
-        <div>
-          <Link to="/about/">about</Link>
-        </div>
         {children}
+        <br />
+        {footer}
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "./about.module.css"
+import Layout from '../components/layout'
 
 const User = props => (
   <div className={styles.user}>
@@ -17,20 +18,22 @@ const User = props => (
 )
 
 export default () => (
-  <div>
-    <h1>About CSS Modules</h1>
-    <p>CSS Modules are cool</p>
-    <User
-      username="Jane Doe"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-      excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
+  <Layout>
+    <div>
+      <h1>About CSS Modules</h1>
+      <p>CSS Modules are cool</p>
+      <User
+        username="Jane Doe"
+        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
+        excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      />
 
-    <User
-      username="Bob Smith"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-      excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-    <Link to="/">back home</Link>
-  </div>
+      <User
+        username="Bob Smith"
+        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
+        excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      />
+      <Link to="/">back home</Link>
+    </div>
+  </Layout>
 )
