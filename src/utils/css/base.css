@@ -1,0 +1,42 @@
+@import './fonts.css';
+
+html {
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 18px;
+  text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-gray1);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--color-gray9);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  color: var(--color-gray9);
+  text-decoration: none;
+}
+
+a:focus {
+  border-radius: 2px;
+  box-shadow: 0 0 3px 1px var(--color-gray9), 0 0 0 1px var(--color-gray9);
+  outline: 0;
+}
