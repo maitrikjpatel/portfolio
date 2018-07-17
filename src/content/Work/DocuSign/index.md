@@ -5,7 +5,7 @@ tools: ""
 link: "" 
 time: "" 
 domain: "" 
-draft: "" 
+publish: "true" 
 category: "work"
 date:  "2015-05-01T22:12:03.284Z"
 ---

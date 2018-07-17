@@ -19,8 +19,8 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             const category = get(node, 'frontmatter.category')
-            console.log(category);
-            if(category == "work"){
+            const publish = get(node, 'frontmatter.publish')
+            if(category == "work" && publish == "true"){
               return (
                 <div key={node.fields.slug}>
                   <h3
@@ -64,6 +64,7 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
             category
+            publish
           }
         }
       }

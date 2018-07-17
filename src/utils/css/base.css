@@ -37,7 +37,5 @@ a:hover {
 }
 
 a:focus {
-  border-radius: 2px;
-  box-shadow: 0 0 3px 1px var(--color-gray6), 0 0 0 1px var(--color-gray6);
   outline: 0;
 }
