@@ -50,6 +50,7 @@ export default () => (
         rock climbing.</p>
       <p className="text-justify display-none">I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience
         for a promising product, a motivating mentor and an innovating organization. </p>
+      <p>Don't be a stranger! Give me a shout at tayler.aitken@gmail.com or find me at one of the links below.</p>
       <p className="text-justify">Do you have a sweet project that needs some creative injection then that’s where I come in! Feel free to connect through
           <a href="mailto:maitrik1419@gmail.com?subject=LetsMakeFuture&body=Lets make wonderful things together.">Email</a>					or other networks!</p>
     </div>
