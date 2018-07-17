@@ -1,0 +1,14 @@
+.footerLinks {
+  float: right;
+}
+
+
+.footerLinks ul li {
+  display: inline;
+  list-style: none;
+  padding: 15px;
+}
+
+.footerCopyright {
+  float: left;
+}

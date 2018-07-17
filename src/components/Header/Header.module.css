@@ -1,0 +1,21 @@
+.header { 
+  padding-bottom: 1rem;
+  border-bottom: 1px solid;
+}
+
+.headerLogo { 
+  text-decoration: none;
+  border: 0.5px solid #ccc;
+  padding: 3px 7.5px;
+  color: #656464;
+}
+
+.headerLinks { 
+  float: right;
+}
+
+.headerLink { 
+  display: inline;
+  list-style: none;
+  padding: 15px;
+}
