@@ -9,7 +9,7 @@ class Header extends React.Component {
       <header className={styles.header}>
         <Link to="/" className={styles.headerLogo}>m</Link>
         <ul className={styles.headerLinks}>
-          <Link className={styles.headerLink} to="/">home</Link>
+          <Link className={styles.headerLink} to="/">work</Link>
           <Link className={styles.headerLink} to="/notes/">notes</Link>
           <Link className={styles.headerLink} to="/photos/">photos</Link>
           <Link className={styles.headerLink} to="/about/">about</Link>

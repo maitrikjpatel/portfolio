@@ -1,8 +1,9 @@
-@import './fonts.css';
+@import './colors.css';
+@import './utilities.css';
 
 html {
   box-sizing: border-box;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
   text-size-adjust: 100%;
 }
@@ -24,19 +25,19 @@ body {
 }
 
 a {
-  color: var(--color-gray9);
+  color: var(--color-gray10);
   cursor: pointer;
   text-decoration: none;
 }
 
 a:active,
 a:hover {
-  color: var(--color-gray9);
+  color: var(--color-gray6);
   text-decoration: none;
 }
 
 a:focus {
   border-radius: 2px;
-  box-shadow: 0 0 3px 1px var(--color-gray9), 0 0 0 1px var(--color-gray9);
+  box-shadow: 0 0 3px 1px var(--color-gray6), 0 0 0 1px var(--color-gray6);
   outline: 0;
 }
