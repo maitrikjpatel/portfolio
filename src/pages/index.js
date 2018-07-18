@@ -13,26 +13,28 @@ class BlogIndex extends React.Component {
       return (
         <Layout location={this.props.location}>
           <Helmet title={siteTitle} />
-          <Bio />
-          <div className="flexbox">
-            {posts.map(({ node }) => {
-              const title = get(node, 'frontmatter.title') || node.fields.slug
-              const category = get(node, 'frontmatter.category')
-              const publish = get(node, 'frontmatter.publish')
-              const role = get(node, 'frontmatter.role')
+          <div className="layoutContainer">
+            <Bio />
+            <div className="flexbox">
+              {posts.map(({ node }) => {
+                const title = get(node, 'frontmatter.title') || node.fields.slug
+                const category = get(node, 'frontmatter.category')
+                const publish = get(node, 'frontmatter.publish')
+                const role = get(node, 'frontmatter.role')
 
-              if(category == "work" && publish == "true"){
-                return (
-                  <Card
-                    key={node.fields.slug}
-                    title={title}
-                    link={node.fields.slug}
-                    role={role}
-                  />
-                )
-              }
-            })
-          }
+                if(category == "work" && publish == "true"){
+                  return (
+                    <Card
+                      key={node.fields.slug}
+                      title={title}
+                      link={node.fields.slug}
+                      role={role}
+                    />
+                  )
+                }
+              })
+            }
+          </div>
         </div>
       </Layout>
     )

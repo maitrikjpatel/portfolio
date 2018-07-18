@@ -3,8 +3,8 @@ import Typography from 'typography'
 const typography = new Typography({
   headerFontFamily: ['Lato', 'sans-serif'],
   bodyFontFamily: ['Avenir Next', 'Helvetica', 'sans-serif'],
-  baseFontSize: '16px',
-  baseLineHeight: 1.5,
+  baseFontSize: '1.125rem',
+  baseLineHeight: 1.75,
   headerGray: '30',
   bodyGray: '15',
   headerWeight: '400',
