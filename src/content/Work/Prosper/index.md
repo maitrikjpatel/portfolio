@@ -1,10 +1,8 @@
 ---
 title: Prosper
-role: ""
-tools: ""
-link: ""
-time: ""
-domain: ""
+role: "Development, Design, UX prototyping"
+tools: "AngularJS, scsss, Javascript, webpack"
+link: "www.prosper.com"
 publish: "true"
 category: "work"
 date: "2015-05-06T23:46:37.121Z"

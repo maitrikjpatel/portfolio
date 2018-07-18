@@ -1,20 +1,14 @@
 ---
-title: OpenText
-role: "" 
-tools: "" 
-link: "" 
-time: "" 
-domain: "" 
+title: OpenText Information Hub (iHub)
+role: "Development, Design System" 
+tools: "HTML, Bootstrap 3, AngularJS, SCSS" 
+link: "https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub/?utm_source=actuate&utm_medium=redirect" 
 publish: "true" 
 category: "work"
 date:  "2015-05-28T22:40:32.169Z"
 ---
 
 ### OpenText Information Hub (iHub)
-
-URL: https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub/?utm_source=actuate&utm_medium=redirect
-Role: Development | Design System
-Tools: HTML | Bootstrap 3 | AngularJS | SCSS
 
 - iHub is the commercial platform for all BIRT content. It is a deployment server that helps developer managing report content. Moreover it provides visualization tools and gives control of users and users group to system administrator. The viewing capability of iHub is superb. It allows interactivity; sorting, filtering, and exporting.
 

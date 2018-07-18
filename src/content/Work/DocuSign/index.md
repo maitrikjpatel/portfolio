@@ -1,10 +1,8 @@
 ---
 title: DocuSign
-role: "" 
-tools: "" 
-link: "" 
-time: "" 
-domain: "" 
+role: "SEO, Branding, Development, design, UX" 
+tools: "React, php, CSS, Design system, Modile, JS, Webpack" 
+link: "www.docusign.com" 
 publish: "true" 
 category: "work"
 date:  "2015-05-01T22:12:03.284Z"

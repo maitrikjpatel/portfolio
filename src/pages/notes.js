@@ -1,12 +1,8 @@
 import React from 'react'
 
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
-
-import { Link } from 'gatsby'
-import { rhythm } from '../utils/typography'
+import Card from '../components/Card/'
 
 class NoteIndex extends React.Component {
   render() {
@@ -16,29 +12,26 @@ class NoteIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <h1 style={{textAlign: 'center'}}>Notes</h1>
-        {posts.map(({ node }) => {
-            const title = get(node, 'frontmatter.title') || node.fields.slug
-            const category = get(node, 'frontmatter.category')
-            const publish = get(node, 'frontmatter.publish')
-            if(category == "note" && publish == "true"){
-              return (
-                <div key={node.fields.slug}>
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                      {title}
-                    </Link>
-                  </h3>
-                  <small>{node.frontmatter.date}</small>
-                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                </div>
-              )
-            }
-          })
-        }
+        <div className="flexbox">
+          {posts.map(({ node }) => {
+              const title = get(node, 'frontmatter.title') || node.fields.slug
+              const category = get(node, 'frontmatter.category')
+              const publish = get(node, 'frontmatter.publish')
+              const tags = get(node, 'frontmatter.tags')
+              
+              if(category == "note" && publish == "true"){
+                return (
+                  <Card 
+                    key={node.fields.slug}
+                    title={title}
+                    link={node.fields.slug}
+                    role={tags}
+                  />
+                )
+              }
+            })
+          }
+        </div>
       </Layout>
     )
   }
@@ -65,6 +58,7 @@ export const noteQuery = graphql`
             title
             category
             publish
+            tags
           }
         }
       }

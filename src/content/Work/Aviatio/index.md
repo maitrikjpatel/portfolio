@@ -1,20 +1,12 @@
 ---
 title: Aviatio
-role: "" 
-tools: "" 
-link: "" 
-time: "" 
-domain: "" 
+role: "UX Prototyping, Development" 
+tools: "HTML, Bootstrap, AngularJS" 
+link: "https://github.com/ActuateBIRT/AviatioExample" 
 publish: "true" 
 category: "work"
 date:  "2015-05-28T22:40:32.169Z"
 ---
-
-### Aviatio
-
-URL: https://github.com/ActuateBIRT/AviatioExample
-Role: UX Prototyping | Development
-Tools: HTML | Bootstrap 3 | AngularJS
 
 - Aviatio is a desktop and tablet app that allows users to explore data on flight and airport performance across the U.S. It’s a pretty simple interface: you select a region and then a state to view a state-specific dashboard.
 

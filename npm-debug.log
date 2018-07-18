@@ -2,10 +2,10 @@
 1 verbose cli [ '/Users/maitrik.patel/.nvm/versions/node/v6.11.2/bin/node',
 1 verbose cli   '/Users/maitrik.patel/.nvm/versions/node/v6.11.2/bin/npm',
 1 verbose cli   'run',
-1 verbose cli   'install' ]
+1 verbose cli   'push-docs' ]
 2 info using npm@3.10.10
 3 info using node@v6.11.2
-4 verbose stack Error: missing script: install
+4 verbose stack Error: missing script: push-docs
 4 verbose stack     at run (/Users/maitrik.patel/.nvm/versions/node/v6.11.2/lib/node_modules/npm/lib/run-script.js:151:19)
 4 verbose stack     at /Users/maitrik.patel/.nvm/versions/node/v6.11.2/lib/node_modules/npm/lib/run-script.js:61:5
 4 verbose stack     at /Users/maitrik.patel/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
@@ -18,10 +18,10 @@
 4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:443:12)
 5 verbose cwd /Users/maitrik.patel/Code/mpcom/portfolio
 6 error Darwin 16.7.0
-7 error argv "/Users/maitrik.patel/.nvm/versions/node/v6.11.2/bin/node" "/Users/maitrik.patel/.nvm/versions/node/v6.11.2/bin/npm" "run" "install"
+7 error argv "/Users/maitrik.patel/.nvm/versions/node/v6.11.2/bin/node" "/Users/maitrik.patel/.nvm/versions/node/v6.11.2/bin/npm" "run" "push-docs"
 8 error node v6.11.2
 9 error npm  v3.10.10
-10 error missing script: install
+10 error missing script: push-docs
 11 error If you need help, you may report this error at:
 11 error     <https://github.com/npm/npm/issues>
 12 verbose exit [ 1, true ]

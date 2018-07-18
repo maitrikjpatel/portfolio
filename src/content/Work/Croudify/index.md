@@ -1,20 +1,12 @@
 ---
 title: Croudify
-role: "" 
-tools: "" 
-link: "" 
-time: "" 
-domain: "" 
+role: "Branding, UX, Design, Development" 
+tools: Illustrator, html, css, JS, AngularJS"" 
+link: "http://croudify.com/" 
 publish: "true" 
 category: "work"
 date:  "2015-05-28T22:40:32.169Z"
 ---
-
-### Croudify
-
-Role: http://croudify.com/
-Role: Branding | UX  | Design | Development
-Tools: Illustrator | html | css | JS | AngularJS
 
 - Croudify is peer to peer investing web platform startup. I work very closely with CEO through brainstorming sessions and wireframe deliverables, I assisted the team for branding of startup, website design and product design and user experience.
 

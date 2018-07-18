@@ -1,20 +1,12 @@
 ---
-title: Gazetteer
-role: "" 
-tools: "" 
-link: "" 
-time: "" 
-domain: "" 
+title: "Gazetteer – iPad Application"
+role: "UX Prototyping, Development" 
+tools: "iOS, ObjECTIVE C, amCharts.js, AngularJS" 
+link: "https://github.com/ActuateBIRT/GazetteerExample" 
 publish: "true" 
 category: "work"
 date:  "2015-05-28T22:40:32.169Z"
 ---
-
-### Gazetteer – iPad Application
-
-URL: https://github.com/ActuateBIRT/GazetteerExample
-Role: UX Prototyping | Development
-Tools: ObjECTIVE C | amCharts.js | AngularJS
 
 - The UN Data App was developed to demonstrate how a client could build a REST API into an application created with our software. Using data gathered by the UN, we designed and developed an app that lets the user explore statistics about individual continents, regions, and countries around the world. The app allows the user to either navigate through a traditional menu structure or make selections by interacting with a map. The user can then drill deeper to view a report about the region they have selected and compare it to others.
 

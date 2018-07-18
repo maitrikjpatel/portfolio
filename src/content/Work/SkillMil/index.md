@@ -1,10 +1,8 @@
 ---
 title: SkillMil
-role: "" 
-tools: "" 
-link: "" 
-time: "" 
-domain: "" 
+role: "Branding, Development, Design, Product Management" 
+tools: "html, css, reactJS, JS" 
+link: "www.skillmil.com"
 publish: "true" 
 category: "work"
 date:  "2015-05-28T22:40:32.169Z"
