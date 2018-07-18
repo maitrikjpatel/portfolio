@@ -1,3 +1,7 @@
+.footer{
+  padding: 0.75rem 0;
+}
+
 .footerLinks {
   float: right;
 }
@@ -6,7 +10,7 @@
 .footerLinks ul li {
   display: inline;
   list-style: none;
-  padding: 15px;
+  padding: 10px;
 }
 
 .footerCopyright {

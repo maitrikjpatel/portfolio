@@ -1,5 +1,6 @@
 .header { 
-  padding-bottom: 1rem;
+  padding: 0.75rem 0;
+  background: #ffffff;
   border-bottom: 1px solid;
 }
 
@@ -17,5 +18,5 @@
 .headerLink { 
   display: inline;
   list-style: none;
-  padding: 15px;
+  padding: 10px;
 }

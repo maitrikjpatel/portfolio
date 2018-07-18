@@ -1,0 +1,45 @@
+.Bio {
+  margin: 25px auto;
+  width: 90%;
+  position: relative;
+  text-align: center;
+  display: block;
+  height: auto;
+}
+
+@media (min-width: 40rem) {
+  .Bio {
+    margin: 35px auto;
+    width: 80%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .Bio {
+    margin: 50px auto;
+    width: 75%;
+  }
+}
+
+.Bio h1{
+  font-size: 1.25rem;
+  line-height: 2rem;
+  word-spacing: 6px;
+  letter-spacing: 2px;
+}
+
+.vertcialLine{
+  height: 30px;
+  position: relative;
+  margin: 25px;
+}
+
+.vertcialLine::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px solid black;  
+}

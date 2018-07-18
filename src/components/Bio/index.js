@@ -1,15 +1,16 @@
 import React from 'react'
-
-import { rhythm } from '../../utils/typography'
+import styles from './Bio.module.css'
 
 class Bio extends React.Component {
   render() {
     return (
-      <p>
-        <strong>Hey! I am Maitrik Patel. </strong>
-        <br/>
-        A Front-End Developer / UX Designer Who Designs and Develops Pixel Perfect Interface Designs, Interfaces and Experiences. 
-      </p>
+      <div className={styles.Bio}>
+        <h1>
+          Hey! I am Maitrik Patel, a UX Designer/Engineer from California. I design and develop pixel perfect web-application, front-end, user interfaces, websites and experiences. 
+        </h1>
+        <div className={styles.vertcialLine}></div>
+        <h5> Here's some of my selected projects</h5>
+      </div>
     )
   }
 }

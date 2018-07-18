@@ -18,7 +18,7 @@ const User = props => (
 
 export default () => (
   <Layout>
-    <div>
+    <div className="layoutContainer">
       <h1 style={{textAlign: 'center'}}>About me</h1>
       <h6 style={{textAlign: 'center'}}>  <a href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a><span>&nbsp; &nbsp;
           | &nbsp; &nbsp;&nbsp;</span>  <a href="mailto:maitrik1419@gmail.com?subject=LetsMakeFuture&body=Lets make wonderful things together.">maitrik1419[at]gmail[dot]com</a>

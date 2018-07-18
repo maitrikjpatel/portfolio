@@ -16,13 +16,13 @@
 }
 
 .layoutContainer {
-  width: 100%;
-  margin: 1rem auto;
+  width: 90%;
+  margin: auto;
 }
 
 @media (min-width: 40rem) {
   .layoutContainer {
-    width: 90%;
+    width: 85%;
   }
 }
 
