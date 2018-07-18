@@ -7,17 +7,24 @@
   height: auto;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
   .Bio {
     margin: 35px auto;
     width: 80%;
   }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 64rem) {
   .Bio {
     margin: 50px auto;
     width: 75%;
+  }
+}
+
+@media (min-width: 90rem) {
+  .Bio {
+    margin: 75px auto;
+    width: 70%;
   }
 }
 

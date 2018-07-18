@@ -13,21 +13,30 @@
 .flexbox{
   display: flex;
   flex-wrap: wrap;
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
 }
 
-.layoutContainer {
+
+.fullWidth {
   width: 90%;
   margin: auto;
 }
 
-@media (min-width: 40rem) {
-  .layoutContainer {
-    width: 85%;
+@media (min-width: 48rem) {
+  .fullWidth {
+    width: 80%;
   }
 }
 
-@media (min-width: 56rem) {
-  .layoutContainer {
-    width: 80%;
+@media (min-width: 64rem) {
+  .fullWidth {
+    width: 75%;
+  }
+}
+
+@media (min-width: 90rem) {
+  .fullWidth {
+    width: 70%;
   }
 }

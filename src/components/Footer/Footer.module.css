@@ -1,5 +1,10 @@
 .footer{
   padding: 0.75rem 0;
+  composes: fullWidth from "../../utils/css/utilities.css";
+}
+
+.footer p, .footer ul {
+  margin-bottom: 0;
 }
 
 .footerLinks {

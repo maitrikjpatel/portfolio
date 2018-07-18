@@ -6,7 +6,7 @@ class Bio extends React.Component {
     return (
       <div className={styles.Bio}>
         <h1>
-          Hey! I am Maitrik Patel, a UX Designer/Engineer from California. I design and develop pixel perfect web-application, front-end, user interfaces, websites and experiences. 
+          Hey! I am Maitrik Patel. I design and develop pixel perfect user interfaces and experiences. 
         </h1>
         <div className={styles.vertcialLine}></div>
         <h5> Here's some of my selected projects</h5>
