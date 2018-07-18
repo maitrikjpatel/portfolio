@@ -13,7 +13,7 @@ class BlogIndex extends React.Component {
       return (
         <Layout location={this.props.location}>
           <Helmet title={siteTitle} />
-          <div className="layoutContainer">
+          <div className="resizeContainer">
             <Bio />
             <div className="flexbox">
               {posts.map(({ node }) => {

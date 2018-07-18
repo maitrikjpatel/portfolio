@@ -1,0 +1,22 @@
+.layoutContainer {
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 48rem) {
+  .layoutContainer {
+    width: 80%;
+  }
+}
+
+@media (min-width: 64rem) {
+  .layoutContainer {
+    width: 75%;
+  }
+}
+
+@media (min-width: 90rem) {
+  .layoutContainer {
+    width: 70%;
+  }
+}

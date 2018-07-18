@@ -11,7 +11,7 @@ class NoteIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div className="layoutContainer">
+        <div className="resizeContainer">
           <h1 style={{textAlign: 'center'}}>Notes</h1>
           <div className="flexbox">
             {posts.map(({ node }) => {

@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <div className="layoutContainer">
+        <div className="resizeContainer">
           <h1>{post.frontmatter.title}</h1>
           <p
             style={{
@@ -34,7 +34,6 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <Bio />
 
           <ul
             style={{

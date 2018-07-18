@@ -6,7 +6,7 @@ class Header extends React.Component {
   render() {
     return (
       <header className={styles.header}>
-        <div className="layoutContainer">
+        <div className="resizeContainer">
           <Link to="/" className={styles.headerLogo}>m</Link>
           <ul className={styles.headerLinks}>
             <Link className={styles.headerLink} to="/">work</Link>

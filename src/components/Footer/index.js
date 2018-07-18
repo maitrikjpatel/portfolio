@@ -5,7 +5,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className={styles.footer}>
-        <div className="layoutContainer">
+        <div className="resizeContainer">
           <p className={styles.footerCopyright}>© copyright 2018</p>
           <div className={styles.footerLinks}>
             <ul>
