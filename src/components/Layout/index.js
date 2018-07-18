@@ -1,4 +1,5 @@
-import '../../utils/css/base.css';
+import '../../utils/css/base.css'
+import styles from  './Layout.module.css';
 
 import React from 'react'
 import Header  from '../Header/'
@@ -11,7 +12,9 @@ class Template extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        {children}
+        <div className={styles.content}>
+          {children}
+        </div>
         <Footer />
       </React.Fragment>
     )

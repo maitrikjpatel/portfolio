@@ -11,28 +11,26 @@ class NoteIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div className="resizeContainer">
-          <h1 style={{textAlign: 'center'}}>Notes</h1>
-          <div className="flexbox">
-            {posts.map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug
-                const category = get(node, 'frontmatter.category')
-                const publish = get(node, 'frontmatter.publish')
-                const tags = get(node, 'frontmatter.tags')
-                
-                if(category == "note" && publish == "true"){
-                  return (
-                    <Card 
-                      key={node.fields.slug}
-                      title={title}
-                      link={node.fields.slug}
-                      role={tags}
-                    />
-                  )
-                }
-              })
-            }
-          </div>
+        <h1 style={{textAlign: 'center'}}>Notes</h1>
+        <div className="flexbox">
+          {posts.map(({ node }) => {
+              const title = get(node, 'frontmatter.title') || node.fields.slug
+              const category = get(node, 'frontmatter.category')
+              const publish = get(node, 'frontmatter.publish')
+              const tags = get(node, 'frontmatter.tags')
+              
+              if(category == "note" && publish == "true"){
+                return (
+                  <Card 
+                    key={node.fields.slug}
+                    title={title}
+                    link={node.fields.slug}
+                    role={tags}
+                  />
+                )
+              }
+            })
+          }
         </div>
       </Layout>
     )
