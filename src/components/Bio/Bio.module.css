@@ -1,5 +1,5 @@
 .Bio {
-  margin: 80px auto 25px;
+  margin: 25px auto;
   width: 90%;
   position: relative;
   text-align: center;
@@ -9,21 +9,21 @@
 
 @media (min-width: 48rem) {
   .Bio {
-    margin: 90px auto 35px;
+    margin: 35px auto;
     width: 80%;
   }
 }
 
 @media (min-width: 64rem) {
   .Bio {
-    margin: 105px auto 50px;
+    margin: 50px auto;
     width: 75%;
   }
 }
 
 @media (min-width: 90rem) {
   .Bio {
-    margin: 130px auto;
+    margin: 75px auto;
     width: 70%;
   }
 }
