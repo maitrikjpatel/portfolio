@@ -2,11 +2,10 @@
 .card {
   width: 100%;
   padding: 1rem;
-  background: #ffff;
+  background: var(--color-white);
   margin: 1rem;
   transition: .3s ease;
-  border: 1px solid #dedede;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--color-gray3);
 }
 
 @media (min-width: 40rem) {
@@ -22,24 +21,27 @@
 }
 
 .card:hover {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px var(--color-gray3);
   transform: translateY(-10px) scale(1.02);
 }
 .card:hover .entryTitle {
   background-position: -100% 0;
 }
 
-.entryTitle {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #1abc9c 50%);
-  background-size: 200%;
-  background-position: 0 0;
-  display: inline;
-  transition: .5s ease-in-out;
-  text-transform: uppercase;
-}
 .entryTitle a {
-  color: #2d2d2d;
-  text-decoration: none;
+  background-image: linear-gradient(180deg, transparent 65%, #79e9d2 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  /* background-position: 0 0; */
+  display: inline;
+  transition: .4s;
+  transition: background-size .5s ease;
+  text-transform: uppercase;  
+}
+
+.entryTitle a:hover {
+  color:  var(--color-black);
+  background-size: 100% 100%;
 }
 
 span {
@@ -47,8 +49,8 @@ span {
   font-size: 12px;
   line-height: 15px;
   margin-top: 10px;
-  color: #1abc9c;
+  color: #9ECBC8;
 }
 span a {
-  color: white;
+  color: var(--color-white);
 }
