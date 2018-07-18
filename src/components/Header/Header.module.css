@@ -20,9 +20,11 @@ header{
 .headerLogo { 
   text-decoration: none;
   border: 0.5px solid #ccc;
-  padding: 3px 7.5px;
+  padding: 0px 7.5px;
   color: #656464;
   float: left;
+  height: 30px;
+  width: 30px;
 }
 
 .headerLinks { 

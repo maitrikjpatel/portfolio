@@ -13,8 +13,6 @@
 .flexbox{
   display: flex;
   flex-wrap: wrap;
-  width: calc(100% + 2rem);
-  margin-left: -1rem;
 }
 
 
