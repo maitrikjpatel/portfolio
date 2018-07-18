@@ -1,39 +1,39 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
-import { rhythm } from '../utils/typography'
+import Card from '../components/Card/'
 
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+      return (
+        <Layout location={this.props.location}>
+          <Helmet title={siteTitle} />
+          <Bio />
+          <div className="flexbox">
+            {posts.map(({ node }) => {
+              const title = get(node, 'frontmatter.title') || node.fields.slug
+              const category = get(node, 'frontmatter.category')
+              const publish = get(node, 'frontmatter.publish')
+              const role = get(node, 'frontmatter.role')
 
-    return (
-      <Layout location={this.props.location}>
-        <Helmet title={siteTitle} />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+              if(category == "work" && publish == "true"){
+                return (
+                  <Card
+                    key={node.fields.slug}
+                    title={title}
+                    link={node.fields.slug}
+                    role={role}
+                  />
+                )
+              }
+            })
+          }
+        </div>
       </Layout>
     )
   }
@@ -58,6 +58,9 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            category
+            publish
+            role
           }
         }
       }

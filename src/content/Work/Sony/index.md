@@ -1,19 +1,14 @@
 ---
-title: Sony
-role: "" 
-tools: "" 
-link: "" 
-time: "" 
-domain: "" 
-draft: "" 
+title: "SONY – Global Website"
+role: "Development" 
+tools: "CSS, html, Javascript, Jade, SASS" 
+link: "www.sony.co.uk" 
+publish: "true" 
+category: "work"
 date:  "2015-05-28T22:40:32.169Z"
 ---
 
-### SONY – Global Website
-
-- URL: Sony.co.uk
-- Role: Development	
-- Tools: JS |  JADE | SASS
+### 
 
 - I was working as Front End Developer at Sony’s global web transformation project.
 
