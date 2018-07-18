@@ -13,5 +13,21 @@
 .flexbox{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+}
+
+.layoutContainer {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+@media (min-width: 40rem) {
+  .layoutContainer {
+    width: 90%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .layoutContainer {
+    width: 80%;
+  }
 }

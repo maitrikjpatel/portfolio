@@ -1,5 +1,5 @@
 ---
-title: OpenText Information Hub (iHub)
+title: "OpenText"
 role: "Development, Design System" 
 tools: "HTML, Bootstrap 3, AngularJS, SCSS" 
 link: "https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub/?utm_source=actuate&utm_medium=redirect" 

@@ -13,11 +13,11 @@ function Card(props) {
 
   return (
     <div className={styles.card}>
-      <h2 className={styles.entryTitle}>
+      <h3 className={styles.entryTitle}>
         <Link style={{ boxShadow: 'none' }} to={link}>
           {title}
         </Link>
-      </h2>
+      </h3>
       <span>{role}</span>
     </div>
   )

@@ -1,5 +1,5 @@
 ---
-title: "SONY – Global Website"
+title: "SONY"
 role: "Development" 
 tools: "CSS, html, Javascript, Jade, SASS" 
 link: "www.sony.co.uk" 

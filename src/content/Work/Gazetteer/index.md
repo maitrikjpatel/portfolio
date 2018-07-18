@@ -1,5 +1,5 @@
 ---
-title: "Gazetteer – iPad Application"
+title: "Gazetteer"
 role: "UX Prototyping, Development" 
 tools: "iOS, ObjECTIVE C, amCharts.js, AngularJS" 
 link: "https://github.com/ActuateBIRT/GazetteerExample" 
