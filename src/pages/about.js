@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from '../components/Layout'
-import H1Title from '../components/H1Title'
+import PageTitle from '../components/PageTitle'
 
 const User = props => (
   <div className={styles.user}>
@@ -19,7 +19,7 @@ const User = props => (
 
 export default () => (
   <Layout>
-    <H1Title text="About me" />
+    <PageTitle text="About me" />
     <h6 style={{textAlign: 'center'}}>  <a href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a><span>&nbsp; &nbsp;
         | &nbsp; &nbsp;&nbsp;</span>  <a href="mailto:maitrik1419@gmail.com?subject=LetsMakeFuture&body=Lets make wonderful things together.">maitrik1419[at]gmail[dot]com</a>
       <span className="hide-mobile">

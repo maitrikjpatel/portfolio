@@ -3,7 +3,7 @@ import React from 'react'
 import get from 'lodash/get'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
-import H1Title from '../components/H1Title'
+import PageTitle from '../components/PageTitle'
 
 class NoteIndex extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class NoteIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <H1Title text="Notes" />
+        <PageTitle text="Notes" />
         <div className="flexbox">
           {posts.map(({ node }) => {
               const title = get(node, 'frontmatter.title') || node.fields.slug

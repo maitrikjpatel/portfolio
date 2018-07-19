@@ -28,8 +28,8 @@
   }
 }
 
-.H1Title{
-  composes: H1Title from "../H1Title/H1Title.module.css";
+.PageTitle{
+  composes: PageTitle from "../PageTitle/PageTitle.module.css";
 }
 
 .vertcialLine{

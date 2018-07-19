@@ -1,4 +1,4 @@
-.H1Title {
+.PageTitle {
   font-size: var(--font-20);
   line-height: var(--font-32);
   word-spacing: 5px;
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: 64rem) {
-  .H1Title {
+  .PageTitle {
     font-size: var(--font-24);
     line-height: var(--font-40);
     word-spacing: 7.5px;

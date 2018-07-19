@@ -8,7 +8,7 @@ function Bio(props) {
 
   return (
     <div className={styles.Bio}>
-      <h1 className={styles.H1Title}>
+      <h1 className={styles.PageTitle}>
         Hey! I am Maitrik Patel. I design and develop pixel perfect user interfaces and experiences. 
       </h1>
       <div className={styles.vertcialLine}></div>
