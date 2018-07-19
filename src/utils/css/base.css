@@ -1,16 +1,16 @@
-@import './colors.css';
+@import './variables.css';
 @import './utilities.css';
 
 html {
   box-sizing: border-box;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: var(--font-18);
+  line-height: var(--font-28);
   text-size-adjust: 100%;
 }
 
 body {
   background: var(--color-gray1);
-  color: var(--color-black);
+  color: var(--color-gray10);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: normal;

@@ -5,7 +5,7 @@
   background: var(--color-white);
   margin: 1rem;
   transition: .3s ease;
-  border: 1px solid var(--color-gray3);
+  border: 1px solid var(--color-gray7);
 }
 
 @media (min-width: 40rem) {
@@ -21,8 +21,12 @@
 }
 
 .card:hover {
-  box-shadow: 5px 5px var(--color-gray3);
   transform: translateY(-10px) scale(1.02);
+  box-shadow: 1px 1px 0px var(--color-gray6),
+  2px 2px 0px var(--color-gray6),
+  3px 3px 0px var(--color-gray6),
+  4px 4px 0px var(--color-gray6),
+  5px 5px 0px var(--color-gray6)
 }
 .card:hover .entryTitle {
   background-position: -100% 0;
@@ -36,10 +40,10 @@
   display: inline;
   transition: .4s;
   transition: background-size .5s ease;
-  text-transform: uppercase;  
+  /* text-transform: uppercase;   */
 }
 
-.entryTitle a:hover {
+.card:hover .entryTitle a {
   color:  var(--color-black);
   background-size: 100% 100%;
 }
@@ -49,7 +53,7 @@ span {
   font-size: 12px;
   line-height: 15px;
   margin-top: 10px;
-  color: #9ECBC8;
+  color: #1abc9c;
 }
 span a {
   color: var(--color-white);

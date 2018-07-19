@@ -1,6 +1,6 @@
 .Bio {
-  margin: 25px auto;
-  width: 90%;
+  margin: var(--space-25) auto;
+  width: 80%;
   position: relative;
   text-align: center;
   display: block;
@@ -9,36 +9,33 @@
 
 @media (min-width: 48rem) {
   .Bio {
-    margin: 35px auto;
-    width: 70%;
+    margin: var(--space-30) auto;
+    width: 60%;
   }
 }
 
 @media (min-width: 64rem) {
   .Bio {
-    margin: 50px auto;
-    width: 65%;
+    margin: var(--space-50) auto;
+    width: 55%;
   }
 }
 
 @media (min-width: 90rem) {
   .Bio {
-    margin: 75px auto;
-    width: 60%;
+    margin: var(--space-75) auto;
+    width: 50%;
   }
 }
 
-.Bio h1{
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  word-spacing: 7.5px;
-  letter-spacing: 2.5px;
+.H1Title{
+  composes: H1Title from "../H1Title/H1Title.module.css";
 }
 
 .vertcialLine{
-  height: 30px;
+  height: var(--space-30);
   position: relative;
-  margin: 25px;
+  margin: var(--space-25);
 }
 
 .vertcialLine::after{

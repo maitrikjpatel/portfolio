@@ -3,15 +3,16 @@ import React from 'react'
 import get from 'lodash/get'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
+import H1Title from '../components/H1Title'
 
 class NoteIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    // const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <Layout location={this.props.location}>
-        <h1 style={{textAlign: 'center'}}>Notes</h1>
+        <H1Title text="Notes" />
         <div className="flexbox">
           {posts.map(({ node }) => {
               const title = get(node, 'frontmatter.title') || node.fields.slug

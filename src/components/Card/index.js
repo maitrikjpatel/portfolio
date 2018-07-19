@@ -33,6 +33,4 @@ Card.defaultProps = {
   role: null,
 }
 
-Card.displayName = 'Card'
-
 export default Card

@@ -3,8 +3,8 @@ import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import get from 'lodash/get'
 
-import Bio from '../components/Bio/'
 import Layout from '../components/Layout'
+import H1Title from '../components/H1Title'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
+        <H1Title text={post.frontmatter.title} />
         <p
           style={{
             ...scale(-1 / 5),
