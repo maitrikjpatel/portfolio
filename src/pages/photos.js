@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from '../components/Layout'
+import H1Title from '../components/H1Title'
 
 
 export default () => (
   <Layout>
-    <h1 style={{textAlign: 'center'}}>Photos</h1>
+    <H1Title text="Photos"/>
    </Layout>
 )

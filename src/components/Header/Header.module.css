@@ -1,6 +1,6 @@
 header{
-  background: #ffffff;
-  border-bottom: 1px solid #e9e9e9;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-gray3);
   position: fixed;
   width: 100%;
   top: 0;
@@ -8,8 +8,8 @@ header{
 }
 
 .header { 
-  padding: 0.75rem 0;
-  height: 55px;
+  padding: var(--space-15) 0;
+  height: var(--space-60);
   composes: fullWidth from "../../utils/css/utilities.css";
 }
 
@@ -19,12 +19,17 @@ header{
 
 .headerLogo { 
   text-decoration: none;
-  border: 0.5px solid #ccc;
-  padding: 0px 7.5px;
-  color: #656464;
+  border: 0.5px solid var(--color-gray7);
+  padding: 0px 7px;
+  color: var(--color-gray7);
   float: left;
-  height: 30px;
-  width: 30px;
+  transition: .3s ease;
+  height: var(--space-30);
+  width: var(--space-30);
+}
+
+.headerLogo:hover { 
+  box-shadow: 1px 1px 0px var(--color-gray7), 2px 2px 0px var(--color-gray7);
 }
 
 .headerLinks { 
@@ -34,5 +39,5 @@ header{
 .headerLink { 
   display: inline;
   list-style: none;
-  padding: 10px;
+  padding: var(--space-10);
 }

@@ -1,6 +1,6 @@
 .content {
-  margin-top: 55px;
+  margin-top: var(--space-60);
   overflow: auto;
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - var(--space-120));
   composes: fullWidth from "../../utils/css/utilities.css";
 }

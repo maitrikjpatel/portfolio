@@ -1,0 +1,38 @@
+:root {
+
+  --color-white: #ffffff;
+  --color-gray1: #fafafa;
+  --color-gray2: #f4f4f4;
+  --color-gray3: #e9e9e9;
+  --color-gray4: #d9d9d9;
+  --color-gray5: #cccccc;
+  --color-gray6: #a9a9a9;
+  --color-gray7: #999999;
+  --color-gray8: #777777;
+  --color-gray9: #666666;
+  --color-gray10: #555555;
+  --color-gray11: #333333;
+  --color-black: #2d2d2d;
+
+  /* Spacing */
+  --space-5: 5px;
+  --space-10: 10px;
+  --space-15: 15px;
+  --space-25: 25px;
+  --space-30: 30px;
+  --space-50: 50px;
+  --space-60: 60px;
+  --space-75: 75px;
+  --space-100: 100px;
+  --space-120: 120px;
+
+  /* font-size */
+  --font-16: 1rem;
+  --font-18: 1.125rem;
+  --font-20: 1.25rem;
+  --font-24: 1.5rem;
+  --font-28: 1.75rem;
+  --font-32: 2rem;
+  --font-40: 2.5rem;
+
+}

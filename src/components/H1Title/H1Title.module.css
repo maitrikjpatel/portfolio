@@ -1,0 +1,22 @@
+.H1Title {
+  font-size: var(--font-20);
+  line-height: var(--font-32);
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 64rem) {
+  .H1Title {
+    font-size: var(--font-24);
+    line-height: var(--font-40);
+    word-spacing: 7.5px;
+    letter-spacing: 2.5px; 
+    text-align: center;
+    padding: var(--space-25) 0 var(--space-15) 0;
+    margin: 0;
+  }
+}
+
