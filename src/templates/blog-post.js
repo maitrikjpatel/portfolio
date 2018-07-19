@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import get from 'lodash/get'
 
 import Layout from '../components/Layout'
-import H1Title from '../components/H1Title'
+import PageTitle from '../components/PageTitle'
 import { rhythm, scale } from '../utils/typography'
 import styles from './blogPost.module.css';
 
@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <H1Title text={post.frontmatter.title} />
+        <PageTitle text={post.frontmatter.title} />
         <p
           style={{
             ...scale(-1 / 5),

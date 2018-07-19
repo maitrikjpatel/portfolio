@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from '../components/Layout'
-import H1Title from '../components/H1Title'
+import PageTitle from '../components/PageTitle'
 import PhotoFrame from '../components/PhotoFrame'
 
 
 export default () => (
   <Layout>
-    <H1Title text="Photos"/>
+    <PageTitle text="Photos"/>
     <div className="flexbox">
       <PhotoFrame imageUrl="https://source.unsplash.com/random/200x300"/>
       <PhotoFrame imageUrl="https://source.unsplash.com/random/300x400"/>
