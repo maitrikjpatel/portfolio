@@ -17,6 +17,7 @@ function PhotoFrame(props) {
         />
       </div>
     </div>
+    // <img className={styles.imageFrame} src={imageUrl}/>
   )
 }
 
