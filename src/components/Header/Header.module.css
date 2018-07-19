@@ -45,6 +45,6 @@ header{
 
 @media (min-width: 40rem) {
   .headerLink {
-    padding-left: var(--space-20);
+    padding-left: var(--space-30);
   }
 }

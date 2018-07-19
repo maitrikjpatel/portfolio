@@ -6,6 +6,7 @@ import get from 'lodash/get'
 import Layout from '../components/Layout'
 import H1Title from '../components/H1Title'
 import { rhythm, scale } from '../utils/typography'
+import styles from './blogPost.module.css';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -27,7 +28,10 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div 
+          className={styles.blogPostContent}
+          dangerouslySetInnerHTML={{ __html: post.html }} 
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
