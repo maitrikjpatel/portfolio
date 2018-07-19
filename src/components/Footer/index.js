@@ -12,19 +12,19 @@ function Footer(props) {
     <div className={styles.footerLinks}>
       <ul>
         <a href="https://twitter.com/maitrikjpatel" target="_blank">
-          <li className="twitter">Twitter.</li>
+          <li className="twitter">Twitter</li>
         </a>
         <a href="https://www.linkedin.com/in/maitrikpatel/" target="_blank">
-          <li className="linkedin">Linkedin.</li>
+          <li className="linkedin">Linkedin</li>
         </a>
         <a href="https://github.com/maitrikjpatel/" target="_blank">
-          <li className="github">Github.</li>
+          <li className="github">Github</li>
         </a>
         <a href="https://dribbble.com/maitrikjpatel" target="_blank">
-          <li className="dribbble">Dribbble.</li>
+          <li className="dribbble">Dribbble</li>
         </a>
         <a href="https://www.instagram.com/maitrikjpatel/" target="_blank">
-          <li className="Instagram">Instagram.</li>
+          <li className="Instagram">Instagram</li>
         </a>
       </ul>
     </div>

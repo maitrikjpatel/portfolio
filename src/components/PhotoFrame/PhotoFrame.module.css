@@ -1,0 +1,54 @@
+:root{
+  --blur: 2px;
+}
+
+.frameBorder {
+  box-sizing: border-box;
+  position: relative;
+  background: black;
+  width: 100%;
+  margin: 5% 15% 15% 15%;
+  box-shadow: -1px 1px var(--blur) 1px rgba(0, 0, 0, 0.1), -2px 2px var(--blur) 1px rgba(0, 0, 0, 0.09), -3px 3px var(--blur) 1px rgba(0, 0, 0, 0.08), -4px 4px var(--blur) 1px rgba(0, 0, 0, 0.07), -5px 5px var(--blur) 1px rgba(0, 0, 0, 0.06), -6px 6px var(--blur) 1px rgba(0, 0, 0, 0.05), -7px 7px var(--blur) 1px rgba(0, 0, 0, 0.04), -8px 8px var(--blur) 1px rgba(0, 0, 0, 0.03), -9px 9px var(--blur) 1px rgba(0, 0, 0, 0.03), -10px 10px var(--blur) 1px rgba(0, 0, 0, 0.03), -11px 11px var(--blur) 1px rgba(0, 0, 0, 0.03), -12px 12px var(--blur) 1px rgba(0, 0, 0, 0.02), -13px 13px var(--blur) 1px rgba(0, 0, 0, 0.02), -14px 14px var(--blur) 1px rgba(0, 0, 0, 0.01), -15px 15px var(--blur) 1px rgba(0, 0, 0, 0.01), -16px 16px var(--blur) 1px rgba(0, 0, 0, 0.01);
+}
+
+@media (min-width: 40rem) {
+  .frameBorder {
+    width: calc( 50% - 16%);
+    margin: 2% 8% 8% 8%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .frameBorder {
+    width: calc(33.33% - 15%);
+    margin: 2% 7.5% 6% 7.5%;
+  }
+}
+
+.frameBorder:before {
+  content: ' ';
+  display: block;
+  padding-bottom: 140%;
+}
+
+.frame {
+  left: 3%;
+  top: 2.5%;
+  box-shadow: inset -1px 1px 6px 1px rgba(0, 0, 0, 0.24);
+  width: 93.75%;
+  height: 95.50%;
+  background: white;
+  align-items: center;
+  display: flex;
+  padding: 18px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.image {
+  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
