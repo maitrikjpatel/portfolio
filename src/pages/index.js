@@ -13,7 +13,10 @@ class BlogIndex extends React.Component {
       return (
         <Layout location={this.props.location}>
           <Helmet title={siteTitle} />
-          <Bio />
+          <Bio 
+            title="I am Maitrik Patel. I design and develop pixel perfect user interfaces and experiences."
+            description="Here's some of my selected projects"
+          />
           <div className="flexbox">
             {posts.map(({ node }) => {
               const title = get(node, 'frontmatter.title') || node.fields.slug

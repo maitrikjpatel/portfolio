@@ -11,10 +11,11 @@ function PhotoFrame(props) {
   return (
     <div className={styles.frameBorder}>
       <div className={styles.frame}>
-        <div 
+        <img 
           className={styles.image} 
-          style={{backgroundImage: `url(${imageUrl})`}} 
-        />
+          // style={{backgroundImage: `url(${imageUrl})`}} 
+          src={imageUrl}
+          />
       </div>
     </div>
     // <img className={styles.imageFrame} src={imageUrl}/>
