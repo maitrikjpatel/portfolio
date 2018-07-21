@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
-
+import image  from '../content/Work/temp.jpg'
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -24,13 +24,15 @@ class BlogIndex extends React.Component {
               const publish = get(node, 'frontmatter.publish')
               const role = get(node, 'frontmatter.role')
 
-              if(category == "work" && publish == "true"){
+              if(category == "work"){
                 return (
                   <Card
                     key={node.fields.slug}
                     title={title}
                     link={node.fields.slug}
                     role={role}
+                    imageUrl={image}
+                    bgColor="#110011"
                   />
                 )
               }
@@ -51,7 +53,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { 
+      fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { publish: { ne: "false" } } }
+    ) {
       edges {
         node {
           excerpt
@@ -62,7 +67,6 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
             category
-            publish
             role
           }
         }

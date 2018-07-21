@@ -8,11 +8,18 @@ function Card(props) {
     title,
     link,
     role,
+    imageUrl,
+    bgColor,
     ...restProps
   } = props
 
   return (
     <div className={styles.card}>
+      {imageUrl && backgroundColor &&
+        <div className={styles.image} style={{ backgroundColor: {bgColor} }}>
+            <img src={imageUrl} alt={title} />
+        </div>
+      }
       <h3 className={styles.entryTitle}>
         <Link style={{ boxShadow: 'none' }} to={link}>
           {title}
@@ -27,10 +34,14 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   role: PropTypes.string,
+  imageUrl: PropTypes.string,
+  bgColor: PropTypes.string,
 }
 
 Card.defaultProps = {
   role: null,
+  imageUrl: null,
+  bgColor: null,
 }
 
 export default Card

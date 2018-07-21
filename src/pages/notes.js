@@ -23,7 +23,7 @@ class NoteIndex extends React.Component {
               const publish = get(node, 'frontmatter.publish')
               const tags = get(node, 'frontmatter.tags')
               
-              if(category == "note" && publish == "true"){
+              if(category == "note"){
                 return (
                   <Card 
                     key={node.fields.slug}
@@ -50,7 +50,10 @@ export const noteQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: 
+      { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { publish: { ne: "false" } } }
+    ) {
       edges {
         node {
           excerpt
@@ -61,7 +64,6 @@ export const noteQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
             category
-            publish
             tags
           }
         }

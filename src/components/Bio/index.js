@@ -15,7 +15,9 @@ function Bio(props) {
         {title}
       </h1>
       <div className={styles.vertcialLine}></div>
-      <h5>{description}</h5>
+      {description &&
+        <h5>{description}</h5>
+      }
     </div>
   )
 }
