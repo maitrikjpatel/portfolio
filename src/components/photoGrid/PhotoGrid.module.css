@@ -1,82 +1,6 @@
-/* Take one  */
-
-
-.imageFrame{
-  width: 90%;
-  margin: auto;
-  background: #fff;
-  padding: 10px;
-  border-style: solid;
-  border-width: 5px;
-  border-top-color: #333333;
-  border-right-color: black;
-  border-bottom-color: #333333;
-  border-left-color: black;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-
-/*  Take 2 */
-
-:root{
-  --blur: 2px;
-}
-.frameBorder {
-  box-sizing: border-box;
-  position: relative;
-  background: black;
-  width: 90%;
-  margin: 25px;
-  box-shadow: -1px 1px var(--blur) 1px rgba(0, 0, 0, 0.1), -2px 2px var(--blur) 1px rgba(0, 0, 0, 0.09), -3px 3px var(--blur) 1px rgba(0, 0, 0, 0.08), -4px 4px var(--blur) 1px rgba(0, 0, 0, 0.07), -5px 5px var(--blur) 1px rgba(0, 0, 0, 0.06);
-}
-
-@media (min-width: 40rem) {
-  .frameBorder {
-    width: calc( 50% - 16%);
-  }
-}
-
-@media (min-width: 56rem) {
-  .frameBorder {
-    width: calc(33.33% - 15%);
-  }
-}
-
-.frameBorder:before {
-  content: ' ';
-  display: block;
-  padding-bottom: 140%;
-}
-
-.frame {
-  left: 3%;
-  top: 2.5%;
-  box-shadow: inset -1px 1px 6px 1px rgba(0, 0, 0, 0.24);
-  width: auto;
-  height: auto;
-  background: white;
-  align-items: center;
-  display: flex;
-  padding: 18px;
-  box-sizing: border-box;
-  position: relative ;
-  border: 5px solid #111;
-}
-
-.image {
-  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  margin: auto;
-}
-
-/* Take 3 */
-
 
 .photoGrid {
-  width: 1200px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   display: grid;
@@ -86,13 +10,14 @@
 }
 
 .photoGridTitle {
-  font-family: sans-serif;
   text-align: right;
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: 2em;
+  font-weight: 300;
   grid-column: 1 / 3;
   grid-row: 3;
   align-self: center;
+  height: var(--space-50);
 }
 
 .photoGridPhoto {
@@ -101,7 +26,8 @@
   -o-object-position: center;
      object-position: center;
   width: 100%;
-  height: 100%;
+  height: 100%; 
+  composes: imageFrame from "../PhotoFrame/PhotoFrame.module.css";
 }
 
 .photoGridPhoto:nth-of-type(1) {
@@ -141,7 +67,7 @@
 }
 .photoGridPhoto:nth-of-type(9) {
   grid-column: 8;
-  grid-row: 3;
+  grid-row: 3 / 5;
 }
 .photoGridPhoto:nth-of-type(10) {
   grid-column: 1;
@@ -181,9 +107,13 @@
     grid-column: 6;
     grid-row: 1;
   }
+  .photoGridPhoto {
+    padding: 5px;
+    border-width: 3px;
+  }
 }
 @media (max-width: 580px) {
-  .photoGrid__title {
+  .photoGridTitle {
     grid-column: 1 / 4;
     grid-row: 1;
   }

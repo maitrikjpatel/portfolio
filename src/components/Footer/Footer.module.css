@@ -60,7 +60,7 @@
 
 .footerBrew:hover:after,
 .footerBrew:focus:after {
-  content: 'Love brewed Coffee, Beer and Kombucha';
+  content: 'While enjoying brewed Coffee, Beer and Kombucha';
   opacity:1;
   transition: all .8s;
 } 

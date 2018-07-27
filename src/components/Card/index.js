@@ -15,11 +15,11 @@ function Card(props) {
 
   return (
     <div className={styles.card}>
-      {imageUrl && bgColor &&
+      {/* {imageUrl && bgColor &&
         <div className={styles.image} style={{ backgroundColor: {bgColor} }}>
             <img src={imageUrl} alt={title} />
         </div>
-      }
+      } */}
       <h3 className={styles.entryTitle}>
         <Link style={{ boxShadow: 'none' }} to={link}>
           {title}

@@ -21,8 +21,8 @@ class BlogIndex extends React.Component {
             {posts.map(({ node }) => {
               const title = get(node, 'frontmatter.title') || node.fields.slug
               const category = get(node, 'frontmatter.category')
-              const publish = get(node, 'frontmatter.publish')
               const role = get(node, 'frontmatter.role')
+              const color = get(node, 'frontmatter.color')
 
               if(category == "work"){
                 return (
@@ -32,7 +32,7 @@ class BlogIndex extends React.Component {
                     link={node.fields.slug}
                     role={role}
                     imageUrl={image}
-                    bgColor="#110011"
+                    bgColor={color}
                   />
                 )
               }
@@ -68,6 +68,7 @@ export const pageQuery = graphql`
             title
             category
             role
+            color
           }
         }
       }
