@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
-import image  from '../content/Work/temp.jpg'
+import image  from '../content/Work/teamplate/temp.jpg'
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
         <Layout location={this.props.location}>
           <Helmet title={siteTitle} />
           <Bio 
-            title="I am Maitrik Patel. I design and develop pixel perfect user interfaces and experiences."
+            title="I am Maitrik. I design and develop pixel perfect user interfaces and experiences."
             description="Here's some of my selected projects"
           />
           <div className="flexbox">

@@ -1,12 +1,17 @@
 ---
+date:  "2015-05-28T22:40:32.169Z"
+publish: "true" 
+category: "work, note, photo"
+
 title: "Title"
+description: "Small information about this topic"
 role: "Development, Design, Product Design, Branding, UX Prototyping, Design System" 
 tools: "CSS, html, Javascript, Jade, SASS ..."
 link: "www.sony.co.uk" 
-publish: "true" 
-category: "work, note, medium"
-date:  "2015-05-28T22:40:32.169Z"
+
+source: "Github, Medium"
 image: ""
+postColor: ""
 ---
 
 ### Start Markdown file here

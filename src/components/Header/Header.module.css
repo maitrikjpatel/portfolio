@@ -19,9 +19,9 @@ header{
 
 .headerLogo { 
   text-decoration: none;
-  border: 0.5px solid var(--color-gray7);
+  border: 0.5px solid var(--color-gray10);
   padding: 0px 7px;
-  color: var(--color-gray7);
+  color: var(--color-gray10);
   float: left;
   transition: .3s ease;
   height: var(--space-30);
@@ -29,6 +29,8 @@ header{
 }
 
 .headerLogo:hover { 
+  color: var(--color-gray7);
+  border: 0.5px solid var(--color-gray7);
   box-shadow: 1px 1px 0px var(--color-gray7), 2px 2px 0px var(--color-gray7);
 }
 

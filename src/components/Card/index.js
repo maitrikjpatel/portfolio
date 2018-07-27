@@ -15,7 +15,7 @@ function Card(props) {
 
   return (
     <div className={styles.card}>
-      {imageUrl && backgroundColor &&
+      {imageUrl && bgColor &&
         <div className={styles.image} style={{ backgroundColor: {bgColor} }}>
             <img src={imageUrl} alt={title} />
         </div>
