@@ -58,8 +58,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "update-notes": "cd src/content/Notes && git fetch && git pull && cd ../../.. && git submodule status",
-    "push-notes": "cd src/content/Notes && git add --a && git commit -m 'update docs from protfolio' && git push && cd ../../.. && git submodule status",
+    "update-notes": "cd src/content/Notes && git fetch && git pull origin HEAD:main && cd ../../.. && git submodule status",
+    "push-notes": "cd src/content/Notes && git add --a && git commit -m 'update docs from protfolio' && git push origin HEAD:main && cd ../../.. && git submodule status",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }
