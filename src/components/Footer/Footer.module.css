@@ -1,25 +1,79 @@
 .footer{
-  padding:var(--space-15) 0;
-  height: var(--space-60);
+  height: var(--space-75);
   border-top: 1px solid var(--color-gray4);
+  margin-top: var(--space-25);
   composes: fullWidth from "../../utils/css/utilities.css";
 }
 
 .footer p, .footer ul {
   margin-bottom: 0;
+  display: inline;
 }
 
 .footerLinks {
   float: right;
 }
 
+.footerLinks p::after {
+  content: "---";
+  padding: 0 var(--space-10);
+}
 
 .footerLinks ul li {
   display: inline;
   list-style: none;
-  padding-left: var(--space-15);
+  padding-right: var(--space-15);
 }
 
+.footerLinks ul li:last-child {
+  padding-right: 0;
+}
+
+.footerBrew {
+  display: inline-block;
+}
+
+.footerBrew:before {
+  content: 'Brewed in California';
+  opacity:1;
+  transition: all .8s;
+}    
+
+.footerBrew:hover:before,
+.footerBrew:focus:before {
+  content: '';
+  opacity:0;
+  transition: all .8s;
+} 
+
+.footerBrew:after {
+  content: '';
+  opacity:0;
+  transition: all .8s;
+}    
+
+.footerBrew:hover:after,
+.footerBrew:focus:after {
+  content: 'I like all things brewed - Coffee, Beer and Kombucha.';
+  opacity:1;
+  transition: all .8s;
+} 
+
 .footerCopyright {
-  float: left;
+  text-align: center;
+}
+
+.footerBrew,
+.footerLinks {
+  font-size: var(--font-12);
+  padding: var(--space-25) 0;
+  width: 100%;;
+}
+
+@media (min-width: 48rem) {
+  .footerBrew,
+  .footerLinks {
+    font-size: var(--font-16);
+    width: 50%;;
+  }
 }

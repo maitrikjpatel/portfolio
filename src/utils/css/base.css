@@ -33,7 +33,7 @@ a {
 
 a:active,
 a:hover {
-  color: var(--color-gray6);
+  color: var(--color-gray7);
   text-decoration: none;
 }
 

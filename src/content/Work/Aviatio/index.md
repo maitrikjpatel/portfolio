@@ -8,6 +8,7 @@ category: "work"
 date:  "2015-05-28T22:40:32.169Z"
 ---
 
+
 - Aviatio is a desktop and tablet app that allows users to explore data on flight and airport performance across the U.S. It’s a pretty simple interface: you select a region and then a state to view a state-specific dashboard.
 
 - We developed this to showcase certain aspects of Actuate’s REST API library and also to demonstrate how BIRT technology could be used in a cross-device, responsive design.

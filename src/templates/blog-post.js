@@ -29,7 +29,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div 
-          className={styles.blogPostContent}
+          className={styles.markdownBody}
           dangerouslySetInnerHTML={{ __html: post.html }} 
         />
         <hr

@@ -11,8 +11,10 @@
   --color-gray8: #777777;
   --color-gray9: #666666;
   --color-gray10: #555555;
-  --color-gray11: #333333;
   --color-black: #2d2d2d;
+
+  --color-brand: #79e9d2;
+  --color-brandDark: #1abc9c;
 
   /* Spacing */
   --space-5: 5px;
@@ -28,6 +30,9 @@
   --space-120: 120px;
 
   /* font-size */
+  --font-8: 0.5rem;
+  --font-10: 0.625rem;
+  --font-12: 0.75rem;
   --font-16: 1rem;
   --font-18: 1.125rem;
   --font-20: 1.25rem;

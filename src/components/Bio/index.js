@@ -1,20 +1,34 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './Bio.module.css'
 
 function Bio(props) {
   const {
-    ...restProps
+  title,
+  description,
+  ...restProps
   } = props
 
   return (
     <div className={styles.Bio}>
       <h1 className={styles.PageTitle}>
-        Hey! I am Maitrik Patel. I design and develop pixel perfect user interfaces and experiences. 
+        {title}
       </h1>
       <div className={styles.vertcialLine}></div>
-      <h5> Here's some of my selected projects</h5>
+      {description &&
+        <h5>{description}</h5>
+      }
     </div>
   )
+}
+
+Bio.propTypes = {
+  title: PropTypes.node.isRequired,
+  description: PropTypes.string,
+}
+
+Bio.defaultProps = {
+  description: null
 }
 
 export default Bio
