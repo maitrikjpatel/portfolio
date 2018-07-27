@@ -23,7 +23,7 @@ function Bio(props) {
 }
 
 Bio.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
   description: PropTypes.string,
 }
 

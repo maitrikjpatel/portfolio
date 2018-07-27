@@ -8,9 +8,7 @@ function Footer(props) {
 
   return (
     <footer className={styles.footer}>
-    <div>
-      <div className={styles.footerBrew} />
-      <div className={styles.footerLinks}>
+      <div className={styles.footerLinks} >
         <p>Stalk</p> 
         <ul>
           <li className="twitter"><a href="https://twitter.com/maitrikjpatel" target="_blank">Twitter</a></li>
@@ -20,7 +18,7 @@ function Footer(props) {
           <li className="Instagram"><a href="https://www.instagram.com/maitrikjpatel/" target="_blank">Instagram</a></li>
         </ul>
       </div>
-    </div>
+      
     {/* <p className={styles.footerCopyright}>© copyright 2018</p> */}
   </footer>
   )
