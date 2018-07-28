@@ -91,6 +91,7 @@
   .footerBrew{
     width: 45%;
     text-align: left;
+    cursor: pointer;
   }
   .footer ul{
     float: right;
