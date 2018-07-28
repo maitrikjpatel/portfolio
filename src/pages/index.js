@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
-import image  from '../content/Work/teamplate/temp.jpg'
+// import image  from '../content/Work/teamplate/temp.jpg'
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -31,8 +31,8 @@ class BlogIndex extends React.Component {
                     title={title}
                     link={node.fields.slug}
                     role={role}
-                    imageUrl={image}
-                    bgColor={color}
+                    // imageUrl={image}
+                    // bgColor={color}
                   />
                 )
               }
