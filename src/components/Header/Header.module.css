@@ -26,6 +26,7 @@ header{
   transition: .3s ease;
   height: var(--space-30);
   width: var(--space-30);
+  display: none;
 }
 
 .headerLogo:hover { 
@@ -35,18 +36,31 @@ header{
 }
 
 .headerLinks { 
-  float: right;
-  margin-left: 5px;
+  width: 100%;
+  text-align: center;
 }
 
 .headerLink { 
   display: inline;
   list-style: none;
-  padding-left: var(--space-10);
+  padding-left: var(--space-25);
+}
+
+.headerLink:first-child { 
+  padding-left: 0;
 }
 
 @media (min-width: 40rem) {
+  .headerLinks { 
+    width: auto;
+    float: right;
+    text-align: right;
+    margin-left: 5px;
+  }
   .headerLink {
-    padding-left: var(--space-30);
+    padding-left: var(--space-50);
+  }
+  .headerLogo {
+    display: block;
   }
 }

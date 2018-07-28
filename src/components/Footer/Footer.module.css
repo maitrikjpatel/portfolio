@@ -8,10 +8,14 @@
 .footer p, .footer ul {
   margin-bottom: 0;
   display: inline;
+  float: left;
 }
+
+/* Link */
 
 .footerLinks {
   float: right;
+  padding: var(--space-25) 0 0 0 !important;
 }
 
 .footerLinks p::after {
@@ -19,15 +23,17 @@
   padding: 0 var(--space-10);
 }
 
-.footerLinks ul li {
+.footerLinks li {
   display: inline;
   list-style: none;
   padding-right: var(--space-15);
 }
 
-.footerLinks ul li:last-child {
+.footerLinks li:last-child {
   padding-right: 0;
 }
+  
+/* Brew */
 
 .footerBrew {
   display: inline-block;
@@ -54,26 +60,50 @@
 
 .footerBrew:hover:after,
 .footerBrew:focus:after {
-  content: 'I like all things brewed - Coffee, Beer and Kombucha.';
+  content: 'While enjoying brewed Coffee, Beer and Kombucha';
   opacity:1;
   transition: all .8s;
 } 
+
+/* Copyright */
 
 .footerCopyright {
   text-align: center;
 }
 
+/* Media Query */
+
 .footerBrew,
 .footerLinks {
   font-size: var(--font-12);
-  padding: var(--space-25) 0;
-  width: 100%;;
+  padding: var(--space-15) 0;
+  width: 100%;
+  text-align: center;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   .footerBrew,
   .footerLinks {
+    width: auto;
     font-size: var(--font-16);
-    width: 50%;;
+    padding: var(--space-25) 0;
+  }
+  .footerBrew{
+    width: 45%;
+    text-align: left;
+    cursor: pointer;
+  }
+  .footer ul{
+    float: right;
+    text-align: right;
+  }  
+  .footerLinks li {
+    padding-right: var(--space-15);
+  }
+}
+
+@media (max-width: 20rem) {
+  .footerLinks li {
+    padding-right: var(--space-5);
   }
 }

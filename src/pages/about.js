@@ -1,28 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from '../components/Layout'
-import Bio from '../components/Bio'
-
-const User = props => (
-  <div className={styles.user}>
-    <img src={props.avatar} className={styles.avatar} alt="" />
-    <div className={styles.description}>
-      <h2 className={styles.username}>
-        {props.username}
-      </h2>
-      <p className={styles.excerpt}>
-        {props.excerpt}
-      </p>
-    </div>
-  </div>
-)
+import PhotoGrid from '../components/photoGrid'
 
 export default () => (
   <Layout>
-    <Bio 
-      title="About me"
-      description="This is who I am !"
-    />
+    <PhotoGrid title={["About", <br />,  "me"]}/>
+    <hr />
+    <h2>Personal Info</h2>
+    <hr />
     <h6 style={{textAlign: 'center'}}>  <a href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a><span>&nbsp; &nbsp;
         | &nbsp; &nbsp;&nbsp;</span>  <a href="mailto:maitrik1419@gmail.com?subject=LetsMakeFuture&body=Lets make wonderful things together.">maitrik1419[at]gmail[dot]com</a>
       <span className="hide-mobile">
@@ -48,13 +34,18 @@ export default () => (
       from   <a href="http://www.startupleadership.com/" target="_blank">Startup Leadership Program</a> and   <a target="_blank" href="https://www.gsb.stanford.edu/programs/stanford-ignite">Stanford Ignite</a> with in-depth knowledge about entrepreneurship
       and startup ecosystem. I want to combine technological and entrepreneurship knowledge to achieve ultimate goal in life&nbsp;to&nbsp;solve
       one of the global challenges that improve people's lives.</p>
+    <p className="text-justify display-none">I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience
+      for a promising product, a motivating mentor and an innovating organization. </p>
+
     <p className="text-justify">Apart from designing &amp; building things, I have an unwavering love for wanderlust, to get lost and explore new places
       which cannot be checked-in by any map services. My all-time favorite leisure time activities include paragliding and
       rock climbing.</p>
-    <p className="text-justify display-none">I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience
-      for a promising product, a motivating mentor and an innovating organization. </p>
-    <p>Don't be a stranger! Give me a shout at tayler.aitken@gmail.com or find me at one of the links below.</p>
-    <p className="text-justify">Do you have a sweet project that needs some creative injection then that’s where I come in! Feel free to connect through
-        <a href="mailto:maitrik1419@gmail.com?subject=LetsMakeFuture&body=Lets make wonderful things together.">Email</a>					or other networks!</p>
+      
+    <hr />
+      <h2>What people say about me !</h2>
+    <hr />
+
+    <p>Don't be a stranger! Give me a shout at <a href="mailto:maitrik1419@gmail.com?subject=LetsMakeFuture&body=Lets make wonderful things together.">maitrik1419[at]gmail[dot]com</a> or find me at one of the links below.</p>
+
   </Layout>
 )

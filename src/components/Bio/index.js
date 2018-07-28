@@ -14,9 +14,11 @@ function Bio(props) {
       <h1 className={styles.PageTitle}>
         {title}
       </h1>
-      <div className={styles.vertcialLine}></div>
       {description &&
-        <h5>{description}</h5>
+        <React.Fragment>
+          <div className={styles.vertcialLine}></div>
+          <h5>{description}</h5>
+        </React.Fragment>
       }
     </div>
   )
