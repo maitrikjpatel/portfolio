@@ -2,17 +2,19 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from '../components/Layout'
 import PhotoGrid from '../components/photoGrid'
+import Bio from '../components/Bio'
 
 export default () => (
   <Layout>
-    <PhotoGrid title={["About", <br />,  "me"]}/>
-    <hr />
-    <h2>Personal Info</h2>
-    <hr />
-    <h6 style={{textAlign: 'center'}}>  <a href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a><span>&nbsp; &nbsp;
-        | &nbsp; &nbsp;&nbsp;</span>  <a href="mailto:maitrik1419@gmail.com?subject=LetsMakeFuture&body=Lets make wonderful things together.">maitrik1419[at]gmail[dot]com</a>
-      <span className="hide-mobile">
-        | &nbsp; &nbsp; &nbsp;</span>  <a className="hide-mobile" href="tel:+14088393930">+1-408-839-3930</a></h6>
+    <Bio 
+      title="About me"
+      description={[
+      <React.Fragment>
+        <a href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a className="emailContact" href="mailto:maitrik1419@gmail.com?subject=LetsMakeFuture&body=Lets make wonderful things together.">maitrik1419[at]gmail[dot]com</a>
+        <a href="tel:+14088393930">+1-408-839-3930</a>
+      </React.Fragment>]}
+     />
     <p className="text-justify">I’m a Front-end Developer and an UX Designer based in Bay Area, California.&nbsp;I stand on the sweet spot where design &amp;
       code intersects. My comprehensive knowledge in design and technology allows me to cultivate productive teams in a synergic
       environment that meets the requirements of creatives and developers concurrently. I work with the latest techniques
@@ -36,6 +38,8 @@ export default () => (
       one of the global challenges that improve people's lives.</p>
     <p className="text-justify display-none">I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience
       for a promising product, a motivating mentor and an innovating organization. </p>
+
+    <PhotoGrid title={["Photo", <br />,  "Grid"]}/>
 
     <p className="text-justify">Apart from designing &amp; building things, I have an unwavering love for wanderlust, to get lost and explore new places
       which cannot be checked-in by any map services. My all-time favorite leisure time activities include paragliding and

@@ -1,5 +1,6 @@
 @import './variables.css';
 @import './utilities.css';
+@import './pages.css';
 
 html {
   box-sizing: border-box;
