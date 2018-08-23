@@ -13,8 +13,8 @@ class BlogIndex extends React.Component {
       return (
         <Layout location={this.props.location}>
           <Helmet title={siteTitle} />
-          <Bio 
-            title="I am Maitrik. I design and develop pixel perfect user interfaces and experiences."
+          <Bio
+            title={["I am Maitrik.", <br />,  "I design and develop pixel perfect user interfaces and experiences."]}
             description="Here's some of my selected projects"
           />
           <div className="flexbox">

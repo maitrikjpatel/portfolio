@@ -5,6 +5,26 @@
   composes: fullWidth from "../../utils/css/utilities.css";
 }
 
+@media (min-width: 48rem) {
+  .footer {
+    margin-top: var(--space-30);
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer {
+    margin-top: var(--space-50);
+  }
+}
+
+@media (min-width: 90rem) {
+  .footer {
+    margin-top: var(--space-75);
+  }
+}
+
+
+
 .footer p, .footer ul {
   margin-bottom: 0;
   display: inline;
