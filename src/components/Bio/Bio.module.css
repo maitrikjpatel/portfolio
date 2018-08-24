@@ -33,9 +33,9 @@
 }
 
 .vertcialLine{
-  height: var(--space-30);
+  height: var(--space-40);
   position: relative;
-  margin: var(--space-25);
+  margin: var(--space-20);
 }
 
 .vertcialLine::after{
@@ -45,5 +45,5 @@
   top: 0;
   bottom: 0;
   left: 50%;
-  border-left: 2px solid black;  
+  border-left: 1px solid var(--color-gray7);  
 }
