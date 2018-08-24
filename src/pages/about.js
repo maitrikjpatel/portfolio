@@ -6,7 +6,7 @@ import Bio from '../components/Bio'
 
 export default () => (
   <Layout>
-    <div className="text-justify">
+    <div className="pageAbout">
       <Bio 
         title="About me"
         description={[
@@ -19,7 +19,7 @@ export default () => (
       <p>I’m a Design Technologist currently living in Bay Area, California. Currently, I am working at DocuSign to develop React componentized design system/tooling to promote shared design language in products and marketing web properties. My comprehensive knowledge in design and technology allows me to cultivate elegant, intuitive and pixel perfect user interface designs & applications.</p>
 
       <p>I have over 7 years of industry experience and have been a part of design and development projects for many exceptional companies during those years, including
-        <a href="https://thewaltdisneycompany.com/" target="_blank">&nbsp;The Walt Disney Studio,</a>
+        <a href="https://thewaltdisneycompany.com/" target="_blank">&nbsp;Disney,</a>
         <a href="http://www.sony.co.uk/"target="_blank">&nbsp;Sony,</a>
         <a href="http://www.sapientnitro.com/" target="_blank">&nbsp;SapientNitro,</a>
         <a href="http://www.actuate.com/" target="_blank">&nbsp;OpenText,</a>
@@ -28,56 +28,52 @@ export default () => (
         <a href="https://twitter.com/martiansf" target="_blank">&nbsp;MartianSF,</a>
         <a href="http://croudify.com/" target="_blank">&nbsp;Croudify,</a>
         <a href="http://hbpsupplier.in" target="_blank">&nbsp;HBPSupplier,</a> and
-        <a href="http://skillmil.com/" target="_blank">&nbsp;SkillMil.</a>
-      </p>
-      <p>With an MS in computer science and industry experience, I still think there’s more for me to learn. I recently graduated from <a href="http://www.startupleadership.com/" target="_blank">Startup Leadership Program</a> and   <a target="_blank" href="https://www.gsb.stanford.edu/programs/stanford-ignite">Stanford Ignite</a> with in-depth knowledge about entrepreneurship and startup ecosystem. I want to combine technological and entrepreneurship knowledge to create tangible things that would have the real impact on people’s lives.</p>
+        <a href="http://skillmil.com/" target="_blank">&nbsp;SkillMil.</a> With an MS in computer science and industry experience, I still think there’s more for me to learn. I recently graduated from <a href="http://www.startupleadership.com/" target="_blank">Startup Leadership Program</a> and   <a target="_blank" href="https://www.gsb.stanford.edu/programs/stanford-ignite">Stanford Ignite</a> with in-depth knowledge about entrepreneurship and startup ecosystem. I want to combine technological and entrepreneurship knowledge to create tangible things that would have the real impact on people’s lives.</p>
       
-      <h3>Skills</h3>
-      <ol>
-        <li><p>JAM stack web development</p></li>
-        <li><p>Front-end/UI Architecture</p></li>
-        <li><p>Design System development</p></li>
-        <li><p>SEO, W3C, Web accessibility</p></li>
-        <li><p>Cross browser compatibility</p></li>
-        <li><p>Web Performance/Optimization</p></li>
-
-        <li><p>Technical Documentation</p></li>
-        <li><p>Test Driven Development</p></li>
-        <li><p>Website Personalization</p></li>
-        <li><p>Responsive Web Design</p></li>
-        <li><p>Data Visualization</p></li>
-        <li><p>Icon fonts Library</p></li>
-
-        <li><p>Rebranding expert</p></li>
-        <li><p>UI/UX prototyping</p></li>
-        <li><p>Agile Development</p></li>
-        <li><p>A/B Testing</p></li>
-        <li><p>SVG Animation</p></li>
-        <li><p>Design tooling</p></li>
-      </ol>
-      <h3>Tools</h3>     
-      <ol> 
-        <li><p>React</p></li>
-        <li><p>Angularjs</p></li>
-        <li><p>Javascript</p></li>
-        <li><p>SASS</p></li>
-        <li><p>CSS</p></li>
-        <li><p>HTML</p></li>
-
-        <li><p>Figma</p></li>
-        <li><p>Sketch</p></li>
-        <li><p>Photoshop</p></li>
-        <li><p>Illustrator</p></li>
-        <li><p>PHP</p></li>
-        <li><p>GIT</p></li>
-
-        <li><p>Nodejs</p></li>
-        <li><p>Gulp</p></li>
-        <li><p>Webpack</p></li>
-        <li><p>Wordpress</p></li>
-        <li><p>Drupal</p></li>
-        <li><p>Gatsby</p></li>
-      </ol>
+      <h3 className="skillsTitle">Skills</h3>
+      <div className="threeColumnsLayout"> 
+        <p>JAMStack web development</p>
+        <p>Front-end/UI Architecture</p>
+        <p>Design System development</p>
+        <p>SEO, W3C, Web accessibility</p>
+        <p>Cross browser compatibility</p>
+        <p>Google Analytics/Optimize</p>
+        <p>Technical Documentation</p>
+        <p>Test Driven Development</p>
+        <p>Website Personalization</p>
+        <p>Responsive Web Design</p>
+        <p>Data Visualization</p>
+        <p>Icon fonts Library</p>
+        <p>Rebranding expert</p>
+        <p>UI/UX prototyping</p>
+        <p>Agile Development</p>
+        <p>Web Performance</p>
+        <p>A/B Testing</p>
+        <p>Design tooling</p>
+      </div>
+      <h3 className="toolsTitle">Tools</h3>     
+      <div className="fourColumnsLayout"> 
+        <p>React</p>
+        <p>Angularjs</p>
+        <p>Javascript</p>
+        <p>SASS</p>
+        <p>CSS</p>
+        <p>HTML</p>
+        <p>PHP</p>
+        <p>GIT</p>
+        <p>Figma</p>
+        <p>Sketch</p>
+        <p>Photoshop</p>
+        <p>Illustrator</p>
+        <p>Abstract</p>
+        <p>Zeplin</p>
+        <p>Nodejs</p>
+        <p>Gulp</p>
+        <p>Webpack</p>
+        <p>Wordpress</p>
+        <p>Drupal</p>
+        <p>Gatsby</p>
+      </div>
 
       <hr /> 
         <h2>What people say about me !</h2>
