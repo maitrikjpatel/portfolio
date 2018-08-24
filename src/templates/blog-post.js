@@ -18,14 +18,7 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <PageTitle text={post.frontmatter.title} />
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
+        <p className={styles.pageHeaderDate} >
           {post.frontmatter.date}
         </p>
         <div 
@@ -38,15 +31,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
 
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
+        <ul className={styles.pagePagination}>
           {previous && (
             <li>
               <Link to={previous.fields.slug} rel="prev">
