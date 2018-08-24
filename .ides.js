@@ -1,0 +1,62 @@
+// ---------- PhotoFrame -------------
+
+< Photoframe 
+  height=""
+  width=""
+  altText=""
+  imgUrl=""
+  title=""
+/>
+
+// ---------- Card -------------
+
+<Card 
+  title
+  description
+  role
+  tools
+  link
+
+  source
+  imageUrl
+  postColor
+/>
+
+
+
+Query Data = {
+  date
+  publish
+  category
+
+  title
+  description
+  role
+  tools
+  link
+
+  source
+  image
+  postColor
+
+}
+
+// ---------- Card Data for Work -------------
+
+// ---------- Card Data for Notes -------------
+
+// ---------- Skills -------------
+
+// ---------- Projects -------------
+
+// ---------- Other Ideas -------------
+
+- A tag with underline
+- Call yourself Design Technologist
+- Add https://jamstack.org/ link somewhere
+
+// ---------- SEO -------------
+
+- SEO keywords
+
+
