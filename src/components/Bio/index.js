@@ -4,8 +4,9 @@ import styles from './Bio.module.css'
 
 function Bio(props) {
   const {
-  title,
+  children,
   description,
+  title,
   ...restProps
   } = props
 
@@ -14,22 +15,25 @@ function Bio(props) {
       <h1 className={styles.PageTitle}>
         {title}
       </h1>
+      <div className={styles.vertcialLine} />
       {description &&
-        <React.Fragment>
-          <div className={styles.vertcialLine}></div>
-          <h5>{description}</h5>
-        </React.Fragment>
+        <h5>{description}</h5>
+      }
+      {children &&
+        <h5>{children}</h5>
       }
     </div>
   )
 }
 
 Bio.propTypes = {
+  children: PropTypes.node,
   title: PropTypes.node.isRequired,
   description: PropTypes.string,
 }
 
 Bio.defaultProps = {
+  children: null,
   description: null
 }
 

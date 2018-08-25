@@ -5,13 +5,13 @@ import styles from "./PhotoGrid.module.css"
 
 function PhotoGrid(props) {
   const {
-    title,
+    children,
     ...restProps
   } = props
 
   return (
   <div className={styles.photoGrid}>
-    <h1 className={styles.photoGridTitle}>{title}</h1>
+    <h1 className={styles.photoGridTitle}>{children}</h1>
     <img src="https://source.unsplash.com/random/600x690" alt="" className={styles.photoGridPhoto} />
     <img src="https://source.unsplash.com/random/609x600" alt="" className={styles.photoGridPhoto} />
     <img src="https://source.unsplash.com/random/660x600" alt="" className={styles.photoGridPhoto} />
@@ -32,7 +32,7 @@ function PhotoGrid(props) {
 }
 
 PhotoGrid.propTypes = {
-  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default PhotoGrid
