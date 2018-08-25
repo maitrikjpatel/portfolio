@@ -1,6 +1,7 @@
 /* About Page */
 .pageAbout p{
   text-align: justify;
+  word-break: break-all;
 }
 
 .pageAbout h3 {

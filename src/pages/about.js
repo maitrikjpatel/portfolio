@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Layout from '../components/Layout'
 import PhotoGrid from '../components/photoGrid'
 import Bio from '../components/Bio'
+import Tags from '../components/Tags'
 
 export default () => (
   <Layout>
@@ -29,53 +30,33 @@ export default () => (
         <a href="http://croudify.com/" target="_blank">&nbsp;Croudify,</a>
         <a href="http://hbpsupplier.in" target="_blank">&nbsp;HBPSupplier,</a> and
         <a href="http://skillmil.com/" target="_blank">&nbsp;SkillMil.</a> I recently graduated from <a href="http://www.startupleadership.com/" target="_blank">Startup Leadership Program</a> and   <a target="_blank" href="https://www.gsb.stanford.edu/programs/stanford-ignite">Stanford Ignite</a> with in-depth knowledge about entrepreneurship and startup ecosystem. I want to combine technological and entrepreneurship knowledge to create tangible things that would have the real impact on people’s lives.</p>
-      
-      <h3 className="skillsTitle">Skills</h3>
-      <div className="fourColumnsLayout"> 
-        <p>JAMStack development</p>
-        <p>Front-end/UI Architecture</p>
-        <p>Design System development</p>
-        <p>Google Analytics/Optimize</p>
-        <p>Technical Documentation</p>
-        <p>Test Driven Development</p>
-        <p>Search Engine Optimization</p>
-        <p>Cross browser compatibility</p>
-        <p>Website Personalization</p>
-        <p>Responsive Web Design</p>
-        <p>Data Visualization</p>
-        <p>Icon fonts Library</p>
-        <p>UI/UX prototyping</p>
-        <p>Agile Development</p>
-        <p>Web accessibility</p>
-        <p>Web Performance</p>
-        <p>Design tooling</p>
-        <p>A/B Testing</p>
-        <p>Rebranding</p>
-      </div>
-      <h3 className="toolsTitle">Tools</h3>     
-      <div className="fourColumnsLayout"> 
-        <p>React</p>
-        <p>Angularjs</p>
-        <p>Javascript</p>
-        <p>SASS</p>
-        <p>CSS</p>
-        <p>HTML</p>
-        <p>PHP</p>
-        <p>GIT</p>
-        <p>Figma</p>
-        <p>Sketch</p>
-        <p>Photoshop</p>
-        <p>Illustrator</p>
-        <p>Abstract</p>
-        <p>Zeplin</p>
-        <p>Nodejs</p>
-        <p>Gulp</p>
-        <p>Webpack</p>
-        <p>Wordpress</p>
-        <p>Drupal</p>
-        <p>Gatsby</p>
-      </div>
 
+      <div>
+        <h3 className="skillsTitle">Skills</h3>
+        <div className="fourColumnsLayout"> 
+          <p>JAMStack development</p>
+          <p>Front-end/UI Architecture</p>
+          <p>Design System development</p>
+          <p>Google Analytics/Optimize</p>
+          <p>Technical Documentation</p>
+          <p>Test Driven Development</p>
+          <p>Search Engine Optimization</p>
+          <p>Cross browser compatibility</p>
+          <p>Website Personalization</p>
+          <p>Responsive Web Design</p>
+          <p>Data Visualization</p>
+          <p>Icon fonts Library</p>
+          <p>UI/UX prototyping</p>
+          <p>Agile Development</p>
+          <p>Web accessibility</p>
+          <p>Web Performance</p>
+          <p>Design tooling</p>
+          <p>A/B Testing</p>
+          <p>Rebranding</p>
+        </div>
+      </div>
+      <Tags tags={[one, two, three]} />
+      
       <h3>What people say about me !</h3>
       
       <p>When I'm not in front of a computer screen, I spend my time paragliding, rock climbing. I also love capturing moments and places, through my lens, while exploring the world.</p>
