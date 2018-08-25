@@ -19,6 +19,7 @@
   grid-row: 2;
   align-self: center;
   height: var(--space-60);
+  margin: 0 0 var(--space-25) 0;
 }
 
 .photoGridPhoto {

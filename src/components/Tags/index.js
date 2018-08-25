@@ -9,10 +9,11 @@ function Tags(props) {
   } = props
 
   const tagsList = tags.map((tag) =>
-    <p className={styles.Tag}>{tag}</p>
+    <p className={styles.Tag}
+      key={tag.index}>
+      {tag}
+    </p>
   )
-
-  console.log(tagsList)
 
   return (
     <div className={styles.Tags}>
@@ -22,7 +23,7 @@ function Tags(props) {
 }
 
 Tags.propTypes = {
-  tags: PropTypes.arrayOf,
+  tags: PropTypes.array,
 }
 
 Tags.defaultProps = {

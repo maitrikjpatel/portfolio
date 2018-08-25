@@ -1,0 +1,54 @@
+/* About Page */
+.pageAbout p{
+  text-align: justify;
+  word-break: break-all;
+}
+
+.emailContact {
+  padding: var(--space-5) 0;
+  margin:  var(--space-10) 0;
+  border: none;
+  display: block;
+}
+
+/* Skills */
+
+.skills {
+  /* display: flex; */
+}
+
+.skillsTitle {
+  /* width: 100px; */
+  margin: var(--space-15) 0;
+}
+
+.skillsColumnsLayout {
+  font-size: var(--font-10);
+  display: grid;
+  grid-template-rows: repeat(auto, 25px);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skillsColumnsLayout p{
+  margin: 0;
+}
+
+@media (min-width: 25rem) {
+  .skillsColumnsLayout{
+    font-size: var(--font-12);
+  }
+}
+
+@media (min-width: 48rem) {
+  .skillsColumnsLayout{
+    grid-template-rows: repeat(auto, 25px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .emailContact{
+    display: inline-block;
+    padding: 0 25px;
+    margin: 0 25px;
+    border-left: 1px solid var(--color-brand);
+    border-right: 1px solid var(--color-brand);
+  }
+}
