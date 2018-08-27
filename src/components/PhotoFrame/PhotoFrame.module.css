@@ -1,9 +1,6 @@
-/* Take one  */
-
-
 .imageFrame{
   height: 275px;
-  width: 20%;
+  width: 200px;
   max-width: 100%;
   max-height: 100%;
   background: #fff;
@@ -17,5 +14,19 @@
   object-fit: cover;
   object-position: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  margin: 2.5%;
+  margin: 15px;
+}
+
+.imageTitle{
+  text-align: center;
+  margin: -10px 0 10px 0;
+}
+
+@media (min-width: 64rem) {
+  .imageFrame{
+    margin: 25px;
+  }
+  .imageTitle{
+    margin: -20px 0 15px 0;
+  }
 }
