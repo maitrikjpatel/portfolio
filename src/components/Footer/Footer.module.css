@@ -1,7 +1,7 @@
 .footer{
   height: var(--space-75);
   border-top: 1px solid var(--color-gray4);
-  composes: fullWidth from "../../utils/css/utilities.css";
+  composes: fullWidth from "../../utils/css/base.css";
 }
 
 @media (min-width: 48rem) {

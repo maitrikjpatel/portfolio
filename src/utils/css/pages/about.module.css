@@ -1,0 +1,27 @@
+/* About Page */
+.pageAbout > h3{
+  margin: var(--space-20) 0; 
+}
+
+.pageAbout > p{
+  text-align: justify;
+  word-break: break-all;
+  margin-bottom: var(--space-20); 
+}
+
+.emailContact {
+  padding: var(--space-5) 0;
+  margin:  var(--space-10) 0;
+  border: none;
+  display: block;
+}
+
+@media (min-width: 48rem) {
+  .emailContact{
+    display: inline-block;
+    padding: 0 25px;
+    margin: 0 25px;
+    border-left: 1px solid var(--color-brand);
+    border-right: 1px solid var(--color-brand);
+  }
+}

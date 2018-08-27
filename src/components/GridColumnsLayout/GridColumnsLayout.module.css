@@ -1,0 +1,24 @@
+
+.GridColumnsLayout {
+  font-size: var(--font-10);
+  display: grid;
+  grid-template-rows: repeat(9, 25px);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.GridColumnsLayout p{
+  margin: 0;
+}
+
+@media (min-width: 25rem) {
+  .GridColumnsLayout{
+    font-size: var(--font-12);
+  }
+}
+
+@media (min-width: 48rem) {
+  .GridColumnsLayout{
+    grid-template-rows: repeat(6, 25px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

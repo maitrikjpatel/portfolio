@@ -1,90 +1,32 @@
-/* Take one  */
-
-
 .imageFrame{
-  height: 375px;
-  width: 250px;
-  max-width:100%;
-  max-height:100%;
-  margin: 0 auto;
+  height: 275px;
+  width: 200px;
+  max-width: 100%;
+  max-height: 100%;
   background: #fff;
-  padding: 7px;
+  padding: 15px;
   border-style: solid;
-  border-width: 4px;
+  border-width: 5px;
   border-top-color: #333333;
   border-right-color: black;
   border-bottom-color: #333333;
   border-left-color: black;
+  object-fit: cover;
+  object-position: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 15px;
 }
 
-.portrait {
-  height: 150px;
-  width: 50px;
+.imageTitle{
+  text-align: center;
+  margin: -10px 0 10px 0;
 }
 
-.landscape {
-  height: 50px;
-  width: 150px;
-}
-
-.square {
-  height: 75px;
-  width: 75px;
-}
-
-/*  Take 2 */
-
-:root{
-  --blur: 2px;
-}
-.frameBorder {
-  box-sizing: border-box;
-  position: relative;
-  background: black;
-  width: 90%;
-  margin: 25px;
-  box-shadow: -1px 1px var(--blur) 1px rgba(0, 0, 0, 0.1), -2px 2px var(--blur) 1px rgba(0, 0, 0, 0.09), -3px 3px var(--blur) 1px rgba(0, 0, 0, 0.08), -4px 4px var(--blur) 1px rgba(0, 0, 0, 0.07), -5px 5px var(--blur) 1px rgba(0, 0, 0, 0.06);
-}
-
-@media (min-width: 40rem) {
-  .frameBorder {
-    width: calc( 50% - 16%);
+@media (min-width: 64rem) {
+  .imageFrame{
+    margin: 25px;
   }
-}
-
-@media (min-width: 56rem) {
-  .frameBorder {
-    width: calc(33.33% - 15%);
+  .imageTitle{
+    margin: -20px 0 15px 0;
   }
-}
-
-.frameBorder:before {
-  content: ' ';
-  display: block;
-  padding-bottom: 140%;
-}
-
-.frame {
-  left: 3%;
-  top: 2.5%;
-  box-shadow: inset -1px 1px 6px 1px rgba(0, 0, 0, 0.24);
-  width: auto;
-  height: auto;
-  background: white;
-  align-items: center;
-  display: flex;
-  padding: 18px;
-  box-sizing: border-box;
-  position: relative ;
-  border: 5px solid #111;
-}
-
-.image {
-  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  margin: auto;
 }

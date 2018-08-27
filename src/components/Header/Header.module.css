@@ -10,7 +10,7 @@ header{
 .header { 
   padding: var(--space-15) 0;
   height: var(--space-60);
-  composes: fullWidth from "../../utils/css/utilities.css";
+  composes: fullWidth from "../../utils/css/base.css";
 }
 
 .header p, .header ul {

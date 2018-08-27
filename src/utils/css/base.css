@@ -1,6 +1,4 @@
 @import './variables.css';
-@import './utilities.css';
-@import './pages.css';
 
 html {
   box-sizing: border-box;
@@ -26,6 +24,10 @@ body {
   box-sizing: inherit;
 }
 
+h1,h2,h3,h4,h5,h6,p,a,img{
+  margin: 0;
+}
+
 a {
   color: var(--color-gray10);
   cursor: pointer;
@@ -44,4 +46,34 @@ a:focus {
 
 ul {
   margin-left: 0;
+}
+
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: center;
+}
+
+.fullWidth {
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 48rem) {
+  .fullWidth {
+    width: 80%;
+  }
+}
+
+@media (min-width: 64rem) {
+  .fullWidth {
+    width: 75%;
+  }
+}
+
+@media (min-width: 90rem) {
+  .fullWidth {
+    width: 65%;
+  }
 }
