@@ -10,7 +10,7 @@ function Tags(props) {
 
   const tagsList = tags.map((tag) =>
     <p className={styles.Tag}
-      key={tag.index}>
+      key={tag.toString()}>
       {tag}
     </p>
   )
