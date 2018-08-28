@@ -44,8 +44,10 @@ export default () => {
         <p>When I'm not in front of a computer screen, I spend my time paragliding, rock climbing. I also love capturing moments and places, through my lens, while exploring the world.</p>
 
         <PhotoGrid>
-          Photo <br/> Grid
+          Photo<br/> Grid
         </PhotoGrid>
+
+        {/* <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization.</p> */}
 
         <p>Don't be a stranger! Give me a shout at <a href="mailto:maitrik1419@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">maitrik1419[at]gmail[dot]com</a> or find me at one of the social links below.</p>
       </div>
