@@ -4,26 +4,6 @@
   composes: fullWidth from "../../utils/css/base.css";
 }
 
-@media (min-width: 48rem) {
-  .footer {
-
-  }
-}
-
-@media (min-width: 64rem) {
-  .footer {
-
-  }
-}
-
-@media (min-width: 90rem) {
-  .footer {
-
-  }
-}
-
-
-
 .footer p, .footer ul {
   margin-bottom: 0;
   display: inline;
