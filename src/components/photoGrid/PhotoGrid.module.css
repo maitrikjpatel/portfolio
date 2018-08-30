@@ -34,10 +34,6 @@
   composes: imageFrame from "../PhotoFrame/PhotoFrame.module.css";
 }
 
-.photoGrid .photoGridPhoto {
-  margin: 0;
-}
-
 .photoGridPhoto:nth-of-type(1) {
   grid-column: 6;
   grid-row: 1;
