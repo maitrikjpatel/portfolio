@@ -14,19 +14,19 @@
   object-fit: cover;
   object-position: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  margin: 15px;
+  margin: 25px 35px 10px;
 }
 
 .imageTitle{
   text-align: center;
-  margin: -10px 0 10px 0;
+  margin-bottom: 25px;
 }
 
 @media (min-width: 64rem) {
   .imageFrame{
-    margin: 25px;
+    margin: 25px 50px 10px;
   }
   .imageTitle{
-    margin: -20px 0 15px 0;
+    margin-bottom: 25px;
   }
 }

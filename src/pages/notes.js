@@ -16,7 +16,7 @@ class NoteIndex extends React.Component {
           title="Notes"
           description="Here's some of my front end development and UX notes"
         />
-        <div className="flexbox">
+        <div className="flexWrapper">
           {posts.map(({ node }) => {
               const title = get(node, 'frontmatter.title') || node.fields.slug
               const category = get(node, 'frontmatter.category')

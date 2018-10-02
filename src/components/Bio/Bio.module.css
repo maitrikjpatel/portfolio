@@ -7,24 +7,10 @@
   height: auto;
 }
 
-@media (min-width: 48rem) {
-  .Bio {
-    margin: var(--space-30) auto;
-    width: 70%;
-  }
-}
-
 @media (min-width: 64rem) {
   .Bio {
     margin: var(--space-50) auto;
     width: 65%;
-  }
-}
-
-@media (min-width: 90rem) {
-  .Bio {
-    margin: var(--space-75) auto;
-    width: 60%;
   }
 }
 

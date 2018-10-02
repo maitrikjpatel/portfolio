@@ -1,7 +1,7 @@
 
 .card {
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   background: var(--color-white);
   margin: 1rem 0 0 0;
   transition: .3s ease;
