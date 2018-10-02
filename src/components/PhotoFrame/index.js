@@ -12,7 +12,7 @@ function PhotoFrame(props) {
   return (
     <div>
       <img className={styles.imageFrame} src={imageUrl}/>
-      <p className={styles.imageTitle} >Image Title</p>
+      <p className={styles.imageTitle} >{imageTitle}</p>
     </div>
   )
 }

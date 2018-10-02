@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
             title={["I am Maitrik.", <br />,  "I design and develop pixel perfect user interfaces and experiences."]}
             description="Here's some of my selected projects"
           />
-          <div className="flexbox">
+          <div className="flexWrapper">
             {posts.map(({ node }) => {
               const title = get(node, 'frontmatter.title') || node.fields.slug
               const category = get(node, 'frontmatter.category')
