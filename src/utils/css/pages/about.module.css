@@ -17,7 +17,7 @@
 }
 
 .sectionTitle{
-  font-size: var(--font-28);
+  font-size: var(--font-24);
   color: var(--color-gray9);
   padding: var(--space-25) 0;
   border-bottom: 0.5px solid var(--color-gray3);

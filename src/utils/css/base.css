@@ -53,7 +53,7 @@ ul {
   flex-wrap: wrap;
   overflow: auto;
   justify-content: center;
-  margin: 0 -1rem;
+  margin: 0 -1rem var(--space-50);
 }
 
 .fullWidth {

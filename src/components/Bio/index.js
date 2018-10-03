@@ -7,11 +7,15 @@ function Bio(props) {
   children,
   description,
   title,
+  titleName,
   ...restProps
   } = props
 
   return (
     <div className={styles.Bio}>
+      <h1 className={styles.PageTitle}>
+        {titleName}
+      </h1>
       <h1 className={styles.PageTitle}>
         {title}
       </h1>
@@ -30,11 +34,13 @@ Bio.propTypes = {
   children: PropTypes.node,
   title: PropTypes.node.isRequired,
   description: PropTypes.string,
+  titleName: PropTypes.string,
 }
 
 Bio.defaultProps = {
   children: null,
-  description: null
+  description: null,
+  titleName: null
 }
 
 export default Bio

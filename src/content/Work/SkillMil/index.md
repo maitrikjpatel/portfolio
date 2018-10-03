@@ -1,11 +1,18 @@
 ---
-title: SkillMil
-role: "Branding, Development, Design, Product Management" 
-tools: "html, css, reactJS, JS" 
-link: "www.skillmil.com"
+date:  "2015-05-28T22:40:32.169Z"
 publish: "true" 
 category: "work"
-date:  "2015-05-28T22:40:32.169Z"
+
+title: SkillMil
+description: "Description is here"
+
+role: "Development, Design, Product Design, Branding"
+tools: "html, css, reactJS, JS" 
+link: "www.skillmil.com"
+
+source: "Website"
+imageUrl: "https://source.unsplash.com/random"
+postColor: "#440000"
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

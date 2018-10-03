@@ -33,13 +33,13 @@ export default () => {
           <a href="http://hbpsupplier.in" target="_blank">&nbsp;HBPSupplier,</a> and
           <a href="http://skillmil.com/" target="_blank">&nbsp;SkillMil.</a> I recently graduated from <a href="http://www.startupleadership.com/" target="_blank">Startup Leadership Program</a> and   <a target="_blank" href="https://www.gsb.stanford.edu/programs/stanford-ignite">Stanford Ignite</a> with in-depth knowledge about entrepreneurship and startup ecosystem. I want to combine technological and entrepreneurship knowledge to create tangible things that would have the real impact on people’s lives.</p>
         
-        <h3 className={styles.sectionTitle}>What I am good at -</h3>
+        <h3 className={styles.sectionTitle}>What I am good at</h3>
         
         <Tags tags={toolsList}/>
 
         <GridColumnsLayout items={skillsList}></GridColumnsLayout>
         
-        <h3 className={styles.sectionTitle}>What people say about me -</h3>
+        <h3 className={styles.sectionTitle}>What people say about me</h3>
         
         <p>When I'm not in front of a computer screen, I spend my time paragliding, rock climbing. I also love capturing moments and places, through my lens, while exploring the world.</p>
 
