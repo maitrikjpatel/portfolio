@@ -1,28 +1,16 @@
 .footer{
   height: var(--space-75);
-  border-top: 1px solid var(--color-gray4);
   composes: fullWidth from "../../utils/css/base.css";
+  composes: universalPadding from "../../utils/css/base.css";
 }
 
-@media (min-width: 48rem) {
-  .footer {
-
-  }
+.footer::before{
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: var(--color-gray3);
+  height: 1px;
 }
-
-@media (min-width: 64rem) {
-  .footer {
-
-  }
-}
-
-@media (min-width: 90rem) {
-  .footer {
-
-  }
-}
-
-
 
 .footer p, .footer ul {
   margin-bottom: 0;

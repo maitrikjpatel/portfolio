@@ -16,6 +16,13 @@
   display: block;
 }
 
+.sectionTitle{
+  font-size: var(--font-24);
+  color: var(--color-gray9);
+  padding: var(--space-25) 0;
+  border-bottom: 0.5px solid var(--color-gray3);
+}
+
 @media (min-width: 48rem) {
   .emailContact{
     display: inline-block;

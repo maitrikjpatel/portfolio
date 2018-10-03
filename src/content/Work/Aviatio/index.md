@@ -1,12 +1,18 @@
 ---
-title: Aviatio
-role: "UX Prototyping, Development" 
-tools: "HTML, Bootstrap, AngularJS" 
-link: "https://github.com/ActuateBIRT/AviatioExample" 
+date:  "2015-05-28T22:40:32.169Z"
 publish: "true" 
 category: "work"
-date:  "2015-05-28T22:40:32.169Z"
-color: "#454545"
+
+title: Aviatio
+description: "Description is here"
+
+role: "Development, UX Prototyping"
+tools: "HTML, Bootstrap, AngularJS" 
+link: "https://github.com/ActuateBIRT/AviatioExample" 
+
+source: "Website"
+imageUrl: "https://source.unsplash.com/random"
+postColor: "#440000"
 ---
 
 

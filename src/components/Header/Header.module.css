@@ -11,6 +11,7 @@ header{
   padding: var(--space-15) 0;
   height: var(--space-60);
   composes: fullWidth from "../../utils/css/base.css";
+  composes: universalPadding from "../../utils/css/base.css";
 }
 
 .header p, .header ul {
@@ -20,7 +21,7 @@ header{
 .headerLogo { 
   text-decoration: none;
   border: 0.5px solid var(--color-gray10);
-  padding: 0px 7px;
+  padding-left: 8px;
   color: var(--color-gray10);
   float: left;
   transition: .3s ease;

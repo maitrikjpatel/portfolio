@@ -1,11 +1,18 @@
 ---
-title: DocuSign
-role: "SEO, Branding, Development, design, UX" 
-tools: "React, php, CSS, Design system, Modile, JS, Webpack" 
-link: "www.docusign.com" 
+date:  "2015-05-28T22:40:32.169Z"
 publish: "true" 
 category: "work"
-date:  "2015-05-01T22:12:03.284Z"
+
+title: DocuSign
+description: "Description is here"
+
+role: "Development, Branding, Design System"
+tools: "React, php, CSS, Design system, Modile, JS, Webpack" 
+link: "www.docusign.com" 
+
+source: "Website"
+imageUrl: "https://source.unsplash.com/random"
+postColor: "#440000"
 ---
 
 - Developed and maintain cross-browser compatible, responsive, modular, highly engaging DocuSign web marketing properties using Bootstrap, Drupal CMS, WordPress, SCSS, JS, PHP, Eloqua, Jenkins, Acquia Cloud in 11 international locals.

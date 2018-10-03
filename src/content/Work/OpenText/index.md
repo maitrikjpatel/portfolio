@@ -1,11 +1,18 @@
 ---
-title: "OpenText"
-role: "Development, Design System" 
-tools: "HTML, Bootstrap 3, AngularJS, SCSS" 
-link: "https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub/?utm_source=actuate&utm_medium=redirect" 
+date:  "2015-05-28T22:40:32.169Z"
 publish: "true" 
 category: "work"
-date:  "2015-05-28T22:40:32.169Z"
+
+title: "OpenText"
+description: "Description is here"
+
+role: "Development, UX Prototyping, Design System"
+tools: "HTML, Bootstrap 3, AngularJS, SCSS" 
+link: "https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub/?utm_source=actuate&utm_medium=redirect" 
+
+source: "Website"
+imageUrl: "https://source.unsplash.com/random"
+postColor: "#440000"
 ---
 
 ### OpenText Information Hub (iHub)

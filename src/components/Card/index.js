@@ -6,42 +6,49 @@ import styles from "./Card.module.css"
 function Card(props) {
   const {
     title,
-    link,
+    description,
     role,
-    imageUrl,
-    bgColor,
+    tools,
+    link,
+    source,
+    postColor,
+    imageUrl,  
     ...restProps
   } = props
 
   return (
-    <div className={styles.card}>
-      {/* {imageUrl && bgColor &&
-        <div className={styles.image} style={{ backgroundColor: {bgColor} }}>
-            <img src={imageUrl} alt={title} />
+    <Link className={styles.card} to={link}>
+      {imageUrl &&
+        <div className={styles.cardImage} style={{ backgroundColor: {postColor} }}>
+          <img className={styles.image} src={imageUrl} alt={title} />
         </div>
-      } */}
-      <h3 className={styles.entryTitle}>
-        <Link style={{ boxShadow: 'none' }} to={link}>
-          {title}
-        </Link>
-      </h3>
-      <span>{role}</span>
-    </div>
+      }
+      <div className={styles.cardContent}>
+        <h3 className={styles.entryTitle}>{title}</h3>
+        {role && <span style={{ color: {postColor} }}>{role}</span>}
+      </div>
+    </Link>
   )
 }
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  description: PropTypes.string,
   role: PropTypes.string,
+  tools: PropTypes.string,
+  link: PropTypes.string.isRequired,
+  source: PropTypes.string,
+  postColor: PropTypes.string,
   imageUrl: PropTypes.string,
-  bgColor: PropTypes.string,
 }
 
 Card.defaultProps = {
+  description: null,
   role: null,
+  tools: null,
+  source: null,
+  postColor: null,
   imageUrl: null,
-  bgColor: null,
 }
 
 export default Card

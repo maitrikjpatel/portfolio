@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
-// import image  from '../content/Work/teamplate/temp.jpg'
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -14,25 +14,30 @@ class BlogIndex extends React.Component {
         <Layout location={this.props.location}>
           <Helmet title={siteTitle} />
           <Bio
-            title={["I am Maitrik.", <br />,  "I design and develop pixel perfect user interfaces and experiences."]}
+            titleName="I am Maitrik."
+            title="I design and develop pixel perfect user interfaces and experiences."
             description="Here's some of my selected projects"
           />
-          <div className="flexbox">
+          <div className="flexWrapper">
             {posts.map(({ node }) => {
-              const title = get(node, 'frontmatter.title') || node.fields.slug
               const category = get(node, 'frontmatter.category')
+              
+              const title = get(node, 'frontmatter.title') || node.fields.slug
+              
               const role = get(node, 'frontmatter.role')
-              const color = get(node, 'frontmatter.color')
+
+              const imageUrl= get(node, 'frontmatter.imageUrl')
 
               if(category == "work"){
                 return (
                   <Card
                     key={node.fields.slug}
                     title={title}
-                    link={node.fields.slug}
+                    
                     role={role}
-                    // imageUrl={image}
-                    // bgColor={color}
+                    link={node.fields.slug}
+
+                    imageUrl={imageUrl}
                   />
                 )
               }
@@ -65,13 +70,15 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
-            title
             category
+            title
             role
-            color
+            link
+            imageUrl
           }
         }
       }
     }
   }
 `
+

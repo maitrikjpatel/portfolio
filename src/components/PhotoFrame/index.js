@@ -11,8 +11,8 @@ function PhotoFrame(props) {
 
   return (
     <div>
-      <img className={styles.imageFrame} src={imageUrl}/>
-      <p className={styles.imageTitle} >Image Title</p>
+      <img className={styles.imageFrame} src={imageUrl} alt={imageTitle}/>
+      <p className={styles.imageTitle} >{imageTitle}</p>
     </div>
   )
 }

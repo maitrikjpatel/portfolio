@@ -2,7 +2,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: var(--font-18);
+  font-size: var(--font-16);
   line-height: var(--font-28);
   text-size-adjust: 100%;
 }
@@ -48,32 +48,21 @@ ul {
   margin-left: 0;
 }
 
-.flexbox{
+.flexWrapper{
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
   justify-content: center;
+  margin: 0 -1rem var(--space-50);
 }
 
 .fullWidth {
-  width: 90%;
+  max-width: 74rem;
+  width: 100%;
   margin: auto;
 }
 
-@media (min-width: 48rem) {
-  .fullWidth {
-    width: 80%;
-  }
-}
-
-@media (min-width: 64rem) {
-  .fullWidth {
-    width: 75%;
-  }
-}
-
-@media (min-width: 90rem) {
-  .fullWidth {
-    width: 65%;
-  }
+.universalPadding {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }

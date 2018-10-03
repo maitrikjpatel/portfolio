@@ -1,11 +1,18 @@
 ---
+date:  "2015-05-28T22:40:32.169Z"
+publish: "true" 
+category: "work"
+
 title: Prosper
-role: "Development, Design, UX prototyping"
+description: "Description is here"
+
+role: "Development, Branding, Design System"
 tools: "AngularJS, scsss, Javascript, webpack"
 link: "www.prosper.com"
-publish: "true"
-category: "work"
-date: "2015-05-06T23:46:37.121Z"
+
+source: "Website"
+imageUrl: "https://source.unsplash.com/random"
+postColor: "#440000"
 ---
 
 ### Redesigning finance
