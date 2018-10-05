@@ -27,6 +27,7 @@ function Card(props) {
         <h3 className={styles.entryTitle}>{title}</h3>
         {role && <span style={{ color: {postColor} }}>{role}</span>}
       </div>
+      <span className={styles.cardSource}>{source}</span>
     </Link>
   )
 }

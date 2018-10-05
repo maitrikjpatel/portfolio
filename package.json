@@ -9,6 +9,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "next",
+    "gatsby-cli": "next",
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-offline": "next",

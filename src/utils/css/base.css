@@ -30,15 +30,35 @@ h1,h2,h3,h4,h5,h6,p,a,img{
 
 a {
   color: var(--color-gray10);
+  /* border-bottom: 0.5px dotted var(--color-gray7); */
   cursor: pointer;
   text-decoration: none;
 }
 
 a:active,
 a:hover {
-  color: var(--color-gray7);
+  border-bottom: 0.5px dotted var(--color-gray7);
   text-decoration: none;
 }
+
+/* a {
+  background-image: linear-gradient(180deg, transparent 65%, var(--color-brand) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: .4s;
+  transition: background-size .5s ease;
+  color: var(--color-gray10);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color:  var(--color-black);
+  background-size: 100% 100%;
+  color: var(--color-gray7);
+  text-decoration: none;
+} */
 
 a:focus {
   outline: 0;
