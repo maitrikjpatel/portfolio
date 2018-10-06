@@ -41,7 +41,7 @@ Card.propTypes = {
   link: PropTypes.string.isRequired,
   source: PropTypes.string,
   postColor: PropTypes.string,
-  imageUrl: PropTypes.string,
+  imageUrl: PropTypes.object,
 }
 
 Card.defaultProps = {
