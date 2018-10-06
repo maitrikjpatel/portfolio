@@ -9,8 +9,12 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "next",
+<<<<<<< HEAD
     "gatsby-cli": "^2.0.0-rc.6",
     "gatsby-image": "^2.0.13",
+=======
+    "gatsby-cli": "^2.4.2",
+>>>>>>> fc711bf055299fdf1bf5309ff704472300b722f6
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-offline": "next",
