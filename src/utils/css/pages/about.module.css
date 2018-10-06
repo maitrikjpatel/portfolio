@@ -1,12 +1,16 @@
 /* About Page */
-.pageAbout > h3{
+.aboutContent > h3{
   margin: var(--space-20) 0; 
 }
 
-.pageAbout > p{
+.aboutContent > p {
   text-align: justify;
   word-break: break-all;
   margin-bottom: var(--space-20); 
+}
+
+.aboutContent {
+  margin: var(--space-75) 0 var(--space-50); 
 }
 
 .emailContact {
@@ -16,7 +20,7 @@
   display: block;
 }
 
-.sectionTitle{
+.sectionTitle {
   font-size: var(--font-24);
   color: var(--color-gray9);
   padding: var(--space-25) 0;
@@ -24,7 +28,7 @@
 }
 
 @media (min-width: 48rem) {
-  .emailContact{
+  .emailContact {
     display: inline-block;
     padding: 0 25px;
     margin: 0 25px;

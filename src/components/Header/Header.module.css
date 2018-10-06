@@ -44,11 +44,11 @@ header{
 .headerLink { 
   display: inline;
   list-style: none;
-  padding-left: var(--space-25);
+  margin-left: var(--space-25);
 }
 
 .headerLink:first-child { 
-  padding-left: 0;
+  margin-left: 0;
 }
 
 @media (min-width: 40rem) {
@@ -59,7 +59,7 @@ header{
     margin-left: 5px;
   }
   .headerLink {
-    padding-left: var(--space-50);
+    margin-left: var(--space-50);
   }
   .headerLogo {
     display: block;

@@ -11,7 +11,7 @@ tools: "CSS, html, Javascript, Jade, SASS"
 link: "www.maitrikpatel.com" 
 
 source: "Website"
-imageUrl: "https://source.unsplash.com/random"
+imageUrl: "../../../images/temp.jpg"
 postColor: "#440000"
 ---
 

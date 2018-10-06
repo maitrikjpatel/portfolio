@@ -1,6 +1,6 @@
 import React from 'react'
-
 import get from 'lodash/get'
+import Img from "gatsby-image"
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
@@ -10,6 +10,8 @@ class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const images = get(this, 'props.data.allMarkdownRemark.edges')
+    console.log(images);
       return (
         <Layout location={this.props.location}>
           <Helmet title={siteTitle} />
@@ -26,7 +28,7 @@ class BlogIndex extends React.Component {
               
               const role = get(node, 'frontmatter.role')
 
-              const imageUrl= get(node, 'frontmatter.imageUrl')
+              const imageUrl= get(node, 'frontmatter.imageUrl.childImageSharp.fluid')
 
               if(category == "work"){
                 return (
@@ -74,7 +76,13 @@ export const pageQuery = graphql`
             title
             role
             link
-            imageUrl
+            imageUrl {
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

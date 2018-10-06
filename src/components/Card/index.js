@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from "gatsby-image"
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styles from "./Card.module.css"
@@ -20,13 +21,14 @@ function Card(props) {
     <Link className={styles.card} to={link}>
       {imageUrl &&
         <div className={styles.cardImage} style={{ backgroundColor: {postColor} }}>
-          <img className={styles.image} src={imageUrl} alt={title} />
+          <Img className={styles.image} fluid={imageUrl} />
         </div>
       }
       <div className={styles.cardContent}>
         <h3 className={styles.entryTitle}>{title}</h3>
         {role && <span style={{ color: {postColor} }}>{role}</span>}
       </div>
+      <span className={styles.cardSource}>{source}</span>
     </Link>
   )
 }
