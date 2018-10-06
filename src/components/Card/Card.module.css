@@ -4,7 +4,7 @@
   background: var(--color-white);
   margin: 1rem 0 0 0;
   transition: .3s ease;
-  border: 1px solid var(--color-gray2);
+  border: 1px solid var(--color-gray4);
   position: relative
 }
 
@@ -24,14 +24,14 @@
 
 .card:hover {
   transform: translateY(-10px) scale(1.02);
-  border: 1px solid var(--color-gray2);
-  border-bottom: 1px solid var(--color-gray5);
-  border-right: 1px solid var(--color-gray5);
-  box-shadow: 1px 1px 0px var(--color-gray5),
-  2px 2px 0px var(--color-gray5),
-  3px 3px 0px var(--color-gray5),
-  4px 4px 0px var(--color-gray5),
-  5px 5px 0px var(--color-gray5)
+  border: 1px solid var(--color-gray4);
+  /* border-bottom: 1px solid var(--color-gray4);
+  border-right: 1px solid var(--color-gray4); */
+  box-shadow: 1px 1px 0px var(--color-gray4),
+  2px 2px 0px var(--color-gray4),
+  3px 3px 0px var(--color-gray4),
+  4px 4px 0px var(--color-gray4),
+  5px 5px 0px var(--color-gray4)
 }
 .card:hover .entryTitle {
   background-position: -100% 0;
@@ -39,7 +39,7 @@
 
 .cardImage {
   height: 200px;
-  background: var(--color-gray5);
+  background: var(--color-gray2);
 }
 
 .cardImage .image{
