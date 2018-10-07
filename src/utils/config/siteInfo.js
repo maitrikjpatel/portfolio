@@ -3,11 +3,12 @@ module.exports = {
   siteTitle: 'Maitrik Patel Portfolio', // Navigation and Site Title
   siteTitleAlt: 'Maitrik Patel Portfolio - A Front-End Developer / UX Designer Who Designs and Develops Pixel Perfect Interface Designs and Products.', // Alternative Site title for SEO
   siteUrl: 'https://festive-banach-a55f7e.netlify.com/', // Domain of your site. No trailing slash!
+  siteName: 'Maitrik Patel', // Name of Developer
   siteLanguage: 'en', // Language Tag on <html> element
   // siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
   siteDescription: 'Maitrik Patel Portfolio - A Front-End Developer / UX Designer Who Designs and Develops Pixel Perfect Interface Designs and Products.',
   // siteFBAppID: '123456789', // Facebook App ID
-  userTwitter: '@maitrikjpate', // Twitter Username
+  userTwitter: '@maitrikjpatel', // Twitter Username
   // og: Meta Tags
   ogSiteName: 'Maitrik Patel Portfolio', // Facebook Site Name
   ogLanguage: 'en_EN',
@@ -25,11 +26,12 @@ module.exports = {
   dateFormat: 'DD.MM.YYYY',
   
   // Manifest and Progress color
-  themeColor: '#3498DB',
-  backgroundColor: '#2b2e3c',
-  
+  manifestBackgroundColor: '#2b2e3c',
+  manifestThemeColor: '#3498DB',
+  manifestDisplay: "standalone",
+
   // Settings for typography.js
-  // headerFontFamily: 'Merriweather',
-  // bodyFontFamily: 'Roboto',
+  // headerFontFamily: 'Lato',
+  // bodyFontFamily: 'Lato',
   // baseFontSize: '16px',
 };

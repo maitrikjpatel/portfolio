@@ -11,7 +11,7 @@ tools: "AngularJS, scsss, Javascript, webpack"
 link: "www.prosper.com"
 
 source: "Website"
-imageUrl: "../../../images/temp.jpg"
+imageUrl: "../../../utils/images/temp.jpg"
 postColor: "#440000"
 ---
 
