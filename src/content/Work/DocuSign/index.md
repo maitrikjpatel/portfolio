@@ -11,7 +11,7 @@ tools: "React, php, CSS, Design system, Modile, JS, Webpack"
 link: "www.docusign.com" 
 
 source: "Website"
-imageUrl: "../../../images/temp.jpg"
+imageUrl: "../../../utils/images/temp.jpg"
 postColor: "#440000"
 ---
 
