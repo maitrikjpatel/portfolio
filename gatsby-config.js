@@ -18,11 +18,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: siteInfo.siteTitle,
-        start_url: siteInfo.siteUrl,
+        short_name: siteInfo.manifestShortName,
+        start_url: siteInfo.pathPrefix,
         background_color: siteInfo.manifestBackgroundColor,
         theme_color: siteInfo.manifestThemeColor,
         display: siteInfo.manifestDisplay,
-        icon: `./src/utils/images/favicon.png`,
+        icon: siteInfo.siteLogo,
         icons: [
           {
             src: "/icons/icon-48x48.png",

@@ -37,12 +37,7 @@
   background-position: -100% 0;
 }
 
-.cardImage {
-  height: 250px;
-  background: var(--color-gray2);
-}
-
-.cardImage .image{
+.cardImage{
   min-width: 100%;
   height: 100%;
 }
@@ -65,19 +60,33 @@
   background-size: 100% 100%;
 }
 
-span {
+.cardContentRoleSpan,
+.cardContentSpan,
+.cardSource{
   display: block;
   font-size: 12px;
   line-height: 15px;
   margin-top: 10px;
   color: var(--color-brandDark);
 }
-span a {
-  color: var(--color-white);
+
+.card:hover .cardContentSpan {
+  display: none;
 }
 
 .cardSource {
+  color: var(--color-gray8);
+  display: none;
+}
+
+.card:hover .cardSource {
+  display: block;
+}
+
+.cardSourceSvg{
   position: absolute;
   right: 0;
   bottom: 0;
+  width: var(--space-50);
+  height: var(--space-50);
 }

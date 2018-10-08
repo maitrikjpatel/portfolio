@@ -13,6 +13,10 @@
   margin-bottom: var(--space-15);
 }
 
+.pageHr {
+  margin: var(--space-25) 0; 
+}
+
 /* Markdown Data */
 
 .markdownBody {

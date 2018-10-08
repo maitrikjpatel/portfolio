@@ -11,8 +11,8 @@ tools: "AngularJS, scsss, Javascript, webpack"
 link: "www.prosper.com"
 
 source: "Website"
-imageUrl: "../../../utils/images/temp.jpg"
-postColor: "#440000"
+imageUrl: "./Thumbnail.png"
+postColor: "#f2f2f2"
 ---
 
 ### Redesigning finance

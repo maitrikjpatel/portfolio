@@ -25,12 +25,7 @@ class BlogPostTemplate extends React.Component {
           className={styles.markdownBody}
           dangerouslySetInnerHTML={{ __html: post.html }} 
         />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-
+        <hr className={styles.pageHr} />
         <ul className={styles.pagePagination}>
           {previous && (
             <li>

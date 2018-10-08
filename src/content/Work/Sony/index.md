@@ -3,7 +3,7 @@ date:  "2015-05-28T22:40:32.169Z"
 publish: "true" 
 category: "work"
 
-title: "SONY"
+title: "Sony"
 description: "Description is here"
 
 role: "Development, Branding"
@@ -11,8 +11,8 @@ tools: "CSS, html, Javascript, Jade, SASS"
 link: "www.sony.co.uk"  
 
 source: "Website"
-imageUrl: "../../../utils/images/temp.jpg"
-postColor: "#440000"
+imageUrl: "./Thumbnail.png"
+postColor: "#010101"
 ---
 
 ### 
