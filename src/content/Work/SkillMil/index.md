@@ -11,8 +11,8 @@ tools: "html, css, reactJS, JS"
 link: "www.skillmil.com"
 
 source: "Website"
-imageUrl: "../../../utils/images/temp.jpg"
-postColor: "#440000"
+imageUrl: "./Thumbnail.png"
+postColor: "#C3153F"
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

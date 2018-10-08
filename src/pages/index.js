@@ -25,6 +25,8 @@ class BlogIndex extends React.Component {
               const title = get(node, 'frontmatter.title') || node.fields.slug
               
               const role = get(node, 'frontmatter.role')
+              
+              const postColor = get(node, 'frontmatter.postColor')
 
               const imageUrl= get(node, 'frontmatter.imageUrl.childImageSharp.fluid')
 
@@ -38,6 +40,7 @@ class BlogIndex extends React.Component {
                     link={node.fields.slug}
 
                     imageUrl={imageUrl}
+                    postColor={postColor}
                   />
                 )
               }
@@ -81,6 +84,7 @@ export const pageQuery = graphql`
                 }
               }
             }
+            postColor
           }
         }
       }

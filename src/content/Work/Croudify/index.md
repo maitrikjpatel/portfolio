@@ -11,8 +11,8 @@ tools: Illustrator, html, css, JS, AngularJS""
 link: "http://croudify.com/" 
 
 source: "Website"
-imageUrl: "../../../utils/images/temp.jpg"
-postColor: "#440000"
+imageUrl: "./Thumbnail.png"
+postColor: "#25D6AD"
 ---
 
 - Croudify is peer to peer investing web platform startup. I work very closely with CEO through brainstorming sessions and wireframe deliverables, I assisted the team for branding of startup, website design and product design and user experience.

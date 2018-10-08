@@ -11,8 +11,8 @@ tools: "HTML, Bootstrap 3, AngularJS, SCSS"
 link: "https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub/?utm_source=actuate&utm_medium=redirect" 
 
 source: "Website"
-imageUrl: "../../../utils/images/temp.jpg"
-postColor: "#440000"
+imageUrl: "./Thumbnail.png"
+postColor: "#0071AC"
 ---
 
 ### OpenText Information Hub (iHub)
@@ -30,12 +30,3 @@ postColor: "#440000"
 - The site was so successful that it also became the home for the company’s brand guidelines and assets.
 
 - Athena eventually split into two sites (blue and green), one offering the standard framework and the other offering developers access to a revised design framework employed in certain products.
-
-### WaxMan – Hybrid Web App
-
-Role: UX Prototyping | Development
-Tools: HTML | Bootstrap 3 | AngularJS
-
-This prototype was designed to show how a data-rich enterprise application could still employ beautiful and contemporary visual design.  Built for a fictitious chain of high-end supermarkets in Southern California, the application allows a store owner to find, dynamically filter, and compare sales and demographic data across a number of locations.
-
-This was intended as an internal tool to help educate engineers and sales folk on the direction data-rich applications are taking — it’s no longer enough to simply allow users to easily access data; today their expectations include modern interactive models (dynamic filtering, drag-and-drop functionality, etc.) and compelling visual design.

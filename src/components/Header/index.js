@@ -12,7 +12,7 @@ class Header extends React.Component {
             <ul className={styles.headerLinks}>
               <Link className={styles.headerLink} to="/">Work</Link>
               <Link className={styles.headerLink} to="/notes/">Notes</Link>
-              <Link className={styles.headerLink} to="/photos/">Photos</Link>
+              <Link className={styles.headerLink} to="/photography/">Photography</Link>
               <Link className={styles.headerLink} to="/about/">About</Link>
             </ul>
           </nav>
