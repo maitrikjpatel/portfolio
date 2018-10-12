@@ -33,9 +33,9 @@ class BlogPostTemplate extends React.Component {
     const postColor = post.frontmatter.postColor     
     const imageUrl = post.frontmatter.imageUrl
 
-    let postHeaderData
+    let postHeader
     if(category === "work") {  
-      postHeaderData = ( 
+      postHeader = ( 
         <WorkPostHeader
           title={title}
           description={description}
@@ -48,7 +48,7 @@ class BlogPostTemplate extends React.Component {
       )
     }
     else if(category === "note"){
-      postHeaderData = ( 
+      postHeader = ( 
         <BlogPostHeader
           title={title}
           description={description}
@@ -86,7 +86,7 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
 
-        {postHeaderData}
+        {postHeader}
 
         <div 
           className={styles.markdownBody}

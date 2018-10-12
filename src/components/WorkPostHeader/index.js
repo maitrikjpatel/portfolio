@@ -18,6 +18,7 @@ function WorkPostHeader(props) {
   
   let WorkPostHeaderImageWrapperClass = {
     height: '250px',
+    width: '50%',
     backgroundColor: postColor
   }
 
@@ -37,17 +38,12 @@ function WorkPostHeader(props) {
   return (
     <div className={styles.WorkPostHeader} >
       {WorkPostHeaderImage}
-      <div className={styles.WorkPostHeaderContent}>
-        <h3 className={styles.entryTitle}>
-          {title}
-        </h3>
-        {role &&
-          <p className={styles.WorkPostHeaderContentRoleSpan}>
-            <span style={{ color: {postColor} }}>
-              {role}
-            </span>
-          </p>
-        }
+      <div>
+        <h1>{title}</h1>
+        {description && <p>{description}</p>}
+        {role && <p>{role}</p>}
+        {tools && <p>{tools}</p>}
+        {link && <p>{link}</p>}
       </div>
     </div>
   )
