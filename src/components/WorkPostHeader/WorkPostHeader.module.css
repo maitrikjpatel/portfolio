@@ -1,0 +1,78 @@
+
+.WorkPostHeader {
+  width: 100%;
+  background: var(--color-white);
+  margin: 1rem 0 0 0;
+  transition: .3s ease;
+  border: 1px solid var(--color-gray4);
+  position: relative
+}
+
+.WorkPostHeader:hover {
+  transform: translateY(-10px) scale(1.02);
+  border: 1px solid var(--color-gray6);
+  /* border-bottom: 1px solid var(--color-gray4);
+  border-right: 1px solid var(--color-gray4); */
+  box-shadow: 1px 1px 0px var(--color-gray6),
+  2px 2px 0px var(--color-gray6),
+  3px 3px 0px var(--color-gray6),
+  4px 4px 0px var(--color-gray6),
+  5px 5px 0px var(--color-gray6)
+}
+.WorkPostHeader:hover .entryTitle {
+  background-position: -100% 0;
+}
+
+.WorkPostHeaderImage{
+  min-width: 100%;
+  height: 100%;
+}
+
+.WorkPostHeaderContent {
+  padding: 1.5rem;
+}
+
+.entryTitle {
+  background-image: linear-gradient(180deg, transparent 65%, var(--color-brand) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: .4s;
+  transition: background-size .5s ease;
+}
+
+.WorkPostHeader:hover .entryTitle {
+  color:  var(--color-black);
+  background-size: 100% 100%;
+}
+
+.WorkPostHeaderContentRoleSpan,
+.WorkPostHeaderContentSpan,
+.WorkPostHeaderSource{
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 10px;
+  color: var(--color-brandDark);
+}
+
+.WorkPostHeader:hover .WorkPostHeaderContentSpan {
+  display: none;
+}
+
+.WorkPostHeaderSource {
+  color: var(--color-gray8);
+  display: none;
+}
+
+.WorkPostHeader:hover .WorkPostHeaderSource {
+  display: block;
+}
+
+.WorkPostHeaderSourceSvg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: var(--space-50);
+  height: var(--space-50);
+}

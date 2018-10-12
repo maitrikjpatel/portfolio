@@ -21,13 +21,9 @@ class BlogIndex extends React.Component {
           <div className="flexWrapper">
             {posts.map(({ node }) => {
               const category = get(node, 'frontmatter.category')
-              
               const title = get(node, 'frontmatter.title') || node.fields.slug
-              
               const role = get(node, 'frontmatter.role')
-              
               const postColor = get(node, 'frontmatter.postColor')
-
               const imageUrl= get(node, 'frontmatter.imageUrl.childImageSharp.fluid')
 
               if(category == "work"){
@@ -61,8 +57,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { 
-      fields: [frontmatter___date], order: DESC }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { publish: { ne: "false" } } }
     ) {
       edges {

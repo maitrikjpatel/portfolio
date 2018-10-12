@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../utils/css/pages/about.module.css"
 
 import Layout from '../components/Layout'
-import PhotoGrid from '../components/photoGrid'
+import PhotoGrid from '../components/PhotoGrid'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import GridColumnsLayout from '../components/GridColumnsLayout'

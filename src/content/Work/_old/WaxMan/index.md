@@ -11,7 +11,7 @@ tools: "HTML, Bootstrap 3, AngularJS"
 link: "https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub/?utm_source=actuate&utm_medium=redirect" 
 
 source: "Website"
-imageUrl: "
+imageUrl: ""
 postColor: "#440000"
 ---
 

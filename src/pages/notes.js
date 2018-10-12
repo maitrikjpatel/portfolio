@@ -20,13 +20,10 @@ class NoteIndex extends React.Component {
         <div className="flexWrapper">
           {posts.map(({ node }) => {
             const category = get(node, 'frontmatter.category')
-            
             const title = get(node, 'frontmatter.title') || node.fields.slug
-
             const role = get(node, 'frontmatter.role')
-            
             const source = get(node, 'frontmatter.source')
-
+            
               if(category == "note"){
                 return (
                   <Card 

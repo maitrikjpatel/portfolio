@@ -1,44 +1,67 @@
 import React from 'react'
+
 import Helmet from 'react-helmet'
+
 import { Link } from 'gatsby'
 import get from 'lodash/get'
 import Img from "gatsby-image"
+
 import Layout from '../components/Layout'
-import PageTitle from '../components/PageTitle'
-import { rhythm, scale } from '../utils/typography'
+import WorkPostHeader from '../components/WorkPostHeader'
+import BlogPostHeader from '../components/BlogPostHeader'
+
 import styles from './blogPost.module.css';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pageContext
-    return (
-      <Layout location={this.props.location}>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-      
-        <div>
-          {post.frontmatter.title && <PageTitle text={post.frontmatter.title} /> }
-          {post.frontmatter.date && <p className={styles.pageHeaderDate} >{post.frontmatter.date}</p> }
-          {post.frontmatter.category && <p className={styles.pageCategory} >{post.frontmatter.category}</p> }
-          {post.frontmatter.description && <p className={styles.pageDescription} >{post.frontmatter.description}</p> }
-          {post.frontmatter.role && <p className={styles.pageRole} >{post.frontmatter.role}</p> }
-          {post.frontmatter.tools && <p className={styles.pageTools} >{post.frontmatter.tools}</p> }
-          {post.frontmatter.link && <p className={styles.pageLink} >{post.frontmatter.link}</p> }
-          {post.frontmatter.postColor && <p className={styles.pagePostColor} >{post.frontmatter.postColor}</p> }
-          {post.frontmatter.imageUrl && 
-            <Img 
-              className={styles.pageImage} 
-              fluid={post.frontmatter.imageUrl.childImageSharp.fluid}
-            />
-          }
-        </div>
+    
+    const post = this.props.data.markdownRemark
+    
+    const category = post.frontmatter.category
+    const date = post.frontmatter.date
+    const author = post.frontmatter.author     
 
-        <div 
-          className={styles.markdownBody}
-          dangerouslySetInnerHTML={{ __html: post.html }} 
-        />
+    const title = post.frontmatter.title
+    const description = post.frontmatter.description
 
+    const role = post.frontmatter.role
+    const tools = post.frontmatter.tools
+    const link = post.frontmatter.link
+
+    const postColor = post.frontmatter.postColor     
+    const imageUrl = post.frontmatter.imageUrl
+
+    let postHeaderData
+    if(category === "work") {  
+      postHeaderData = ( 
+        <WorkPostHeader
+          title={title}
+          description={description}
+          role={role}
+          tools={tools}
+          link={link}
+          postColor={postColor}
+          imageUrl={imageUrl.childImageSharp.fluid}
+        />          
+      )
+    }
+    else if(category === "note"){
+      postHeaderData = ( 
+        <BlogPostHeader
+          title={title}
+          description={description}
+          role={role}
+          date={date}
+          author={author}
+          postColor={postColor}
+        />  
+      )
+    }
+
+    const pagination = ( 
+      <React.Fragment>
         <hr className={styles.pageHr} />
         <ul className={styles.pagePagination}>
           {previous && (
@@ -57,6 +80,20 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
+      </React.Fragment>       
+    )
+    return (
+      <Layout location={this.props.location}>
+        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+
+        {postHeaderData}
+
+        <div 
+          className={styles.markdownBody}
+          dangerouslySetInnerHTML={{ __html: post.html }} 
+        />
+
+        {pagination}
       </Layout>
     )
   }
@@ -72,10 +109,13 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+    ) {
       id
       html
       frontmatter {
+        author
         date(formatString: "DD MMMM, YYYY")
         category
         title
