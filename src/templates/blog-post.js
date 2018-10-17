@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 
 import { Link } from 'gatsby'
 import get from 'lodash/get'
-import Img from "gatsby-image"
 
 import Layout from '../components/Layout'
 import WorkPostHeader from '../components/WorkPostHeader'
@@ -15,13 +14,14 @@ import styles from './blogPost.module.css';
 class BlogPostTemplate extends React.Component {
   render() {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteAuthor = get(this.props, 'data.site.siteMetadata.Author')
     const { previous, next } = this.props.pageContext
     
     const post = this.props.data.markdownRemark
     
     const category = post.frontmatter.category
     const date = post.frontmatter.date
-    const author = post.frontmatter.author     
+    const author = post.frontmatter.author
 
     const title = post.frontmatter.title
     const description = post.frontmatter.description
@@ -54,7 +54,7 @@ class BlogPostTemplate extends React.Component {
           description={description}
           role={role}
           date={date}
-          author={author}
+          author={`${author} | ${siteAuthor}`}
           postColor={postColor}
         />  
       )
@@ -82,6 +82,7 @@ class BlogPostTemplate extends React.Component {
         </ul>
       </React.Fragment>       
     )
+
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
@@ -115,7 +116,6 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        author
         date(formatString: "DD MMMM, YYYY")
         category
         title

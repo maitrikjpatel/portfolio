@@ -43,5 +43,5 @@
     left: 40px;
     border-radius: 50%;
     background: var(--color-gray7);
-    box-shadow: 0 0 0 0.2rem, var(--color-gray7), 1.5rem 0 0 0 var(--color-gray7), 1.5rem 0 0 0.2rem var(--color-gray7), 3rem 0 0 0 var(--color-gray7), 3rem 0 0 0.2rem var(--color-gray7);
-  }
+    box-shadow: 0 0 0 0.2rem var(--color-gray7), 1.5rem 0 0 0 var(--color-gray7), 1.5rem 0 0 0.2rem var(--color-gray7), 3rem 0 0 0 var(--color-gray7), 3rem 0 0 0.2rem var(--color-gray7);
+  } 
