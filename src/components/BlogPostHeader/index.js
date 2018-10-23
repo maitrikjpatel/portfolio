@@ -16,11 +16,15 @@ function BlogPostHeader(props) {
   return (
     <div className={styles.BlogPostHeader} >
       <div style={{ color: {postColor} }}>
-        <h1 className={styles.entryTitle}>{title}</h1>
-        <p>{description}</p>
-        <p>{role}</p>
-        <p>{date}</p>
-        <p>{author}</p>
+      <div className={styles.BlogPostTitleWrapper}>
+        {title && <h1 className={styles.BlogPostTitle}>{title}</h1>}
+        {description && <p className={styles.BlogPostSubTitle}>{description}</p>}
+      </div>
+        <div className={styles.BlogPostDescription}>
+          {role && <p>Roles : {role}</p>}
+          {date && <p>Last Updated: {date}</p>}
+          {author && <p>Author : {author}</p>}
+        </div>
       </div>
     </div>
   )

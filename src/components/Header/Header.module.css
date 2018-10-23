@@ -32,9 +32,32 @@ header{
 
 .headerLogo:hover { 
   color: var(--color-gray7);
-  border: 0.5px solid var(--color-gray6);
-  box-shadow: 1px 1px 0px var(--color-gray6), 2px 2px 0px var(--color-gray6);
+  border: 0.5px solid var(--color-gray7);
+  box-shadow: 1px 1px 0px var(--color-gray7), 2px 2px 0px var(--color-gray7);
 }
+
+/* 3d Logo */
+
+/* 
+.headerLogo { 
+  text-decoration: none;
+  border: 0.5px solid var(--color-gray10);
+  padding-left: 8px;
+  color: var(--color-gray10);
+  float: left;
+  transition: .3s ease;
+  height: var(--space-30);
+  width: var(--space-30);
+  display: none;
+  border: 0.5px solid var(--color-gray10);
+  box-shadow: 1px 1px 0px var(--color-gray10), 2px 2px 0px var(--color-gray10);
+}
+
+.headerLogo:hover { 
+  color: var(--color-gray6);
+  border: 0.5px solid var(--color-gray6);
+  box-shadow: none;
+} */
 
 .headerLinks { 
   width: 100%;

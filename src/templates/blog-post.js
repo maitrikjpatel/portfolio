@@ -14,14 +14,14 @@ import styles from './blogPost.module.css';
 class BlogPostTemplate extends React.Component {
   render() {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const siteAuthor = get(this.props, 'data.site.siteMetadata.Author')
+    const siteAuthor = get(this.props, 'data.site.siteMetadata.author')
     const { previous, next } = this.props.pageContext
     
     const post = this.props.data.markdownRemark
     
     const category = post.frontmatter.category
     const date = post.frontmatter.date
-    const author = post.frontmatter.author
+    const author = post.frontmatter.author || siteAuthor
 
     const title = post.frontmatter.title
     const description = post.frontmatter.description
@@ -54,7 +54,7 @@ class BlogPostTemplate extends React.Component {
           description={description}
           role={role}
           date={date}
-          author={`${author} | ${siteAuthor}`}
+          author={author}
           postColor={postColor}
         />  
       )
@@ -116,6 +116,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        author
         date(formatString: "DD MMMM, YYYY")
         category
         title
