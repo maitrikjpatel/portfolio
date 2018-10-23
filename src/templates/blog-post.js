@@ -1,30 +1,67 @@
 import React from 'react'
+
 import Helmet from 'react-helmet'
+
 import { Link } from 'gatsby'
 import get from 'lodash/get'
 
 import Layout from '../components/Layout'
-import PageTitle from '../components/PageTitle'
-import { rhythm, scale } from '../utils/typography'
+import WorkPostHeader from '../components/WorkPostHeader'
+import BlogPostHeader from '../components/BlogPostHeader'
+
 import styles from './blogPost.module.css';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteAuthor = get(this.props, 'data.site.siteMetadata.Author')
     const { previous, next } = this.props.pageContext
+    
+    const post = this.props.data.markdownRemark
+    
+    const category = post.frontmatter.category
+    const date = post.frontmatter.date
+    const author = post.frontmatter.author
 
-    return (
-      <Layout location={this.props.location}>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <PageTitle text={post.frontmatter.title} />
-        <p className={styles.pageHeaderDate} >
-          {post.frontmatter.date}
-        </p>
-        <div 
-          className={styles.markdownBody}
-          dangerouslySetInnerHTML={{ __html: post.html }} 
-        />
+    const title = post.frontmatter.title
+    const description = post.frontmatter.description
+
+    const role = post.frontmatter.role
+    const tools = post.frontmatter.tools
+    const link = post.frontmatter.link
+
+    const postColor = post.frontmatter.postColor     
+    const imageUrl = post.frontmatter.imageUrl
+
+    let postHeader
+    if(category === "work") {  
+      postHeader = ( 
+        <WorkPostHeader
+          title={title}
+          description={description}
+          role={role}
+          tools={tools}
+          link={link}
+          postColor={postColor}
+          imageUrl={imageUrl.childImageSharp.fluid}
+        />          
+      )
+    }
+    else if(category === "note"){
+      postHeader = ( 
+        <BlogPostHeader
+          title={title}
+          description={description}
+          role={role}
+          date={date}
+          author={`${author} | ${siteAuthor}`}
+          postColor={postColor}
+        />  
+      )
+    }
+
+    const pagination = ( 
+      <React.Fragment>
         <hr className={styles.pageHr} />
         <ul className={styles.pagePagination}>
           {previous && (
@@ -43,6 +80,21 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
+      </React.Fragment>       
+    )
+
+    return (
+      <Layout location={this.props.location}>
+        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+
+        {postHeader}
+
+        <div 
+          className={styles.markdownBody}
+          dangerouslySetInnerHTML={{ __html: post.html }} 
+        />
+
+        {pagination}
       </Layout>
     )
   }
@@ -58,12 +110,27 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+    ) {
       id
       html
       frontmatter {
+        date(formatString: "DD MMMM, YYYY")
+        category
         title
-        date(formatString: "MMMM DD, YYYY")
+        description
+        role
+        tools
+        link
+        imageUrl {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        postColor
       }
     }
   }
