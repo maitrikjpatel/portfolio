@@ -2,7 +2,7 @@
 .card {
   width: 100%;
   background: var(--color-white);
-  margin: 1rem 0 0 0;
+  margin: var(--space-25) 0 0 0;
   transition: .3s ease;
   border: 1px solid var(--color-gray4);
   position: relative
@@ -33,6 +33,7 @@
   4px 4px 0px var(--color-gray6),
   5px 5px 0px var(--color-gray6)
 }
+
 .card:hover .entryTitle {
   background-position: -100% 0;
 }
