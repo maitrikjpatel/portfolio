@@ -30,8 +30,10 @@
   --space-50: 50px;
   --space-60: 60px;
   --space-75: 75px;
+  --space-80: 80px;
   --space-100: 100px;
   --space-120: 120px;
+  --space-m-40: -40px;
 
   /* font-size */
   --font-8: 0.5rem;
