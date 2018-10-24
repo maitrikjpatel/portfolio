@@ -17,15 +17,24 @@ function WorkPostHeader(props) {
   } = props
   
   let WorkPostHeaderImageWrapperClass = {
-    height: '250px',
-    width: '50%',
-    backgroundColor: postColor
+    minHeight: '200px',
+    height: '100%',
+    width:  '250px',
+    backgroundColor: postColor,
+  }
+
+  let WorkPostHeaderContentWrapperClass = {
+    minHeight: '200px',
+    height: '100%',
+    width:  '100%',
+    backgroundColor: '#fff',
+    padding: '15px 30px',
   }
 
   let WorkPostHeaderImage = (
     <React.Fragment>
       {imageUrl &&
-        <div style={WorkPostHeaderImageWrapperClass}>
+        <div className={styles.WorkPostHeaderWrapper} style={WorkPostHeaderImageWrapperClass}>
           <Img 
             className={styles.WorkPostHeaderImage} 
             fluid={imageUrl}
@@ -38,12 +47,13 @@ function WorkPostHeader(props) {
   return (
     <div className={styles.WorkPostHeader} >
       {WorkPostHeaderImage}
-      <div>
+      <div style={WorkPostHeaderContentWrapperClass}>
         <h1>{title}</h1>
         {description && <p>{description}</p>}
-        {role && <p>{role}</p>}
-        {tools && <p>{tools}</p>}
-        {link && <p>{link}</p>}
+        <div className={styles.WorkPostHeaderContentSplitter} />
+        {role && <p>Role : {role}</p>}
+        {tools && <p>Toole : {tools}</p>}
+        {link && <p>Link : {link}</p>}
       </div>
     </div>
   )

@@ -4,4 +4,5 @@
   min-height: calc(100vh - var(--space-120));
   composes: fullWidth from "../../utils/css/base.css";
   composes: universalPadding from "../../utils/css/base.css";
+  overflow-x: hidden;
 }

@@ -73,16 +73,22 @@ ul {
   flex-wrap: wrap;
   overflow: auto;
   justify-content: center;
-  margin: 0 -1rem var(--space-50);
+  margin: 0;
+}
+
+@media (min-width: 40rem) {
+  .flexWrapper{
+    margin: var(--space-40) var(--space-m-40) var(--space-40)
+  }
 }
 
 .fullWidth {
-  max-width: 74rem;
+  max-width: 70rem;
   width: 100%;
   margin: auto;
 }
 
 .universalPadding {
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding-left: var(--space-20) !important;
+  padding-right: var(--space-20) !important;
 }

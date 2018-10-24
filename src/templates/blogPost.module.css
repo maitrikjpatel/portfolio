@@ -15,12 +15,10 @@
 
 .pageHr {
   margin: var(--space-25) 0; 
+  background: var(--color-gray3)
 }
 
-
-
 /* Markdown Data */
-
 .markdownBody {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

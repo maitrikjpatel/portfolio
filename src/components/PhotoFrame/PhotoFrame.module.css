@@ -1,4 +1,8 @@
-.imageFrame{
+.PhotoFrame{
+  margin: var(--space-40) var(--space-50);
+}
+
+.image{
   height: 275px;
   width: 200px;
   max-width: 100%;
@@ -14,19 +18,19 @@
   object-fit: cover;
   object-position: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  margin: 25px 35px 10px;
 }
 
-.imageTitle{
+.title{
   text-align: center;
-  margin-bottom: 25px;
 }
 
 @media (min-width: 64rem) {
-  .imageFrame{
-    margin: 25px 50px 10px;
+  .PhotoFrame{
+
   }
-  .imageTitle{
-    margin-bottom: 25px;
+  .image{
+
+  }
+  .title{
   }
 }
