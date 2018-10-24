@@ -67,11 +67,17 @@ header{
 .headerLink { 
   display: inline;
   list-style: none;
-  margin-left: var(--space-25);
+  margin-left: var(--space-15);
 }
 
 .headerLink:first-child { 
   margin-left: 0;
+}
+
+@media (min-width: 20.5rem) {
+  .headerLink { 
+    margin-left: var(--space-25);
+  } 
 }
 
 @media (min-width: 40rem) {

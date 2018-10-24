@@ -18,7 +18,7 @@ function Card(props) {
   } = props
   
   let cardImageWrapperClass = {
-    height: '250px',
+    height: '200px',
     backgroundColor: postColor
   }
 
