@@ -1,5 +1,5 @@
 .PhotoFrame{
-  margin: 0 var(--space-50);
+  margin: var(--space-40) var(--space-50);
 }
 
 .image{
@@ -22,7 +22,6 @@
 
 .title{
   text-align: center;
-  margin-bottom: 25px;
 }
 
 @media (min-width: 64rem) {
@@ -33,6 +32,5 @@
 
   }
   .title{
-    margin-bottom: 50px;
   }
 }

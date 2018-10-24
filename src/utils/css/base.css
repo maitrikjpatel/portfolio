@@ -78,7 +78,7 @@ ul {
 
 @media (min-width: 40rem) {
   .flexWrapper{
-    margin: 0 var(--space-m-40) 0;
+    margin: var(--space-40) var(--space-m-40) var(--space-40)
   }
 }
 

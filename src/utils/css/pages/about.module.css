@@ -10,7 +10,7 @@
 }
 
 .aboutContent {
-  margin: var(--space-50) 0;
+  margin: var(--space-80) 0 var(--space-50);
 }
 
 .emailContact {
