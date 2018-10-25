@@ -11,7 +11,7 @@ tools: "CSS, html, Javascript, Jade, SASS"
 link: "www.maitrikpatel.com" 
 
 source: "Website"
-imageUrl: ""
+imageUrl: "./Thumbnail.png"
 postColor: "#440000"
 ---
 
