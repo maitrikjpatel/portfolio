@@ -11,7 +11,7 @@ tools: "HTML, Bootstrap 3, AngularJS"
 link: "http://pixelandbinary.com" 
 
 source: "Website"
-imageUrl: ""
+imageUrl: "./Thumbnail.png"
 postColor: "#440000"
 ---
 
