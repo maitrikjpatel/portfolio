@@ -1,6 +1,6 @@
 
 .card {
-  width: 100%;
+  width: calc(100% - var(--space-80));
   background: var(--color-white);
   margin: var(--space-25) 0 0 0;
   transition: .3s ease;
@@ -25,8 +25,6 @@
 .card:hover { 
   transform: translateY(-10px) scale(1.02);
   border: 1px solid var(--color-gray6);
-  /* border-bottom: 1px solid var(--color-gray4);
-  border-right: 1px solid var(--color-gray4); */
   box-shadow: 1px 1px 0px var(--color-gray6),
   2px 2px 0px var(--color-gray6),
   3px 3px 0px var(--color-gray6),
