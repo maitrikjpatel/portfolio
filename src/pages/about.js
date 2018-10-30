@@ -2,13 +2,13 @@ import React from "react"
 import styles from "../utils/css/pages/about.module.css"
 
 import Layout from '../components/Layout'
-import PhotoGrid from '../components/PhotoGrid'
+import PhotosGrid from '../components/PhotosGrid'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import GridColumnsLayout from '../components/GridColumnsLayout'
 
 export default () => {
-  const toolsList = ["React","Angularjs","Javascript","SASS","CSS","HTML","PHP","GIT","Figma","Sketch","Photoshop","Jest","PostCSS","GraphQL","Illustrator","Abstract","Zeplin","Nodejs","Gulp","Webpack","Wordpress","Drupal","Gatsby"]
+  const toolsList = ["React","Angularjs","Javascript","SASS","CSS","HTML","PHP","GIT","Figma","Sketch","Photoshop","Jest","PostCSS","GraphQL","Illustrator","Abstract","Zeplin","Nodejs","Gulp","Webpack","Wordpress","Drupal","Gatsby", "Saas"]
   const skillsList = [ "JAMStack development" , "Front-end/UI Architecture" , "Google Analytics/Optimize" , "Technical Documentation" , "Test Driven Development" , "Website Personalization" , "Responsive Web Design" , "cross-browser testing" , "Website accessibility" , "Website Performance" , "Data Visualization" , "UI/UX prototyping" , "Agile Development" , "Design tooling" , "Design System" , "SEO strategy" , "A/B Testing" , "Rebranding" ]
   return (
     <Layout>
@@ -44,9 +44,9 @@ export default () => {
           
           <p>When I'm not in front of a computer screen, I spend my time paragliding, rock climbing. I also love capturing moments and places, through my lens, while exploring the world.</p>
 
-          <PhotoGrid>
+          <PhotosGrid>
             Photo<br/> Grid
-          </PhotoGrid>
+          </PhotosGrid>
           
           {/* <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization.</p> */}
           
