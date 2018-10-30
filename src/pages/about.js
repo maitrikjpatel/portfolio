@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../utils/css/pages/about.module.css"
 
 import Layout from '../components/Layout'
-import PhotoGrid from '../components/PhotoGrid'
+import PhotosGrid from '../components/PhotosGrid'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import GridColumnsLayout from '../components/GridColumnsLayout'
@@ -44,9 +44,9 @@ export default () => {
           
           <p>When I'm not in front of a computer screen, I spend my time paragliding, rock climbing. I also love capturing moments and places, through my lens, while exploring the world.</p>
 
-          <PhotoGrid>
+          <PhotosGrid>
             Photo<br/> Grid
-          </PhotoGrid>
+          </PhotosGrid>
           
           {/* <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization.</p> */}
           
