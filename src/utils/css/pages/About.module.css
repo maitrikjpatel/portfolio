@@ -1,4 +1,7 @@
-/* About Page */
+.aboutContent {
+  margin: var(--space-25) 0 var(--space-25);
+}
+
 .aboutContent > h3{
   margin: var(--space-20) 0; 
 }
@@ -7,10 +10,6 @@
   text-align: justify;
   word-break: break-all;
   margin-bottom: var(--space-20); 
-}
-
-.aboutContent {
-  margin: var(--space-80) 0 var(--space-50);
 }
 
 .emailContact {
@@ -28,6 +27,9 @@
 }
 
 @media (min-width: 48rem) {
+  .aboutContent {
+    margin: var(--space-80) 0;
+  }
   .emailContact {
     display: inline-block;
     padding: 0 25px;

@@ -1,10 +1,11 @@
 import React from 'react'
 import get from 'lodash/get'
-import Img from "gatsby-image"
+import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
+import styles from "../utils/css/pages/Work.module.css"
 
 class BlogIndex extends React.Component {
   render() {
@@ -18,7 +19,7 @@ class BlogIndex extends React.Component {
             title="I design and develop pixel perfect user interfaces and experiences."
             description="Here's some of my selected projects"
           />
-          <div className="flexWrapper">
+          <div className={styles.WorkWrapper}>
             {posts.map(({ node }) => {
               const category = get(node, 'frontmatter.category')
               const title = get(node, 'frontmatter.title') || node.fields.slug

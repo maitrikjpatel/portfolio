@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import { Link } from 'gatsby'
 import get from 'lodash/get'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import WorkPostHeader from '../components/WorkPostHeader'

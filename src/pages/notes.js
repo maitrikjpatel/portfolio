@@ -1,9 +1,11 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
 import Bio from '../components/Bio'
+import styles from "../utils/css/pages/Notes.module.css"
 
 class NoteIndex extends React.Component {
   render() {
@@ -17,7 +19,7 @@ class NoteIndex extends React.Component {
           title="Notes"
           description="Here's some of my front end development and UX notes"
         />
-        <div className="flexWrapper">
+        <div className={styles.NotesWrapper}>
           {posts.map(({ node }) => {
             const category = get(node, 'frontmatter.category')
             const title = get(node, 'frontmatter.title') || node.fields.slug
