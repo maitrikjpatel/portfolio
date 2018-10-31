@@ -1,0 +1,17 @@
+.WorkWrapper {
+  composes: flexWrapper from "../base.css";
+}
+
+.WorkWrapper a {
+  margin: var(--space-25)
+}
+
+.WorkWrapper a:last-child {
+  margin-bottom: var(--space-25);
+}
+
+@media (min-width: 40rem) {
+  .WorkWrapper a{
+    margin: var(--space-40);
+  }
+}

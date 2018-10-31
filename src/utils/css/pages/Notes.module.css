@@ -1,0 +1,16 @@
+.NotesWrapper {
+  composes: flexWrapper from "../base.css";
+}
+
+.NotesWrapper a {
+  margin: var(--space-25) 0 0 0;
+}
+
+.NotesWrapper a:last-child {
+  margin-bottom: var(--space-25);
+}
+@media (min-width: 40rem) {
+  .NotesWrapper a{
+    margin: var(--space-40);
+  }
+}

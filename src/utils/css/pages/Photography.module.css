@@ -1,0 +1,17 @@
+.PhotosWrapper {
+  composes: flexWrapper from "../base.css";
+}
+
+.PhotosWrapper div {
+  margin: var(--space-25);
+}
+
+.PhotosWrapper div:last-child {
+  margin-bottom: var(--space-25);
+}
+
+@media (min-width: 40rem) {
+  .PhotosWrapper div {
+    margin: var(--space-40);
+  }
+}

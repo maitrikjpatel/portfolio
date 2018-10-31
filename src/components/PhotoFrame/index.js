@@ -10,10 +10,10 @@ function PhotoFrame(props) {
   } = props
 
   return (
-    <div className={styles.PhotoFrame} >
+    <React.Fragment>
       <img className={styles.image} src={imageUrl} alt={imageTitle}/>
       <p className={styles.title} >{imageTitle}</p>
-    </div>
+    </React.Fragment>
   )
 }
 

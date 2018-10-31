@@ -41,31 +41,23 @@ a:hover {
   border-bottom: 0.5px dotted var(--color-gray7);
 }
 
-/* a {
-  background-image: linear-gradient(180deg, transparent 65%, var(--color-brand) 0);
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  display: inline;
-  transition: .4s;
-  transition: background-size .5s ease;
-  color: var(--color-gray10);
-  cursor: pointer;
-  text-decoration: none;
-}
-
-a:hover {
-  color:  var(--color-black);
-  background-size: 100% 100%;
-  color: var(--color-gray7);
-  text-decoration: none;
-} */
-
 a:focus {
   outline: 0;
 }
 
 ul {
   margin-left: 0;
+}
+
+.fullWidth {
+  max-width: 70rem;
+  width: 100%;
+  margin: auto;
+}
+
+.universalPadding {
+  padding-left: var(--space-20) !important;
+  padding-right: var(--space-20) !important;
 }
 
 .flexWrapper{
@@ -80,15 +72,4 @@ ul {
   .flexWrapper{
     margin: var(--space-40) var(--space-m-40) var(--space-40)
   }
-}
-
-.fullWidth {
-  max-width: 70rem;
-  width: 100%;
-  margin: auto;
-}
-
-.universalPadding {
-  padding-left: var(--space-20) !important;
-  padding-right: var(--space-20) !important;
 }
