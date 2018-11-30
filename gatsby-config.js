@@ -130,8 +130,8 @@ module.exports = {
     },
 
     // Markdown Sharp Image rendering
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
 
     // Site work offline (Work on it later)
     `gatsby-plugin-offline`,

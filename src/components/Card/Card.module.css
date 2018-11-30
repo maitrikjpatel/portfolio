@@ -7,6 +7,22 @@
   position: relative
 }
 
+.card::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  background: transparent;
+  z-index: -10;
+}
+
+.card:hover::after { 
+  transform: translateY(0px) scale(1.02);
+  border: 1px solid var(--color-gray6);
+}
+
 @media (min-width: 40rem) {
   .card {
     width: calc( 50% - var(--space-80));
@@ -22,11 +38,6 @@
 .card:hover { 
   transform: translateY(-10px) scale(1.02);
   border: 1px solid var(--color-gray6);
-  box-shadow: 1px 1px 0px var(--color-gray6),
-  2px 2px 0px var(--color-gray6),
-  3px 3px 0px var(--color-gray6),
-  4px 4px 0px var(--color-gray6),
-  5px 5px 0px var(--color-gray6)
 }
 
 .card:hover .entryTitle {
@@ -40,6 +51,7 @@
 
 .cardContent {
   padding: 1.5rem;
+  background: var(--color-white);
 }
 
 .entryTitle {
