@@ -14,4 +14,7 @@
   .WorkWrapper a{
     margin: var(--space-40);
   }
+  .WorkWrapper a:last-child {
+    margin-bottom: inherit;
+  }
 }

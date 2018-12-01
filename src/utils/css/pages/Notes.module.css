@@ -13,4 +13,7 @@
   .NotesWrapper a{
     margin: var(--space-40);
   }
+  .NotesWrapper a:last-child {
+    margin-bottom: inherit;
+  }
 }
