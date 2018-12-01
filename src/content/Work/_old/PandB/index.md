@@ -8,7 +8,7 @@ description: "Description is here"
 
 role: "Development, UX Prototyping"
 tools: "HTML, Bootstrap 3, AngularJS" 
-link: "http://pixelandbinary.com" 
+link: "https://pixelandbinary.com" 
 
 source: "Website"
 imageUrl: "./Thumbnail.png"

@@ -53,7 +53,7 @@ function WorkPostHeader(props) {
         <div className={styles.WorkPostHeaderContentSplitter} />
         {role && <p>Role : {role}</p>}
         {tools && <p>Toole : {tools}</p>}
-        {link && <p>Link : {link}</p>}
+        {link && <p>Link : <a target="_blank" href={link}>{link}</a></p>}
       </div>
     </div>
   )

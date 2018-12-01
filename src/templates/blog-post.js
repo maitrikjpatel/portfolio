@@ -11,6 +11,7 @@ import WorkPostHeader from '../components/WorkPostHeader'
 import BlogPostHeader from '../components/BlogPostHeader'
 
 import styles from './blogPost.module.css';
+import MdRender from '../components/MdRender';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -90,10 +91,7 @@ class BlogPostTemplate extends React.Component {
 
         {postHeader}
 
-        <div 
-          className={styles.markdownBody}
-          dangerouslySetInnerHTML={{ __html: post.html }} 
-        />
+        <MdRender md2html={post.html} />
 
         {pagination}
       </Layout>
