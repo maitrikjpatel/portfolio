@@ -16,8 +16,6 @@ function WorkPostHeader(props) {
     ...restProps
   } = props
 
-  const rgbPostColor = hexToRgbA(postColor)
-
   function hexToRgbA(hex){
     var c;
     if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
@@ -28,13 +26,16 @@ function WorkPostHeader(props) {
         c= '0x'+c.join('');
         return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',0.8)';
     }
-    throw new Error('Bad Hex');
-}
+    return hex
+  }
+  const rgbPostColor = hexToRgbA(postColor)
 
-let WorkPostColorWrapper = {
-  background: `linear-gradient(180deg, ${rgbPostColor} 0%, rgba(250,250,250,1) 100%)`,
-  paddingBottom: 'var(--space-40)'
-}
+  const linkUrl = `https://${link}`
+
+  let WorkPostColorWrapper = {
+    background: `linear-gradient(180deg, ${rgbPostColor} 0%, rgba(250,250,250,1) 100%)`,
+    paddingBottom: 'var(--space-40)'
+  }
 
   let WorkPostHeaderImage = (
     <React.Fragment>
@@ -53,11 +54,17 @@ let WorkPostColorWrapper = {
         {WorkPostHeaderImage}
         <div className={styles.WorkPostTitleWrapper}>
           {title && <h1 className={styles.WorkPostTitle}>{title}</h1>}
-          {link && <p className={styles.WorkPostSubTitle}><a target="_blank" href={link}>{link}</a></p>}
+          {link && 
+            <p className={styles.WorkPostSubTitle}>
+              <a target="_blank" href={linkUrl}>
+                {link}
+              </a>
+            </p>
+          }
         </div>
         <div className={styles.WorkPostDescription}>
-          {role && <p>Role : {role}</p>}
-          {tools && <p>Tool : {tools}</p>}
+          {role && <p><strong>Role :</strong> {role}</p>}
+          {tools && <p><strong>Tool :</strong> {tools}</p>}
         </div>
       </div>
     </BrowserFrame>

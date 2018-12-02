@@ -8,7 +8,7 @@ description: "Description is here"
 
 role: "Development, Design, Product Design, Branding"
 tools: Illustrator, html, css, JS, AngularJS
-link: "https://croudify.com/" 
+link: "www.croudify.com/" 
 
 source: "Website"
 imageUrl: "./Thumbnail.png"

@@ -8,7 +8,7 @@ description: "Description is here"
 
 role: "Development, Design, UX Prototyping"
 tools: "iOS, ObjECTIVE C, amCharts.js, AngularJS" 
-link: "https://github.com/ActuateBIRT/GazetteerExample" 
+link: "www.github.com/ActuateBIRT/GazetteerExample" 
 
 source: "Website"
 imageUrl: "./Thumbnail.png"

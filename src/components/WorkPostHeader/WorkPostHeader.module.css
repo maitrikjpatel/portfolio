@@ -1,4 +1,5 @@
 .WorkPostTitleWrapper {
+  margin-top: -15px;
 }
 
 .WorkPostHeaderImage {
@@ -13,28 +14,34 @@
 }
 
 .WorkPostDescription {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 20px; 
 }
 
-.WorkPostDescription p{
+.WorkPostDescription p {
   padding: 0;
   border-right: none;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 48rem) {
+  /* .WorkPostDescription {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+  } */
+  
   .WorkPostDescription p {
-      padding: 0;
-      border-right: 1px solid var(--color-gray7);
+    padding: 0;
+      /* border-right: 1px solid var(--color-gray7); */
   }
 
   .WorkPostDescription p:last-child {
       border: none;
   }
+}
 
-  .WorkPostDescription p {
-  }
+@media (min-width: 30rem) {
   .WorkPostHeaderImage {
     width: 400px;
   }

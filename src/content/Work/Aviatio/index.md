@@ -8,7 +8,7 @@ description: "Description is here"
 
 role: "Development, UX Prototyping"
 tools: "HTML, Bootstrap, AngularJS" 
-link: "https://github.com/ActuateBIRT/AviatioExample" 
+link: "www.github.com/ActuateBIRT/AviatioExample" 
 
 source: "Website"
 imageUrl: "./Thumbnail.png"
