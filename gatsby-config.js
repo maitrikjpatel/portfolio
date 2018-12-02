@@ -134,7 +134,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
 
     // Site work offline (Work on it later)
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
     
     // {
     //   resolve: `gatsby-plugin-sitemap`

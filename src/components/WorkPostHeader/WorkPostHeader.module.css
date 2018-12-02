@@ -1,25 +1,41 @@
+.WorkPostTitleWrapper {
+}
 
-  .WorkPostHeader {
-    width: 100%;
-    display: flex;
-    margin: var(--space-30) 0;  
-    border: 1px solid var(--color-gray4);
+.WorkPostHeaderImage {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+}
+
+.WorkPostTitle,
+.WorkPostSubTitle {
+  text-align: center;
+}
+
+.WorkPostDescription {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.WorkPostDescription p{
+  padding: 0;
+  border-right: none;
+}
+
+@media (min-width: 30rem) {
+  .WorkPostDescription p {
+      padding: 0;
+      border-right: 1px solid var(--color-gray7);
   }
 
+  .WorkPostDescription p:last-child {
+      border: none;
+  }
+
+  .WorkPostDescription p {
+  }
   .WorkPostHeaderImage {
-    height: 200px;
+    width: 400px;
   }
-
-  .WorkPostHeaderWrapper {
-    display: none;
-  }
-
-  .WorkPostHeaderContentSplitter {
-    height: 15px;
-  }
-
-  @media (min-width: 48rem) {
-    .WorkPostHeaderWrapper {
-      display: block;
-    }
-  }
+}

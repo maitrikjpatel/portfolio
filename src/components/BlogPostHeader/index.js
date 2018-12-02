@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from "./BlogPostHeader.module.css"
+import BrowserFrame from '../BroswerFrame'
 
 function BlogPostHeader(props) {
   const {
@@ -14,19 +15,19 @@ function BlogPostHeader(props) {
   } = props
   
   return (
-    <div className={styles.BlogPostHeader} >
+    <BrowserFrame>
       <div style={{ color: {postColor} }}>
-      <div className={styles.BlogPostTitleWrapper}>
-        {title && <h1 className={styles.BlogPostTitle}>{title}</h1>}
-        {description && <p className={styles.BlogPostSubTitle}>{description}</p>}
-      </div>
+        <div className={styles.BlogPostTitleWrapper}>
+          {title && <h1 className={styles.BlogPostTitle}>{title}</h1>}
+          {description && <p className={styles.BlogPostSubTitle}>{description}</p>}
+        </div>
         <div className={styles.BlogPostDescription}>
           {role && <p>Roles : {role}</p>}
           {date && <p>Last Updated: {date}</p>}
           {author && <p>Author : {author}</p>}
         </div>
       </div>
-    </div>
+    </BrowserFrame>
   )
 }
 

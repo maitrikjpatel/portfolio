@@ -12,7 +12,7 @@ link: "https://www.opentext.com/what-we-do/products/analytics/opentext-informati
 
 source: "Website"
 imageUrl: "./Thumbnail.png"
-postColor: "#0071AC"
+postColor: "#0092ff"
 ---
 
 ### OpenText Information Hub (iHub)

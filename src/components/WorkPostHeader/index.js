@@ -1,8 +1,8 @@
 import React from 'react'
 import Img from "gatsby-image"
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import styles from "./WorkPostHeader.module.css"
+import BrowserFrame from '../BroswerFrame'
 
 function WorkPostHeader(props) {
   const {
@@ -15,47 +15,52 @@ function WorkPostHeader(props) {
     imageUrl,  
     ...restProps
   } = props
-  
-  let WorkPostHeaderImageWrapperClass = {
-    minHeight: '200px',
-    height: '100%',
-    width:  '250px',
-    backgroundColor: postColor,
-  }
 
-  let WorkPostHeaderContentWrapperClass = {
-    minHeight: '200px',
-    height: '100%',
-    width:  '100%',
-    backgroundColor: '#fff',
-    padding: '15px 30px',
-  }
+  const rgbPostColor = hexToRgbA(postColor)
+
+  function hexToRgbA(hex){
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length== 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',0.8)';
+    }
+    throw new Error('Bad Hex');
+}
+
+let WorkPostColorWrapper = {
+  background: `linear-gradient(180deg, ${rgbPostColor} 0%, rgba(250,250,250,1) 100%)`,
+  paddingBottom: 'var(--space-40)'
+}
 
   let WorkPostHeaderImage = (
     <React.Fragment>
       {imageUrl &&
-        <div className={styles.WorkPostHeaderWrapper} style={WorkPostHeaderImageWrapperClass}>
-          <Img 
-            className={styles.WorkPostHeaderImage} 
-            fluid={imageUrl}
-          />
-        </div>
+        <Img 
+          className={styles.WorkPostHeaderImage} 
+          fluid={imageUrl}
+        />
       }
     </React.Fragment>
   )
   
   return (
-    <div className={styles.WorkPostHeader} >
-      {WorkPostHeaderImage}
-      <div style={WorkPostHeaderContentWrapperClass}>
-        <h1>{title}</h1>
-        {description && <p>{description}</p>}
-        <div className={styles.WorkPostHeaderContentSplitter} />
-        {role && <p>Role : {role}</p>}
-        {tools && <p>Toole : {tools}</p>}
-        {link && <p>Link : <a target="_blank" href={link}>{link}</a></p>}
+    <BrowserFrame>
+      <div style={WorkPostColorWrapper}>
+        {WorkPostHeaderImage}
+        <div className={styles.WorkPostTitleWrapper}>
+          {title && <h1 className={styles.WorkPostTitle}>{title}</h1>}
+          {link && <p className={styles.WorkPostSubTitle}><a target="_blank" href={link}>{link}</a></p>}
+        </div>
+        <div className={styles.WorkPostDescription}>
+          {role && <p>Role : {role}</p>}
+          {tools && <p>Tool : {tools}</p>}
+        </div>
       </div>
-    </div>
+    </BrowserFrame>
   )
 }
 

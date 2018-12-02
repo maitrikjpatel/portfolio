@@ -8,7 +8,6 @@ function MdRender(props) {
     ...restProps
   } = props
 
-  console.log(md2html);
   return (
     <div 
         className={styles.markdownBody}

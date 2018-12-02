@@ -12,7 +12,7 @@ link: "www.docusign.com"
 
 source: "Website"
 imageUrl: "./Thumbnail.png"
-postColor: "#1E4C9D"
+postColor: "#2875c4"
 ---
 
 - Developed and maintain cross-browser compatible, responsive, modular, highly engaging DocuSign web marketing properties using Bootstrap, Drupal CMS, WordPress, SCSS, JS, PHP, Eloqua, Jenkins, Acquia Cloud in 11 international locals.
