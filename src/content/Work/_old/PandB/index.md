@@ -4,7 +4,7 @@ publish: "false"
 category: "work"
 
 title: "PandB"
-description: "Description is here"
+
 
 role: "Development, UX Prototyping"
 tools: "HTML, Bootstrap 3, AngularJS" 

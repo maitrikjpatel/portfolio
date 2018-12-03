@@ -4,7 +4,7 @@ publish: "true"
 category: "work"
 
 title: Croudify
-description: "Description is here"
+
 
 role: "Development, Design, Product Design, Branding"
 tools: Illustrator, html, css, JS, AngularJS

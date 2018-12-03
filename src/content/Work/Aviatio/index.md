@@ -4,7 +4,7 @@ publish: "true"
 category: "work"
 
 title: Aviatio
-description: "Description is here"
+
 
 role: "Development, UX Prototyping"
 tools: "HTML, Bootstrap, AngularJS" 

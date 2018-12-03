@@ -4,7 +4,7 @@ publish: "true"
 category: "work"
 
 title: "Gazetteer"
-description: "Description is here"
+
 
 role: "Development, Design, UX Prototyping"
 tools: "iOS, ObjECTIVE C, amCharts.js, AngularJS" 

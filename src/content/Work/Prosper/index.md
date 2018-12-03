@@ -4,7 +4,7 @@ publish: "true"
 category: "work"
 
 title: Prosper
-description: "Description is here"
+
 
 role: "Development, Branding, Design System"
 tools: "AngularJS, scsss, Javascript, webpack"

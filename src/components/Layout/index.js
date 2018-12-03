@@ -1,4 +1,4 @@
-// import '../../utils/css/base.css'
+import '../../utils/css/base.css'
 import styles from  './Layout.module.css';
 
 import React from 'react'

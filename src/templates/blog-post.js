@@ -7,8 +7,7 @@ import get from 'lodash/get'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import WorkPostHeader from '../components/WorkPostHeader'
-import BlogPostHeader from '../components/BlogPostHeader'
+import PostHeader from '../components/PostHeader'
 
 import styles from './blogPost.module.css';
 import MdRender from '../components/MdRender';
@@ -29,6 +28,7 @@ class BlogPostTemplate extends React.Component {
     const description = post.frontmatter.description
 
     const role = post.frontmatter.role
+    const topics = post.frontmatter.topics
     const tools = post.frontmatter.tools
     const link = post.frontmatter.link
 
@@ -38,7 +38,7 @@ class BlogPostTemplate extends React.Component {
     let postHeader
     if(category === "work") {  
       postHeader = ( 
-        <WorkPostHeader
+        <PostHeader
           title={title}
           description={description}
           role={role}
@@ -51,10 +51,10 @@ class BlogPostTemplate extends React.Component {
     }
     else if(category === "note"){
       postHeader = ( 
-        <BlogPostHeader
+        <PostHeader
           title={title}
           description={description}
-          role={role}
+          topics={topics}
           date={date}
           author={author}
           postColor={postColor}
@@ -122,6 +122,7 @@ export const pageQuery = graphql`
         description
         role
         tools
+        topics
         link
         imageUrl {
           childImageSharp {

@@ -4,7 +4,7 @@ publish: "true"
 category: "work"
 
 title: SkillMil
-description: "Description is here"
+
 
 role: "Development, Design, Product Design, Branding"
 tools: "html, css, reactJS, JS" 

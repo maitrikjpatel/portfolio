@@ -4,7 +4,7 @@ publish: "true"
 category: "work"
 
 title: "Sony"
-description: "Description is here"
+
 
 role: "Development, Branding"
 tools: "CSS, html, Javascript, Jade, SASS" 

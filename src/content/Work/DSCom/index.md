@@ -4,7 +4,7 @@ publish: "true"
 category: "work"
 
 title: "DocuSign Site"
-description: "Description is here"
+
 
 role: "Development, Branding, Design System"
 tools: "React, php, CSS, Design system, Modile, JS, Webpack" 

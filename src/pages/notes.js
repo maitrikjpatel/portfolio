@@ -23,7 +23,7 @@ class NoteIndex extends React.Component {
           {posts.map(({ node }) => {
             const category = get(node, 'frontmatter.category')
             const title = get(node, 'frontmatter.title') || node.fields.slug
-            const role = get(node, 'frontmatter.role')
+            const topics = get(node, 'frontmatter.topics')
             const source = get(node, 'frontmatter.source')
             
               if(category == "note"){
@@ -32,7 +32,7 @@ class NoteIndex extends React.Component {
                     key={node.fields.slug}
                     title={title}
 
-                    role={role}
+                    topics={topics}
                     link={node.fields.slug}
                     
                     source={source}
@@ -70,7 +70,7 @@ export const noteQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             category
             title
-            role
+            topics
             link
             source
           }

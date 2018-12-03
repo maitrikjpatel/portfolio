@@ -4,7 +4,7 @@ publish: "true"
 category: "work"
 
 title: "OpenText"
-description: "Description is here"
+
 
 role: "Development, UX Prototyping, Design System"
 tools: "HTML, Bootstrap 3, AngularJS, SCSS" 
