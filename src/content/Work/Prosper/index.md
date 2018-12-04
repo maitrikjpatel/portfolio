@@ -11,8 +11,8 @@ tools: "AngularJS, scsss, Javascript, webpack"
 link: "www.prosper.com/invest"
 
 source: "Website"
-imageUrl: "./Thumbnail.png"
-postColor: "#c7c7c7"
+imageUrl: "./ProsperColor.png"
+postColor: "#45c3c4"
 ---
 
 ### Redesigning finance

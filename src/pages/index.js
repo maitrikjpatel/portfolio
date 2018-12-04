@@ -27,6 +27,7 @@ class BlogIndex extends React.Component {
               const postColor = get(node, 'frontmatter.postColor')
               const imageUrl= get(node, 'frontmatter.imageUrl.childImageSharp.fluid')
 
+              console.log(imageUrl);
               if(category == "work"){
                 return (
                   <Card

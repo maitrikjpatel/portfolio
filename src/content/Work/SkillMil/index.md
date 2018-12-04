@@ -11,7 +11,7 @@ tools: "html, css, reactJS, JS"
 link: "www.skillmil.com"
 
 source: "Website"
-imageUrl: "./Thumbnail.png"
+imageUrl: "./SkillMil.png"
 postColor: "#C3153F"
 ---
 

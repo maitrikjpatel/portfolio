@@ -11,7 +11,7 @@ tools: "HTML, Bootstrap, AngularJS"
 link: "www.github.com/ActuateBIRT/AviatioExample" 
 
 source: "Website"
-imageUrl: "./Thumbnail.png"
+imageUrl: "./Aviatio.png"
 postColor: "#d9d9d9"
 ---
 

@@ -11,7 +11,7 @@ tools: "HTML, Bootstrap 3, AngularJS, SCSS"
 link: "www.opentext.com/what-we-do/products/analytics/opentext-information-hub"
 
 source: "Website"
-imageUrl: "./Thumbnail.png"
+imageUrl: "./Opentext.png"
 postColor: "#0092ff"
 ---
 

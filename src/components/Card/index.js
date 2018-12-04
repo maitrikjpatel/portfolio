@@ -31,6 +31,7 @@ function Card(props) {
             className={styles.cardImage} 
             fluid={imageUrl}
           />
+          
         </div>
       }
     </React.Fragment>
