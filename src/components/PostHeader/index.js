@@ -87,8 +87,8 @@ function PostHeader(props) {
           </div>
           { topics && date && author &&
             <div className={styles.PostDescription}>
-              {topics && <p><strong>Topics : </strong> {topics}</p>}
               {date && <p><strong>Last Updated: </strong> {date}</p>}
+              {topics && <p><strong>Topics : </strong> {topics}</p>}
               {author && <p><strong>Author : </strong> {author}</p>}
             </div>
           }
