@@ -37,12 +37,12 @@
   .BroswerFrame:after {
     content: "";
     position: absolute;
-    width: 8px;
-    height: 8px;
-    top: 16px;
-    left: 40px;
+    width: 6px;
+    height: 6px;
+    top: 17px;
+    left: 20px;
     border-radius: 50%;
-    background: var(--color-gray8);
-    box-shadow: 0 0 0 0.2rem var(--color-gray8), 1.5rem 0 0 0 var(--color-gray8), 1.5rem 0 0 0.2rem var(--color-gray8), 3rem 0 0 0 var(--color-gray8), 3rem 0 0 0.2rem var(--color-gray8);
+    background: var(--color-gray7);
+    box-shadow: 0 0 0 0.2rem var(--color-gray7), 1.5rem 0 0 0 var(--color-gray7), 1.5rem 0 0 0.2rem var(--color-gray7), 3rem 0 0 0 var(--color-gray7), 3rem 0 0 0.2rem var(--color-gray7);
   }
   

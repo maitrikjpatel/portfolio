@@ -24,16 +24,12 @@
   border-right: none;
 }
 
-/* .PostDottedWrapper {
-  padding: 2.25em 1.6875em;
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(250,250,250,1), rgba(250,250,250,1) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(250,250,250,1), rgba(250,250,250,1) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(250,250,250,1), rgba(250,250,250,1) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(250,250,250,1), rgba(250,250,250,1) 1px, transparent 1px, transparent 100%);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  background-size: 3px 3px;
-} */
+.PostDottedWrapper {
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
+  background-size: 5px 5px;
+}
 
 @media (min-width: 48rem) {
   /* .PostDescription {

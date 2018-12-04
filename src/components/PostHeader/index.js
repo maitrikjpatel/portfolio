@@ -19,7 +19,7 @@ function PostHeader(props) {
     ...restProps
   } = props
 
-  function hexToRgbA(hex){
+  function hexToRgbA(hex, opacity){
     var c;
     if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
         c= hex.substring(1).split('');
@@ -27,18 +27,24 @@ function PostHeader(props) {
             c= [c[0], c[0], c[1], c[1], c[2], c[2]];
         }
         c= '0x'+c.join('');
-        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',0.5)';
+        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+','+opacity+')';
     }
     return hex
   }
-  const rgbPostColor = hexToRgbA(postColor)
 
-  const linkUrl = `https://${link}`
+  let rgbPostColor
+  if (postColor){
+    rgbPostColor = hexToRgbA(postColor, 0.4)
+  } else {
+    rgbPostColor = 'rgba(255,255,255,0)'
+  }
 
   let PostColorWrapper = {
     background: `linear-gradient(180deg, ${rgbPostColor} 0%, rgba(250,250,250,1) 100%)`,
     paddingBottom: 'var(--space-40)'
   }
+
+  const linkUrl = `https://${link}`
 
   let PostHeaderImage = (
     <React.Fragment>
@@ -53,7 +59,7 @@ function PostHeader(props) {
   
   return (
     <BrowserFrame>
-      {/* <div className={styles.PostDottedWrapper}> */}
+      <div className={styles.PostDottedWrapper}>
         <div style={PostColorWrapper}>
           {PostHeaderImage}
           <div className={styles.PostTitleWrapper}>
@@ -87,7 +93,7 @@ function PostHeader(props) {
             </div>
           }
         </div>
-      {/* </div> */}
+      </div>
     </BrowserFrame>
   )
 }
@@ -114,7 +120,7 @@ PostHeader.defaultProps = {
   topics: null,
   author: null,
   imageUrl: null,
-  postColor: '#d9d9d9'
+  postColor: null
 }
 
 export default PostHeader
