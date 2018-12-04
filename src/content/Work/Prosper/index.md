@@ -12,7 +12,7 @@ link: "www.prosper.com/invest"
 
 source: "Website"
 imageUrl: "./Thumbnail.png"
-postColor: "#00b0af"
+postColor: "#c7c7c7"
 ---
 
 ### Redesigning finance
