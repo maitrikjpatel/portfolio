@@ -12,6 +12,7 @@ link: "www.croudify.com/"
 
 source: "Website"
 imageUrl: "./Croudify.png"
+svgUrl: "./Croudify.svg"
 postColor: "#25D6AD"
 ---
 

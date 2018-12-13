@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Helmet from 'react-helmet'
+import Img from "gatsby-image"
 
 import { Link } from 'gatsby'
 import get from 'lodash/get'
@@ -89,6 +90,8 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
 
+        <Img fluid={post.frontmatter.svgUrl} />
+        
         {postHeader}
 
         <MdRender md2html={post.html} />
@@ -127,6 +130,13 @@ export const pageQuery = graphql`
         imageUrl {
           childImageSharp {
             fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        svgUrl {
+          childImageSharp {
+            fluid(maxWidth: 100) {
               ...GatsbyImageSharpFluid
             }
           }
