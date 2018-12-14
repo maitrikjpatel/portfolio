@@ -11,7 +11,7 @@ tools: "CSS, html, Javascript, Jade, SASS"
 link: "www.sony.co.uk"  
 
 source: "Website"
-imageUrl: "./Sony.png"
+imageUrl: "./Thumbnail.png"
 postColor: "#2d2d2d"
 ---
 

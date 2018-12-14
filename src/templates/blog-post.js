@@ -46,7 +46,7 @@ class BlogPostTemplate extends React.Component {
           tools={tools}
           link={link}
           postColor={postColor}
-          imageUrl={imageUrl.childImageSharp.fluid}
+          imageUrl={imageUrl.childImageSharp.fluid.tracedSVG}
         />          
       )
     }
@@ -89,8 +89,6 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-
-        <Img fluid={post.frontmatter.svgUrl} />
         
         {postHeader}
 
@@ -130,14 +128,7 @@ export const pageQuery = graphql`
         imageUrl {
           childImageSharp {
             fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        svgUrl {
-          childImageSharp {
-            fluid(maxWidth: 100) {
-              ...GatsbyImageSharpFluid
+              tracedSVG
             }
           }
         }

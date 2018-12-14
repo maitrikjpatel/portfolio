@@ -23,6 +23,8 @@ function Card(props) {
     backgroundColor: postColor
   }
 
+  console.log(imageUrl)
+  
   let cardImage = (
     <React.Fragment>
       {imageUrl &&
@@ -30,6 +32,8 @@ function Card(props) {
           <Img 
             className={styles.cardImage} 
             fluid={imageUrl}
+            title={title}
+            alt={title}
           />
           
         </div>

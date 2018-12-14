@@ -11,7 +11,7 @@ tools: "React, php, CSS, Design system, Modile, JS, Webpack"
 link: "www.docusign.com" 
 
 source: "Website"
-imageUrl: "./DocuSign.png"
+imageUrl: "./Thumbnail.png"
 postColor: "#2875c4"
 ---
 

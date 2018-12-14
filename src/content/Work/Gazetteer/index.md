@@ -11,7 +11,7 @@ tools: "iOS, ObjECTIVE C, amCharts.js, AngularJS"
 link: "www.github.com/ActuateBIRT/GazetteerExample" 
 
 source: "Website"
-imageUrl: "./Gazetteer.png"
+imageUrl: "./Thumbnail.png"
 postColor: "#3b4e71"
 ---
 

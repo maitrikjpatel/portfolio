@@ -11,8 +11,7 @@ tools: Illustrator, html, css, JS, AngularJS
 link: "www.croudify.com/" 
 
 source: "Website"
-imageUrl: "./Croudify.png"
-svgUrl: "./Croudify.svg"
+imageUrl: "./Thumbnail.png"
 postColor: "#25D6AD"
 ---
 

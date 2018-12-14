@@ -11,7 +11,7 @@ tools: "AngularJS, scsss, Javascript, webpack"
 link: "www.prosper.com/invest"
 
 source: "Website"
-imageUrl: "./ProsperColor.png"
+imageUrl: "./Thumbnail.png"
 postColor: "#45c3c4"
 ---
 
