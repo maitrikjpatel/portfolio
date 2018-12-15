@@ -46,7 +46,7 @@ class BlogPostTemplate extends React.Component {
           tools={tools}
           link={link}
           postColor={postColor}
-          imageUrl={imageUrl.childImageSharp.fluid.tracedSVG}
+          imageUrl={imageUrl.childImageSharp.fluid}
         />          
       )
     }
@@ -128,7 +128,7 @@ export const pageQuery = graphql`
         imageUrl {
           childImageSharp {
             fluid(maxWidth: 1000) {
-              tracedSVG
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
