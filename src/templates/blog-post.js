@@ -11,7 +11,9 @@ import Layout from '../components/Layout'
 import PostHeader from '../components/PostHeader'
 
 import styles from './blogPost.module.css';
+import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import MdRender from '../components/MdRender';
+
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,6 +22,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     
     const post = this.props.data.markdownRemark
+    const mdx = this.props.data.mdx
     
     const category = post.frontmatter.category
     const date = post.frontmatter.date
@@ -92,7 +95,7 @@ class BlogPostTemplate extends React.Component {
         
         {postHeader}
 
-        <MdRender md2html={post.html} />
+        <MDXRenderer>{mdx.code.body}</MDXRenderer>
 
         {pagination}
       </Layout>
@@ -104,6 +107,12 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
+    mdx(id: { eq: $slug }) {
+      id
+      code {
+        body
+      }
+    }
     site {
       siteMetadata {
         title
@@ -114,7 +123,6 @@ export const pageQuery = graphql`
       fields: { slug: { eq: $slug } }
     ) {
       id
-      html
       frontmatter {
         author
         date(formatString: "DD MMMM, YYYY")

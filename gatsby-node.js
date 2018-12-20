@@ -2,12 +2,12 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const componentWithMDXScope = require("gatsby-mdx/component-with-mdx-scope");
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
     resolve(
       graphql(
         `
@@ -24,6 +24,26 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+          }clear
+          
+          {
+            allMdx {
+              edges {
+                node {
+                  parent {
+                    ... on File {
+                      name
+                      absolutePath
+                      relativePath
+                    }
+                  }
+                  id
+                  code {
+                    scope
+                  }
+                }
+              }
+            }
           }
         `
       ).then(result => {
@@ -34,6 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges;
+        const blogPost = path.resolve('./src/templates/blog-post.js')
 
         _.each(posts, (post, index) => {
           const previous = index === posts.length - 1 ? null : posts[index + 1].node;
@@ -42,6 +63,10 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: post.node.fields.slug,
             component: blogPost,
+            component: componentWithMDXScope(
+              blogPost,
+              node.code.scope
+            ),
             context: {
               slug: post.node.fields.slug,
               previous,
@@ -49,6 +74,7 @@ exports.createPages = ({ graphql, actions }) => {
             },
           })
         })
+
       })
     )
   })

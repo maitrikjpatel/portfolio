@@ -116,6 +116,15 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+
+          // MDX 
+          {
+            resolve: `gatsby-mdx`,
+            options: {
+              extensions: [".mdx", ".md"]
+            }
+          },
+
           // code blocks in markdown files (Work on it later)
           'gatsby-remark-prismjs',
 
@@ -133,6 +142,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
 
+
+    // MDX 
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        extensions: [".mdx", ".md"]
+      }
+    }
     // Site work offline (Work on it later)
     // `gatsby-plugin-offline`,
     
