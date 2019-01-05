@@ -94,7 +94,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/utils/images`,
+        path: `${__dirname}/src/images`,
         name: 'images',
       },
     },   
@@ -134,7 +134,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
 
     // Site work offline (Work on it later)
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
     
     // {
     //   resolve: `gatsby-plugin-sitemap`

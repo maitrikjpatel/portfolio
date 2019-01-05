@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: 'https://festive-banach-a55f7e.netlify.com/', // Domain of your site. No trailing slash!
   siteName: 'Maitrik Patel', // Name of Developer
   siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: './src/utils/images/favicon.png', // Used for SEO and manifest
+  siteLogo: './src/images/favicon.png', // Used for SEO and manifest
   
   // Manifest and Progress color
   manifestShortName: 'MP-Portolfio',

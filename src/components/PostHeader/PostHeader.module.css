@@ -1,0 +1,59 @@
+.PostTitleWrapper { 
+  padding-top: 40px;
+}
+
+.PostHeaderImage {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: -40px;
+}
+
+.PostTitle,
+.PostSubTitle {
+  text-align: center;
+}
+
+.PostDescription {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.PostDescription p {
+  padding: 0;
+  border-right: none;
+}
+
+.PostDottedWrapper {
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
+  background-size: 5px 5px;
+}
+
+@media (min-width: 48rem) {
+  .PostDescription {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+  }
+  
+  .PostDescription p {
+    padding: 0;
+    border-right: 1px solid var(--color-gray7);
+    box-sizing: border-box;
+    padding-right: 15px;
+    margin-right: 15px;
+  }
+
+  .PostDescription p:last-child {
+      border: none;
+  }
+}
+
+@media (min-width: 30rem) {
+  .PostHeaderImage {
+    width: 400px;
+  }
+}

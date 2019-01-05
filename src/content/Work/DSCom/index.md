@@ -4,16 +4,21 @@ publish: "true"
 category: "work"
 
 title: "DocuSign Site"
-description: "Description is here"
+
 
 role: "Development, Branding, Design System"
 tools: "React, php, CSS, Design system, Modile, JS, Webpack" 
 link: "www.docusign.com" 
 
 source: "Website"
-imageUrl: "./Thumbnail.png"
-postColor: "#1E4C9D"
+imageUrl: "./Thmubnail.png"
+postColor: "#2875c4"
 ---
+
+- Dark color : #343e48
+- Yellow color : #ffc820
+- New Light Blue color : #0bc0f7
+- New Dark Blue color : #000d39
 
 - Developed and maintain cross-browser compatible, responsive, modular, highly engaging DocuSign web marketing properties using Bootstrap, Drupal CMS, WordPress, SCSS, JS, PHP, Eloqua, Jenkins, Acquia Cloud in 11 international locals.
 - Code review developers' and remote team Pull Requests (PR) to maintain Continuous Integration Workflow (CI) and Code Driven Development with minimum manual interaction on environments.

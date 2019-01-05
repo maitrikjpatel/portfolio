@@ -4,14 +4,14 @@ publish: "true"
 category: "work"
 
 title: "DocuSign Olive"
-description: "Description is here"
+
 
 role: "Development, Branding, Design System"
 tools: "React, php, CSS, Design system, Modile, JS, Webpack" 
 link: "www.docusign.com" 
 
 source: "Website"
-imageUrl: "./Thumbnail.png"
+imageUrl: "./Thmubnail.png"
 postColor: "#24C1F4"
 ---
 

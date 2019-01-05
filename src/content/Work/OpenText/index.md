@@ -4,15 +4,15 @@ publish: "true"
 category: "work"
 
 title: "OpenText"
-description: "Description is here"
+
 
 role: "Development, UX Prototyping, Design System"
 tools: "HTML, Bootstrap 3, AngularJS, SCSS" 
-link: "https://www.opentext.com/what-we-do/products/analytics/opentext-information-hub"
+link: "www.opentext.com/what-we-do/products/analytics/opentext-information-hub"
 
 source: "Website"
 imageUrl: "./Thumbnail.png"
-postColor: "#0071AC"
+postColor: "#0092ff"
 ---
 
 ### OpenText Information Hub (iHub)

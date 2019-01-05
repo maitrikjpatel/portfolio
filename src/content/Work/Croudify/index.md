@@ -4,11 +4,11 @@ publish: "true"
 category: "work"
 
 title: Croudify
-description: "Description is here"
+
 
 role: "Development, Design, Product Design, Branding"
-tools: Illustrator, html, css, JS, AngularJS"" 
-link: "http://croudify.com/" 
+tools: Illustrator, html, css, JS, AngularJS
+link: "www.croudify.com/" 
 
 source: "Website"
 imageUrl: "./Thumbnail.png"

@@ -4,15 +4,15 @@ publish: "true"
 category: "work"
 
 title: Prosper
-description: "Description is here"
+
 
 role: "Development, Branding, Design System"
 tools: "AngularJS, scsss, Javascript, webpack"
-link: "www.prosper.com"
+link: "www.prosper.com/invest"
 
 source: "Website"
-imageUrl: "./Thumbnail.png"
-postColor: "#d9d9d9 "
+imageUrl: "./Thmubnail.png"
+postColor: "#3bbcbb"
 ---
 
 ### Redesigning finance

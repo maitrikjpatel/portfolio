@@ -2,7 +2,7 @@
   width: calc(100% - var(--space-80));
   background: var(--color-white);
   transition: .3s ease;
-  border: 1px solid var(--color-gray4);
+  border: 1px solid var(--color-gray5);
   position: relative
 }
 
@@ -20,12 +20,12 @@
 
 .card:hover { 
   transform: translateY(-10px) scale(1.02);
-  border: 1px solid var(--color-gray6);
-  box-shadow: 1px 1px 0px var(--color-gray6),
-  2px 2px 0px var(--color-gray6),
-  3px 3px 0px var(--color-gray6),
-  4px 4px 0px var(--color-gray6),
-  5px 5px 0px var(--color-gray6)
+  border: 1px solid var(--color-gray5);
+  box-shadow: 1px 1px 0px var(--color-gray5),
+  2px 2px 0px var(--color-gray5),
+  3px 3px 0px var(--color-gray5),
+  4px 4px 0px var(--color-gray5),
+  5px 5px 0px var(--color-gray5)
 }
 
 .card:hover .entryTitle {

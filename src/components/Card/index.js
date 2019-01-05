@@ -9,6 +9,7 @@ function Card(props) {
     title,
     description,
     role,
+    topics,
     tools,
     link,
     source,
@@ -22,6 +23,8 @@ function Card(props) {
     backgroundColor: postColor
   }
 
+  console.log(imageUrl)
+  
   let cardImage = (
     <React.Fragment>
       {imageUrl &&
@@ -29,7 +32,10 @@ function Card(props) {
           <Img 
             className={styles.cardImage} 
             fluid={imageUrl}
+            title={title}
+            alt={title}
           />
+          
         </div>
       }
     </React.Fragment>
@@ -67,6 +73,13 @@ function Card(props) {
             </span>
           </p>
         }
+        {topics &&
+          <p className={styles.cardContentSpan}>
+            <span style={{ color: {postColor} }}>
+              {topics}
+            </span>
+          </p>
+        }        
         <p className={styles.cardSource}>
           Source: {source}
           <span className={styles.cardSourceSvg}>{cardSourceSvg}</span>
@@ -80,6 +93,13 @@ function Card(props) {
           <p className={styles.cardContentRoleSpan}>
             <span style={{ color: {postColor} }}>
               {role}
+            </span>
+          </p>
+        }
+        {topics &&
+          <p className={styles.cardContentRoleSpan}>
+            <span style={{ color: {postColor} }}>
+              {topics}
             </span>
           </p>
         }
@@ -107,6 +127,7 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   role: PropTypes.string,
+  topics: PropTypes.string,
   tools: PropTypes.string,
   link: PropTypes.string.isRequired,
   source: PropTypes.string,
@@ -117,6 +138,7 @@ Card.propTypes = {
 Card.defaultProps = {
   description: null,
   role: null,
+  topics: null,
   tools: null,
   source: null,
   postColor: null,

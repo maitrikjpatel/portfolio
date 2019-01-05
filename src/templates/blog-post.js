@@ -1,16 +1,17 @@
 import React from 'react'
 
 import Helmet from 'react-helmet'
+import Img from "gatsby-image"
 
 import { Link } from 'gatsby'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import WorkPostHeader from '../components/WorkPostHeader'
-import BlogPostHeader from '../components/BlogPostHeader'
+import PostHeader from '../components/PostHeader'
 
 import styles from './blogPost.module.css';
+import MdRender from '../components/MdRender';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -28,6 +29,7 @@ class BlogPostTemplate extends React.Component {
     const description = post.frontmatter.description
 
     const role = post.frontmatter.role
+    const topics = post.frontmatter.topics
     const tools = post.frontmatter.tools
     const link = post.frontmatter.link
 
@@ -37,7 +39,7 @@ class BlogPostTemplate extends React.Component {
     let postHeader
     if(category === "work") {  
       postHeader = ( 
-        <WorkPostHeader
+        <PostHeader
           title={title}
           description={description}
           role={role}
@@ -50,10 +52,10 @@ class BlogPostTemplate extends React.Component {
     }
     else if(category === "note"){
       postHeader = ( 
-        <BlogPostHeader
+        <PostHeader
           title={title}
           description={description}
-          role={role}
+          topics={topics}
           date={date}
           author={author}
           postColor={postColor}
@@ -87,13 +89,10 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-
+        
         {postHeader}
 
-        <div 
-          className={styles.markdownBody}
-          dangerouslySetInnerHTML={{ __html: post.html }} 
-        />
+        <MdRender md2html={post.html} />
 
         {pagination}
       </Layout>
@@ -124,11 +123,12 @@ export const pageQuery = graphql`
         description
         role
         tools
+        topics
         link
         imageUrl {
           childImageSharp {
             fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
