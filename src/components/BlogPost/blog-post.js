@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
     const siteAuthor = get(this.props, 'data.site.siteMetadata.author')
     const { previous, next } = this.props.pageContext
     
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.mdx
     
     const category = post.frontmatter.category
     const date = post.frontmatter.date
@@ -110,7 +110,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(
+    mdx(
       fields: { slug: { eq: $slug } }
     ) {
       id

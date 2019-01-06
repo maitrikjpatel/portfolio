@@ -10,7 +10,7 @@ import styles from "../utils/css/pages/Work.module.css"
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, 'props.data.allMdx.edges')
       return (
         <Layout location={this.props.location}>
           <Helmet title={siteTitle} />
@@ -58,7 +58,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { publish: { ne: "false" } } }
     ) {

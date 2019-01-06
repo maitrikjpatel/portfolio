@@ -113,7 +113,6 @@ module.exports = {
 
       resolve: `gatsby-mdx`,
       options: {
-        root: __dirname,
         extensions: ['.md', '.mdx'],
         plugins: [
           {
