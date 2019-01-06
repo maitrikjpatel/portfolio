@@ -7,11 +7,11 @@ import { Link } from 'gatsby'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import PostHeader from '../components/PostHeader'
+import Layout from '../Layout'
+import PostHeader from '../PostHeader'
 
 import styles from './blogPost.module.css';
-import MdRender from '../components/MdRender';
+import MdRender from '../MdRender';
 
 class BlogPostTemplate extends React.Component {
   render() {

@@ -22,8 +22,6 @@ function Card(props) {
     height: '200px',
     backgroundColor: postColor
   }
-
-  console.log(imageUrl)
   
   let cardImage = (
     <React.Fragment>
