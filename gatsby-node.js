@@ -2,6 +2,7 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const componentWithMDXScope = require("gatsby-mdx/component-with-mdx-scope")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -10,20 +11,26 @@ exports.createPages = ({ graphql, actions }) => {
     resolve(
       graphql(
         `
-          {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
-              edges {
-                node {
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                  }
+        {
+          allMdx(
+            sort: { fields: [frontmatter___date], order: DESC }
+            limit: 1000
+          ) {
+            edges {
+              node {
+                code {
+                  scope
+                }
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title
                 }
               }
             }
           }
+        }
         `
       ).then(result => {
         if (result.errors) {
@@ -32,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMdx.edges;
         const blogPost = path.resolve('./src/components/BlogPost/blog-post.js')
         
         _.each(posts, (post, index) => {
@@ -41,7 +48,11 @@ exports.createPages = ({ graphql, actions }) => {
 
           createPage({
             path: post.node.fields.slug,
-            component: blogPost,
+            component: componentWithMDXScope(
+              blogPost,
+              post.node.code.scope,
+              __dirname
+            ),
             context: {
               slug: post.node.fields.slug,
               previous,
