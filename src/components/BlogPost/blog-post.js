@@ -92,7 +92,7 @@ class BlogPostTemplate extends React.Component {
         
         {postHeader}
 
-        <MdRender md2html={post.html} />
+        <MdRender mdxCodeBody={post.code.body} />
 
         {pagination}
       </Layout>
@@ -115,15 +115,16 @@ export const pageQuery = graphql`
     ) {
       id
       html
+      code {
+        body
+      }
       frontmatter {
-        author
         date(formatString: "DD MMMM, YYYY")
         category
         title
         description
         role
         tools
-        topics
         link
         imageUrl {
           childImageSharp {

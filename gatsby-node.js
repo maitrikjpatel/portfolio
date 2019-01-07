@@ -2,7 +2,6 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
-const componentWithMDXScope = require("gatsby-mdx/component-with-mdx-scope")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -18,9 +17,6 @@ exports.createPages = ({ graphql, actions }) => {
           ) {
             edges {
               node {
-                code {
-                  scope
-                }
                 fields {
                   slug
                 }
@@ -48,10 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
 
           createPage({
             path: post.node.fields.slug,
-            component: componentWithMDXScope(
-              blogPost,
-              post.node.code.scope,
-            ),
+            component: blogPost,
             context: {
               slug: post.node.fields.slug,
               previous,
@@ -67,7 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `mdx`) {
+  if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
