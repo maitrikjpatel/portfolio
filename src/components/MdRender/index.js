@@ -6,7 +6,6 @@ import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 function MdRender(props) {
   const { mdxCodeBody, ...restProps } = props
 
-  console.log(mdxCodeBody)
   return (
     <MDXRenderer className={styles.markdownBody}>{mdxCodeBody}</MDXRenderer>
   )

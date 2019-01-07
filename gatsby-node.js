@@ -78,7 +78,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
           {
             test: /bad-module/,
             use: loaders.null(),
-          },
+          }
         ],
       },
     })
