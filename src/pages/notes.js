@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
 import Bio from '../components/Bio'
-import styles from "../utils/css/pages/Notes.module.css"
+import styles from '../utils/css/pages/Notes.module.css'
 
 class NoteIndex extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class NoteIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Helmet title={siteTitle} />
-        <Bio 
+        <Bio
           title="Notes"
           description="Here's some of my front end development and UX notes"
         />
@@ -25,22 +25,19 @@ class NoteIndex extends React.Component {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             const topics = get(node, 'frontmatter.topics')
             const source = get(node, 'frontmatter.source')
-            
-              if(category == "note"){
-                return (
-                  <Card 
-                    key={node.fields.slug}
-                    title={title}
 
-                    topics={topics}
-                    link={node.fields.slug}
-                    
-                    source={source}
-                  />
-                )
-              }
-            })
-          }
+            if (category == 'note') {
+              return (
+                <Card
+                  key={node.fields.slug}
+                  title={title}
+                  topics={topics}
+                  link={node.fields.slug}
+                  source={source}
+                />
+              )
+            }
+          })}
         </div>
       </Layout>
     )
@@ -56,8 +53,8 @@ export const noteQuery = graphql`
         title
       }
     }
-    allMdx(sort: 
-      { fields: [frontmatter___date], order: DESC }
+    allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { publish: { ne: "false" } } }
     ) {
       edges {
