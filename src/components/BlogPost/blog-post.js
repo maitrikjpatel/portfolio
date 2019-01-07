@@ -116,14 +116,12 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        author
         date(formatString: "DD MMMM, YYYY")
         category
         title
         description
         role
         tools
-        topics
         link
         imageUrl {
           childImageSharp {
