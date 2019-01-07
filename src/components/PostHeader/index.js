@@ -88,7 +88,7 @@ function PostHeader(props) {
               </p>
             )}
           </div>
-          {topics || date || author && (
+          {topics && date && author && (
               <div className={styles.PostDescription}>
                 {date && (
                   <p>
