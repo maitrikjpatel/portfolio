@@ -3,23 +3,15 @@ import PropTypes from 'prop-types'
 import styles from './Tags.module.css'
 
 function Tags(props) {
-  const {
-    tags,
-  ...restProps
-  } = props
+  const { tags, ...restProps } = props
 
-  const tagsList = tags.map((tag) =>
-    <p className={styles.Tag}
-      key={tag.toString()}>
+  const tagsList = tags.map(tag => (
+    <p className={styles.Tag} key={tag.toString()}>
       {tag}
     </p>
-  )
+  ))
 
-  return (
-    <div className={styles.Tags}>
-      {tagsList}
-    </div>
-  )
+  return <div className={styles.Tags}>{tagsList}</div>
 }
 
 Tags.propTypes = {
@@ -27,7 +19,7 @@ Tags.propTypes = {
 }
 
 Tags.defaultProps = {
-  tags: null
+  tags: null,
 }
 
 export default Tags

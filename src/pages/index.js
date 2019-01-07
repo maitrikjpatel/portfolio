@@ -5,44 +5,44 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
-import styles from "../utils/css/pages/Work.module.css"
+import styles from '../utils/css/pages/Work.module.css'
 
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
-      return (
-        <Layout location={this.props.location}>
-          <Helmet title={siteTitle} />
-          <Bio
-            titleName="I am Maitrik."
-            title="I design and develop pixel perfect user interfaces and experiences."
-            description="Here's some of my selected projects"
-          />
-          <div className={styles.WorkWrapper}>
-            {posts.map(({ node }) => {
-              const category = get(node, 'frontmatter.category')
-              const title = get(node, 'frontmatter.title') || node.fields.slug
-              const role = get(node, 'frontmatter.role')
-              const postColor = get(node, 'frontmatter.postColor')
-              const imageUrl= get(node, 'frontmatter.imageUrl.childImageSharp.fluid')
+    const posts = get(this, 'props.data.allMdx.edges')
+    return (
+      <Layout location={this.props.location}>
+        <Helmet title={siteTitle} />
+        <Bio
+          titleName="I am Maitrik."
+          title="I design and develop pixel perfect user interfaces and experiences."
+          description="Here's some of my selected projects"
+        />
+        <div className={styles.WorkWrapper}>
+          {posts.map(({ node }) => {
+            const category = get(node, 'frontmatter.category')
+            const title = get(node, 'frontmatter.title') || node.fields.slug
+            const role = get(node, 'frontmatter.role')
+            const postColor = get(node, 'frontmatter.postColor')
+            const imageUrl = get(
+              node,
+              'frontmatter.imageUrl.childImageSharp.fluid'
+            )
 
-              if(category == "work"){
-                return (
-                  <Card
-                    key={node.fields.slug}
-                    title={title}
-                    
-                    role={role}
-                    link={node.fields.slug}
-
-                    imageUrl={imageUrl}
-                    postColor={postColor}
-                  />
-                )
-              }
-            })
-          }
+            if (category == 'work') {
+              return (
+                <Card
+                  key={node.fields.slug}
+                  title={title}
+                  role={role}
+                  link={node.fields.slug}
+                  imageUrl={imageUrl}
+                  postColor={postColor}
+                />
+              )
+            }
+          })}
         </div>
       </Layout>
     )
@@ -58,7 +58,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { publish: { ne: "false" } } }
     ) {
@@ -88,4 +88,3 @@ export const pageQuery = graphql`
     }
   }
 `
-

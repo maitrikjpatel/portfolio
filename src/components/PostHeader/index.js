@@ -1,7 +1,7 @@
 import React from 'react'
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
-import styles from "./PostHeader.module.css"
+import styles from './PostHeader.module.css'
 import BrowserFrame from '../BroswerFrame'
 
 function PostHeader(props) {
@@ -15,25 +15,31 @@ function PostHeader(props) {
     date,
     author,
     postColor,
-    imageUrl,  
+    imageUrl,
     ...restProps
   } = props
 
-  function hexToRgbA(hex, opacity){
-    var c;
-    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
-        c= hex.substring(1).split('');
-        if(c.length== 3){
-            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-        }
-        c= '0x'+c.join('');
-        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+','+opacity+')';
+  function hexToRgbA(hex, opacity) {
+    var c
+    if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)) {
+      c = hex.substring(1).split('')
+      if (c.length == 3) {
+        c = [c[0], c[0], c[1], c[1], c[2], c[2]]
+      }
+      c = '0x' + c.join('')
+      return (
+        'rgba(' +
+        [(c >> 16) & 255, (c >> 8) & 255, c & 255].join(',') +
+        ',' +
+        opacity +
+        ')'
+      )
     }
     return hex
   }
 
   let rgbPostColor
-  if (postColor){
+  if (postColor) {
     rgbPostColor = hexToRgbA(postColor, 0.4)
   } else {
     rgbPostColor = 'rgba(255,255,255,0)'
@@ -41,57 +47,66 @@ function PostHeader(props) {
 
   let PostColorWrapper = {
     background: `linear-gradient(180deg, ${rgbPostColor} 0%, rgba(250,250,250,1) 100%)`,
-    paddingBottom: 'var(--space-40)'
+    paddingBottom: 'var(--space-40)',
   }
 
   const linkUrl = `https://${link}`
 
   let PostHeaderImage = (
     <React.Fragment>
-      {imageUrl &&
-        <Img 
-          className={styles.PostHeaderImage} 
-          fluid={imageUrl}
-        />
-      }
+      {imageUrl && <Img className={styles.PostHeaderImage} fluid={imageUrl} />}
     </React.Fragment>
   )
-  
+
   return (
     <BrowserFrame>
       <div className={styles.PostDottedWrapper}>
         <div style={PostColorWrapper}>
           {PostHeaderImage}
           <div className={styles.PostTitleWrapper}>
-            {title && 
-              <h1 className={styles.PostTitle}>
-                {title}
-              </h1>
-            }
-            {link && 
+            {title && <h1 className={styles.PostTitle}>{title}</h1>}
+            {link && (
               <p className={styles.PostSubTitle}>
                 <a target="_blank" href={linkUrl}>
                   {link}
                 </a>
               </p>
-            }
-            {description && 
-              <p className={styles.PostSubTitle}>
-                {description}
-              </p>
-            }
+            )}
+            {description && (
+              <p className={styles.PostSubTitle}>{description}</p>
+            )}
           </div>
           <div className={styles.PostDescription}>
-            {role && <p><strong>Role :</strong> {role}</p>}
-            {tools && <p><strong>Tools :</strong> {tools}</p>}
+            {role && (
+              <p>
+                <strong>Role :</strong> {role}
+              </p>
+            )}
+            {tools && (
+              <p>
+                <strong>Tools :</strong> {tools}
+              </p>
+            )}
           </div>
-          { topics && date && author &&
-            <div className={styles.PostDescription}>
-              {date && <p><strong>Last Updated: </strong> {date}</p>}
-              {topics && <p><strong>Topics : </strong> {topics}</p>}
-              {author && <p><strong>Author : </strong> {author}</p>}
-            </div>
-          }
+          {topics || date || author && (
+              <div className={styles.PostDescription}>
+                {date && (
+                  <p>
+                    <strong>Last Updated: </strong> {date}
+                  </p>
+                )}
+                {topics && (
+                  <p>
+                    <strong>Topics : </strong> {topics}
+                  </p>
+                )}
+                {author && (
+                  <p>
+                    <strong>Author : </strong> {author}
+                  </p>
+                )}
+              </div>
+            )}
         </div>
       </div>
     </BrowserFrame>
@@ -120,7 +135,7 @@ PostHeader.defaultProps = {
   topics: null,
   author: null,
   imageUrl: null,
-  postColor: null
+  postColor: null,
 }
 
 export default PostHeader

@@ -36,11 +36,6 @@ module.exports = {
             type: "image/png"
           },
           {
-            src: "/icons/icon-144x144.png",
-            sizes: "144x144",
-            type: "image/png"
-          },
-          {
             src: "/icons/icon-192x192.png",
             sizes: "192x192",
             type: "image/png"
@@ -83,6 +78,14 @@ module.exports = {
       },
     },
 
+    // MDX 
+    // {
+    //   resolve: `gatsby-mdx`,
+    //   options: {
+    //     extensions: [".mdx", ".md"]
+    //   }
+    // },
+
     // Google Source FileSystem for image/pages
     {
       resolve: `gatsby-source-filesystem`,
@@ -101,8 +104,11 @@ module.exports = {
 
     // Markdown Images
     {
-      resolve: `gatsby-transformer-remark`,
+      // resolve: `gatsby-transformer-remark`,
+
+      resolve: `gatsby-mdx`,
       options: {
+        extensions: ['.md', '.mdx'],
         plugins: [
           {
             resolve: `gatsby-remark-images`,

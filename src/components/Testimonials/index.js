@@ -3,16 +3,9 @@ import PropTypes from 'prop-types'
 import styles from './Tags.module.css'
 
 function Tags(props) {
-  const {
-    text,
-  ...restProps
-  } = props
+  const { text, ...restProps } = props
 
-  return (
-    <div className={styles.Tags}>
-      {text}
-    </div>
-  )
+  return <div className={styles.Tags}>{text}</div>
 }
 
 Tags.propTypes = {
@@ -20,7 +13,7 @@ Tags.propTypes = {
 }
 
 Tags.defaultProps = {
-  text: null
+  text: null,
 }
 
 export default Tags

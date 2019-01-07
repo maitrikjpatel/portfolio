@@ -25,10 +25,10 @@
 }
 
 .PostDottedWrapper {
-  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
-  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
-  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray5) 1px, transparent 1px, transparent 100%);
-  background-size: 5px 5px;
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray6) 1px, transparent 1px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray6) 1px, transparent 1px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, var(--color-gray1), var(--color-gray6) 1px, transparent 1px, transparent 100%);
+  background-size: 6px 6px;
 }
 
 @media (min-width: 48rem) {

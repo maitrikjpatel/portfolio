@@ -1,22 +1,15 @@
 import React from 'react'
-import styles from "./BroswerFrame.module.css"
+import styles from './BroswerFrame.module.css'
 import PropTypes from 'prop-types'
 
 function BroswerFrame(props) {
-  const {
-    children,
-    ...restProps
-  } = props
+  const { children, ...restProps } = props
 
-  return (
-    <div className={styles.BroswerFrame}>
-        {children}
-    </div>
-  )
+  return <div className={styles.BroswerFrame}>{children}</div>
 }
 
 BroswerFrame.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default BroswerFrame

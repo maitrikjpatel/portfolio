@@ -1,26 +1,26 @@
 import React from 'react'
 
 import Helmet from 'react-helmet'
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 
 import { Link } from 'gatsby'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import PostHeader from '../components/PostHeader'
+import Layout from '../Layout'
+import PostHeader from '../PostHeader'
 
-import styles from './blogPost.module.css';
-import MdRender from '../components/MdRender';
+import styles from './blogPost.module.css'
+import MdRender from '../MdRender'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteAuthor = get(this.props, 'data.site.siteMetadata.author')
     const { previous, next } = this.props.pageContext
-    
-    const post = this.props.data.markdownRemark
-    
+
+    const post = this.props.data.mdx
+
     const category = post.frontmatter.category
     const date = post.frontmatter.date
     const author = post.frontmatter.author || siteAuthor
@@ -33,12 +33,12 @@ class BlogPostTemplate extends React.Component {
     const tools = post.frontmatter.tools
     const link = post.frontmatter.link
 
-    const postColor = post.frontmatter.postColor     
+    const postColor = post.frontmatter.postColor
     const imageUrl = post.frontmatter.imageUrl
 
     let postHeader
-    if(category === "work") {  
-      postHeader = ( 
+    if (category === 'work') {
+      postHeader = (
         <PostHeader
           title={title}
           description={description}
@@ -47,11 +47,10 @@ class BlogPostTemplate extends React.Component {
           link={link}
           postColor={postColor}
           imageUrl={imageUrl.childImageSharp.fluid}
-        />          
+        />
       )
-    }
-    else if(category === "note"){
-      postHeader = ( 
+    } else if (category === 'note') {
+      postHeader = (
         <PostHeader
           title={title}
           description={description}
@@ -59,11 +58,11 @@ class BlogPostTemplate extends React.Component {
           date={date}
           author={author}
           postColor={postColor}
-        />  
+        />
       )
     }
 
-    const pagination = ( 
+    const pagination = (
       <React.Fragment>
         <hr className={styles.pageHr} />
         <ul className={styles.pagePagination}>
@@ -83,16 +82,16 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
-      </React.Fragment>       
+      </React.Fragment>
     )
 
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        
+
         {postHeader}
 
-        <MdRender md2html={post.html} />
+        <MdRender mdxCodeBody={post.code.body} />
 
         {pagination}
       </Layout>
@@ -110,13 +109,12 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(
-      fields: { slug: { eq: $slug } }
-    ) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
-      html
+      code {
+        body
+      }
       frontmatter {
-        author
         date(formatString: "DD MMMM, YYYY")
         category
         title

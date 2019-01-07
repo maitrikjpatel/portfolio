@@ -1,23 +1,18 @@
 import React from 'react'
-import styles from "./MdRender.module.css"
+import styles from './MdRender.module.css'
 import PropTypes from 'prop-types'
+import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 
 function MdRender(props) {
-  const {
-    md2html,
-    ...restProps
-  } = props
+  const { mdxCodeBody, ...restProps } = props
 
   return (
-    <div 
-        className={styles.markdownBody}
-        dangerouslySetInnerHTML={{ __html: md2html }} 
-    />
+    <MDXRenderer className={styles.markdownBody}>{mdxCodeBody}</MDXRenderer>
   )
 }
 
 MdRender.propTypes = {
-    md2html: PropTypes.node,
+  mdxCodeBody: PropTypes.string,
 }
 
 export default MdRender
