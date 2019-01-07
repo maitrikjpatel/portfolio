@@ -69,6 +69,7 @@ export const noteQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             category
+            topics
             title
             link
             source
