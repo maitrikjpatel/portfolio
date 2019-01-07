@@ -121,6 +121,7 @@ export const pageQuery = graphql`
         description
         role
         tools
+        topics
         link
         imageUrl {
           childImageSharp {
