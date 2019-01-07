@@ -24,7 +24,7 @@ body {
   box-sizing: inherit;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,img{
+p,a,img{
   margin: 0;
 }
 
@@ -43,10 +43,6 @@ a:hover {
 
 a:focus {
   outline: 0;
-}
-
-ul {
-  margin-left: 0;
 }
 
 .fullWidth {
