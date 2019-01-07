@@ -13,6 +13,7 @@ import PostHeader from '../PostHeader'
 import styles from './blogPost.module.css';
 import MdRender from '../MdRender';
 
+
 class BlogPostTemplate extends React.Component {
   render() {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
@@ -114,7 +115,6 @@ export const pageQuery = graphql`
       fields: { slug: { eq: $slug } }
     ) {
       id
-      html
       code {
         body
       }
