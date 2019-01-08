@@ -65,48 +65,50 @@ function PostHeader(props) {
           {PostHeaderImage}
           <div className={styles.PostTitleWrapper}>
             {title && <h1 className={styles.PostTitle}>{title}</h1>}
-            {link && (
+            {link &&
               <p className={styles.PostSubTitle}>
                 <a target="_blank" href={linkUrl}>
                   {link}
                 </a>
               </p>
-            )}
-            {description && (
+            }
+            {description &&
               <p className={styles.PostSubTitle}>{description}</p>
-            )}
+            }
           </div>
-          <div className={styles.PostDescription}>
-            {role && (
-              <p>
-                <strong>Role :</strong> {role}
-              </p>
-            )}
-            {tools && (
-              <p>
-                <strong>Tools :</strong> {tools}
-              </p>
-            )}
-          </div>
-          {topics && date && author && (
-              <div className={styles.PostDescription}>
-                {date && (
-                  <p>
-                    <strong>Last Updated: </strong> {date}
-                  </p>
-                )}
-                {topics && (
-                  <p>
-                    <strong>Topics : </strong> {topics}
-                  </p>
-                )}
-                {author && (
-                  <p>
-                    <strong>Author : </strong> {author}
-                  </p>
-                )}
-              </div>
-            )}
+          {tools && role &&
+            <div className={styles.PostDescription}>
+              {role && 
+                <p>
+                  <strong>Role :</strong> {role}
+                </p>
+              }
+              {tools && 
+                <p>
+                  <strong>Tools :</strong> {tools}
+                </p>
+              }
+            </div>
+          }
+          {topics && date && author &&
+            <div className={styles.PostDescription}>
+              {date &&
+                <p>
+                  <strong>Last Updated: </strong> {date}
+                </p>
+              }
+              {topics && 
+                <p>
+                  <strong>Topics : </strong> {topics}
+                </p>
+              }
+              {author && 
+                <p>
+                  <strong>Author : </strong> {author}
+                </p>
+              }
+            </div>
+          }
         </div>
       </div>
     </BrowserFrame>

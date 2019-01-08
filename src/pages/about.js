@@ -5,6 +5,7 @@ import PhotosGrid from '../components/PhotosGrid'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import GridColumnsLayout from '../components/GridColumnsLayout'
+import Carousel from '../components/Carousel'
 
 export default () => {
   const toolsList = [
@@ -75,6 +76,7 @@ export default () => {
           <a href="tel:+14088393930">+1-408-839-3930</a>
         </Bio>
 
+        <Carousel title="this is seond tile" />
         <div className={styles.aboutContent}>
           <p>
             I’m a Design Technologist currently living in Bay Area, California.

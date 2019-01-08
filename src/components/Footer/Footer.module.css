@@ -1,7 +1,7 @@
 .footer{
   height: var(--space-75);
-  composes: fullWidth from "../../utils/css/base.css";
-  composes: universalPadding from "../../utils/css/base.css";
+  composes: fullWidth from "../../utils/css/reusable.css";
+  composes: universalPadding from "../../utils/css/reusable.css";
 }
 
 .footer::before{

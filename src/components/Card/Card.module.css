@@ -62,7 +62,7 @@
   display: block;
   font-size: 12px;
   line-height: var(--space-15);
-  margin-top: var(--space-10);
+  margin: var(--space-10) 0 0 0;
   color: var(--color-brandDark);
 }
 
