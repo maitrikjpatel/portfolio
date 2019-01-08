@@ -62,14 +62,6 @@ module.exports = {
     // HTML SEO Head (Work on it later)
     `gatsby-plugin-react-helmet`,
 
-    // Typography
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
-
     // Google Analytics
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -151,5 +143,13 @@ module.exports = {
     //     include: /svg-icons/
     //   }
     // }
+
+    // Typography
+    // {
+    //   resolve: 'gatsby-plugin-typography',
+    //   options: {
+    //     pathToConfigModule: 'src/utils/typography',
+    //   },
+    // },
   ],
 }
