@@ -32,6 +32,16 @@ function Footer(props) {
             Instagram
           </a>
         </li>
+        {/* <li className="Codepen">
+          <a href="https://www.instagram.com/maitrikjpatel/" target="_blank">
+            Codepen
+          </a>
+        </li>
+        <li className="Email">
+          <a href="https://www.instagram.com/maitrikjpatel/" target="_blank">
+            Email
+          </a>
+        </li> */}
       </ul>
       <div className={styles.footerBrew} />
       {/* <p className={styles.footerCopyright}>© copyright 2018</p> */}

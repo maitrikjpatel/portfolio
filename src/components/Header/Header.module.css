@@ -15,7 +15,8 @@ header{
 }
 
 .header p, .header ul {
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .headerLogo { 
