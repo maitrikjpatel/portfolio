@@ -18,15 +18,16 @@ function Card(props) {
     ...restProps
   } = props
 
-  let cardImageWrapperClass = {
+  let cardImageWrapperStyle = {
     height: '200px',
+    margin: '-1px -1px 0 -1px',
     backgroundColor: postColor,
   }
 
   let cardImage = (
     <React.Fragment>
       {imageUrl && (
-        <div style={cardImageWrapperClass}>
+        <div style={cardImageWrapperStyle} className={styles.cardImageWrapperClass}>
           <Img
             className={styles.cardImage}
             fluid={imageUrl}

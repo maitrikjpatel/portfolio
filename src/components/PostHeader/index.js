@@ -67,7 +67,7 @@ function PostHeader(props) {
             {title && <h1 className={styles.PostTitle}>{title}</h1>}
             {link &&
               <p className={styles.PostSubTitle}>
-                <a target="_blank" href={linkUrl}>
+                <a target="_blank" rel="noopener" href={linkUrl}>
                   {link}
                 </a>
               </p>

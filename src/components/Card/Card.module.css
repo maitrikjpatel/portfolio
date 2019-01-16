@@ -32,6 +32,10 @@
   background-position: -100% 0;
 }
 
+.card:hover > div:first-child {
+  margin: -1px 0 0 -1px !important;
+}
+
 .cardImage{
   min-width: 100%;
   height: 100%;

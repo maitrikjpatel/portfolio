@@ -14,8 +14,9 @@
 }
 
 .pageHr {
-  margin: var(--space-25) 0 0; 
-  background: var(--color-gray3)
+  border-color: var(--color-gray5);
+  border-width: 0.5px;
+  background: none;
 }
 
 .allWork {
