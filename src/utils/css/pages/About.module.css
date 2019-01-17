@@ -12,13 +12,6 @@
   margin-bottom: var(--space-20); 
 }
 
-.emailContact {
-  padding: var(--space-5) 0;
-  margin:  var(--space-10) 0;
-  border: none;
-  display: block;
-}
-
 .sectionTitle {
   font-size: var(--font-24);
   color: var(--color-gray9);
@@ -26,15 +19,45 @@
   border-bottom: 0.5px solid var(--color-gray3);
 }
 
+.aboutContact {
+  display: block;
+  padding: 0;
+}
+
+.aboutContact li {
+  list-style-type: none;
+}
+
 @media (min-width: 48rem) {
   .aboutContent {
     margin: var(--space-80) 0;
   }
-  .emailContact {
+
+  .aboutContact {
+    display: inline-flex;
+  }
+
+  .aboutContact li:nth-child(2){
+    display: inline;
+    margin: 0 40px;
+    position: relative;
+  }
+  .aboutContact li:nth-child(2)::before{
+    content: "";
     display: inline-block;
-    padding: 0 25px;
-    margin: 0 25px;
-    border-left: 1px solid var(--color-brand);
-    border-right: 1px solid var(--color-brand);
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    left: -20px;
+    background-color:var(--color-brand);
+  }
+  .aboutContact li:nth-child(2)::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    right: -20px;
+    background-color:var(--color-brand);
   }
 }

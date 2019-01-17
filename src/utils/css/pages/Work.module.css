@@ -1,5 +1,5 @@
 .WorkWrapper {
-  composes: flexWrapper from "../base.css";
+  composes: flexWrapper from "../reusable.css";
 }
 
 .WorkWrapper a {

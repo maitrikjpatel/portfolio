@@ -14,6 +14,21 @@
 }
 
 .pageHr {
+  border: 0.5px solid var(--color-gray5);
+  background: none;
+}
+
+.allWork {
   margin: var(--space-25) 0; 
-  background: var(--color-gray3)
+  display: flex;
+  justify-content: center;
+}
+
+.allWork a {
+  border-bottom: 0.5px dotted transparent;
+  font-weight: bold;
+}
+
+.allWork a:hover {
+  border-bottom: 0.5px dotted var(--color-gray7);
 }

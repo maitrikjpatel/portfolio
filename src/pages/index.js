@@ -2,9 +2,11 @@ import React from 'react'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
+
 import styles from '../utils/css/pages/Work.module.css'
 
 class BlogIndex extends React.Component {

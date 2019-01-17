@@ -17,7 +17,6 @@ class BlogPostTemplate extends React.Component {
   render() {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteAuthor = get(this.props, 'data.site.siteMetadata.author')
-    const { previous, next } = this.props.pageContext
 
     const post = this.props.data.mdx
 
@@ -61,30 +60,25 @@ class BlogPostTemplate extends React.Component {
         />
       )
     }
-
-    const pagination = (
+    
+    const allWork = (
       <React.Fragment>
         <hr className={styles.pageHr} />
-        <ul className={styles.pagePagination}>
-          {previous && (
-            <li>
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            </li>
+        <div className={styles.allWork}>
+          {(category === 'note') && (
+            <Link to="/notes/">
+              ← Back to all Notes
+            </Link>
           )}
-
-          {next && (
-            <li>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            </li>
+          {(category === 'work') && (
+            <Link to="/">
+              ← Back to all Work
+            </Link>
           )}
-        </ul>
+        </div>
       </React.Fragment>
     )
-
+    
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
@@ -93,7 +87,7 @@ class BlogPostTemplate extends React.Component {
 
         <MdRender mdxCodeBody={post.code.body} />
 
-        {pagination}
+        {allWork}
       </Layout>
     )
   }

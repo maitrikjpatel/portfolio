@@ -5,6 +5,7 @@ import PhotosGrid from '../components/PhotosGrid'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import GridColumnsLayout from '../components/GridColumnsLayout'
+import Carousel from '../components/Carousel'
 
 export default () => {
   const toolsList = [
@@ -59,22 +60,26 @@ export default () => {
     <Layout>
       <div className={styles.pageAbout}>
         <Bio title="About me">
-          <a
-            href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
-          <a
-            className={styles.emailContact}
-            href="mailto:maitrik1419@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together."
-          >
-            maitrik1419[at]gmail[dot]com
-          </a>
-          <a href="tel:+14088393930">+1-408-839-3930</a>
+          <ul className={styles.aboutContact}>
+            <li>
+              <a
+                href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
+            </li>
+            <li>
+              <a href="mailto:maitrik1419@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">maitrik1419[at]gmail[dot]com</a>
+            </li>
+            <li>
+              <a href="tel:+14088393930">+1-408-839-3930</a>
+            </li>
+          </ul>
         </Bio>
 
+        <Carousel title="this is seond tile" />
         <div className={styles.aboutContent}>
           <p>
             I’m a Design Technologist currently living in Bay Area, California.

@@ -12,18 +12,10 @@ class Header extends React.Component {
           </Link>
           <nav>
             <ul className={styles.headerLinks}>
-              <Link className={styles.headerLink} to="/">
-                Work
-              </Link>
-              <Link className={styles.headerLink} to="/notes/">
-                Notes
-              </Link>
-              <Link className={styles.headerLink} to="/photography/">
-                Photography
-              </Link>
-              <Link className={styles.headerLink} to="/about/">
-                About
-              </Link>
+              <li className={styles.headerLink}><Link to="/">Work</Link></li>
+              <li className={styles.headerLink}><Link to="/notes/">Notes</Link></li>
+              <li className={styles.headerLink}><Link to="/photography/">Photography</Link></li>
+              <li className={styles.headerLink}><Link to="/about/">About</Link></li>
             </ul>
           </nav>
         </div>
