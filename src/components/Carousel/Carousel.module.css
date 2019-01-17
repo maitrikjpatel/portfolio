@@ -2,6 +2,10 @@
   margin: var(--space-25) 0;
 }
 
+.CarouselTitle {
+  text-align: center;
+}
+
 .Slider {
   padding-bottom: 50px;
 }
