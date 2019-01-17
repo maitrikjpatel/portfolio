@@ -27,7 +27,7 @@ function Card(props) {
   let cardImage = (
     <React.Fragment>
       {imageUrl && (
-        <div style={cardImageWrapperStyle} className={styles.cardImageWrapperClass}>
+        <div style={cardImageWrapperStyle}>
           <Img
             className={styles.cardImage}
             fluid={imageUrl}
@@ -60,17 +60,18 @@ function Card(props) {
     )
   }
 
+  // Do not try to remove redundant code, see classes
   let cardSubContent
   if (source) {
     cardSubContent = (
       <React.Fragment>
         {role && (
-          <p className={styles.cardContentSpan}>
+          <p className={styles.cardNotesSpan}>
             <span style={{ color: { postColor } }}>{role}</span>
           </p>
         )}
         {topics && (
-          <p className={styles.cardContentSpan}>
+          <p className={styles.cardNotesSpan}>
             <span style={{ color: { postColor } }}>{topics}</span>
           </p>
         )}
@@ -84,12 +85,12 @@ function Card(props) {
     cardSubContent = (
       <React.Fragment>
         {role && (
-          <p className={styles.cardContentRoleSpan}>
+          <p className={styles.cardWorkSpan}>
             <span style={{ color: { postColor } }}>{role}</span>
           </p>
         )}
         {topics && (
-          <p className={styles.cardContentRoleSpan}>
+          <p className={styles.cardWorkSpan}>
             <span style={{ color: { postColor } }}>{topics}</span>
           </p>
         )}

@@ -4,18 +4,18 @@
     position: relative;
     padding: var(--space-40) 1px 0;
     margin: var(--space-30) 0;
-    border-top: 1px solid var(--color-gray5);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-gray5)), to(transparent));
-    background-image: -webkit-linear-gradient(var(--color-gray5), transparent);
+    border-top: 1px solid var(--color-gray8);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--color-gray8)), to(transparent));
+    background-image: -webkit-linear-gradient(var(--color-gray8), transparent);
     background-image:
-        -moz-linear-gradient(var(--color-gray5), transparent),
-        -moz-linear-gradient(var(--color-gray5), transparent);
+        -moz-linear-gradient(var(--color-gray8), transparent),
+        -moz-linear-gradient(var(--color-gray8), transparent);
     background-image:
-        -o-linear-gradient(var(--color-gray5), transparent),
-        -o-linear-gradient(var(--color-gray5), transparent);
+        -o-linear-gradient(var(--color-gray8), transparent),
+        -o-linear-gradient(var(--color-gray8), transparent);
     background-image:
-        linear-gradient(var(--color-gray5), transparent),
-        linear-gradient(var(--color-gray5), transparent);
+        linear-gradient(var(--color-gray8), transparent),
+        linear-gradient(var(--color-gray8), transparent);
     -moz-background-size: 1px 100%;
     background-size: 1px 100%;
     background-position: 0 0, 100% 0;
@@ -29,7 +29,7 @@
     left: 1px;
     width: calc(100% - 2px);
     height: 40px;
-    border-bottom: 1px solid var(--color-gray5);
+    border-bottom: 1px solid var(--color-gray8);
     z-index: -1;
     background-clip: padding-box;
   }
@@ -42,7 +42,7 @@
     top: 17px;
     left: 20px;
     border-radius: 50%;
-    background: var(--color-gray5);
-    box-shadow: 0 0 0 0.2rem var(--color-gray5), 1.5rem 0 0 0 var(--color-gray5), 1.5rem 0 0 0.2rem var(--color-gray5), 3rem 0 0 0 var(--color-gray5), 3rem 0 0 0.2rem var(--color-gray5);
+    background: var(--color-gray8);
+    box-shadow: 0 0 0 0.2rem var(--color-gray8), 1.5rem 0 0 0 var(--color-gray8), 1.5rem 0 0 0.2rem var(--color-gray8), 3rem 0 0 0 var(--color-gray8), 3rem 0 0 0.2rem var(--color-gray8);
   }
   

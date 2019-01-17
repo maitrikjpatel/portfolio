@@ -32,9 +32,9 @@
   background-position: -100% 0;
 }
 
-.card:hover > div:first-child {
+/* .card:hover > div:first-child {
   margin: -1px 0 0 -1px !important;
-}
+} */
 
 .cardImage{
   min-width: 100%;
@@ -60,8 +60,8 @@
   background-size: 100% 100%;
 }
 
-.cardContentRoleSpan,
-.cardContentSpan,
+.cardWorkSpan,
+.cardNotesSpan,
 .cardSource{
   display: block;
   font-size: 12px;
@@ -70,7 +70,7 @@
   color: var(--color-brandDark);
 }
 
-.card:hover .cardContentSpan {
+.card:hover .cardNotesSpan {
   display: none;
 }
 

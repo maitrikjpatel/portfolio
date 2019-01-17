@@ -14,8 +14,7 @@
 }
 
 .pageHr {
-  border-color: var(--color-gray5);
-  border-width: 0.5px;
+  border: 0.5px solid var(--color-gray5);
   background: none;
 }
 
