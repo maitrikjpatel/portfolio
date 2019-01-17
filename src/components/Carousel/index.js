@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-import { CarouselProvider, Slider, Image, Slide, ButtonBack, ButtonNext, DotGroup, ButtonPlay } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Image, Dot, Slide, ButtonBack, ButtonNext, DotGroup, ButtonPlay } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import BroswerFrame from '../BroswerFrame'
@@ -46,42 +46,48 @@ function Carousel(props) {
   // }
   
   return (
-    <React.Fragment>
+    <div className={styles.Carousel}>
       <h2>Variant Type : {variant}</h2>
-        <CarouselProvider
-          naturalSlideWidth={1024}
-          naturalSlideHeight={670}
-          totalSlides={4}
-          isPlaying
-          interval='2500'
-        >        
-          {/* <BroswerFrame> */}
-            <Slider className={styles.Slider}>
-              <Slide innerClassName={styles.Slide} index={1}><Image src={AviatioImage1} alt=""></Image><p className={styles.SlideText}>Image Name : 1</p></Slide>
-              <Slide innerClassName={styles.Slide} index={2}><Image src={AviatioImage2} alt=""></Image><p className={styles.SlideText}>Image Name : 2</p></Slide>
-              <Slide innerClassName={styles.Slide} index={3}><Image src={AviatioImage3} alt=""></Image><p className={styles.SlideText}>Image Name : 3</p></Slide>
-              <Slide innerClassName={styles.Slide} index={4}><Image src={AviatioImage4} alt=""></Image><p className={styles.SlideText}>Image Name : 4</p></Slide>
-            </Slider>
-          {/* </BroswerFrame> */}
-          <div>
-            <DotGroup className={styles.Dots}/>
-            <div className={styles.SliderControls}>
-              <ButtonBack className={styles.Back} />
-              <ButtonPlay 
-                childrenPlaying="&#9632;" 
-                childrenPaused="&#9654;" 
-                className={styles.PlayPause}>
-              </ButtonPlay> 
-              <ButtonNext className={styles.Next} />
-            </div>
+      <CarouselProvider
+        naturalSlideWidth={1024}
+        naturalSlideHeight={670}
+        totalSlides={4}
+        isPlaying
+        interval='4000'
+      >        
+        <Slider className={styles.Slider}>
+          <Slide innerClassName={styles.Slide} index={0}><Image src={AviatioImage1} alt=""></Image></Slide>
+          <Slide innerClassName={styles.Slide} index={1}><Image src={AviatioImage2} alt=""></Image></Slide>
+          <Slide innerClassName={styles.Slide} index={2}><Image src={AviatioImage3} alt=""></Image></Slide>
+          <Slide innerClassName={styles.Slide} index={3}><Image src={AviatioImage4} alt=""></Image></Slide>
+        </Slider>
+        <div className={styles.SliderActions}>
+        
+          <div className={styles.Dots}>
+            <Dot className={styles.Dot} slide={0}><p className={styles.SlideText}>Image Name : 1</p></Dot>
+            <Dot className={styles.Dot} slide={1}><p className={styles.SlideText}>Image Name : 2</p></Dot>
+            <Dot className={styles.Dot} slide={2}><p className={styles.SlideText}>Image Name : 3</p></Dot>
+            <Dot className={styles.Dot} slide={3}><p className={styles.SlideText}>Image Name : 4</p></Dot>
           </div>
-        </CarouselProvider>
-    </React.Fragment>
+
+          <div className={styles.SliderControls}>
+            <ButtonBack className={styles.Back} />
+            <ButtonPlay 
+              childrenPlaying="&#9632;" 
+              childrenPaused="&#9654;" 
+              className={styles.PlayPause} 
+            />
+            <ButtonNext className={styles.Next} />
+          </div>
+
+        </div>
+      </CarouselProvider>
+    </div>
   )
 }
 
 Carousel.propTypes = {
-  title: PropTypes.node.isRequired,
+  variant: PropTypes.string.isRequired,
 }
 
 Carousel.defaultProps = {
