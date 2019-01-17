@@ -13,7 +13,8 @@ import AviatioImageFour from './work/Aviatio/AviatioSS4.jpg'
 
 function Carousel(props) {
 
-  const { 
+  const {
+    title,
     variant,
     ...restProps 
   } = props
@@ -43,8 +44,6 @@ function Carousel(props) {
     }
   }
 
-  console.log(variant)
-
   const Slides = tempObject.Aviatio.Images.map((image, index) =>
     <Slide 
       innerClassName={styles.Slide} 
@@ -58,7 +57,7 @@ function Carousel(props) {
 
   return (
     <div className={styles.Carousel}>
-      <h3 className={styles.CarouselTitle}>{variant} Slider</h3>
+      <h3 className={styles.CarouselTitle}>{title}</h3>
       <CarouselProvider
         naturalSlideWidth={tempObject.Aviatio.width}
         naturalSlideHeight={tempObject.Aviatio.height}
@@ -89,10 +88,12 @@ function Carousel(props) {
 }
 
 Carousel.propTypes = {
+  title: PropTypes.string,
   variant: PropTypes.string.isRequired,
 }
 
 Carousel.defaultProps = {
+  title: null,
 }
 
 export default Carousel
