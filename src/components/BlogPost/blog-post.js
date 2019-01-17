@@ -78,9 +78,7 @@ class BlogPostTemplate extends React.Component {
         </div>
       </React.Fragment>
     )
-
-    console.log(post.code.body)
-    console.log(post.frontmatter)
+    
     return (
       <Layout location={this.props.location}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
