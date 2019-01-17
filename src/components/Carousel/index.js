@@ -56,19 +56,19 @@ function Carousel(props) {
         interval='4000'
       >        
         <Slider className={styles.Slider}>
-          <Slide innerClassName={styles.Slide} index={0}><Image src={AviatioImage1} alt=""></Image></Slide>
-          <Slide innerClassName={styles.Slide} index={1}><Image src={AviatioImage2} alt=""></Image></Slide>
-          <Slide innerClassName={styles.Slide} index={2}><Image src={AviatioImage3} alt=""></Image></Slide>
-          <Slide innerClassName={styles.Slide} index={3}><Image src={AviatioImage4} alt=""></Image></Slide>
+          <Slide innerClassName={styles.Slide} index={0}><Image src={AviatioImage1} alt=""></Image><p className={styles.SlideText}>Image Name : 1</p></Slide>
+          <Slide innerClassName={styles.Slide} index={1}><Image src={AviatioImage2} alt=""></Image><p className={styles.SlideText}>Image Name : 2</p></Slide>
+          <Slide innerClassName={styles.Slide} index={2}><Image src={AviatioImage3} alt=""></Image><p className={styles.SlideText}>Image Name : 3</p></Slide>
+          <Slide innerClassName={styles.Slide} index={3}><Image src={AviatioImage4} alt=""></Image><p className={styles.SlideText}>Image Name : 4</p></Slide>
         </Slider>
         <div className={styles.SliderActions}>
-        
-          <div className={styles.Dots}>
+          <DotGroup className={styles.Dots}/>
+          {/* <div className={styles.Dots}>
             <Dot className={styles.Dot} slide={0}><p className={styles.SlideText}>Image Name : 1</p></Dot>
             <Dot className={styles.Dot} slide={1}><p className={styles.SlideText}>Image Name : 2</p></Dot>
             <Dot className={styles.Dot} slide={2}><p className={styles.SlideText}>Image Name : 3</p></Dot>
             <Dot className={styles.Dot} slide={3}><p className={styles.SlideText}>Image Name : 4</p></Dot>
-          </div>
+          </div> */}
 
           <div className={styles.SliderControls}>
             <ButtonBack className={styles.Back} />
