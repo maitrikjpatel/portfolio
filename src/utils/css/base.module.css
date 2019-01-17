@@ -23,6 +23,8 @@ body {
 ::before {
   box-sizing: inherit;
   box-sizing: border-box;
+  /* Remove this in future */
+  font-weight: 500;
 }
 
 a {
