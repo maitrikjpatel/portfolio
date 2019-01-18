@@ -4,20 +4,24 @@ export default {
     height: "768",
     Images: [
       {
-        SrcUrl: './work/Gazetteer/GZSS1.PNG',
+        SrcUrl: 'Gazetteer/GZSS1.png',
         Text: "GZSS1",
       },
       {
-        SrcUrl: './work/Gazetteer/GZSS2.PNG',
+        SrcUrl: 'Gazetteer/GZSS2.png',
         Text: "GZSS2",
       },
       {
-        SrcUrl: './work/Gazetteer/GZSS3.PNG',
+        SrcUrl: 'Gazetteer/GZSS3.png',
         Text: "GZSS3", 
       },
       {
-        SrcUrl: './work/Gazetteer/GZSS4.PNG',
+        SrcUrl: 'Gazetteer/GZSS4.png',
         Text: "GZSS4",
+      },
+      {
+        SrcUrl: 'Gazetteer/GZSS5.png',
+        Text: "GZSS5",
       }
     ]
   },
@@ -26,19 +30,19 @@ export default {
     height: "670",
     Images: [
       {
-        SrcUrl: './work/Aviatio/AviatioSS1.jpg',
+        SrcUrl: 'Aviatio/AviatioSS1.jpg',
         Text: "AviatioImageOne",
       },
       {
-        SrcUrl: './work/Aviatio/AviatioSS2.jpg',
+        SrcUrl: 'Aviatio/AviatioSS2.jpg',
         Text: "AviatioImageTwo"
       },
       {
-        SrcUrl: './work/Aviatio/AviatioSS3.jpg',
+        SrcUrl: 'Aviatio/AviatioSS3.jpg',
         Text: "AviatioImageThree"
       },
       {
-        SrcUrl: './work/Aviatio/AviatioSS4.jpg',
+        SrcUrl: 'Aviatio/AviatioSS4.jpg',
         Text: "AviatioImageFour"
       }
     ]

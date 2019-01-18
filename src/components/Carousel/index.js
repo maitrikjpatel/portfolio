@@ -4,15 +4,8 @@ import PropTypes from 'prop-types'
 import { CarouselProvider, Slider, Image, Dot, Slide, ButtonBack, ButtonNext, DotGroup, ButtonPlay } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-import styles from './Carousel.module.css'
-
 import SliderImages from './work/index'
-
-import AviatioImageOne from './work/Aviatio/AviatioSS1.jpg'
-import AviatioImageTwo from './work/Aviatio/AviatioSS2.jpg'
-import AviatioImageThree from './work/Aviatio/AviatioSS3.jpg'
-import AviatioImageFour from './work/Aviatio/AviatioSS4.jpg'
-
+import styles from './Carousel.module.css'
 
 function Carousel(props) {
 
@@ -22,44 +15,24 @@ function Carousel(props) {
     ...restProps 
   } = props
 
-  console.log(SliderImages);
-  console.log(AviatioImageOne);
+  // Import All Images
+  function importAll(r) {
+    let AllImages = {};
+    r.keys().map((item, index) => { 
+      AllImages[item.replace('./', '')] = r(item); 
+    });
+    return AllImages;
+  }
+  const AllImages = importAll(require.context('./work/', true, /\.(png|jpe?g|svg)$/));
 
-  // NOTE: How to import multiple files at once
-  // NOTE: Gatsby-source-System for images and use those links or use graphql to get them
-  
-  // const SliderImages = {
-  //   Aviatio: {
-  //     width: "1024",
-  //     height: "670",
-  //     Images: [
-  //       {
-  //         SrcUrl: AviatioImageOne,
-  //         Text: "AviatioImageOne",
-  //       },
-  //       {
-  //         SrcUrl: AviatioImageTwo,
-  //         Text: "AviatioImageTwo"
-  //       },
-  //       {
-  //         SrcUrl: AviatioImageThree,
-  //         Text: "AviatioImageThree"
-  //       },
-  //       {
-  //         SrcUrl: AviatioImageFour,
-  //         Text: "AviatioImageFour"
-  //       }
-  //     ]
-  //   }
-  // }
-
-  const Slides = SliderImages.Gazetteer.Images.map((image, index) =>
+  // Import All Images
+  const Slides = SliderImages[variant].Images.map((image, index) =>
     <Slide 
       innerClassName={styles.Slide} 
       index={index}
       key={index}
       >
-        <Image src={image.SrcUrl} alt={image.Text} />
+        <Image src={AllImages[image.SrcUrl]} alt={image.Text} />
         <p className={styles.SlideText}>{image.Text}</p>
     </Slide>
   );
@@ -83,19 +56,16 @@ function Carousel(props) {
     <div className={styles.Carousel}>
       <h3 className={styles.CarouselTitle}>{title}</h3>
       <CarouselProvider
-        naturalSlideWidth={SliderImages.Aviatio.width}
-        naturalSlideHeight={SliderImages.Aviatio.height}
-        totalSlides={SliderImages.Aviatio.Images.length}
+        naturalSlideWidth={SliderImages[variant].width}
+        naturalSlideHeight={SliderImages[variant].height}
+        totalSlides={SliderImages[variant].Images.length}
         isPlaying
         interval='4000'
       >
-
         <Slider className={styles.Slider}>
           {Slides}
         </Slider>
-
         {SliderActions}
-
       </CarouselProvider>
     </div>
   )

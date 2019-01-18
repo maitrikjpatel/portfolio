@@ -9,6 +9,10 @@ const NotFoundPage = () => (
       title='Aviatio' 
       variant='Aviatio' 
     />
+    <Carousel 
+      title='Gazetteer' 
+      variant='Gazetteer' 
+    />
   </Layout>
 )
 
