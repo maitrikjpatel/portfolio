@@ -5,7 +5,6 @@ import PhotosGrid from '../components/PhotosGrid'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import GridColumnsLayout from '../components/GridColumnsLayout'
-import Carousel from '../components/Carousel'
 
 export default () => {
   const toolsList = [
@@ -78,8 +77,6 @@ export default () => {
             </li>
           </ul>
         </Bio>
-
-        <Carousel title="this is seond tile" />
         <div className={styles.aboutContent}>
           <p>
             I’m a Design Technologist currently living in Bay Area, California.
