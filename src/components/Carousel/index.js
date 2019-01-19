@@ -37,6 +37,8 @@ function Carousel(props) {
     </Slide>
   );
 
+  console.log(AllImages)
+
   const SliderActions = (
     <div className={styles.SliderActions}>
       <DotGroup className={styles.Dots}/>

@@ -46,5 +46,23 @@ export default {
         Text: "AviatioImageFour"
       }
     ]
+  },
+  Prosper: {
+    width: "3338",
+    height: "1858",
+    Images: [
+      {
+        SrcUrl: 'Prosper/ProsperSS1.png',
+        Text: "ProsperImageOne",
+      },
+      {
+        SrcUrl: 'Prosper/ProsperSS2.png',
+        Text: "ProsperImageTwo"
+      },
+      {
+        SrcUrl: 'Prosper/ProsperSS3.png',
+        Text: "ProsperImageThree"
+      }
+    ]
   }
 }
