@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Bio from '../components/Bio'
 import PhotoFrame from '../components/PhotoFrame'
-import styles from '../utils/css/pages/Photography.module.css'
+import styles from '../utilities/css/pages/Photography.module.css'
 
 export default () => (
   <Layout>

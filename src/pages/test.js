@@ -22,7 +22,9 @@ const test = () => (
       title='Gazetteer' 
       variant='Gazetteer' 
     />
-    <ImageWrapper srcName="Croudify/CroudifyColors.png"/>
+    <ImageWrapper srcName="CroudifyColors"/>
+    <ImageWrapper srcName="CroudifyLogo"/>
+    <ImageWrapper srcName="CroudifyWebsite"/>
   </Layout>
 )
 

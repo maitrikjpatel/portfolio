@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../utils/css/pages/About.module.css'
+import styles from '../utilities/css/pages/About.module.css'
 import Layout from '../components/Layout'
 import PhotosGrid from '../components/PhotosGrid'
 import Bio from '../components/Bio'

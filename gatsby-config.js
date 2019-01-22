@@ -1,8 +1,8 @@
-// import { siteInfo } from './src/utils/config/siteInfo.js' 
-// const siteInfo = require('./src/utils/config/siteInfo.js');
+// import { siteInfo } from './src/utilities/config/siteInfo.js' 
+// const siteInfo = require('./src/utilities/config/siteInfo.js');
 // Future review https://github.com/greglobinski/gatsby-starter-personal-blog/blob/master/gatsby-config.js
 
-const siteInfo = require("./src/utils/config/siteInfo.js");
+const siteInfo = require("./src/utilities/config/siteInfo.js");
 
 module.exports = {
   siteMetadata: {
@@ -132,7 +132,7 @@ module.exports = {
     // {
     //   resolve: 'gatsby-plugin-typography',
     //   options: {
-    //     pathToConfigModule: 'src/utils/typography',
+    //     pathToConfigModule: 'src/utilities/typography',
     //   },
     // },
   ],

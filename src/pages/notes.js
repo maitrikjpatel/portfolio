@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
 import Bio from '../components/Bio'
-import styles from '../utils/css/pages/Notes.module.css'
+import styles from '../utilities/css/pages/Notes.module.css'
 
 class NoteIndex extends React.Component {
   render() {
