@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from '../components/Carousel'
-import Image from '../components/Image'
+import ImageWrapper from '../components/ImageWrapper'
 import Layout from '../components/Layout/'
 
 const test = () => (
@@ -22,7 +22,7 @@ const test = () => (
       title='Gazetteer' 
       variant='Gazetteer' 
     />
-    <Image text="Image Test"/>
+    <ImageWrapper srcName="Croudify/CroudifyColors.png"/>
   </Layout>
 )
 
