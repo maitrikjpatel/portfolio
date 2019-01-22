@@ -6,7 +6,10 @@ import styles from './ImageWrapper.module.css'
 import PropTypes from 'prop-types'
 
 function ImageWrapper(props) {
-  const { srcName, ...restProps } = props
+  const { 
+    srcName, 
+    ...restProps 
+  } = props
 
   const AllSingleImages = importAll(require.context('../../Assets/Images/SingleImages/', true, /\.(png|jpe?g|svg)$/));
 

@@ -70,11 +70,20 @@ module.exports = {
       },
     },
 
-    // Google Source FileSystem for image/pages
+    // FileSystem for content pages
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/content`,
+        name: 'pages',
+      },
+    },
+
+    // FileSystem for image/pages
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/Assets/Images/SingleImages/`,
         name: 'pages',
       },
     },
