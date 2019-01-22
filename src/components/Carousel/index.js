@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { CarouselProvider, Slider, Image, Dot, Slide, ButtonBack, ButtonNext, DotGroup, ButtonPlay } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-import SliderImages from './work/index'
+import SliderImages from '../../Assets/Images/SliderImages/index'
 import styles from './Carousel.module.css'
 
 function Carousel(props) {
@@ -23,7 +23,7 @@ function Carousel(props) {
     });
     return AllImages;
   }
-  const AllImages = importAll(require.context('./work/', true, /\.(png|jpe?g|svg)$/));
+  const AllImages = importAll(require.context('../../Assets/Images/SliderImages/', true, /\.(png|jpe?g|svg)$/));
 
   // Import All Images
   const Slides = SliderImages[variant].Images.map((image, index) =>

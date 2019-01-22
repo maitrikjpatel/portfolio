@@ -70,14 +70,6 @@ module.exports = {
       },
     },
 
-    // MDX 
-    // {
-    //   resolve: `gatsby-mdx`,
-    //   options: {
-    //     extensions: [".mdx", ".md"]
-    //   }
-    // },
-
     // Google Source FileSystem for image/pages
     {
       resolve: `gatsby-source-filesystem`,
@@ -90,7 +82,6 @@ module.exports = {
     // Markdown Images
     {
       // resolve: `gatsby-transformer-remark`,
-
       resolve: `gatsby-mdx`,
       options: {
         extensions: ['.md', '.mdx'],
