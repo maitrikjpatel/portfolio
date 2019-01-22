@@ -13,6 +13,10 @@ function ImageWrapper(props) {
 
   const AllSingleImages = importAll(require.context('../../Assets/Images/SingleImages/', true, /\.(png|jpe?g|svg)$/));
 
+  // TODO: 
+  // 1. Pull graphql as per dynamic query by propNmae
+  // 2. Pull allImages and store it to imageSrc after if(queryOriginalName = propName)
+  
   return (
     <div>
       <img 
