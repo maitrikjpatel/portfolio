@@ -1,7 +1,9 @@
 import React from 'react'
+
 import { StaticQuery, graphql } from "gatsby"
 import { splitCamelCase } from '../../utilities/js'
-import PropTypes from 'prop-types'
+
+import styles from './ImageWrapper.module.css'
 import Img from 'gatsby-image'
 
 class ImageWrap extends React.Component {
@@ -11,24 +13,18 @@ class ImageWrap extends React.Component {
       srcName,
       ...restProps
     } = this.props
-    
-    const fluidImg = data.allImageSharp.edges.map((image, index) => {
+
+    var fluidSrc = data.allImageSharp.edges.find( function( image ){
       const fileName = image.node.fluid.originalName.replace(/\.[^/.]+$/, "")
-      if (fileName == srcName) {
-        return (
-          <Img
-            fluid={image.node.fluid}
-            alt={splitCamelCase(srcName)}
-            key={index}
-          />
-        )  
-      }
+      return fileName === srcName;
     })
 
     return (
-      <React.Fragment>
-        {fluidImg}
-      </React.Fragment>
+      <Img
+        className={styles.Image} 
+        fluid={fluidSrc.node.fluid}
+        alt={splitCamelCase(srcName)}
+      />
     )
   }
 }
@@ -54,3 +50,30 @@ export default props => (
     }
   />
 )
+
+// class ImageWrapper extends React.Component {
+//   render() { 
+//     const {
+//       srcName,
+//       ...restProps
+//     } = this.props
+
+//     const AllSingleImages = importAll(require.context('../../Assets/Images/SingleImages/', true, /\.(png|jpe?g|svg)$/));
+    
+//     return (
+//       <div>
+//         <img 
+//           className={styles.Image} 
+//           src={AllSingleImages[srcName.concat(".png")]} 
+//           alt={splitCamelCase(srcName)}
+//         />
+//       </div>
+//     )
+//   }
+// }
+
+// ImageWrapper.propTypes = {
+//   srcName: PropTypes.string.isRequired,
+// }
+
+// export default ImageWrapper

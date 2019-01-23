@@ -8,7 +8,7 @@ const test = () => (
     <h1>Components Test Page</h1>
     <ImageWrap srcName="CroudifyColors"/>
     <ImageWrap srcName="CroudifyLogo"/>
-    <ImageWrap srcName="CroudifyWebsite"/> */}
+    <ImageWrap srcName="CroudifyWebsite"/>
     <Carousel 
       title='Aviatio' 
       variant='Aviatio' 
