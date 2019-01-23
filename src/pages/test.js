@@ -6,14 +6,15 @@ import Layout from '../components/Layout/'
 const test = () => (
   <Layout>
     <h1>Components Test Page</h1>
-    <ImageWrap srcName="CroudifyColors"/>
+    {/* <ImageWrap srcName="CroudifyColors"/>
     <ImageWrap srcName="CroudifyLogo"/>
-    <ImageWrap srcName="CroudifyWebsite"/>
+    <ImageWrap srcName="CroudifyWebsite"/> */}
     <Carousel 
       title='Aviatio' 
-      variant='Aviatio' 
+      variant='Aviatio'
+      kind="vertical"
     />
-    <Carousel 
+    {/* <Carousel 
       title='Prosper' 
       variant='Prosper' 
     />
@@ -24,7 +25,7 @@ const test = () => (
     <Carousel 
       title='Gazetteer' 
       variant='Gazetteer' 
-    />
+    /> */}
   </Layout>
 )
 
