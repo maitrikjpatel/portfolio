@@ -1,11 +1,14 @@
 import React from 'react'
 import Carousel from '../components/Carousel'
-import ImageWrapper from '../components/ImageWrapper'
+import ImageWrap from '../components/ImageWrap'
 import Layout from '../components/Layout/'
 
 const test = () => (
   <Layout>
     <h1>Components Test Page</h1>
+    <ImageWrap srcName="CroudifyColors"/>
+    <ImageWrap srcName="CroudifyLogo"/>
+    <ImageWrap srcName="CroudifyWebsite"/> */}
     <Carousel 
       title='Aviatio' 
       variant='Aviatio' 
@@ -22,9 +25,6 @@ const test = () => (
       title='Gazetteer' 
       variant='Gazetteer' 
     />
-    <ImageWrapper srcName="CroudifyColors"/>
-    <ImageWrapper srcName="CroudifyLogo"/>
-    <ImageWrapper srcName="CroudifyWebsite"/>
   </Layout>
 )
 

@@ -52,6 +52,8 @@ function PostHeader(props) {
 
   const linkUrl = `https://${link}`
 
+  console.log(imageUrl)
+  
   let PostHeaderImage = (
     <React.Fragment>
       {imageUrl && <Img className={styles.PostHeaderImage} fluid={imageUrl} />}
