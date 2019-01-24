@@ -117,6 +117,28 @@
 
 /* Vertical */
 
+
+.VerticalSlider {
+  padding-bottom: 50px;
+}
+
+.VerticalSliderActions .SliderControls .Next,
+.VerticalSliderActions .SliderControls .Back  {
+  margin: 0;
+}
+
+.VerticalSliderActions .PlayPause {
+  padding-left: 0;
+}
+
+.VerticalSliderActions .Back:before {
+  margin: -10px 0 0 -50px;
+}
+
+.VerticalSliderActions .Next:before {
+  margin: -10px 0 0 50px;
+}
+
 @media (min-width: 64rem) {
   .VerticalSlider {
     width: calc( 100% - 70px);

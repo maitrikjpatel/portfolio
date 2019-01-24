@@ -101,6 +101,7 @@
   .footer ul{
     float: right;
     text-align: right;
+    margin: 0;
   }  
   .footerLinks li {
     padding-right: var(--space-15);

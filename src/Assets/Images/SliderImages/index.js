@@ -107,14 +107,9 @@ export default {
         SrcUrl: 'DSCom/DSGreenscoreTwo.png',
         Text: "DSGreenscoreTwo"
       },
-      ,
       {
         SrcUrl: 'DSCom/DSGreenscoreOne.png',
         Text: "DSGreenscoreOne"
-      },
-      {
-        SrcUrl: 'DSCom/DSGreenscoreTwo.png',
-        Text: "DSGreenscoreTwo"
       }
     ]
   }

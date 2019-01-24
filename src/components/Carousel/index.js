@@ -30,19 +30,19 @@ function Carousel(props) {
     </Slide>
   );
 
-  const mobileQuery = window.addEventListener('resize', function(){
-    console.log(window.innerWidth)
-    if (window.innerWidth > 1023) {
-      return mobileQuery
-    } else {
-      return mobileQuery
-    }
-  })
+  // const mobileQuery = window.addEventListener('resize', function(){
+  //   console.log(window.innerWidth)
+  //   if (window.innerWidth > 1023) {
+  //     return mobileQuery
+  //   } else {
+  //     return mobileQuery
+  //   }
+  // })
 
-  console.log(mobileQuery)
+  // console.log(mobileQuery)
 
   let SliderActions
-  if (kind === "vertical" && mobileQuery) {
+  if (kind === "vertical") {
     SliderActions = (
       <div className={styles.VerticalSliderActions}>
         <DotGroup className={styles.Dots}/>
@@ -74,7 +74,7 @@ function Carousel(props) {
     )
   }
   
-  const SliderClass = (kind === "vertical" && mobileQuery) ? styles.VerticalSlider : styles.Slider
+  const SliderClass = (kind === "vertical") ? styles.VerticalSlider : styles.Slider
 
   return (
     <div className={styles.Carousel}>
