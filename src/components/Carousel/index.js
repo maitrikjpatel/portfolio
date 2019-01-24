@@ -9,7 +9,6 @@ import SliderImages from '../../Assets/Images/SliderImages/index'
 import styles from './Carousel.module.css'
 
 function Carousel(props) {
-
   const {
     title,
     variant,
@@ -19,6 +18,7 @@ function Carousel(props) {
 
   const AllImages = importAll(require.context('../../Assets/Images/SliderImages/', true, /\.(png|jpe?g|svg)$/));
 
+  // Max 12 slides without title and 14 slides with title
   const Slides = SliderImages[variant].Images.map((image, index) =>
     <Slide 
       innerClassName={styles.Slide} 
@@ -30,20 +30,30 @@ function Carousel(props) {
     </Slide>
   );
 
+  const mobileQuery = window.addEventListener('resize', function(){
+    console.log(window.innerWidth)
+    if (window.innerWidth > 1023) {
+      return mobileQuery
+    } else {
+      return mobileQuery
+    }
+  })
+
+  console.log(mobileQuery)
 
   let SliderActions
-  if (kind === "vertical") {
+  if (kind === "vertical" && mobileQuery) {
     SliderActions = (
       <div className={styles.VerticalSliderActions}>
         <DotGroup className={styles.Dots}/>
         <div className={styles.SliderControls}>
+          <ButtonNext className={styles.Next} />
           <ButtonBack className={styles.Back} />
           <ButtonPlay 
             childrenPlaying="&#9632;" 
             childrenPaused="&#9654;" 
             className={styles.PlayPause} 
           />
-          <ButtonNext className={styles.Next} />
         </div>
       </div>
     )
@@ -64,8 +74,7 @@ function Carousel(props) {
     )
   }
   
-  // Trinary to define styles.Slider class
-  // SliderClass = (kind = vertical) : VerticalSlider ? slider
+  const SliderClass = (kind === "vertical" && mobileQuery) ? styles.VerticalSlider : styles.Slider
 
   return (
     <div className={styles.Carousel}>
@@ -77,10 +86,9 @@ function Carousel(props) {
         isPlaying
         interval='4000'
       >
-        <Slider className={styles.Slider}>
+        <Slider className={SliderClass}>
           {Slides}
         </Slider>
-
         {SliderActions}
       </CarouselProvider>
     </div>

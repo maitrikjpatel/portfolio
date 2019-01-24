@@ -10,22 +10,28 @@ const test = () => (
     <ImageWrap srcName="CroudifyLogo"/>
     <ImageWrap srcName="CroudifyWebsite"/> */}
     <Carousel 
-      title='Aviatio' 
-      variant='Aviatio'
+      title='DocuSignWeb' 
+      variant='DocuSignWeb'
       kind="vertical"
     />
-    {/* <Carousel 
+    <Carousel 
+      variant='DocuSignWeb'
+      kind="vertical"
+    />
+    <Carousel 
+      title='DocuSignWeb' 
+      variant='DocuSignWeb'
+    />
+    <Carousel 
+      kind="vertical"
       title='Prosper' 
       variant='Prosper' 
     />
     <Carousel 
+      kind="vertical"
       title='Croudify' 
       variant='Croudify' 
     />
-    <Carousel 
-      title='Gazetteer' 
-      variant='Gazetteer' 
-    /> */}
   </Layout>
 )
 

@@ -1,5 +1,6 @@
 .Carousel {
   margin: var(--space-25) 0;
+  position: relative;
 }
 
 .CarouselTitle {
@@ -116,6 +117,57 @@
 
 /* Vertical */
 
-.VerticalSliderActions {
-  background: lightblue;
+@media (min-width: 64rem) {
+  .VerticalSlider {
+    width: calc( 100% - 70px);
+    display: inline-block;
+  }
+  
+  .VerticalSlider li {
+   margin-bottom: 45px; 
+  }
+  
+  .VerticalSliderActions {
+    width: 70px;
+    position: absolute;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: calc(100% - 85px);
+  }
+  
+  .VerticalSliderActions .SliderControls {
+    display: block;
+    margin: 0;
+  }
+  
+  .VerticalSliderActions .SliderControls .Next,
+  .VerticalSliderActions .SliderControls .Back  {
+    margin: 15px 37.5px 35px;
+  }
+  
+  .VerticalSliderActions .PlayPause {
+    margin: 15px 23.5px;
+  }
+  
+  .VerticalSliderActions .Dots {
+    display: block;
+    width: 15px;
+    margin: 0 auto
+  }
+  
+  .VerticalSliderActions .Dots button {
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid var(--color-gray3);
+    background:  var(--color-gray3);
+  }
+  
+  .VerticalSliderActions .Dots button:disabled {
+    border: 1px solid  var(--color-gray7);
+    background: var(--color-gray7);
+  }  
 }
+
