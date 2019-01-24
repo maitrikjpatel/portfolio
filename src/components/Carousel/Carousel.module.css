@@ -41,7 +41,6 @@
 }
 
 .Dots button:disabled {
-  margin-top: 0.5px;
   border: 1px solid  var(--color-gray7);
   background: var(--color-gray7);
 }
