@@ -12,6 +12,8 @@
 }
 
 .Slide {
+  border: 1px solid var(--color-gray3);
+  box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.50);
 }
 
 .SlideText {
@@ -34,11 +36,12 @@
   width: 100%;
   height: 3px;
   padding: 0;
-  border: 1px solid var(--color-gray3);
-  background:  var(--color-gray3);
+  border: 1px solid var(--color-gray4);
+  background:  var(--color-gray4);
 }
 
 .Dots button:disabled {
+  margin-top: 0.5px;
   border: 1px solid  var(--color-gray7);
   background: var(--color-gray7);
 }
@@ -72,7 +75,7 @@
 
 .Next:disabled::before,
 .Back:disabled::before {
-  border-color: var(--color-gray3);
+  border-color: var(--color-gray4);
 }
 
 .Next:before,
@@ -116,8 +119,6 @@
 
 
 /* Vertical */
-
-
 .VerticalSlider {
   padding-bottom: 50px;
 }
@@ -170,6 +171,14 @@
     margin: 15px 37.5px 35px;
   }
   
+  .VerticalSliderActions .Back:before {
+    margin: 0 0 0 -5px;
+  }
+  
+  .VerticalSliderActions .Next:before {
+    margin: 0 0 0 -15px;
+  }
+  
   .VerticalSliderActions .PlayPause {
     margin: 15px 23.5px;
   }
@@ -182,13 +191,13 @@
   
   .VerticalSliderActions .Dots button {
     width: 100%;
-    margin: 10px auto;
-    border: 1px solid var(--color-gray3);
-    background:  var(--color-gray3);
+    margin: 8px auto;
+    border: 2px solid var(--color-gray4);
+    background:  var(--color-gray4);
   }
   
   .VerticalSliderActions .Dots button:disabled {
-    border: 1px solid  var(--color-gray7);
+    border: 3px solid  var(--color-gray7);
     background: var(--color-gray7);
   }  
 }

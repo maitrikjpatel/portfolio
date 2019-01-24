@@ -6,16 +6,16 @@ import Layout from '../components/Layout/'
 const test = () => (
   <Layout>
     <h1>Components Test Page</h1>
-    {/* <ImageWrap srcName="CroudifyColors"/>
+    <ImageWrap srcName="CroudifyColors"/>
     <ImageWrap srcName="CroudifyLogo"/>
-    <ImageWrap srcName="CroudifyWebsite"/> */}
+    <ImageWrap srcName="CroudifyWebsite"/>
     <Carousel 
-      title='DocuSignWeb' 
-      variant='DocuSignWeb'
+      title='Aviatio' 
+      variant='Aviatio'
       kind="vertical"
     />
     <Carousel 
-      variant='DocuSignWeb'
+      variant='Aviatio'
       kind="vertical"
     />
     <Carousel 
