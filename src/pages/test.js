@@ -18,20 +18,6 @@ const test = () => (
       variant='Aviatio'
       kind="vertical"
     />
-    <Carousel 
-      title='DocuSignWeb' 
-      variant='DocuSignWeb'
-    />
-    <Carousel 
-      kind="vertical"
-      title='Prosper' 
-      variant='Prosper' 
-    />
-    <Carousel 
-      kind="vertical"
-      title='Croudify' 
-      variant='Croudify' 
-    />
   </Layout>
 )
 

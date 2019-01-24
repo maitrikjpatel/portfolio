@@ -27,6 +27,10 @@
   4px 4px 0px var(--color-gray5),
   5px 5px 0px var(--color-gray5)
 }
+/* 
+.card:hover .cardContent {
+  margin-right: -1px;
+} */
 
 .card:hover .entryTitle {
   background-position: -100% 0;
@@ -35,6 +39,15 @@
 /* .card:hover > div:first-child {
   margin: -1px 0 0 -1px !important;
 } */
+
+.cardImageWrapper {
+  height: 200px;
+  margin: -1px -1px 0 -1px;
+}
+
+.card:hover .cardImageWrapper {
+  margin: -1px 0 0 -1px;
+}
 
 .cardImage{
   min-width: 100%;
