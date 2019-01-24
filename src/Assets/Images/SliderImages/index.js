@@ -1,4 +1,30 @@
 export default {
+  Sony: {
+    width: "1440",
+    height: "1024",
+    Images: [
+      {
+        SrcUrl: 'Sony/SonyHeroModuleWithNavigation.png',
+        Text: "SonyHeroModuleWithNavigation",
+      },
+      {
+        SrcUrl: 'Sony/SonyImageComparisonModule.png',
+        Text: "SonyImageComparisonModule",
+      },
+      {
+        SrcUrl: 'Sony/SonyImageSliderWithImageTabs.png',
+        Text: "SonyImageSliderWithImageTabs", 
+      },
+      {
+        SrcUrl: 'Sony/SonyImageSliderWithNumericTabs.png',
+        Text: "SonyImageSliderWithNumericTabs",
+      },
+      {
+        SrcUrl: 'Sony/SonyLensSliderWithThumbnailImages.png',
+        Text: "SonyLensSliderWithThumbnailImages",
+      }
+    ]
+  },
   Gazetteer: {
     width: "1024",
     height: "768",

@@ -143,6 +143,7 @@
   .VerticalSlider {
     width: calc( 100% - 70px);
     display: inline-block;
+    padding-bottom: 0;
   }
   
   .VerticalSlider li {

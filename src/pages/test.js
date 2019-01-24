@@ -9,6 +9,7 @@ const test = () => (
     <ImageWrap srcName="CroudifyColors"/>
     <ImageWrap srcName="CroudifyLogo"/>
     <ImageWrap srcName="CroudifyWebsite"/>
+    <ImageWrap srcName="SonyNavigationWithFilter"/>
     <Carousel 
       title='Aviatio' 
       variant='Aviatio'

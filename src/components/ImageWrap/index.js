@@ -3,7 +3,7 @@ import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
 import { splitCamelCase } from '../../utilities/js'
 
-import styles from './ImageWrapper.module.css'
+import styles from './ImageWrap.module.css'
 import Img from 'gatsby-image'
 
 class ImageWrap extends React.Component {
@@ -11,6 +11,7 @@ class ImageWrap extends React.Component {
     const {
       data,
       srcName,
+      title,
       ...restProps
     } = this.props
 
@@ -19,12 +20,22 @@ class ImageWrap extends React.Component {
       return fileName === srcName;
     })
 
+    let titleText
+    if (title) {
+      titleText = title
+    }else {
+      titleText = splitCamelCase(srcName)
+    }
+    
     return (
-      <Img
-        className={styles.Image} 
-        fluid={fluidSrc.node.fluid}
-        alt={splitCamelCase(srcName)}
-      />
+      <div className={styles.ImageWrap}>
+        <Img
+          className={styles.Image} 
+          fluid={fluidSrc.node.fluid}
+          alt={titleText}
+        />
+        <p>{titleText}</p>
+      </div>
     )
   }
 }
