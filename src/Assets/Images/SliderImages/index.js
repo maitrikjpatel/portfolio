@@ -25,6 +25,68 @@ export default {
       }
     ]
   },
+  Aviatio: {
+    width: "1024",
+    height: "670",
+    Images: [
+      {
+        SrcUrl: 'Aviatio/AviatioLandingPage.jpg',
+        Text: "AviatioLandingPage",
+      },
+      {
+        SrcUrl: 'Aviatio/AviatioSelectRegion.jpg',
+        Text: "AviatioSelectRegion",
+      },
+      {
+        SrcUrl: 'Aviatio/AviatioPhoenixAirportReport.jpg',
+        Text: "AviatioPhoenixAirportReport",
+      },
+      {
+        SrcUrl: 'Aviatio/AviatioOrlandoAirportReport.jpg',
+        Text: "AviatioOrlandoAirportReport",
+      },
+      {
+        SrcUrl: 'Aviatio/AviatioSelectRegionFromReport.jpg',
+        Text: "AviatioSelectRegionFromReport",
+      }
+    ]
+  },
+  Croudify: {
+    width: "2880",
+    height: "2048",
+    Images: [
+      {
+        SrcUrl: 'Croudify/CroudifyRegister.png',
+        Text: "CroudifyRegister",
+      },
+      {
+        SrcUrl: 'Croudify/CroudifyProductLandingPage.png',
+        Text: "CroudifyProductLandingPage",
+      },
+      {
+        SrcUrl: 'Croudify/CroudifySelectLoans.png',
+        Text: "CroudifySelectLoans",
+      },
+      {
+        SrcUrl: 'Croudify/CroudifyAutomateLoans.png',
+        Text: "CroudifyAutomateLoans",
+      }
+    ]
+  },
+  CroudifyConcept: {
+    width: "1406",
+    height: "900",
+    Images: [
+      {
+        SrcUrl: 'Croudify/CroudifyProductConceptDesignReport.png',
+        Text: "CroudifyProductConceptDesignReport",
+      },
+      {
+        SrcUrl: 'Croudify/CroudifyProductConceptDesignLadning.png',
+        Text: "CroudifyProductConceptDesignLadning",
+      }
+    ]
+  },
   Gazetteer: {
     width: "1024",
     height: "768",
@@ -51,28 +113,6 @@ export default {
       }
     ]
   },
-  Aviatio: {
-    width: "1024",
-    height: "670",
-    Images: [
-      {
-        SrcUrl: 'Aviatio/AviatioSS1.jpg',
-        Text: "AviatioImageOne",
-      },
-      {
-        SrcUrl: 'Aviatio/AviatioSS2.jpg',
-        Text: "AviatioImageTwo"
-      },
-      {
-        SrcUrl: 'Aviatio/AviatioSS3.jpg',
-        Text: "AviatioImageThree"
-      },
-      {
-        SrcUrl: 'Aviatio/AviatioSS4.jpg',
-        Text: "AviatioImageFour"
-      }
-    ]
-  },
   Prosper: {
     width: "3338",
     height: "1858",
@@ -88,28 +128,6 @@ export default {
       {
         SrcUrl: 'Prosper/ProsperSS3.png',
         Text: "ProsperImageThree"
-      }
-    ]
-  },
-  Croudify: {
-    width: "1440",
-    height: "1024",
-    Images: [
-      {
-        SrcUrl: 'Croudify/CroudifySS1.png',
-        Text: "CroudifyImageOne",
-      },
-      {
-        SrcUrl: 'Croudify/CroudifySS2.png',
-        Text: "CroudifyImageTwo"
-      },
-      {
-        SrcUrl: 'Croudify/CroudifySS3.png',
-        Text: "CroudifyImageThree"
-      },
-      {
-        SrcUrl: 'Croudify/CroudifySS4.png',
-        Text: "CroudifyImageFour"
       }
     ]
   },
