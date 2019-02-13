@@ -10,8 +10,8 @@ header{
 .header { 
   padding: var(--space-15) 0;
   height: var(--space-60);
-  composes: fullWidth from "../../utils/css/reusable.css";
-  composes: universalPadding from "../../utils/css/reusable.css";
+  composes: fullWidth from "../../utilities/css/reusable.css";
+  composes: universalPadding from "../../utilities/css/reusable.css";
 }
 
 .header p, .header ul {

@@ -3,7 +3,13 @@ import PropTypes from 'prop-types'
 import styles from './Bio.module.css'
 
 function Bio(props) {
-  const { children, description, title, titleName, ...restProps } = props
+  const { 
+    children, 
+    description, 
+    title, 
+    titleName, 
+    ...restProps 
+  } = props
 
   return (
     <div className={styles.Bio}>

@@ -1,8 +1,8 @@
-// import { siteInfo } from './src/utils/config/siteInfo.js' 
-// const siteInfo = require('./src/utils/config/siteInfo.js');
+// import { siteInfo } from './src/utilities/config/siteInfo.js' 
+// const siteInfo = require('./src/utilities/config/siteInfo.js');
 // Future review https://github.com/greglobinski/gatsby-starter-personal-blog/blob/master/gatsby-config.js
 
-const siteInfo = require("./src/utils/config/siteInfo.js");
+const siteInfo = require("./src/utilities/config/siteInfo.js");
 
 module.exports = {
   siteMetadata: {
@@ -70,15 +70,7 @@ module.exports = {
       },
     },
 
-    // MDX 
-    // {
-    //   resolve: `gatsby-mdx`,
-    //   options: {
-    //     extensions: [".mdx", ".md"]
-    //   }
-    // },
-
-    // Google Source FileSystem for image/pages
+    // FileSystem for content pages
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -87,10 +79,18 @@ module.exports = {
       },
     },
 
+    // FileSystem for image/pages
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/Assets/Images/SingleImages/`,
+        name: 'pages',
+      },
+    },
+
     // Markdown Images
     {
       // resolve: `gatsby-transformer-remark`,
-
       resolve: `gatsby-mdx`,
       options: {
         extensions: ['.md', '.mdx'],
@@ -141,7 +141,7 @@ module.exports = {
     // {
     //   resolve: 'gatsby-plugin-typography',
     //   options: {
-    //     pathToConfigModule: 'src/utils/typography',
+    //     pathToConfigModule: 'src/utilities/typography',
     //   },
     // },
   ],

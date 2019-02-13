@@ -1,5 +1,5 @@
 .PostTitleWrapper { 
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .PostHeaderImage {
@@ -12,6 +12,7 @@
 .PostTitle,
 .PostSubTitle {
   text-align: center;
+  margin-bottom: -16px;
 }
 
 .PostDescription {

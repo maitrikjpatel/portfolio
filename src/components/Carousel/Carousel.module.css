@@ -1,5 +1,6 @@
 .Carousel {
   margin: var(--space-25) 0;
+  position: relative;
 }
 
 .CarouselTitle {
@@ -11,6 +12,8 @@
 }
 
 .Slide {
+  border: 1px solid var(--color-gray3);
+  box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.50);
 }
 
 .SlideText {
@@ -33,40 +36,14 @@
   width: 100%;
   height: 3px;
   padding: 0;
-  border: 1px solid var(--color-gray3);
-  background:  var(--color-gray3);
+  border: 1px solid var(--color-gray4);
+  background:  var(--color-gray4);
 }
 
 .Dots button:disabled {
   border: 1px solid  var(--color-gray7);
   background: var(--color-gray7);
 }
-
-/* .Dot {
-  width: 100%;
-  height: 3px;
-  padding: 0;
-  border: 1px solid var(--color-gray3);
-  background:  var(--color-gray3);
-}
-
-.Dot:disabled {
-  border: 1px solid  var(--color-gray7);
-  background: var(--color-gray7);
-}
-
-.Dot .SlideText {
-  display: none;
-  color: var(--color-gray10);
-  margin: 15px auto;
-}
-
-.Dot:disabled .SlideText {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-} */
 
 .SliderControls {
   margin: 25px auto 0;
@@ -97,7 +74,7 @@
 
 .Next:disabled::before,
 .Back:disabled::before {
-  border-color: var(--color-gray3);
+  border-color: var(--color-gray4);
 }
 
 .Next:before,
@@ -138,3 +115,90 @@
   font-size: 30px;
   color: var(--color-gray7);
 }
+
+
+/* Vertical */
+.VerticalSlider {
+  padding-bottom: 50px;
+}
+
+.VerticalSliderActions .SliderControls .Next,
+.VerticalSliderActions .SliderControls .Back  {
+  margin: 0;
+}
+
+.VerticalSliderActions .PlayPause {
+  padding-left: 0;
+}
+
+.VerticalSliderActions .Back:before {
+  margin: -10px 0 0 -50px;
+}
+
+.VerticalSliderActions .Next:before {
+  margin: -10px 0 0 50px;
+}
+
+@media (min-width: 64rem) {
+  .VerticalSlider {
+    width: calc( 100% - 70px);
+    display: inline-block;
+    padding-bottom: 0;
+  }
+  
+  .VerticalSlider li {
+   margin-bottom: 45px; 
+  }
+  
+  .VerticalSliderActions {
+    width: 70px;
+    position: absolute;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: calc(100% - 85px);
+  }
+  
+  .VerticalSliderActions .SliderControls {
+    display: block;
+    margin: 0;
+  }
+  
+  .VerticalSliderActions .SliderControls .Next,
+  .VerticalSliderActions .SliderControls .Back  {
+    margin: 15px 37.5px 35px;
+  }
+  
+  .VerticalSliderActions .Back:before {
+    margin: 0 0 0 -5px;
+  }
+  
+  .VerticalSliderActions .Next:before {
+    margin: 0 0 0 -15px;
+  }
+  
+  .VerticalSliderActions .PlayPause {
+    margin: 15px 23.5px;
+  }
+  
+  .VerticalSliderActions .Dots {
+    display: block;
+    width: 15px;
+    margin: 0 auto
+  }
+  
+  .VerticalSliderActions .Dots button {
+    width: 100%;
+    margin: 8px auto;
+    border: 2px solid var(--color-gray4);
+    background:  var(--color-gray4);
+  }
+  
+  .VerticalSliderActions .Dots button:disabled {
+    border: 3px solid  var(--color-gray7);
+    background: var(--color-gray7);
+  }  
+}
+

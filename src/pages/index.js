@@ -7,7 +7,7 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
 
-import styles from '../utils/css/pages/Work.module.css'
+import styles from '../utilities/css/pages/Work.module.css'
 
 class BlogIndex extends React.Component {
   render() {
