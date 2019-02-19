@@ -87,7 +87,7 @@ export default {
   },
   Waxman: {
     width: "1024",
-    height: "768",
+    height: "735",
     Images: [
       {
         SrcUrl: 'Actuate/WaxManStoreReport.png',
@@ -135,6 +135,7 @@ export default {
       }
     ]
   },
+  // InProgress
   Prosper: {
     width: "3338",
     height: "1858",
