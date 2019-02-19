@@ -7,7 +7,6 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import SliderImages from '../../Assets/Images/SliderImages/index'
 import styles from './Carousel.module.css'
-import BrowserFrame from '../BroswerFrame'
 
 function Carousel(props) {
   const {
@@ -27,27 +26,16 @@ function Carousel(props) {
       key={index}
       >
         <Image src={AllImages[image.SrcUrl]} alt={splitCamelCase(image.Text)} />
-        <p className={styles.SlideText}>{splitCamelCase(image.Text)}</p>
+        <p className={styles.CarouselText}>{splitCamelCase(image.Text)}</p>
     </Slide>
   );
 
-  // const mobileQuery = window.addEventListener('resize', function(){
-  //   console.log(window.innerWidth)
-  //   if (window.innerWidth > 1023) {
-  //     return mobileQuery
-  //   } else {
-  //     return mobileQuery
-  //   }
-  // })
-
-  // console.log(mobileQuery)
-
-  let SliderActions
+  let CarouselActions
   if (kind === "vertical") {
-    SliderActions = (
-      <div className={styles.VerticalSliderActions}>
+    CarouselActions = (
+      <div className={styles.VerticalCarouselActions}>
         <DotGroup className={styles.Dots}/>
-        <div className={styles.SliderControls}>
+        <div className={styles.CarouselControls}>
           <ButtonNext className={styles.Next} />
           <ButtonBack className={styles.Back} />
           <ButtonPlay 
@@ -59,10 +47,10 @@ function Carousel(props) {
       </div>
     )
   } else {
-    SliderActions = (
-      <div className={styles.SliderActions}>
+    CarouselActions = (
+      <div className={styles.CarouselActions}>
         <DotGroup className={styles.Dots}/>
-        <div className={styles.SliderControls}>
+        <div className={styles.CarouselControls}>
           <ButtonBack className={styles.Back} />
           <ButtonPlay 
             childrenPlaying="&#9632;" 
@@ -88,11 +76,9 @@ function Carousel(props) {
         interval='4000'
       >
         <Slider className={SliderClass}>
-          {/* <BrowserFrame> */}
-            {Slides}
-          {/* </BrowserFrame> */}
+          {Slides}
         </Slider>
-        {SliderActions}
+        {CarouselActions}
       </CarouselProvider>
     </div>
   )

@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import PhotosGrid from '../components/PhotosGrid'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
-import GridColumnsLayout from '../components/GridColumnsLayout'
+import SkillsColumn from '../components/SkillsColumn'
 
 export default () => {
   const toolsList = [
@@ -143,7 +143,7 @@ export default () => {
 
           <Tags tags={toolsList} />
 
-          <GridColumnsLayout items={skillsList} />
+          <SkillsColumn items={skillsList} />
 
           <h3 className={styles.sectionTitle}>What people say about me</h3>
 

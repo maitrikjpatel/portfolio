@@ -7,6 +7,12 @@
   text-align: center;
 }
 
+.CarouselText {
+  text-align: center;
+  color: var(--color-gray10);
+  margin: var(--space-15) auto;
+}
+
 .Slider {
   padding-bottom: 50px;
 }
@@ -16,13 +22,7 @@
   box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.50);
 }
 
-.SlideText {
-  text-align: center;
-  color: var(--color-gray10);
-  margin: var(--space-15) auto;
-}
-
-.SliderActions {
+.CarouselActions {
   margin: var(--space-10) auto 0;
 }
 
@@ -45,7 +45,7 @@
   background: var(--color-gray7);
 }
 
-.SliderControls {
+.CarouselControls {
   margin: 25px auto 0;
   display: flex;
   justify-content: center;
@@ -122,20 +122,20 @@
   padding-bottom: 50px;
 }
 
-.VerticalSliderActions .SliderControls .Next,
-.VerticalSliderActions .SliderControls .Back  {
+.VerticalCarouselActions .CarouselControls .Next,
+.VerticalCarouselActions .CarouselControls .Back  {
   margin: 0;
 }
 
-.VerticalSliderActions .PlayPause {
+.VerticalCarouselActions .PlayPause {
   padding-left: 0;
 }
 
-.VerticalSliderActions .Back:before {
+.VerticalCarouselActions .Back:before {
   margin: -10px 0 0 -50px;
 }
 
-.VerticalSliderActions .Next:before {
+.VerticalCarouselActions .Next:before {
   margin: -10px 0 0 50px;
 }
 
@@ -150,7 +150,7 @@
    margin-bottom: 45px; 
   }
   
-  .VerticalSliderActions {
+  .VerticalCarouselActions {
     width: 70px;
     position: absolute;
     display: inline-flex;
@@ -161,42 +161,42 @@
     height: calc(100% - 85px);
   }
   
-  .VerticalSliderActions .SliderControls {
+  .VerticalCarouselActions .CarouselControls {
     display: block;
     margin: 0;
   }
   
-  .VerticalSliderActions .SliderControls .Next,
-  .VerticalSliderActions .SliderControls .Back  {
+  .VerticalCarouselActions .CarouselControls .Next,
+  .VerticalCarouselActions .CarouselControls .Back  {
     margin: 15px 37.5px 35px;
   }
   
-  .VerticalSliderActions .Back:before {
+  .VerticalCarouselActions .Back:before {
     margin: 0 0 0 -5px;
   }
   
-  .VerticalSliderActions .Next:before {
+  .VerticalCarouselActions .Next:before {
     margin: 0 0 0 -15px;
   }
   
-  .VerticalSliderActions .PlayPause {
+  .VerticalCarouselActions .PlayPause {
     margin: 15px 23.5px;
   }
   
-  .VerticalSliderActions .Dots {
+  .VerticalCarouselActions .Dots {
     display: block;
     width: 15px;
     margin: 0 auto
   }
   
-  .VerticalSliderActions .Dots button {
+  .VerticalCarouselActions .Dots button {
     width: 100%;
     margin: 8px auto;
     border: 2px solid var(--color-gray4);
     background:  var(--color-gray4);
   }
   
-  .VerticalSliderActions .Dots button:disabled {
+  .VerticalCarouselActions .Dots button:disabled {
     border: 3px solid  var(--color-gray7);
     background: var(--color-gray7);
   }  
