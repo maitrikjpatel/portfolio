@@ -30,27 +30,75 @@ export default {
     height: "670",
     Images: [
       {
-        SrcUrl: 'Aviatio/AviatioLandingPage.jpg',
+        SrcUrl: 'Actuate/AviatioLandingPage.jpg',
         Text: "AviatioLandingPage",
       },
       {
-        SrcUrl: 'Aviatio/AviatioSelectRegion.jpg',
+        SrcUrl: 'Actuate/AviatioSelectRegion.jpg',
         Text: "AviatioSelectRegion",
       },
       {
-        SrcUrl: 'Aviatio/AviatioPhoenixAirportReport.jpg',
+        SrcUrl: 'Actuate/AviatioPhoenixAirportReport.jpg',
         Text: "AviatioPhoenixAirportReport",
       },
       {
-        SrcUrl: 'Aviatio/AviatioOrlandoAirportReport.jpg',
+        SrcUrl: 'Actuate/AviatioOrlandoAirportReport.jpg',
         Text: "AviatioOrlandoAirportReport",
       },
       {
-        SrcUrl: 'Aviatio/AviatioSelectRegionFromReport.jpg',
+        SrcUrl: 'Actuate/AviatioSelectRegionFromReport.jpg',
         Text: "AviatioSelectRegionFromReport",
       }
     ]
   },
+  Gazetteer: {
+    width: "1024",
+    height: "768",
+    Images: [
+      {
+        SrcUrl: 'Actuate/GazetteerEuropeReport.png',
+        Text: 'GazetteerEuropeReport.png'
+      },
+      {
+        SrcUrl: 'Actuate/GazetteerListBasedNavigation.png',
+        Text: 'GazetteerListBasedNavigation.png'
+      },
+      {
+        SrcUrl: 'Actuate/GazetteerLogin.png',
+        Text: 'GazetteerLogin.png'
+      },
+      {
+        SrcUrl: 'Actuate/GazetteerMapBaedNavigationSelection.png',
+        Text: 'GazetteerMapBaedNavigationSelection.png'
+      },
+      {
+        SrcUrl: 'Actuate/GazetteerMapBasedNavigation.png',
+        Text: 'GazetteerMapBasedNavigation.png'
+      },
+      {
+        SrcUrl: 'Actuate/GazetteerReport.png',
+        Text: 'GazetteerReport.png'
+      },
+      {
+        SrcUrl: 'Actuate/GazetteerSouthEuropeReport.png',
+        Text: 'GazetteerSouthEuropeReport.png'
+      }
+    ]
+  },
+  Waxman: {
+    width: "1024",
+    height: "768",
+    Images: [
+      {
+        SrcUrl: 'Actuate/WaxManStoreReport.png',
+        Text: 'WaxManStoreReport.png'
+      },
+      {
+        SrcUrl: 'Actuate/WaxManStoreDataReporting.png',
+        Text: 'WaxManStoreDataReporting.png'
+      }
+    ]
+  },  
   Croudify: {
     width: "2880",
     height: "2048",
@@ -84,32 +132,6 @@ export default {
       {
         SrcUrl: 'Croudify/CroudifyProductConceptDesignLadning.png',
         Text: "CroudifyProductConceptDesignLadning",
-      }
-    ]
-  },
-  Gazetteer: {
-    width: "1024",
-    height: "768",
-    Images: [
-      {
-        SrcUrl: 'Gazetteer/GZSS1.png',
-        Text: "GZSS1",
-      },
-      {
-        SrcUrl: 'Gazetteer/GZSS2.png',
-        Text: "GZSS2",
-      },
-      {
-        SrcUrl: 'Gazetteer/GZSS3.png',
-        Text: "GZSS3", 
-      },
-      {
-        SrcUrl: 'Gazetteer/GZSS4.png',
-        Text: "GZSS4",
-      },
-      {
-        SrcUrl: 'Gazetteer/GZSS5.png',
-        Text: "GZSS5",
       }
     ]
   },

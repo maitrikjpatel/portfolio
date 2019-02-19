@@ -17,7 +17,6 @@ const test = () => (
     />
     <Carousel 
       variant='Aviatio'
-      kind="vertical"
     />
   </Layout>
 )

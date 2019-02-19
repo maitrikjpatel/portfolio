@@ -7,6 +7,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import SliderImages from '../../Assets/Images/SliderImages/index'
 import styles from './Carousel.module.css'
+import BrowserFrame from '../BroswerFrame'
 
 function Carousel(props) {
   const {
@@ -87,7 +88,9 @@ function Carousel(props) {
         interval='4000'
       >
         <Slider className={SliderClass}>
-          {Slides}
+          {/* <BrowserFrame> */}
+            {Slides}
+          {/* </BrowserFrame> */}
         </Slider>
         {SliderActions}
       </CarouselProvider>
