@@ -18,6 +18,8 @@ class PhotoGallery extends Component {
     this.gotoPrevious = this.gotoPrevious.bind(this);
 
     const {
+      columns,
+      margin,
       title,
       variant,
       ...restProps
@@ -49,6 +51,8 @@ class PhotoGallery extends Component {
 
   render() {
     const {
+      columns,
+      margin,
       title,
       variant,
       ...restProps
@@ -62,8 +66,8 @@ class PhotoGallery extends Component {
         console.log(image.Text)
         VariantImages[index] = {
           src : AllImages[image.SrcUrl],
-          width: Number(SliderImages[variant].width),
-          height: Number(SliderImages[variant].height),
+          width: Number(image.width),
+          height: Number(image.height),
           caption: splitCamelCase(image.Text),
           alt: splitCamelCase(image.Text), 
           key: index,
@@ -84,7 +88,8 @@ class PhotoGallery extends Component {
         <Gallery 
           photos={VariantImages} 
           onClick={this.openLightbox} 
-          margin={5}
+          margin={margin}
+          columns={columns}
         />
         <Lightbox 
           images={VariantImages}
@@ -100,11 +105,15 @@ class PhotoGallery extends Component {
 }
 
 PhotoGallery.propTypes = {
+  columns: PropTypes.number,
+  margin: PropTypes.number,
   title: PropTypes.string,
   variant: PropTypes.string.isRequired,
 }
 
 PhotoGallery.defaultProps = {
+  columns: 3,
+  margin: 5,
   title: null,
 }
 

@@ -8,9 +8,10 @@ const test = () => (
   <Layout>
     <PhotoGallery variant="Sony"/>
     <PhotoGallery variant="Aviatio" title="Aviatio"/>
-    <PhotoGallery variant="Waxman" title="Waxman"/>
-    <PhotoGallery variant="Croudify" title="Croudify"/>
-
+    <PhotoGallery variant="Gazetteer" title="Gazetteer"/>
+    <PhotoGallery variant="Waxman" title="Waxman" columns={2}/>
+    <PhotoGallery variant="Croudify" title="Croudify" columns={2}/>
+    <PhotoGallery variant="CroudifyConcept" title="CroudifyConcept" columns={2}/>
   </Layout>
 )
 

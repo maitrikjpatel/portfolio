@@ -6,22 +6,32 @@ export default {
       {
         SrcUrl: 'Sony/SonyHeroModuleWithNavigation.png',
         Text: "SonyHeroModuleWithNavigation",
+        width: "1440",
+        height: "1024",
       },
       {
         SrcUrl: 'Sony/SonyImageComparisonModule.png',
         Text: "SonyImageComparisonModule",
+        width: "1440",
+        height: "1024",
       },
       {
         SrcUrl: 'Sony/SonyImageSliderWithImageTabs.png',
-        Text: "SonyImageSliderWithImageTabs", 
+        Text: "SonyImageSliderWithImageTabs",
+        width: "1440",
+        height: "1024", 
       },
       {
         SrcUrl: 'Sony/SonyImageSliderWithNumericTabs.png',
         Text: "SonyImageSliderWithNumericTabs",
+        width: "1440",
+        height: "1024",
       },
       {
         SrcUrl: 'Sony/SonyLensSliderWithThumbnailImages.png',
         Text: "SonyLensSliderWithThumbnailImages",
+        width: "1440",
+        height: "1024",
       }
     ]
   },
@@ -32,22 +42,32 @@ export default {
       {
         SrcUrl: 'Actuate/AviatioLandingPage.jpg',
         Text: "AviatioLandingPage",
+        width: "1024",
+        height: "670",
       },
       {
         SrcUrl: 'Actuate/AviatioSelectRegion.jpg',
         Text: "AviatioSelectRegion",
+        width: "1024",
+        height: "670",
       },
       {
         SrcUrl: 'Actuate/AviatioPhoenixAirportReport.jpg',
         Text: "AviatioPhoenixAirportReport",
+        width: "1024",
+        height: "670",
       },
       {
         SrcUrl: 'Actuate/AviatioOrlandoAirportReport.jpg',
         Text: "AviatioOrlandoAirportReport",
+        width: "1024",
+        height: "670",
       },
       {
         SrcUrl: 'Actuate/AviatioSelectRegionFromReport.jpg',
         Text: "AviatioSelectRegionFromReport",
+        width: "1024",
+        height: "670",
       }
     ]
   },
@@ -57,31 +77,45 @@ export default {
     Images: [
       {
         SrcUrl: 'Actuate/GazetteerEuropeReport.png',
-        Text: 'GazetteerEuropeReport'
+        Text: 'GazetteerEuropeReport',
+        width: "1024",
+        height: "768",
       },
       {
         SrcUrl: 'Actuate/GazetteerListBasedNavigation.png',
-        Text: 'GazetteerListBasedNavigation'
+        Text: 'GazetteerListBasedNavigation',
+        width: "1024",
+        height: "768",
       },
       {
         SrcUrl: 'Actuate/GazetteerLogin.png',
-        Text: 'GazetteerLogin'
+        Text: 'GazetteerLogin',
+        width: "1024",
+        height: "768",
       },
       {
         SrcUrl: 'Actuate/GazetteerMapBaedNavigationSelection.png',
-        Text: 'GazetteerMapBaedNavigationSelection'
+        Text: 'GazetteerMapBaedNavigationSelection',
+        width: "1024",
+        height: "768",
       },
       {
         SrcUrl: 'Actuate/GazetteerMapBasedNavigation.png',
-        Text: 'GazetteerMapBasedNavigation'
+        Text: 'GazetteerMapBasedNavigation',
+        width: "1024",
+        height: "768",
       },
       {
         SrcUrl: 'Actuate/GazetteerReport.png',
-        Text: 'GazetteerReport'
+        Text: 'GazetteerReport',
+        width: "1024",
+        height: "768",
       },
       {
         SrcUrl: 'Actuate/GazetteerSouthEuropeReport.png',
-        Text: 'GazetteerSouthEuropeReport'
+        Text: 'GazetteerSouthEuropeReport',
+        width: "1024",
+        height: "768",
       }
     ]
   },
@@ -91,11 +125,15 @@ export default {
     Images: [
       {
         SrcUrl: 'Actuate/WaxManStoreReport.png',
-        Text: 'WaxManStoreReport'
+        Text: 'WaxManStoreReport',
+        width: "1024",
+        height: "735",
       },
       {
         SrcUrl: 'Actuate/WaxManStoreDataReporting.png',
-        Text: 'WaxManStoreDataReporting'
+        Text: 'WaxManStoreDataReporting',
+        width: "1368",
+        height: "886",
       }
     ]
   },  
@@ -106,18 +144,26 @@ export default {
       {
         SrcUrl: 'Croudify/CroudifyRegister.png',
         Text: "CroudifyRegister",
+        width: "2880",
+        height: "2048",
       },
       {
         SrcUrl: 'Croudify/CroudifyProductLandingPage.png',
         Text: "CroudifyProductLandingPage",
+        width: "2880",
+        height: "2048",
       },
       {
         SrcUrl: 'Croudify/CroudifySelectLoans.png',
         Text: "CroudifySelectLoans",
+        width: "2880",
+        height: "2048",
       },
       {
         SrcUrl: 'Croudify/CroudifyAutomateLoans.png',
         Text: "CroudifyAutomateLoans",
+        width: "2880",
+        height: "2048",
       }
     ]
   },
@@ -128,13 +174,18 @@ export default {
       {
         SrcUrl: 'Croudify/CroudifyProductConceptDesignReport.png',
         Text: "CroudifyProductConceptDesignReport",
+        width: "1406",
+        height: "900",
       },
       {
         SrcUrl: 'Croudify/CroudifyProductConceptDesignLadning.png',
         Text: "CroudifyProductConceptDesignLadning",
+        width: "1406",
+        height: "900",
       }
     ]
   },
+
   // InProgress
   Prosper: {
     width: "3338",
