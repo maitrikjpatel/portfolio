@@ -34,7 +34,9 @@ class ImageWrap extends React.Component {
           fluid={fluidSrc.node.fluid}
           alt={titleText}
         />
-        <p>{titleText}</p>
+        {titleText && 
+          <p>{titleText}</p>
+        }
       </div>
     )
   }

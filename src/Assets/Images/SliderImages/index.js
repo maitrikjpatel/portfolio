@@ -57,31 +57,31 @@ export default {
     Images: [
       {
         SrcUrl: 'Actuate/GazetteerEuropeReport.png',
-        Text: 'GazetteerEuropeReport.png'
+        Text: 'GazetteerEuropeReport'
       },
       {
         SrcUrl: 'Actuate/GazetteerListBasedNavigation.png',
-        Text: 'GazetteerListBasedNavigation.png'
+        Text: 'GazetteerListBasedNavigation'
       },
       {
         SrcUrl: 'Actuate/GazetteerLogin.png',
-        Text: 'GazetteerLogin.png'
+        Text: 'GazetteerLogin'
       },
       {
         SrcUrl: 'Actuate/GazetteerMapBaedNavigationSelection.png',
-        Text: 'GazetteerMapBaedNavigationSelection.png'
+        Text: 'GazetteerMapBaedNavigationSelection'
       },
       {
         SrcUrl: 'Actuate/GazetteerMapBasedNavigation.png',
-        Text: 'GazetteerMapBasedNavigation.png'
+        Text: 'GazetteerMapBasedNavigation'
       },
       {
         SrcUrl: 'Actuate/GazetteerReport.png',
-        Text: 'GazetteerReport.png'
+        Text: 'GazetteerReport'
       },
       {
         SrcUrl: 'Actuate/GazetteerSouthEuropeReport.png',
-        Text: 'GazetteerSouthEuropeReport.png'
+        Text: 'GazetteerSouthEuropeReport'
       }
     ]
   },
@@ -91,11 +91,11 @@ export default {
     Images: [
       {
         SrcUrl: 'Actuate/WaxManStoreReport.png',
-        Text: 'WaxManStoreReport.png'
+        Text: 'WaxManStoreReport'
       },
       {
         SrcUrl: 'Actuate/WaxManStoreDataReporting.png',
-        Text: 'WaxManStoreDataReporting.png'
+        Text: 'WaxManStoreDataReporting'
       }
     ]
   },  

@@ -6,10 +6,11 @@ import PhotoGallery from '../components/PhotoGallery/'
 
 const test = () => (
   <Layout>
-    <h1>Components Test Page</h1>
-    <PhotoGallery>
-      <p>Something</p>
-    </PhotoGallery>
+    <PhotoGallery variant="Sony"/>
+    <PhotoGallery variant="Aviatio" title="Aviatio"/>
+    <PhotoGallery variant="Waxman" title="Waxman"/>
+    <PhotoGallery variant="Croudify" title="Croudify"/>
+
   </Layout>
 )
 
