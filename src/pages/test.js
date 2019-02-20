@@ -11,7 +11,7 @@ const test = () => (
     <PhotoGallery variant="Gazetteer" title="Gazetteer"/>
     <PhotoGallery variant="Waxman" title="Waxman" columns={2}/>
     <PhotoGallery variant="Croudify" title="Croudify" columns={2}/>
-    <PhotoGallery variant="CroudifyConcept" title="CroudifyConcept" columns={2}/>
+    <PhotoGallery variant="CroudifyConcept" title="Croudify Concept" columns={2}/>
   </Layout>
 )
 
