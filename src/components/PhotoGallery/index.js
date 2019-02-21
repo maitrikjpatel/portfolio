@@ -81,7 +81,7 @@ class PhotoGallery extends Component {
     console.log(VariantImages)
 
     return (
-      <div>
+      <div className={styles.PhotoGallery}>
         {title && 
           <h3>{title}</h3>
         }

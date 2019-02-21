@@ -12,6 +12,9 @@ const test = () => (
     <PhotoGallery variant="Waxman" title="Waxman" columns={2}/>
     <PhotoGallery variant="Croudify" title="Croudify" columns={2}/>
     <PhotoGallery variant="CroudifyConcept" title="Croudify Concept" columns={2}/>
+    <PhotoGallery variant="Prosper" title="Prosper"/>
+    <PhotoGallery variant="ProsperRegister" title="Prosper Registeration"/>
+    <PhotoGallery variant="ProsperSite" title="Prosper Site" columns={2}/>
   </Layout>
 )
 

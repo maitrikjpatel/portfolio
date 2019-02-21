@@ -185,30 +185,67 @@ export default {
       }
     ]
   },
-
   Prosper: {
-
-  },
-
-  // InProgress
-  ProsperOld: {
-    width: "3338",
-    height: "1858",
     Images: [
       {
-        SrcUrl: 'Prosper/ProsperSS1.png',
-        Text: "ProsperImageOne",
+        SrcUrl: 'Prosper/ProsperProductBefore.png',
+        Text: 'ProsperProductBefore',
+        width: '3200 ',
+        height: ' 2405'
       },
       {
-        SrcUrl: 'Prosper/ProsperSS2.png',
-        Text: "ProsperImageTwo"
+        SrcUrl: 'Prosper/ProsperProductAfter.png',
+        Text: 'ProsperProductAfter',
+        width: '3200 ',
+        height: ' 1675'
       },
       {
-        SrcUrl: 'Prosper/ProsperSS3.png',
-        Text: "ProsperImageThree"
+        SrcUrl: 'Prosper/ProsperProductAutoInvest.png',
+        Text: 'ProsperProductAutoInvest',
+        width: '3194 ',
+        height: '3762'
       }
     ]
   },
+  ProsperRegister: {
+    Images: [
+      {
+        SrcUrl: 'Prosper/ProsperRegisterationStep1.png',
+        Text: 'ProsperRegisterationStep1',
+        width: '3360 ',
+        height: ' 1678'
+      },
+      {
+        SrcUrl: 'Prosper/ProsperRegisterationStep2.png',
+        Text: 'ProsperRegisterationStep2',
+        width: '3338 ',
+        height: '1858'
+      },
+      {
+        SrcUrl: 'Prosper/ProsperRegisterationStep3.png',
+        Text: 'ProsperRegisterationStep3',
+        width: '3817 ',
+        height: ' 2171'
+      }
+    ]
+  },
+  ProsperSite: {
+    Images: [
+      {
+        SrcUrl: 'Prosper/ProsperInvestorLandingPageBefore.png',
+        Text: 'ProsperInvestorLandingPageBefore',
+        width: '3817',
+        height: ' 2261'
+      },
+      {
+        SrcUrl: 'Prosper/ProsperInvestorLandingPageAfter.png',
+        Text: 'ProsperInvestorLandingPageAfter',
+        width: '3817 ',
+        height: ' 8119'
+      }
+    ]
+  },
+  // Something
   DocuSignWeb: {
     width: "3158",
     height: "1876",
