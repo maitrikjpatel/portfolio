@@ -244,32 +244,5 @@ export default {
         height: ' 8119'
       }
     ]
-  },
-  // Something
-  DocuSignWeb: {
-    width: '3158',
-    height: '1876',
-    Images: [
-      {
-        SrcUrl: 'DSCom/DSGreenscoreOne.png',
-        Text: 'DSGreenscoreOne',
-      },
-      {
-        SrcUrl: 'DSCom/DSGreenscoreTwo.png',
-        Text: 'DSGreenscoreTwo'
-      },
-      {
-        SrcUrl: 'DSCom/DSGreenscoreOne.png',
-        Text: 'DSGreenscoreOne'
-      },
-      {
-        SrcUrl: 'DSCom/DSGreenscoreTwo.png',
-        Text: 'DSGreenscoreTwo'
-      },
-      {
-        SrcUrl: 'DSCom/DSGreenscoreOne.png',
-        Text: 'DSGreenscoreOne'
-      }
-    ]
   }
 }
