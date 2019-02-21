@@ -186,8 +186,12 @@ export default {
     ]
   },
 
-  // InProgress
   Prosper: {
+
+  },
+
+  // InProgress
+  ProsperOld: {
     width: "3338",
     height: "1858",
     Images: [
