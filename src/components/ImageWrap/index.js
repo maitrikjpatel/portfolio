@@ -34,7 +34,9 @@ class ImageWrap extends React.Component {
           fluid={fluidSrc.node.fluid}
           alt={titleText}
         />
-        <p>{titleText}</p>
+        {titleText && 
+          <p>{titleText}</p>
+        }
       </div>
     )
   }
@@ -61,30 +63,3 @@ export default props => (
     }
   />
 )
-
-// class ImageWrapper extends React.Component {
-//   render() { 
-//     const {
-//       srcName,
-//       ...restProps
-//     } = this.props
-
-//     const AllSingleImages = importAll(require.context('../../Assets/Images/SingleImages/', true, /\.(png|jpe?g|svg)$/));
-    
-//     return (
-//       <div>
-//         <img 
-//           className={styles.Image} 
-//           src={AllSingleImages[srcName.concat(".png")]} 
-//           alt={splitCamelCase(srcName)}
-//         />
-//       </div>
-//     )
-//   }
-// }
-
-// ImageWrapper.propTypes = {
-//   srcName: PropTypes.string.isRequired,
-// }
-
-// export default ImageWrapper

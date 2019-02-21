@@ -1,0 +1,30 @@
+.PhotoGallery img{
+  position: relative;
+  border: 1px solid var(--color-gray3);
+  box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.50);
+}
+
+.PhotoGallery img:hover {
+  transition: all 0.5s;
+  border: 1px solid var(--color-gray7);
+  box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.85);
+}
+
+.PhotoGallery img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s;
+  opacity: 0;
+  background-size: 100% 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.PhotoGallery img:hover:after {
+  opacity: 0.8;
+}

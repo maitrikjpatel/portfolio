@@ -2,23 +2,19 @@ import React from 'react'
 import Carousel from '../components/Carousel'
 import ImageWrap from '../components/ImageWrap'
 import Layout from '../components/Layout/'
+import PhotoGallery from '../components/PhotoGallery/'
 
 const test = () => (
   <Layout>
-    <h1>Components Test Page</h1>
-    <ImageWrap srcName="CroudifyColors"/>
-    <ImageWrap srcName="CroudifyLogo"/>
-    <ImageWrap srcName="CroudifyWebsite"/>
-    <ImageWrap srcName="SonyNavigationWithFilter"/>
-    <Carousel 
-      title='Aviatio' 
-      variant='Aviatio'
-      kind="vertical"
-    />
-    <Carousel 
-      variant='Aviatio'
-      kind="vertical"
-    />
+    <PhotoGallery variant="Sony"/>
+    <PhotoGallery variant="Aviatio" title="Aviatio"/>
+    <PhotoGallery variant="Gazetteer" title="Gazetteer"/>
+    <PhotoGallery variant="Waxman" title="Waxman" columns={2}/>
+    <PhotoGallery variant="Croudify" title="Croudify" columns={2}/>
+    <PhotoGallery variant="CroudifyConcept" title="Croudify Concept" columns={2}/>
+    <PhotoGallery variant="Prosper" title="Prosper"/>
+    <PhotoGallery variant="ProsperRegister" title="Prosper Registeration"/>
+    <PhotoGallery variant="ProsperSite" title="Prosper Site" columns={2}/>
   </Layout>
 )
 

@@ -27,9 +27,9 @@ function Footer(props) {
             Dribbble
           </a>
         </li>
-        <li className="Instagram">
-          <a href="https://www.instagram.com/maitrikjpatel/" target="_blank" rel="noopener">
-            Instagram
+        <li className="Unsplash">
+          <a href="https://unsplash.com/@maitrikjpatel/" target="_blank" rel="noopener">
+            Unsplash
           </a>
         </li>
         {/* <li className="Codepen">

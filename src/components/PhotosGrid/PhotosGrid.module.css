@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-gap: var(--space-15);
+  grid-gap: var(--space-5);
   margin: var(--space-40) auto;
 }
 
@@ -30,8 +30,7 @@
   height: 100%; 
   margin: 0;
   grid-gap: var(--space-10);
-  padding: var(--space-10);
-  composes: image from "../PhotoFrame/PhotoFrame.module.css";
+  padding: var(--space-5);
 }
 
 .photosGridPhoto:nth-of-type(1) {
