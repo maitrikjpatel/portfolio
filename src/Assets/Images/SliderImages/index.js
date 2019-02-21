@@ -40,34 +40,34 @@ export default {
     height: "670",
     Images: [
       {
-        SrcUrl: 'Actuate/AviatioLandingPage.jpg',
+        SrcUrl: 'Actuate/AviatioLandingPage.png',
         Text: "AviatioLandingPage",
         width: "1024",
         height: "670",
       },
       {
-        SrcUrl: 'Actuate/AviatioSelectRegion.jpg',
+        SrcUrl: 'Actuate/AviatioSelectRegion.png',
         Text: "AviatioSelectRegion",
         width: "1024",
         height: "670",
       },
       {
-        SrcUrl: 'Actuate/AviatioPhoenixAirportReport.jpg',
+        SrcUrl: 'Actuate/AviatioPhoenixAirportReport.png',
         Text: "AviatioPhoenixAirportReport",
         width: "1024",
         height: "670",
       },
       {
-        SrcUrl: 'Actuate/AviatioOrlandoAirportReport.jpg',
+        SrcUrl: 'Actuate/AviatioOrlandoAirportReport.png',
         Text: "AviatioOrlandoAirportReport",
         width: "1024",
         height: "670",
       },
       {
-        SrcUrl: 'Actuate/AviatioSelectRegionFromReport.jpg',
+        SrcUrl: 'Actuate/AviatioSelectRegionFromReport.png',
         Text: "AviatioSelectRegionFromReport",
         width: "1024",
-        height: "670",
+        height: "671",
       }
     ]
   },
