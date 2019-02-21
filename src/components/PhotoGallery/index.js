@@ -63,7 +63,6 @@ class PhotoGallery extends Component {
     function VariantImagesObject(SliderImages) {
       let VariantImages = []
       SliderImages[variant].Images.map((image, index) => {
-        console.log(image.Text)
         VariantImages[index] = {
           src : AllImages[image.SrcUrl],
           width: Number(image.width),
@@ -77,8 +76,6 @@ class PhotoGallery extends Component {
     }
 
     const VariantImages = VariantImagesObject(SliderImages)
-
-    console.log(VariantImages)
 
     return (
       <div className={styles.PhotoGallery}>
