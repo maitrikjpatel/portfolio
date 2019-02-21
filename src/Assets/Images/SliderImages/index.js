@@ -1,187 +1,187 @@
 export default {
   Sony: {
-    width: "1440",
-    height: "1024",
+    width: '1440',
+    height: '1024',
     Images: [
       {
         SrcUrl: 'Sony/SonyHeroModuleWithNavigation.png',
-        Text: "SonyHeroModuleWithNavigation",
-        width: "1440",
-        height: "1024",
+        Text: 'SonyHeroModuleWithNavigation',
+        width: '1440',
+        height: '1024',
       },
       {
         SrcUrl: 'Sony/SonyImageComparisonModule.png',
-        Text: "SonyImageComparisonModule",
-        width: "1440",
-        height: "1024",
+        Text: 'SonyImageComparisonModule',
+        width: '1440',
+        height: '1024',
       },
       {
         SrcUrl: 'Sony/SonyImageSliderWithImageTabs.png',
-        Text: "SonyImageSliderWithImageTabs",
-        width: "1440",
-        height: "1024", 
+        Text: 'SonyImageSliderWithImageTabs',
+        width: '1440',
+        height: '1024', 
       },
       {
         SrcUrl: 'Sony/SonyImageSliderWithNumericTabs.png',
-        Text: "SonyImageSliderWithNumericTabs",
-        width: "1440",
-        height: "1024",
+        Text: 'SonyImageSliderWithNumericTabs',
+        width: '1440',
+        height: '1024',
       },
       {
         SrcUrl: 'Sony/SonyLensSliderWithThumbnailImages.png',
-        Text: "SonyLensSliderWithThumbnailImages",
-        width: "1440",
-        height: "1024",
+        Text: 'SonyLensSliderWithThumbnailImages',
+        width: '1440',
+        height: '1024',
       }
     ]
   },
   Aviatio: {
-    width: "1024",
-    height: "670",
+    width: '1024',
+    height: '670',
     Images: [
       {
         SrcUrl: 'Actuate/AviatioLandingPage.png',
-        Text: "AviatioLandingPage",
-        width: "1024",
-        height: "670",
+        Text: 'AviatioLandingPage',
+        width: '1024',
+        height: '670',
       },
       {
         SrcUrl: 'Actuate/AviatioSelectRegion.png',
-        Text: "AviatioSelectRegion",
-        width: "1024",
-        height: "670",
+        Text: 'AviatioSelectRegion',
+        width: '1024',
+        height: '670',
       },
       {
         SrcUrl: 'Actuate/AviatioPhoenixAirportReport.png',
-        Text: "AviatioPhoenixAirportReport",
-        width: "1024",
-        height: "670",
+        Text: 'AviatioPhoenixAirportReport',
+        width: '1024',
+        height: '670',
       },
       {
         SrcUrl: 'Actuate/AviatioOrlandoAirportReport.png',
-        Text: "AviatioOrlandoAirportReport",
-        width: "1024",
-        height: "670",
+        Text: 'AviatioOrlandoAirportReport',
+        width: '1024',
+        height: '670',
       },
       {
         SrcUrl: 'Actuate/AviatioSelectRegionFromReport.png',
-        Text: "AviatioSelectRegionFromReport",
-        width: "1024",
-        height: "671",
+        Text: 'AviatioSelectRegionFromReport',
+        width: '1024',
+        height: '671',
       }
     ]
   },
   Gazetteer: {
-    width: "1024",
-    height: "768",
+    width: '1024',
+    height: '768',
     Images: [
       {
         SrcUrl: 'Actuate/GazetteerEuropeReport.png',
         Text: 'GazetteerEuropeReport',
-        width: "1024",
-        height: "768",
+        width: '1024',
+        height: '768',
       },
       {
         SrcUrl: 'Actuate/GazetteerListBasedNavigation.png',
         Text: 'GazetteerListBasedNavigation',
-        width: "1024",
-        height: "768",
+        width: '1024',
+        height: '768',
       },
       {
         SrcUrl: 'Actuate/GazetteerLogin.png',
         Text: 'GazetteerLogin',
-        width: "1024",
-        height: "768",
+        width: '1024',
+        height: '768',
       },
       {
         SrcUrl: 'Actuate/GazetteerMapBaedNavigationSelection.png',
         Text: 'GazetteerMapBaedNavigationSelection',
-        width: "1024",
-        height: "768",
+        width: '1024',
+        height: '768',
       },
       {
         SrcUrl: 'Actuate/GazetteerMapBasedNavigation.png',
         Text: 'GazetteerMapBasedNavigation',
-        width: "1024",
-        height: "768",
+        width: '1024',
+        height: '768',
       },
       {
         SrcUrl: 'Actuate/GazetteerReport.png',
         Text: 'GazetteerReport',
-        width: "1024",
-        height: "768",
+        width: '1024',
+        height: '768',
       },
       {
         SrcUrl: 'Actuate/GazetteerSouthEuropeReport.png',
         Text: 'GazetteerSouthEuropeReport',
-        width: "1024",
-        height: "768",
+        width: '1024',
+        height: '768',
       }
     ]
   },
   Waxman: {
-    width: "1024",
-    height: "735",
+    width: '1024',
+    height: '735',
     Images: [
       {
         SrcUrl: 'Actuate/WaxManStoreReport.png',
         Text: 'WaxManStoreReport',
-        width: "1024",
-        height: "735",
+        width: '1024',
+        height: '735',
       },
       {
         SrcUrl: 'Actuate/WaxManStoreDataReporting.png',
         Text: 'WaxManStoreDataReporting',
-        width: "1368",
-        height: "886",
+        width: '1368',
+        height: '886',
       }
     ]
   },  
   Croudify: {
-    width: "2880",
-    height: "2048",
+    width: '2880',
+    height: '2048',
     Images: [
       {
         SrcUrl: 'Croudify/CroudifyRegister.png',
-        Text: "CroudifyRegister",
-        width: "2880",
-        height: "2048",
+        Text: 'CroudifyRegister',
+        width: '2880',
+        height: '2048',
       },
       {
         SrcUrl: 'Croudify/CroudifyProductLandingPage.png',
-        Text: "CroudifyProductLandingPage",
-        width: "2880",
-        height: "2048",
+        Text: 'CroudifyProductLandingPage',
+        width: '2880',
+        height: '2048',
       },
       {
         SrcUrl: 'Croudify/CroudifySelectLoans.png',
-        Text: "CroudifySelectLoans",
-        width: "2880",
-        height: "2048",
+        Text: 'CroudifySelectLoans',
+        width: '2880',
+        height: '2048',
       },
       {
         SrcUrl: 'Croudify/CroudifyAutomateLoans.png',
-        Text: "CroudifyAutomateLoans",
-        width: "2880",
-        height: "2048",
+        Text: 'CroudifyAutomateLoans',
+        width: '2880',
+        height: '2048',
       }
     ]
   },
   CroudifyConcept: {
-    width: "1406",
-    height: "900",
+    width: '1406',
+    height: '900',
     Images: [
       {
         SrcUrl: 'Croudify/CroudifyProductConceptDesignReport.png',
-        Text: "CroudifyProductConceptDesignReport",
-        width: "1406",
-        height: "900",
+        Text: 'CroudifyProductConceptDesignReport',
+        width: '1406',
+        height: '900',
       },
       {
         SrcUrl: 'Croudify/CroudifyProductConceptDesignLadning.png',
-        Text: "CroudifyProductConceptDesignLadning",
-        width: "1406",
-        height: "900",
+        Text: 'CroudifyProductConceptDesignLadning',
+        width: '1406',
+        height: '900',
       }
     ]
   },
@@ -247,28 +247,28 @@ export default {
   },
   // Something
   DocuSignWeb: {
-    width: "3158",
-    height: "1876",
+    width: '3158',
+    height: '1876',
     Images: [
       {
         SrcUrl: 'DSCom/DSGreenscoreOne.png',
-        Text: "DSGreenscoreOne",
+        Text: 'DSGreenscoreOne',
       },
       {
         SrcUrl: 'DSCom/DSGreenscoreTwo.png',
-        Text: "DSGreenscoreTwo"
+        Text: 'DSGreenscoreTwo'
       },
       {
         SrcUrl: 'DSCom/DSGreenscoreOne.png',
-        Text: "DSGreenscoreOne"
+        Text: 'DSGreenscoreOne'
       },
       {
         SrcUrl: 'DSCom/DSGreenscoreTwo.png',
-        Text: "DSGreenscoreTwo"
+        Text: 'DSGreenscoreTwo'
       },
       {
         SrcUrl: 'DSCom/DSGreenscoreOne.png',
-        Text: "DSGreenscoreOne"
+        Text: 'DSGreenscoreOne'
       }
     ]
   }
