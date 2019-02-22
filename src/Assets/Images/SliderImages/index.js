@@ -244,5 +244,249 @@ export default {
         height: ' 8119'
       }
     ]
+  },
+  OpenTextAthena:{
+    Images: [
+      {
+        SrcUrl: 'OpenText/AthenaDesignSystemBrandAssets.png',
+        Text: 'AthenaDesignSystemBrandAssets',
+        width: '2513 ',
+        height: '1380'
+      },
+      {
+        SrcUrl: 'OpenText/AthenaDesignSystemHomepage.png',
+        Text: 'AthenaDesignSystemHomepage',
+        width: '2513 ',
+        height: '1380'
+      },
+      {
+        SrcUrl: 'OpenText/AthenaDesignSystemSvgIcons.png',
+        Text: 'AthenaDesignSystemSvgIcons',
+        width: '2513 ',
+        height: '1380'
+      },
+      {
+        SrcUrl: 'OpenText/AthenaDesignSystemFontIcons.png',
+        Text: 'AthenaDesignSystemFontIcons',
+        width: '2513 ',
+        height: '1380'
+      },
+      {
+        SrcUrl: 'OpenText/AthenaDesignSystemLayoutComponents.png',
+        Text: 'AthenaDesignSystemLayoutComponents',
+        width: '2513 ',
+        height: '1380'
+      },
+      {
+        SrcUrl: 'OpenText/AthenaDesignSystemComponents.png',
+        Text: 'AthenaDesignSystemComponents',
+        width: '2513 ',
+        height: '1380'
+      }
+    ]
+  },
+  OpenTextFtype:{
+    Images: [
+      {
+        SrcUrl: 'OpenText/FTypeDashboardCreater.png',
+        Text: 'FTypeDashboardCreater',
+        width: '1280  ',
+        height: '1024'
+      },
+      {
+        SrcUrl: 'OpenText/FTypeDashboardReoprt.png',
+        Text: 'FTypeDashboardReoprt',
+        width: '1280  ',
+        height: '1024'
+      },
+      {
+        SrcUrl: 'OpenText/FTypeLogin.png',
+        Text: 'FTypeLogin',
+        width: '1280  ',
+        height: '1024'
+      },
+      {
+        SrcUrl: 'OpenText/FTypeReportAssetsFileUploader.png',
+        Text: 'FTypeReportAssetsFileUploader',
+        width: '1280  ',
+        height: '1024'
+      },
+      {
+        SrcUrl: 'OpenText/FTypeReportAssetsUplading.png',
+        Text: 'FTypeReportAssetsUplading',
+        width: '1280  ',
+        height: '1024'
+      },
+      {
+        SrcUrl: 'OpenText/FTypeReportSharing.png',
+        Text: 'FTypeReportSharing',
+        width: '1280  ',
+        height: '1024'
+      }
+    ]
+  },
+  OpenTextRebrand: {
+    width: '1740 ',
+    height: '921',
+    Images: [
+      {
+        SrcUrl: 'OpenText/IhubActuateFileSystem.png',
+        Text: 'IhubActuateFileSystem',
+        width: '1740 ',
+        height: '921',
+      },
+      {
+        SrcUrl: 'OpenText/IhubOpentextFileSystem.png',
+        Text: 'IhubOpentextFileSystem',
+        width: '1740 ',
+        height: '921',
+      },
+    ]
+  },
+  OpenTextIhub: {
+    Images: [
+      { 
+        SrcUrl: 'OpenText/IhubAnalyticsAndDataVisualizationPlatform.png',
+        Text: 'IhubAnalyticsAndDataVisualizationPlatform',
+        width: '1435 ',
+        height: ' 825'
+      },
+      { 
+        SrcUrl: 'OpenText/IhubAnalyticsAndDataVisualizationPlatformTable.png',
+        Text: 'IhubAnalyticsAndDataVisualizationPlatformTable',
+        width: '1435 ',
+        height: ' 825'
+      },
+      { 
+        SrcUrl: 'OpenText/IhubAnalyticsAndDataVisualizationPlatformReport.png',
+        Text: 'IhubAnalyticsAndDataVisualizationPlatformReport',
+        width: '1435 ',
+        height: ' 825'
+      }
+    ]
+  },
+  SkillmilWeb:{
+    Images: [
+      { 
+        SrcUrl: 'SkillMil/SkillmilLandingPage.png',
+        Text: 'SkillMilLandingPage',
+        width: '3350 ',
+        height: '10052',
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilLandingPageVeteran.png',
+        Text: 'SkillMilVeteranLandingPage',
+        width: '1440',
+        height: '  1801',
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilLandingPageEmployer.png',
+        Text: 'SkillMilEmployerLandingPage',
+        width: '1440 ',
+        height: ' 1750',
+      }
+    ]
+  },
+  SkillmilProduct:{
+    Images: [
+      { 
+        SrcUrl: 'SkillMil/SkillmilProductVeteranFlow.png',
+        Text: 'SkillMilProductVeteranFlow',
+        width: '1788 ',
+        height: ' 1838'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilProductEmployerFlow.png',
+        Text: 'SkillMilProductEmployerFlow',
+        width: '1448 ',
+        height: '1798'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilProductReusableComponents.png',
+        Text: 'SkillMilProductStyleGuide',
+        width: '2880 ',
+        height: '6212'
+      },
+    ]
+  },
+  SkillmilVeteran: {
+    Images: [
+      { 
+        SrcUrl: 'SkillMil/SkillmilVeteranSignUp.png',
+        Text: 'SkillmilVeteranSignUp',
+        width: '2880',
+        height: '  2048'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilVeteranProfileLandingPage.png',
+        Text: 'SkillmilVeteranProfileLandingPage',
+        width: '2880 ',
+        height: '5234'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilVeteranProfileEdit.png',
+        Text: 'SkillmilVeteranProfileEdit',
+        width: '2880 ',
+        height: '5696'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilVeteranProfileView.png',
+        Text: 'SkillmilVeteranProfileView',
+        width: '2880 ',
+        height: '4508'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilVeteranConversation.png',
+        Text: 'SkillmilVeteranConversation',
+        width: '2880 ',
+        height: '2110'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilVeteranJobMatches.png',
+        Text: 'SkillmilVeteranJobMatches',
+        width: '2880 ',
+        height: '2864'
+      }
+    ]
+  },
+  SkillmilEmployer :{
+    Images: [
+      { 
+        SrcUrl: 'SkillMil/SkillmilEmployerCompanyProfile.png',
+        Text: 'SkillmilEmployerCompanyProfile',
+        width: '2880 ',
+        height: ' 1778'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilEmployerAddingRoleLandingPage.png',
+        Text: 'SkillmilEmployerAddingRoleLandingPage',
+        width: '2880 ',
+        height: '2742'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilEmployerAddingRoleForm.png',
+        Text: 'SkillmilEmployerAddingRoleForm',
+        width: '2880',
+        height: '  2804'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilEmployerRolesListing.png',
+        Text: 'SkillmilEmployerRolesListing',
+        width: '2880 ',
+        height: ' 2578'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilEmployerRoleMatches.png',
+        Text: 'SkillmilEmployerRoleMatches',
+        width: '2880 ',
+        height: ' 2934'
+      },
+      { 
+        SrcUrl: 'SkillMil/SkillmilEmployerRoleMatchesWithDescription.png',
+        Text: 'SkillmilEmployerRoleMatchesWithDescription',
+        width: '2880 ',
+        height: ' 4778'
+      }
+    ]
   }
 }
