@@ -368,7 +368,7 @@ export default {
   SkillmilWeb:{
     Images: [
       { 
-        SrcUrl: 'SkillMil/SkillmilLandingPage.png',
+        SrcUrl: 'SkillMil/SkillmilLandingPageWeb.png',
         Text: 'SkillMilLandingPage',
         width: '3350 ',
         height: '10052',
