@@ -488,5 +488,43 @@ export default {
         height: ' 4778'
       }
     ]
-  }
+  },
+  DocusignGreenscore:{
+    Images: [
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreLogin.png',
+        Text: 'DocusignGreenscoreLogin',
+        width: '1433 ',
+        height: ' 907',
+      },
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreDashboard.png',
+        Text: 'DocusignGreenscoreDashboard',
+        width: '1564',
+        height: ' 1080',
+      },
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreResourcesPage.png',
+        Text: 'DocusignGreenscoreResourcesPage',
+        width: '1433',
+        height: ' 2642',
+      }
+    ]
+  },
+  DocusignGreenscoreProduct:{
+    Images: [
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreLandingPage.png',
+        Text: 'DocusignGreenscoreLandingPage',
+        width: '959 ',
+        height: '1114',
+      },
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreProduct.png',
+        Text: 'DocusignGreenscoreProduct',
+        width: '1094 ',
+        height: ' 545',
+      }
+    ]
+  },
 }
