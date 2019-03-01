@@ -527,4 +527,48 @@ export default {
       }
     ]
   },
+  DocusignOliveProcess: {
+    Images: [
+      {
+        SrcUrl: 'DocusignOlive/OliveProcess.jpg',
+        Text: 'OliveProcess',
+        width: '823 ',
+        height: ' 1097'
+      },
+      {
+        SrcUrl: 'DocusignOlive/OliveProcessVoted.jpg',
+        Text: 'OliveProcessVoted',
+        width: '1528 ',
+        height: '1146'
+      },
+      {
+        SrcUrl: 'DocusignOlive/OliveProcessReview.jpg',
+        Text: 'OliveProcessSession',
+        width: '823 ',
+        height: '1097'
+      },
+    ]
+  },
+  DocusignOliveProcess: {
+    Images: [
+      {
+        SrcUrl: 'DocusignOlive/OliveProcess.jpg',
+        Text: 'OliveProcess',
+        width: '823 ',
+        height: ' 1097'
+      },
+      {
+        SrcUrl: 'DocusignOlive/OliveProcessVoted.jpg',
+        Text: 'OliveProcessVoted',
+        width: '1528 ',
+        height: '1146'
+      },
+      {
+        SrcUrl: 'DocusignOlive/OliveProcessReview.jpg',
+        Text: 'OliveProcessSession',
+        width: '823 ',
+        height: '1097'
+      },
+    ]
+  }
 }
