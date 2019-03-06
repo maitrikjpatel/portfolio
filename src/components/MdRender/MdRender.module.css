@@ -35,10 +35,6 @@
   margin: 0.67em 0;
 }
 
-.markdownBody img {
-  border-style: none;
-}
-
 .markdownBody code,
 .markdownBody kbd,
 .markdownBody pre {
@@ -76,12 +72,13 @@
 }
 
 .markdownBody a {
-  color: var(--color-brandDark);
+  color: var(--color-gray10);
   text-decoration: none;
+  border-bottom: 0.5px dotted var(--color-gray7);
 }
 
 .markdownBody a:hover {
-  text-decoration: underline;
+  border-bottom: 0.5px solid var(--color-gray7);
 }
 
 .markdownBody strong {
@@ -353,13 +350,13 @@
 .markdownBody h1 {
   padding-bottom: 0.3em;
   font-size: 2em;
-  border-bottom: 1px solid var(--color-gray5);;
+  border-bottom: 1px solid var(--color-gray4);;
 }
 
 .markdownBody h2 {
   padding-bottom: 0.3em;
   font-size: 1.5em;
-  border-bottom: 1px solid var(--color-gray5);;
+  border-bottom: 1px solid var(--color-gray4);;
 }
 
 .markdownBody h3 {
@@ -447,19 +444,6 @@
   background-color: var(--color-gray3);
 }
 
-.markdownBody img {
-  max-width: 100%;
-  box-sizing: content-box;
-  background-color: #fff;
-}
-
-.markdownBody img[align=right] {
-  padding-left: 20px;
-}
-
-.markdownBody img[align=left] {
-  padding-right: 20px;
-}
 
 .markdownBody code {
   padding: 0.2em 0.4em;
@@ -680,3 +664,21 @@
   text-decoration: underline;
   color: #032f62;
 }
+
+/* 
+.markdownBody img {
+  border-style: none;
+}
+
+.markdownBody img {
+  max-width: 100%;
+  background-color: #fff;
+}
+
+.markdownBody img[align=right] {
+  padding-left: 20px;
+}
+
+.markdownBody img[align=left] {
+  padding-right: 20px;
+} */

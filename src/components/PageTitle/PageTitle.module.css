@@ -11,8 +11,8 @@
   .PageTitle {
     font-size: var(--font-24);
     line-height: var(--font-40);
-    word-spacing: 7.5px;
-    letter-spacing: 2.5px; 
+    word-spacing: 4px;
+    letter-spacing: 2px;
     text-align: center;
     margin: 0;
   }

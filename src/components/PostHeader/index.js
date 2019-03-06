@@ -44,7 +44,7 @@ function PostHeader(props) {
     <BrowserFrame>
       <div className={styles.PostDottedWrapper}>
         <div style={PostColorWrapper}>
-          {PostHeaderImage}
+          {/* {PostHeaderImage} */}
           <div className={styles.PostTitleWrapper}>
             {title && <h1 className={styles.PostTitle}>{title}</h1>}
             {link &&

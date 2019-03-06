@@ -2,12 +2,13 @@
   position: relative;
   border: 1px solid var(--color-gray4);
   box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.50);
+  box-sizing: border-box;
 }
 
 .PhotoGallery img:hover {
   transition: all 0.5s;
   border: 1px solid var(--color-gray7);
-  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.2)
+  box-shadow: 3px 3px 8px 0px rgba(17, 6, 6, 0.2)
 }
 
 .PhotoGallery img:after {
