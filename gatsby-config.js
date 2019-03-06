@@ -13,6 +13,22 @@ module.exports = {
   },
   pathPrefix: '/portfolio',
   plugins: [
+    // Google Fonts
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Quicksand`,
+            variants: ['300','400','500','700']
+          },
+          {
+            family: `IBM Plex Sans`,
+            variants: ['100','300','400','500','600','700']
+          },
+        ],
+      },
+    },
     // Manifest 
     {
       resolve: `gatsby-plugin-manifest`,

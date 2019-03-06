@@ -12,6 +12,7 @@ class ImageWrap extends React.Component {
       data,
       srcName,
       title,
+      width,
       ...restProps
     } = this.props
 
@@ -28,7 +29,7 @@ class ImageWrap extends React.Component {
     }
     
     return (
-      <div className={styles.ImageWrap}>
+      <div style={{ width: `${width}%`}} className={styles.ImageWrap} >
         <Img
           className={styles.Image} 
           fluid={fluidSrc.node.fluid}

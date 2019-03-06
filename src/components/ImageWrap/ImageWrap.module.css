@@ -1,6 +1,12 @@
 .ImageWrap {
-  margin: 25px 0;
+  margin: 25px auto;
+  display: inherit;
 }
+/* @media only screen and (max-width: 768px) {
+  .ImageWrap {
+    width: 100% !important;
+  }
+} */
 
 .Image {
   display: block;

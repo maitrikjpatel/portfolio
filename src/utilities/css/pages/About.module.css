@@ -30,7 +30,7 @@
 
 @media (min-width: 48rem) {
   .aboutContent {
-    margin: var(--space-80) 0;
+    margin: var(--space-50) 0;
   }
 
   .aboutContact {

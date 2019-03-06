@@ -488,5 +488,97 @@ export default {
         height: ' 4778'
       }
     ]
+  },
+  DocusignGreenscore:{
+    Images: [
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreLogin.png',
+        Text: 'DocusignGreenscoreLogin',
+        width: '1433 ',
+        height: ' 907',
+      },
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreDashboard.png',
+        Text: 'DocusignGreenscoreDashboard',
+        width: '1564',
+        height: ' 1080',
+      },
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreResourcesPage.png',
+        Text: 'DocusignGreenscoreResourcesPage',
+        width: '1433',
+        height: ' 2642',
+      }
+    ]
+  },
+  DocusignGreenscoreProduct:{
+    Images: [
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreLandingPage.png',
+        Text: 'DocusignGreenscoreLandingPage',
+        width: '959 ',
+        height: '1114',
+      },
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreProduct.png',
+        Text: 'DocusignGreenscoreProduct',
+        width: '1094 ',
+        height: ' 545',
+      }
+    ]
+  },
+  DocusignOliveProcess: {
+    Images: [
+      {
+        SrcUrl: 'DocusignOlive/OliveProcess.jpg',
+        Text: 'OliveProcess',
+        width: '823 ',
+        height: ' 1097'
+      },
+      {
+        SrcUrl: 'DocusignOlive/OliveProcessVoted.jpg',
+        Text: 'OliveProcessVoted',
+        width: '1528 ',
+        height: '1146'
+      },
+      {
+        SrcUrl: 'DocusignOlive/OliveProcessReview.jpg',
+        Text: 'OliveProcessSession',
+        width: '823 ',
+        height: '1097'
+      },
+    ]
+  },
+  Olive : {
+    Images : [
+      {
+        SrcUrl: 'DocusignOlive/OliveLegacySite.png',
+        Text: 'OliveLegacySite',
+        width: '1062 ',
+        height: '805',
+      },
+      {
+        SrcUrl: 'DocusignOlive/OliveReactSite.png',
+        Text: 'OliveReactSite',
+        width: '1432',
+        height: '915',
+      }
+    ]
+  },
+  OliveProcess: {
+    Images: [
+      {
+        SrcUrl: 'DocusignOlive/TraditionalDesignSystemArchitect.png',
+        Text: 'TraditionalDesignSystemArchitect',
+        width: '1190 ',
+        height: '1684'
+      },
+      {
+        SrcUrl: 'DocusignOlive/DesignSystemArchitect.png',
+        Text: 'DesignSystemArchitect',
+        width: '1600',
+        height: '1190'
+      }
+    ]
   }
 }
