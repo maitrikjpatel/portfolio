@@ -159,6 +159,7 @@ export default () => {
             <br /> Grid
           </PhotosGrid> */}
           
+          <h3 className={styles.sectionTitle}>What people say about me</h3>
           <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization.</p>
           <p>
             Don't be a stranger! Give me a shout at
