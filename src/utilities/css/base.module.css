@@ -9,17 +9,18 @@ body {
   color: var(--color-gray10);
   margin: 0;
   height: 100%;
+  font-weight: 400;
   font-size: var(--font-16);
   line-height: var(--font-28);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   word-spacing: 1px;
   LETTER-SPACING: 0.25px;
 }
@@ -29,8 +30,6 @@ h1,h2,h3,h4,h5,h6 {
 ::before {
   box-sizing: inherit;
   box-sizing: border-box;
-  /* Remove this in future */
-  font-weight: 500;
 }
 
 a {
