@@ -32,11 +32,11 @@
   height: 100%;
   left: 50%;
   border-left: 1px solid var(--color-gray7);  
-  animation: expand 1.5s;
+  animation: expand 1.25s;
 }
 
 .description{
-  animation: fadeIn 1s ease;
+  animation: fadeIn 2s ease;
 }
 
 @keyframes fadeIn {
