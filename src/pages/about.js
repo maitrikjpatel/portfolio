@@ -81,18 +81,15 @@ export default () => {
 
         <div className={styles.aboutContent}>
 
+
+
+
           <p>
-            I’m a Design Technologist currently living in Bay Area, California.
-            Currently, I am working at DocuSign to develop React componentized
-            design system and design tooling to promote shared design language in products
-            and marketing web properties. My comprehensive knowledge in design
-            and technology allows me to cultivate elegant, intuitive and pixel
-            perfect user interface designs & applications.
+          I’m a Design Technologist currently living in Bay Area, California. I stand on the sweet spot where design and code intersects. My comprehensive knowledge in design and technology allows me to cultivate productive teams in a synergic environment that meets the requirements of creatives and developers concurrently. I utilize UX / Front End Development best practices in agile workflow to cultivate elegant, intuitive and pixel perfect user interface designs and applications.
           </p>
+
           <p>
-            I have over 7 years of industry experience and have been a part of
-            design and development projects for many exceptional companies
-            during those years, including
+          I am currently working at DocuSign as an senior UI Engineer to develop design system and design tooling to promote shared design language in mobile, products and marketing teams. I have over 7 years of industry experience and have been a part of design and development projects for many exceptional companies during those years, including
             <a href="https://thewaltdisneycompany.com/" target="_blank">
               Disney,
             </a>
@@ -124,21 +121,16 @@ export default () => {
             <a href="http://skillmil.com/" target="_blank">
               SkillMil.
             </a>
-            I recently graduated from
-            <a href="http://www.startupleadership.com/" target="_blank">
-              Startup Leadership Program
-            </a>
+          </p>
+          <p>
+            With a MS in computer science and industry experience I still think there’s more for me to learn. I recently graduated from
+            <a href="http://www.startupleadership.com/" target="_blank"> Startup Leadership Program</a>
             and
             <a
               target="_blank"
               href="https://www.gsb.stanford.edu/programs/stanford-ignite"
-            >
-              Stanford Ignite
-            </a>
-            with in-depth knowledge about entrepreneurship and startup
-            ecosystem. I want to combine technological and entrepreneurship
-            knowledge to create tangible things that would have the real impact
-            on people’s lives.
+            >Stanford Ignite</a> 
+            with in-depth knowledge about entrepreneurship and startup ecosystem. I want to combine technological and entrepreneurship knowledge to create tangible things that would have the real impact on people’s lives.
           </p>
 
           <h3 className={styles.sectionTitle}>What I am good at</h3>
