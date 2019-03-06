@@ -35,10 +35,6 @@
   margin: 0.67em 0;
 }
 
-.markdownBody img {
-  border-style: none;
-}
-
 .markdownBody code,
 .markdownBody kbd,
 .markdownBody pre {
@@ -448,19 +444,6 @@
   background-color: var(--color-gray3);
 }
 
-.markdownBody img {
-  max-width: 100%;
-  box-sizing: content-box;
-  background-color: #fff;
-}
-
-.markdownBody img[align=right] {
-  padding-left: 20px;
-}
-
-.markdownBody img[align=left] {
-  padding-right: 20px;
-}
 
 .markdownBody code {
   padding: 0.2em 0.4em;
@@ -681,3 +664,21 @@
   text-decoration: underline;
   color: #032f62;
 }
+
+/* 
+.markdownBody img {
+  border-style: none;
+}
+
+.markdownBody img {
+  max-width: 100%;
+  background-color: #fff;
+}
+
+.markdownBody img[align=right] {
+  padding-left: 20px;
+}
+
+.markdownBody img[align=left] {
+  padding-right: 20px;
+} */
