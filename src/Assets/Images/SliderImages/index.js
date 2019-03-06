@@ -549,26 +549,36 @@ export default {
       },
     ]
   },
-  DocusignOliveProcess: {
+  Olive : {
+    Images : [
+      {
+        SrcUrl: 'DocusignOlive/OliveLegacySite.png',
+        Text: 'OliveLegacySite',
+        width: '1062 ',
+        height: '805',
+      },
+      {
+        SrcUrl: 'DocusignOlive/OliveReactSite.png',
+        Text: 'OliveReactSite',
+        width: '1432',
+        height: '915',
+      }
+    ]
+  },
+  OliveProcess: {
     Images: [
       {
-        SrcUrl: 'DocusignOlive/OliveProcess.jpg',
-        Text: 'OliveProcess',
-        width: '823 ',
-        height: ' 1097'
+        SrcUrl: 'DocusignOlive/TraditionalDesignSystemArchitect.png',
+        Text: 'TraditionalDesignSystemArchitect',
+        width: '1190 ',
+        height: '1684'
       },
       {
-        SrcUrl: 'DocusignOlive/OliveProcessVoted.jpg',
-        Text: 'OliveProcessVoted',
-        width: '1528 ',
-        height: '1146'
-      },
-      {
-        SrcUrl: 'DocusignOlive/OliveProcessReview.jpg',
-        Text: 'OliveProcessSession',
-        width: '823 ',
-        height: '1097'
-      },
+        SrcUrl: 'DocusignOlive/DesignSystemArchitect.png',
+        Text: 'DesignSystemArchitect',
+        width: '1600',
+        height: '1190'
+      }
     ]
   }
 }

@@ -13,6 +13,26 @@ module.exports = {
   },
   pathPrefix: '/portfolio',
   plugins: [
+    // Google Fonts
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Josefin Slab`,
+            variants: ['100','100i','300','300i','400','400i','600','600i','700','700i'],
+          },
+          {
+            family: `Quicksand`,
+            variants: ['300','400','500','700']
+          },
+          {
+            family: `Zilla Slab`,
+            variants: ['300','300i','400','400i','500','500i','600','600i','700','700i']
+          }
+        ],
+      },
+    },
     // Manifest 
     {
       resolve: `gatsby-plugin-manifest`,
