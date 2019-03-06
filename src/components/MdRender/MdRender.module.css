@@ -76,12 +76,13 @@
 }
 
 .markdownBody a {
-  color: var(--color-brandDark);
+  color: var(--color-gray10);
   text-decoration: none;
+  border-bottom: 0.5px dotted var(--color-gray7);
 }
 
 .markdownBody a:hover {
-  text-decoration: underline;
+  border-bottom: 0.5px solid var(--color-gray7);
 }
 
 .markdownBody strong {

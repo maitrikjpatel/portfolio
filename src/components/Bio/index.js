@@ -16,8 +16,8 @@ function Bio(props) {
       <h1 className={styles.PageTitle}>{titleName}</h1>
       <h1 className={styles.PageTitle}>{title}</h1>
       <div className={styles.vertcialLine} />
-      {description && <h5>{description}</h5>}
-      {children && <h5>{children}</h5>}
+      {description && <h5 className={styles.description}>{description}</h5>}
+      {children && <h5 className={styles.description}>{children}</h5>}
     </div>
   )
 }

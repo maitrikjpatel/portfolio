@@ -31,7 +31,21 @@
 .footerLinks li {
   display: inline;
   list-style: none;
-  padding-right: var(--space-15);
+  margin-right: var(--space-15);
+  background-image: linear-gradient(180deg, transparent 90%, var(--color-linkGray) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .4s;
+  transition: background-size .5s ease;
+}
+
+.footerLinks li:hover {
+  background-size: 100% 100%;
+  border: none;
+}
+
+.footerLinks li a {
+  border: none;
 }
 
 .footerLinks li:last-child {
@@ -39,7 +53,6 @@
 }
   
 /* Brew */
-
 .footerBrew {
   display: inline-block;
 }
@@ -104,12 +117,12 @@
     margin: 0;
   }  
   .footerLinks li {
-    padding-right: var(--space-15);
+    margin-right: var(--space-15);
   }
 }
 
 @media (max-width: 20rem) {
   .footerLinks li {
-    padding-right: var(--space-5);
+    margin-right: var(--space-5);
   }
 }

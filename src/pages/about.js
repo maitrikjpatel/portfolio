@@ -4,7 +4,6 @@ import Layout from '../components/Layout'
 import PhotosGrid from '../components/PhotosGrid'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
-import SkillsColumn from '../components/SkillsColumn'
 
 export default () => {
   const toolsList = [
@@ -59,6 +58,7 @@ export default () => {
   return (
     <Layout>
       <div className={styles.pageAbout}>
+
         <Bio title="About me">
           <ul className={styles.aboutContact}>
             <li>
@@ -78,62 +78,63 @@ export default () => {
             </li>
           </ul>
         </Bio>
+
         <div className={styles.aboutContent}>
+
           <p>
             I’m a Design Technologist currently living in Bay Area, California.
             Currently, I am working at DocuSign to develop React componentized
-            design system/tooling to promote shared design language in products
+            design system and design tooling to promote shared design language in products
             and marketing web properties. My comprehensive knowledge in design
             and technology allows me to cultivate elegant, intuitive and pixel
             perfect user interface designs & applications.
           </p>
-
           <p>
             I have over 7 years of industry experience and have been a part of
             design and development projects for many exceptional companies
             during those years, including
             <a href="https://thewaltdisneycompany.com/" target="_blank">
-              &nbsp;Disney,
+              Disney,
             </a>
             <a href="http://www.sony.co.uk/" target="_blank">
-              &nbsp;Sony,
+              Sony,
             </a>
             <a href="http://www.sapientnitro.com/" target="_blank">
-              &nbsp;SapientNitro,
+              SapientNitro,
             </a>
             <a href="http://www.actuate.com/" target="_blank">
-              &nbsp;OpenText,
+              OpenText,
             </a>
             <a href="https://www.prosper.com/invest" target="_blank">
-              &nbsp;Prosper Marketplace,
+              Prosper Marketplace,
             </a>
             <a href="http://alphonso.tv/" target="_blank">
-              &nbsp;AlphansoTV,
+              AlphansoTV,
             </a>
             <a href="https://twitter.com/martiansf" target="_blank">
-              &nbsp;MartianSF,
+              MartianSF,
             </a>
             <a href="http://croudify.com/" target="_blank">
-              &nbsp;Croudify,
+              Croudify,
             </a>
             <a href="http://hbpsupplier.in" target="_blank">
-              &nbsp;HBPSupplier,
-            </a>{' '}
+              HBPSupplier,
+            </a>
             and
             <a href="http://skillmil.com/" target="_blank">
-              &nbsp;SkillMil.
-            </a>{' '}
-            I recently graduated from{' '}
+              SkillMil.
+            </a>
+            I recently graduated from
             <a href="http://www.startupleadership.com/" target="_blank">
               Startup Leadership Program
-            </a>{' '}
-            and{' '}
+            </a>
+            and
             <a
               target="_blank"
               href="https://www.gsb.stanford.edu/programs/stanford-ignite"
             >
               Stanford Ignite
-            </a>{' '}
+            </a>
             with in-depth knowledge about entrepreneurship and startup
             ecosystem. I want to combine technological and entrepreneurship
             knowledge to create tangible things that would have the real impact
@@ -141,31 +142,29 @@ export default () => {
           </p>
 
           <h3 className={styles.sectionTitle}>What I am good at</h3>
-
+          <h4>Skills</h4>
+          <Tags tags={skillsList} />
+          <h4>Tools</h4>
           <Tags tags={toolsList} />
 
-          <SkillsColumn items={skillsList} />
 
-          <h3 className={styles.sectionTitle}>What people say about me</h3>
-
+          {/* <h3 className={styles.sectionTitle}>What people say about me</h3>
           <p>
             When I'm not in front of a computer screen, I spend my time
             paragliding, rock climbing. I also love capturing moments and
             places, through my lens, while exploring the world.
           </p>
-
           <PhotosGrid>
             Photo
             <br /> Grid
-          </PhotosGrid>
-
-          {/* <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization.</p> */}
-
+          </PhotosGrid> */}
+          
+          <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization.</p>
           <p>
-            Don't be a stranger! Give me a shout at{' '}
+            Don't be a stranger! Give me a shout at
             <a href="mailto:maitrik1419@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">
               maitrik1419[at]gmail[dot]com
-            </a>{' '}
+            </a>
             or find me at one of the social links below.
           </p>
         </div>

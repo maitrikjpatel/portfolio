@@ -7,7 +7,9 @@ function MdRender(props) {
   const { mdxCodeBody, ...restProps } = props
 
   return (
-    <MDXRenderer className={styles.markdownBody}>{mdxCodeBody}</MDXRenderer>
+    <div className={styles.markdownBody}>
+      <MDXRenderer>{mdxCodeBody}</MDXRenderer>
+    </div>
   )
 }
 
