@@ -48,9 +48,9 @@
   -webkit-line-clamp: 2;
   /* autoprefixer: off */
   -webkit-box-orient: vertical;
-  /* autoprefixer: on */
   text-overflow: ellipsis;
   font-weight: 300;
+  line-height: 25px;
 }
 
 .recommendationPerson {
@@ -221,23 +221,24 @@
     position: relative; 
     width: 90%;
   }
-  .multipleTestimonial .Testimonial   {
+  /* .multipleTestimonial .Testimonial   {
     max-width: 46%;
     margin: 2%;
-  }
+  } */
   .recommendations {
     padding: 40px;
   }
   .recommendationRecco {
-    /* font-size: 20px; */
+    font-size: 20px;
     width:90%;
+    line-height: 35px;
     max-height: 110px;
     margin: var(--space-5) auto var(--space-40);
     -webkit-line-clamp: 3;
   }
   .SeeAll {
     padding: 10px 0;
-    margin-top: -55px;
+    margin-top: -30px;
     font-size: 20px;
   }
   .recommendationName{

@@ -46,6 +46,8 @@
 
 .footerLinks li a {
   border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 .footerLinks li:last-child {
@@ -55,6 +57,8 @@
 /* Brew */
 .footerBrew {
   display: inline-block;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 .footerBrew:before {

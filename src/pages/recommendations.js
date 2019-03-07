@@ -1,11 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Testimonial from '../components/Testimonial'
+import Bio from '../components/Bio'
 
 export default () => {
   return (
     <Layout>
-      <h1 style={{textAlign:"center"}}>Recommendations</h1>
+      <Bio title="Recommendations" />
       <Testimonial variant="multiple"/>
     </Layout>
   )

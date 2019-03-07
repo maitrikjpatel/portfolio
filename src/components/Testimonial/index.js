@@ -63,13 +63,11 @@ function Testimonial(props) {
             naturalSlideWidth='768'
             naturalSlideHeight='250'
             totalSlides={Recommendations.length}
-            // isPlaying
-            interval='2000'
           >
+            {CarouselActions}
             <Slider>
               {RecommendationSlider}
             </Slider>
-            {CarouselActions}
           </CarouselProvider> 
         </div>
         <Link className={styles.SeeAll} to='/recommendations/'>See All</Link>
