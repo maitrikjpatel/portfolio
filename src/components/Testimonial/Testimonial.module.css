@@ -1,26 +1,16 @@
-.Testimonial {
-  margin: var(--space-25) 0;
-  position: relative;
-}
-
-.TestimonialTitle {
-  text-align: center;
-}
-
-.recommendation{
+.Testimonial{
   position: relative; 
-  width: 90%;
+  width: 100%;
   max-width: 768px;
   background-color: var(--color-white);
-  border: 1px solid var(--color-gray4);
+  border: 1px solid var(--color-gray3);
   margin: 2em auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 20px 40px;
   z-index: 1;
 }
 
-.recommendation::after {
+.Testimonial::after {
   content: '\201C';
   position: absolute;
   top: 10px;
@@ -29,25 +19,38 @@
   height: 50px;
   padding-top: 8px;
   margin-left: -25px;
-  background: var(--color-gray4);
+  background: var(--color-gray1);
   font-family: "Georgia", serif;
   color: var(--color-gray9);
   font-size: 70px;
   font-size: 80px;
   line-height: 75px;
   text-align: center;
-  display: block;
+  display: none;
+  border: 1px solid var(--color-gray5);
 }
 
+.recommendations {
+  padding: 20px;
+}
 
 .recommendationRecco {
+  display: box; 
+  position: relative;
+  font-size: 14px;
+  width:100%;
+  max-height: 50px;
   text-align: center;
   color: var(--color-gray10);
-  margin: var(--space-15) auto;
-  white-space: nowrap;
-  overflow: hidden;
+  margin: var(--space-5) auto var(--space-10);
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
   text-overflow: ellipsis;
-  max-width: 80%;
+  font-weight: 300;
 }
 
 .recommendationPerson {
@@ -57,37 +60,70 @@
 .recommendationRole {
   text-align: center;
   color: var(--color-gray10);
-  margin: var(--space-15) auto;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 18px;
 }
 
-.TestimonialActions {
-  margin: var(--space-10) auto 0;
+.recommendationRole {
+  font-size: 10px;
 }
 
-.Dots {
-  display: flex;
-  width: 50%;
-  margin: auto;
+.recommendationName{
+  font-weight: 600;
 }
 
-.Dots button {
-  width: 100%;
-  height: 3px;
-  padding: 0;
-  border: 1px solid var(--color-gray4);
-  background:  var(--color-gray4);
+.SeeAll{
+  padding: 5px 0;
+  text-align: center;
+  background: var(--color-gray1);
+  font-size: 12px;
+  display: block;
+  border: none;
 }
 
-.Dots button:disabled {
-  border: 1px solid  var(--color-gray7);
-  background: var(--color-gray7);
+.SeeAll:hover{
+  border: none;
+  background: var(--color-gray3);
 }
 
-.TestimonialControls {
-  margin: 25px auto 0;
+.multipleTestimonial {
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
+
+.multipleTestimonial .Testimonial   {
+  max-width: 94%;
+  margin: 3%;
+}
+
+.multipleTestimonial .recommendationRecco {
+  display: block;
+  font-size: 1rem;
+  text-overflow: initial;
+  max-height: initial;
+  width: 100%;
+}
+
+.CarouselControls {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  margin-left: -20px;
+  
+}
+
+.Next{
+  float: right;
+}
+
+.Back {
+  float: left;
+}
+
 
 .Next,
 .Back,
@@ -105,7 +141,8 @@
 .Back {
   width: auto;
   height: auto;
-  margin: -20px 50px 0;
+  margin: 0px 25px;
+  padding: 50px 0;
   display: inline-block;
   position: relative;
 }
@@ -149,9 +186,62 @@
   margin: 0 0 0 -15px;
 }
 
-.PlayPause {
-  font-size: 30px;
-  height: 40px;
-  width: 40px;
-  color: var(--color-gray7);
+
+
+@media only screen and (min-width: 480px) {
+  .Testimonial{
+    width: 95%;
+  }
+  .recommendations {
+    padding: 40px;
+  }
+  .CarouselControls {
+    margin-left: -40px;
+  }
+  .recommendationRecco {
+    margin: var(--space-5) auto var(--space-25);
+  }
+  .Testimonial::after {
+    display: block;
+  }
+  .recommendationRole {
+    font-size: 12px;
+  }
+  .recommendationRecco {
+    font-size: 20px;
+  }
+  .Next,
+  .Back {
+    margin: 0px 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Testimonial{
+    position: relative; 
+    width: 90%;
+  }
+  .multipleTestimonial .Testimonial   {
+    max-width: 46%;
+    margin: 2%;
+  }
+  .recommendations {
+    padding: 40px;
+  }
+  .recommendationRecco {
+    /* font-size: 20px; */
+    width:90%;
+    max-height: 110px;
+    margin: var(--space-5) auto var(--space-40);
+    -webkit-line-clamp: 3;
+  }
+  .SeeAll {
+    padding: 10px 0;
+    margin-top: -55px;
+    font-size: 20px;
+  }
+  .recommendationName{
+    font-size: 16px;
+    line-height: 28px;
+  }
 }

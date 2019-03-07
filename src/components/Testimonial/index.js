@@ -1,74 +1,98 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup, ButtonPlay } from 'pure-react-carousel';
+import { CarouselProvider, Slider , Slide, ButtonBack, ButtonNext, DotGroup, ButtonPlay } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import siteInfo from '../../utilities/config/siteInfo'
 
-import SliderImages from '../../Assets/Images/SliderImages/index'
 import styles from './Testimonial.module.css'
+import { Link } from '@reach/router';
 
 function Testimonial(props) {
   const {
+    variant,
     ...restProps 
   } = props
 
-  const Recommendations = siteInfo.Recommendations;
+  function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
 
-  const Slides = Recommendations.map((recommendation, index) =>
-    <Slide  
-      index={index}
-      key={index}
-      >
-        <div className={styles.recommendation}>
-          <p className={styles.recommendationRecco}>{recommendation.recco}</p>
-          <div className={styles.recommendationPerson}>
-            <p className={styles.recommendationName}><strong>{recommendation.name}</strong></p>
-            <p className={styles.recommendationRole}>{recommendation.role}</p>
-          </div>
-        </div>
+  // const Recommendations = shuffle(siteInfo.Recommendations);   
+  const Recommendations = siteInfo.Recommendations;   
+
+  const RecommendationSlider = Recommendations.map((recommendation, index) =>
+    <Slide index={index} key={index}>
+      <p className={styles.recommendationRecco}>{recommendation.recco}</p>
+      <div className={styles.recommendationPerson}>
+        <p className={styles.recommendationName}>{recommendation.name}</p>
+        <p className={styles.recommendationRole}>{recommendation.role}</p>
+      </div>
     </Slide>
   );
 
-  console.log(Slides)
-  
-  const TestimonialActions = (
-    <div className={styles.TestimonialActions}>
-      <DotGroup className={styles.Dots}/>
-      <div className={styles.TestimonialControls}>
-        <ButtonBack className={styles.Back} />
-        <ButtonPlay 
-          childrenPlaying="&#9632;" 
-          childrenPaused="&#9654;" 
-          className={styles.PlayPause} 
-        />
-        <ButtonNext className={styles.Next} />
+  const RecommendationElements = Recommendations.map((recommendation, index) =>
+    <div index={index} key={index} className={styles.Testimonial}>
+      <div className={styles.recommendations}>
+        <p className={styles.recommendationRecco}>{recommendation.recco}</p>
+        <div className={styles.recommendationPerson}>
+          <p className={styles.recommendationName}>{recommendation.name}</p>
+          <p className={styles.recommendationRole}>{recommendation.role}</p>
+        </div>
       </div>
     </div>
-  )
+  );
 
-  return (  
-    <div className={styles.Testimonial}>
-      <CarouselProvider
-        naturalSlideWidth="4.5"
-        naturalSlideHeight="1"
-        totalSlides={Recommendations.length}
-        isPlaying
-        interval='4000'
-      >
-        <Slider className={styles.Slider}>
-          {Slides}
-        </Slider>
-        {TestimonialActions}
-      </CarouselProvider>
+  const CarouselActions = (
+    <div className={styles.CarouselControls}>
+      <ButtonBack className={styles.Back} />
+      <ButtonNext className={styles.Next} />
     </div>
+  )
+  
+  let TestimonialElement
+  if (variant === "single") {
+    TestimonialElement = (
+      <div className={styles.Testimonial}>
+        <div className={styles.recommendations} >
+          <CarouselProvider
+            naturalSlideWidth='768'
+            naturalSlideHeight='250'
+            totalSlides={Recommendations.length}
+            // isPlaying
+            interval='2000'
+          >
+            <Slider>
+              {RecommendationSlider}
+            </Slider>
+            {CarouselActions}
+          </CarouselProvider> 
+        </div>
+        <Link className={styles.SeeAll} to='/recommendations/'>See All</Link>
+      </div>
+    )
+  } else if (variant === "multiple") {
+    TestimonialElement = (
+      <div className={styles.multipleTestimonial}>{RecommendationElements}</div>
+    )
+  }
+  return (  
+    <React.Fragment>
+      {TestimonialElement}
+    </React.Fragment>
   )
 }
 
 Testimonial.propTypes = {
+  variant: PropTypes.string,
 }
 
 Testimonial.defaultProps = {
+  variant: 'single'
 }
 
 export default Testimonial
