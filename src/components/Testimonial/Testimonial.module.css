@@ -1,0 +1,248 @@
+.Testimonial{
+  position: relative; 
+  width: 100%;
+  max-width: 768px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray3);
+  margin: 2em auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 1;
+}
+
+.Testimonial::after {
+  content: '\201C';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  padding-top: 8px;
+  margin-left: -25px;
+  background: var(--color-gray1);
+  font-family: "Georgia", serif;
+  color: var(--color-gray9);
+  font-size: 70px;
+  font-size: 80px;
+  line-height: 75px;
+  text-align: center;
+  display: none;
+  border: 1px solid var(--color-gray5);
+}
+
+.recommendations {
+  padding: 20px;
+}
+
+.recommendationRecco {
+  display: box; 
+  position: relative;
+  font-size: 14px;
+  width:100%;
+  max-height: 50px;
+  text-align: center;
+  color: var(--color-gray10);
+  margin: var(--space-5) auto var(--space-10);
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.recommendationPerson {
+}
+
+.recommendationName,
+.recommendationRole {
+  text-align: center;
+  color: var(--color-gray10);
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.recommendationRole {
+  font-size: 10px;
+}
+
+.recommendationName{
+  font-weight: 600;
+}
+
+.SeeAll{
+  padding: 5px 0;
+  text-align: center;
+  background: var(--color-gray1);
+  font-size: 12px;
+  display: block;
+  border: none;
+}
+
+.SeeAll:hover{
+  border: none;
+  background: var(--color-gray3);
+}
+
+.multipleTestimonial {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.multipleTestimonial .Testimonial   {
+  max-width: 94%;
+  margin: 3%;
+}
+
+.multipleTestimonial .recommendationRecco {
+  display: block;
+  font-size: 1rem;
+  text-overflow: initial;
+  max-height: initial;
+  width: 100%;
+}
+
+.CarouselControls {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  margin-left: -20px;
+  
+}
+
+.Next{
+  float: right;
+}
+
+.Back {
+  float: left;
+}
+
+
+.Next,
+.Back,
+.PlayPause {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+}
+
+.Next,
+.Back {
+  width: auto;
+  height: auto;
+  margin: 0px 25px;
+  padding: 50px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.Next:disabled::before,
+.Back:disabled::before {
+  border-color: var(--color-gray4);
+}
+
+.Next:before,
+.Back:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-color: var(--color-gray7);
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  -moz-transform-origin: 50% 50% 50%;
+  -ms-transform-origin: 50% 50% 50%;
+  -webkit-transform-origin: 50% 50% 50%;
+  transform-origin: 50% 50% 50%;
+}
+
+.Back:before {
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  margin: 0 0 0 -5px;
+}
+
+.Next:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: 0 0 0 -15px;
+}
+
+
+
+@media only screen and (min-width: 480px) {
+  .Testimonial{
+    width: 95%;
+  }
+  .recommendations {
+    padding: 40px;
+  }
+  .CarouselControls {
+    margin-left: -40px;
+  }
+  .recommendationRecco {
+    margin: var(--space-5) auto var(--space-25);
+  }
+  .Testimonial::after {
+    display: block;
+  }
+  .recommendationRole {
+    font-size: 12px;
+  }
+  .recommendationRecco {
+    font-size: 20px;
+  }
+  .Next,
+  .Back {
+    margin: 0px 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Testimonial{
+    position: relative; 
+    width: 90%;
+  }
+  /* .multipleTestimonial .Testimonial   {
+    max-width: 46%;
+    margin: 2%;
+  } */
+  .recommendations {
+    padding: 40px;
+  }
+  .recommendationRecco {
+    font-size: 20px;
+    width:90%;
+    line-height: 35px;
+    max-height: 110px;
+    margin: var(--space-5) auto var(--space-40);
+    -webkit-line-clamp: 3;
+  }
+  .SeeAll {
+    padding: 10px 0;
+    margin-top: -30px;
+    font-size: 20px;
+  }
+  .recommendationName{
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

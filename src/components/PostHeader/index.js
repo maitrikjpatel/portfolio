@@ -47,15 +47,15 @@ function PostHeader(props) {
           {/* {PostHeaderImage} */}
           <div className={styles.PostTitleWrapper}>
             {title && <h1 className={styles.PostTitle}>{title}</h1>}
+            {description &&
+              <h3 className={styles.PostSubTitle}>{description}</h3>
+            }
             {link &&
               <p className={styles.PostSubTitle}>
                 <a target="_blank" rel="noopener" href={linkUrl}>
                   {link}
                 </a>
               </p>
-            }
-            {description &&
-              <p className={styles.PostSubTitle}>{description}</p>
             }
           </div>
           {tools && role &&

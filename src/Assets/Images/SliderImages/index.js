@@ -580,5 +580,39 @@ export default {
         height: '1190'
       }
     ]
-  }
+  },
+  DocusignWebReactModuleLibrary: {
+    Images: [
+      {
+        SrcUrl: 'DocusignWeb/ComponentsModulesPages.png',
+        Text: 'ComponentsModulesPages',
+        width: '1264',
+        height: ' 540'
+        
+      },
+      {
+        SrcUrl: 'DocusignWeb/ComponentsModulesPagesIllustration.png',
+        Text: 'ComponentsModulesPagesIllustration',
+        width: '979 ',
+        height: ' 561'
+      }
+      
+    ]
+  },
+  DocusignWebPersonlization: {
+    Images: [
+      {
+        SrcUrl: 'DocusignWeb/PersonlizationBefore.png',
+        Text: 'DocusignWebpageBeforePersonlization',
+        width: '999 ',
+        height: '647'
+      },
+      {
+        SrcUrl: 'DocusignWeb/PersonlizationAfter.png',
+        Text: 'DocusignWebpageAfterPersonlization',
+        width: '1115 ',
+        height: '740'
+      }
+    ]
+  } 
 }

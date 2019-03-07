@@ -62,6 +62,13 @@
 	cursor: pointer;
   outline: inherit;
 }
+.Next{
+  float: left;
+}
+
+.Back {
+  float: right;
+}
 
 .Next,
 .Back {

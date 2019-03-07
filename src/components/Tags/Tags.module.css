@@ -3,10 +3,16 @@
 }
 
 .Tag{
-  font-size: var(--font-12);
+  font-size: var(--font-10);
   padding: 0 7.5px;
   margin: 5px 5px 0 0;
   border: 1px solid var(--color-gray4);
   border-radius: 5px;
   display: inline-block;
+}
+
+@media only screen and (min-width: 480px) {
+  .Tag{
+    font-size: var(--font-12);
+  }
 }

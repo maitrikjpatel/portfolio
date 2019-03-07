@@ -55,6 +55,8 @@ header{
 
 .headerLink a {
   border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
 }
 
 .headerLink a.active {

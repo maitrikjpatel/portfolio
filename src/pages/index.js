@@ -17,8 +17,8 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location}>
         <Helmet title={siteTitle} />
         <Bio
-          titleName="I am Maitrik."
-          title="Design Technologist who design and develop pixel perfect user interfaces and experiences."
+          titleName="Hi, I'm Maitrik."
+          title="As a Design Technologist, I design and develop pixel perfect user interfaces and experiences."
           description="Here's some of my selected projects"
         />
         <div className={styles.WorkWrapper}>
