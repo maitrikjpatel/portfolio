@@ -140,11 +140,10 @@ module.exports = {
       },
     }, 
 
-    // Site work offline (Work on it later)
-    // `gatsby-plugin-offline`,
+    // Site work offline
+    `gatsby-plugin-offline`,
     
-    // {
-    //   resolve: `gatsby-plugin-sitemap`
-    // },
+    // Site map
+    `gatsby-plugin-sitemap`
   ],
 }
