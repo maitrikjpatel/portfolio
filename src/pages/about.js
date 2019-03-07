@@ -7,10 +7,12 @@ import siteInfo from '../utilities/config/siteInfo'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import Testimonial from '../components/Testimonial'
+import resume from "../Assets/MaitrikResume.pdf"
 
 export default () => {
   const toolsList = siteInfo.toolsList;
   const skillsList = siteInfo.skillsList;
+  console.log(resume)
   return (
     <Layout>
       <div className={styles.pageAbout}>
@@ -25,7 +27,7 @@ export default () => {
           <ul className={styles.aboutContact}>
             <li>
               <a
-                href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf"
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
               >
