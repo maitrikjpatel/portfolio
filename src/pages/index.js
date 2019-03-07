@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
-
+import siteInfo from '../utilities/config/siteInfo'
 import styles from '../utilities/css/pages/Work.module.css'
 
 class BlogIndex extends React.Component {
@@ -15,7 +15,13 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMdx.edges')
     return (
       <Layout location={this.props.location}>
-        <Helmet title={siteTitle} />
+        <Helmet
+          title={siteInfo.siteTitle}
+          meta={[
+            { name: 'description', content: siteInfo.siteDescription },
+            { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
+          ]}
+        />
         <Bio
           titleName="Hi, I'm Maitrik."
           title="As a Design Technologist, I design and develop pixel perfect user interfaces and experiences."

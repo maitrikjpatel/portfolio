@@ -1,4 +1,6 @@
 import React from 'react'
+import Helmet from 'react-helmet'
+
 import styles from '../utilities/css/pages/About.module.css'
 import Layout from '../components/Layout'
 import siteInfo from '../utilities/config/siteInfo'
@@ -12,7 +14,13 @@ export default () => {
   return (
     <Layout>
       <div className={styles.pageAbout}>
-
+        <Helmet
+          title={`About me | ${siteInfo.siteTitle}`}
+          meta={[
+            { name: 'description', content: siteInfo.siteDescription },
+            { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
+          ]}
+        />
         <Bio title="About me">
           <ul className={styles.aboutContact}>
             <li>
