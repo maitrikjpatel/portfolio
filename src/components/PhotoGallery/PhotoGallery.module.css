@@ -1,3 +1,8 @@
+
+.PhotoGallery {
+  margin-bottom: var(--space-25);
+}
+
 .PhotoGallery img{
   position: relative;
   border: 1px solid var(--color-gray4);
