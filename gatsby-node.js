@@ -36,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMdx.edges;
+        const posts = result.data.allMdx.edges
         const blogPost = path.resolve('./src/components/BlogPost/blog-post.js')
         
         _.each(posts, (post, index) => {
