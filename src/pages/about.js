@@ -1,23 +1,33 @@
 import React from 'react'
+import Helmet from 'react-helmet'
+
 import styles from '../utilities/css/pages/About.module.css'
 import Layout from '../components/Layout'
 import siteInfo from '../utilities/config/siteInfo'
 import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import Testimonial from '../components/Testimonial'
+import resume from "../Assets/MaitrikResume.pdf"
 
 export default () => {
   const toolsList = siteInfo.toolsList;
   const skillsList = siteInfo.skillsList;
+  console.log(resume)
   return (
     <Layout>
       <div className={styles.pageAbout}>
-
+        <Helmet
+          title={`About me | ${siteInfo.siteTitle}`}
+          meta={[
+            { name: 'description', content: siteInfo.siteDescription },
+            { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
+          ]}
+        />
         <Bio title="About me">
           <ul className={styles.aboutContact}>
             <li>
               <a
-                href="http://maitrikpatel.com/resume/Maitrik_Resume.pdf"
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
               >

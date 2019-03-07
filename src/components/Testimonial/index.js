@@ -47,9 +47,13 @@ function Testimonial(props) {
     </div>
   );
 
-  const CarouselActions = (
-    <div className={styles.CarouselControls}>
+  const CarouselActionsBack = (
+    <div className={styles.CarouselActionsBack}>
       <ButtonBack className={styles.Back} />
+    </div>
+  )
+  const CarouselActionsNext = (
+    <div className={styles.CarouselActionsNext}>
       <ButtonNext className={styles.Next} />
     </div>
   )
@@ -64,10 +68,11 @@ function Testimonial(props) {
             naturalSlideHeight='250'
             totalSlides={Recommendations.length}
           >
-            {CarouselActions}
+            {CarouselActionsBack}
             <Slider>
               {RecommendationSlider}
             </Slider>
+            {CarouselActionsNext}
           </CarouselProvider> 
         </div>
         <Link className={styles.SeeAll} to='/recommendations/'>See All</Link>

@@ -75,16 +75,7 @@ module.exports = {
       }
     },   
 
-    // HTML SEO Head (Work on it later)
-    `gatsby-plugin-react-helmet`,
-
-    // Google Analytics
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
+ 
 
     // FileSystem for content pages
     {
@@ -129,9 +120,6 @@ module.exports = {
           // Copies local files linked to/from markdown to your public folder.
           'gatsby-remark-copy-linked-files',
 
-
-          // Replaces “dumb” punctuation marks with “smart” 
-          // 'gatsby-remark-smartypants',
         ],
       },
     },
@@ -140,25 +128,22 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
 
-    // Site work offline (Work on it later)
-    // `gatsby-plugin-offline`,
-    
-    // {
-    //   resolve: `gatsby-plugin-sitemap`
-    // },
-    // {
-    //   resolve: "gatsby-plugin-react-svg",
-    //   options: {
-    //     include: /svg-icons/
-    //   }
-    // }
 
-    // Typography
-    // {
-    //   resolve: 'gatsby-plugin-typography',
-    //   options: {
-    //     pathToConfigModule: 'src/utilities/typography',
-    //   },
-    // },
+    // HTML SEO Head
+    `gatsby-plugin-react-helmet`,
+
+    // Google Analytics
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-38627749-1"
+      },
+    }, 
+
+    // Site work offline
+    `gatsby-plugin-offline`,
+    
+    // Site map
+    `gatsby-plugin-sitemap`
   ],
 }

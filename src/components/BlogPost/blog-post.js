@@ -12,6 +12,7 @@ import PostHeader from '../PostHeader'
 
 import styles from './blogPost.module.css'
 import MdRender from '../MdRender'
+import siteInfo from '../../utilities/config/siteInfo'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -81,7 +82,13 @@ class BlogPostTemplate extends React.Component {
     
     return (
       <Layout location={this.props.location}>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet
+          title={`${title} | ${siteTitle}`}
+          meta={[
+            { name: 'description', content: description },
+            { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
+          ]}
+        />
 
         {postHeader}
 

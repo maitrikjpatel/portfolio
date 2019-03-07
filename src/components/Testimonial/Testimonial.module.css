@@ -108,12 +108,19 @@
   width: 100%;
 }
 
-.CarouselControls {
+.CarouselActionsBack,
+.CarouselActionsNext {
   position: absolute;
-  top: 30%;
-  width: 100%;
-  margin-left: -20px;
-  
+  top: 0;
+  height: 100%;
+}
+
+.CarouselActionsNext {
+  right: 0;
+}
+
+.CarouselActionsBack {
+  left: 0;
 }
 
 .Next{
@@ -139,9 +146,9 @@
 
 .Next,
 .Back {
-  width: auto;
-  height: auto;
-  margin: 0px 25px;
+  width: 25px;
+  height: inherit;
+  margin: 0px 10px;
   padding: 50px 0;
   display: inline-block;
   position: relative;
@@ -156,8 +163,8 @@
 .Back:before {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   top: 50%;
   left: 50%;
   border-style: solid;
@@ -195,9 +202,6 @@
   .recommendations {
     padding: 40px;
   }
-  .CarouselControls {
-    margin-left: -40px;
-  }
   .recommendationRecco {
     margin: var(--space-5) auto var(--space-25);
   }
@@ -210,9 +214,16 @@
   .recommendationRecco {
     font-size: 20px;
   }
-  .Next,
+  .Next{
+    margin: 0px 20px 0 0 ;
+  }
   .Back {
-    margin: 0px 40px;
+    margin: 0px 0 0 20px;
+  }
+  .Next:before,
+  .Back:before {
+    width: 20px;
+    height: 20px;
   }
 }
 
