@@ -18,26 +18,7 @@ module.exports = {
   userTwitter: '@maitrikjpatel', // Twitter Username
   ogSiteName: 'Maitrik Patel Portfolio', // Facebook Site Name
   ogLanguage: 'en_EN',
-  // siteFBAppID: '123456789', // Facebook App ID
-  // og: Meta Tags
-
-  // googleAnalyticsID: 'UA-12345689-1',
-  // copyright: 'Copyright © 2017. All rights reserved. Pictures by Unsplash.', // Copyright in the footer of the site
-
-  // Settings for typography.js
-  // headerFontFamily: 'Lato',
-  // bodyFontFamily: 'Lato',
-  // baseFontSize: '16px',
-
-  // You can translate these three words into your language if you want.
-  // They'll be shown on the project page header
-  // client: 'Client',
-  // date: 'Date',
-  // service: 'Service',
-
-  // Date format used in your project header
-  // More information here: https://date-fns.org/v1.29.0/docs/format
-  // dateFormat: 'DD.MM.YYYY',
+  googleAnalyticsID: 'UA-38627749-1',
 
   toolsList : [
     'React',
