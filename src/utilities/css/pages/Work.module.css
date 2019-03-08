@@ -3,7 +3,7 @@
 }
 
 .WorkWrapper a {
-  margin: var(--space-25)
+  margin: var(--space-25) var(--space-15) 0;
 }
 
 .WorkWrapper a:last-child {

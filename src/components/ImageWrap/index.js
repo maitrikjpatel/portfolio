@@ -27,9 +27,17 @@ class ImageWrap extends React.Component {
     }else {
       titleText = splitCamelCase(srcName)
     }
+
+    const windowWidth = window.innerWidth
+    let ImageWidth
+    if( windowWidth <= 768) {
+      ImageWidth = 100
+    } else {
+      ImageWidth = width
+    }
     
     return (
-      <div style={{ width: `${width}%`}} className={styles.ImageWrap} >
+      <div style={{ width: `${ImageWidth}%`}} className={styles.ImageWrap} >
         <Img
           className={styles.Image} 
           fluid={fluidSrc.node.fluid}
