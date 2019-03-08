@@ -3,7 +3,8 @@
   background: var(--color-white);
   transition: .3s ease;
   border: 1px solid var(--color-gray5);
-  position: relative
+  position: relative;
+  width: 100%
 }
 
 @media (min-width: 40rem) {

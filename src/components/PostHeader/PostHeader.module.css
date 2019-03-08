@@ -18,6 +18,10 @@
   margin-top: -10px;
 }
 
+.PostTitle {
+  line-height: normal;
+}
+
 .PostDescription {
   text-align: center;
 }
@@ -59,5 +63,8 @@
 @media (min-width: 30rem) {
   .PostHeaderImage {
     width: 400px;
+  }
+  .PostTitle {
+    line-height: inherit;
   }
 }
