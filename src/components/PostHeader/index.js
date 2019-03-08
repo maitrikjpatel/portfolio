@@ -29,7 +29,7 @@ function PostHeader(props) {
 
   let PostColorWrapper = {
     background: `linear-gradient(180deg, ${rgbPostColor} 0%, rgba(250,250,250,1) 100%)`,
-    paddingBottom: 'var(--space-40)',
+    padding: '0 10px var(--space-40)',
   }
 
   const linkUrl = `https://${link}`

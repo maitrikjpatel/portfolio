@@ -18,14 +18,18 @@ function Card(props) {
     ...restProps
   } = props
 
-  let cardImageWrapperStyle = {
+  const cardImageWrapperStyle = {
     backgroundColor: postColor,
+  }
+
+  const postColorText = { 
+    color: postColor 
   }
 
   let cardImage = (
     <React.Fragment>
       {imageUrl && (
-        <div style={{backgroundColor: postColor}} className={styles.cardImageWrapper}>
+        <div style={cardImageWrapperStyle} className={styles.cardImageWrapper}>
           <Img
             className={styles.cardImage}
             fluid={imageUrl}
@@ -64,14 +68,10 @@ function Card(props) {
     cardSubContent = (
       <React.Fragment>
         {role && (
-          <p className={styles.cardNotesSpan}>
-            <span style={{ color: { postColor } }}>{role}</span>
-          </p>
+          <p className={styles.cardNotesSpan}>{role}</p>
         )}
         {topics && (
-          <p className={styles.cardNotesSpan}>
-            <span style={{ color: { postColor } }}>{topics}</span>
-          </p>
+          <p className={styles.cardNotesSpan}>{topics}</p>
         )}
         <p className={styles.cardSource}>
           Source: {source}
@@ -83,14 +83,10 @@ function Card(props) {
     cardSubContent = (
       <React.Fragment>
         {role && (
-          <p className={styles.cardWorkSpan}>
-            <span style={{ color: { postColor } }}>{role}</span>
-          </p>
+          <p className={styles.cardWorkSpan}>{role}</p>
         )}
         {topics && (
-          <p className={styles.cardWorkSpan}>
-            <span style={{ color: { postColor } }}>{topics}</span>
-          </p>
+          <p className={styles.cardWorkSpan}>{topics}</p>
         )}
       </React.Fragment>
     )

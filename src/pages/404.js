@@ -12,7 +12,10 @@ const NotFoundPage = () => (
         { name: 'description', content: siteInfo.siteDescription },
         { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
       ]}
-    />
+    >
+      <html lang="en" />
+    </Helmet>
+    
     <div style={{textAlign: "center"}}>
       <h1>404 - Oh Snap !</h1>
       <h2>

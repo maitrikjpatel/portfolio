@@ -88,7 +88,9 @@ class BlogPostTemplate extends React.Component {
             { name: 'description', content: description },
             { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
           ]}
-        />
+        >
+          <html lang="en" />
+        </Helmet>
 
         {postHeader}
 

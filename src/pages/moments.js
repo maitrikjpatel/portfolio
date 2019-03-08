@@ -13,7 +13,9 @@ export default () => (
         { name: 'description', content: siteInfo.siteDescription },
         { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
       ]}
-    />
+    >
+      <html lang="en" />
+    </Helmet>
     <Bio
       title="Photos"
       description="My photographs tells the story, I fail to put into words."

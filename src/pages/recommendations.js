@@ -14,7 +14,9 @@ export default () => {
           { name: 'description', content: siteInfo.siteDescription },
           { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
         ]}
-      />
+      >
+        <html lang="en" />
+      </Helmet>
       <Bio title="Recommendations" />
       <Testimonial variant="multiple"/>
     </Layout>
