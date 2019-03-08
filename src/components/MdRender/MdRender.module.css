@@ -280,7 +280,8 @@
 }
 
 .markdownBody blockquote {
-  padding: 0 1em;
+  font-size: var(--font-32);
+  padding: 1em;
   color: #6a737d;
   border-left: 0.25em solid #dfe2e5;
 }
