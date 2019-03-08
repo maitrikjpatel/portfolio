@@ -21,7 +21,9 @@ class NoteIndex extends React.Component {
             { name: 'description', content: siteInfo.siteDescription },
             { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
           ]}
-        />
+        >
+          <html lang="en" />
+        </Helmet>
         <Bio
           title="Notes"
           description="Here's some of my development and UX notes"

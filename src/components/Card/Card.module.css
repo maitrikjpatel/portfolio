@@ -69,10 +69,10 @@
 .cardNotesSpan,
 .cardSource{
   display: block;
-  font-size: 12px;
+  font-size: 13px;
   line-height: var(--space-15);
   margin: var(--space-10) 0 0 0;
-  color: var(--color-gray8);
+  color: var(--color-gray9);
 }
 
 .card:hover .cardNotesSpan {

@@ -22,7 +22,10 @@ export default () => {
             { name: 'description', content: siteInfo.siteDescription },
             { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
           ]}
-        />
+        >
+          <html lang="en" />
+        </Helmet>
+
         <Bio title="About me">
           <ul className={styles.aboutContact}>
             <li>

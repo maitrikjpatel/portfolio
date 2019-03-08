@@ -21,7 +21,9 @@ class BlogIndex extends React.Component {
             { name: 'description', content: siteInfo.siteDescription },
             { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
           ]}
-        />
+        >
+          <html lang="en" />
+        </Helmet>
         <Bio
           titleName="Hi, I'm Maitrik."
           title="As a Design Technologist, I design and develop pixel perfect user interfaces and experiences."
