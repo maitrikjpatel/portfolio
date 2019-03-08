@@ -17,12 +17,12 @@ const NotFoundPage = () => (
     </Helmet>
     
     <div style={{textAlign: "center"}}>
-      <h1>404 - Oh Snap !</h1>
+      <h1>404 - Oh Snap</h1>
       <h2>
-        Couldn't find the page<br/>
+        Couldn't find the page !!!<br/>
         Chewie will guide you to <a href="/">home</a>
       </h2>
-      <ImageWrap srcName="404Image" width="40"/>
+      <ImageWrap srcName="404Image" width="75"/>
     </div>
   </Layout>
 )
