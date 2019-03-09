@@ -282,8 +282,8 @@
 .markdownBody blockquote {
   font-size: var(--font-32);
   padding: 1em;
-  color: #6a737d;
-  border-left: 0.25em solid #dfe2e5;
+  line-height: 40px;
+  border-left: 0.25em solid var(--color-gray5);
 }
 
 .markdownBody blockquote>:first-child {
@@ -665,21 +665,3 @@
   text-decoration: underline;
   color: #032f62;
 }
-
-/* 
-.markdownBody img {
-  border-style: none;
-}
-
-.markdownBody img {
-  max-width: 100%;
-  background-color: #fff;
-}
-
-.markdownBody img[align=right] {
-  padding-left: 20px;
-}
-
-.markdownBody img[align=left] {
-  padding-right: 20px;
-} */

@@ -26,7 +26,7 @@ class NoteIndex extends React.Component {
         </Helmet>
         <Bio
           title="Notes"
-          description="Here's some of my development and UX notes"
+          description="Here are some of my development and UX notes"
         />
         <div className={styles.NotesWrapper}>
           {posts.map(({ node }) => {

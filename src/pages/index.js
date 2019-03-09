@@ -27,7 +27,7 @@ class BlogIndex extends React.Component {
         <Bio
           titleName="Hi, I'm Maitrik."
           title="As a Design Technologist, I design and develop pixel perfect user interfaces and experiences."
-          description="Here's some of my selected projects"
+          description="Here are some of my selected projects"
         />
         <div className={styles.WorkWrapper}>
           {posts.map(({ node }) => {
