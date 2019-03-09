@@ -7,6 +7,22 @@ import styles from './ImageWrap.module.css'
 import Img from 'gatsby-image'
 
 class ImageWrap extends React.Component {
+  constructor(props) {
+    super(props)
+
+    const {
+      ...restProps
+    } = this.props
+
+    this.state = {
+      windowWidth: props.windowWidth
+    }
+  }
+
+  componentDidMount() {
+    this.setState({windowWidth: window.innerWidth})
+  }
+
   render() { 
     const {
       data,
@@ -15,6 +31,11 @@ class ImageWrap extends React.Component {
       width,
       ...restProps
     } = this.props
+
+    const {
+      windowWidth,
+    } = this.state
+
 
     var fluidSrc = data.allImageSharp.edges.find( function( image ){
       const fileName = image.node.fluid.originalName.replace(/\.[^/.]+$/, "")
@@ -27,15 +48,15 @@ class ImageWrap extends React.Component {
     }else {
       titleText = splitCamelCase(srcName)
     }
-
-    const windowWidth = window.innerWidth
+    
+    console.log(windowWidth)
     let ImageWidth
     if( windowWidth <= 768) {
       ImageWidth = 100
     } else {
       ImageWidth = width
     }
-    
+    console.log(ImageWidth)
     return (
       <div style={{ width: `${ImageWidth}%`}} className={styles.ImageWrap} >
         <Img
