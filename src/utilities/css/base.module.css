@@ -10,7 +10,7 @@ body {
   margin: 0;
   height: 100%;
   font-weight: 400;
-  font-size: var(--font-16);
+  font-size: var(--font-18);
   line-height: var(--font-28);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
