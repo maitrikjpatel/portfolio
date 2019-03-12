@@ -245,6 +245,22 @@ export default {
       }
     ]
   },
+  OpentextWhiteboard: {
+    Images: [
+      {
+        SrcUrl: 'OpenText/OpentextWhiteboardSolution.png',
+        Text: 'OpentextWhiteboardSolution',
+        width: '681 ',
+        height: '493',
+      },
+      {
+        SrcUrl: 'OpenText/OpentextWhiteboardDashBoardDesign.png',
+        Text: 'OpentextWhiteboardDashBoardDesign',
+        width: '797 ',
+        height: '530',
+      }
+    ]
+  },
   OpenTextAthena:{
     Images: [
       {
