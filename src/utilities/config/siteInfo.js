@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: "Maitrik's Portfolio", // Navigation and Site Title
   siteTitleAlt: "Maitrik's Portfolio - A Front-End Developer / UX Designer who designs and develops pixel perfect user interface, experiences and web applications.",
   siteDescription: "Maitrik's Portfolio - A Front-End Developer / UX Designer who designs and develops pixel perfect user interface, experiences and web applications.",
-  siteUrl: 'https://festive-banach-a55f7e.netlify.com/', // Domain of your site. No trailing slash!
+  siteUrl: 'https://maitrikpatel.com', // Domain of your site. No trailing slash!
   siteName: 'Maitrik', // Name of Developer
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: './src/Assets/favicon.png', // Used for SEO and manifest

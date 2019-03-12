@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
+import SEO from '../SEO'
 
 import { Link } from 'gatsby'
 import get from 'lodash/get'
@@ -12,11 +11,9 @@ import PostHeader from '../PostHeader'
 
 import styles from './blogPost.module.css'
 import MdRender from '../MdRender'
-import siteInfo from '../../utilities/config/siteInfo'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteAuthor = get(this.props, 'data.site.siteMetadata.author')
 
     const post = this.props.data.mdx
@@ -82,18 +79,7 @@ class BlogPostTemplate extends React.Component {
     
     return (
       <Layout location={this.props.location}>
-        <Helmet
-          title={`${title} | ${siteTitle}`}
-          meta={[
-            { name: 'description', content: description },
-            { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
-          ]}
-        >
-          <html lang="en" />
-          <meta charSet="utf-8" />
-          <meta property="og:image" content={siteInfo.siteImage} />
-          <meta name="image" content={siteInfo.siteImage} />
-        </Helmet>
+        <SEO titleText={title} />
 
         {postHeader}
 

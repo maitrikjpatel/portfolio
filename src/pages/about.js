@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import SEO from '../components/SEO'
 
 import styles from '../utilities/css/pages/About.module.css'
 import Layout from '../components/Layout'
@@ -16,18 +16,7 @@ export default () => {
   return (
     <Layout>
       <div className={styles.pageAbout}>
-        <Helmet
-          title={`About me | ${siteInfo.siteTitle}`}
-          meta={[
-            { name: 'description', content: siteInfo.siteDescription },
-            { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
-          ]}
-        >
-          <html lang="en" />
-          <meta charSet="utf-8" />
-          <meta property="og:image" content={siteInfo.siteImage} />
-          <meta name="image" content={siteInfo.siteImage} />
-        </Helmet>
+        <SEO titleText="About me" />
 
         <Bio title="About me">
           <ul className={styles.aboutContact}>

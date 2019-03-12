@@ -1,12 +1,11 @@
 import React from 'react'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import SEO from '../components/SEO'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
-import siteInfo from '../utilities/config/siteInfo'
 import styles from '../utilities/css/pages/Work.module.css'
 
 class BlogIndex extends React.Component {
@@ -15,18 +14,7 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMdx.edges')
     return (
       <Layout location={this.props.location}>
-        <Helmet
-          title={siteInfo.siteTitle}
-          meta={[
-            { name: 'description', content: siteInfo.siteDescription },
-            { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
-          ]}
-        >
-          <html lang="en" />
-          <meta charSet="utf-8" />
-          <meta property="og:image" content={siteInfo.siteImage} />
-          <meta name="image" content={siteInfo.siteImage} />
-        </Helmet>
+        <SEO />
         <Bio
           titleName="Hi, I'm Maitrik."
           title="As a Design Technologist, I design and develop pixel perfect user interfaces and experiences."
