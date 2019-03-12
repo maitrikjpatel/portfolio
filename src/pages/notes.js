@@ -1,12 +1,12 @@
 import React from 'react'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
+
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout/'
 import Card from '../components/Card/'
 import Bio from '../components/Bio'
 import styles from '../utilities/css/pages/Notes.module.css'
-import siteInfo from '../utilities/config/siteInfo'
+import SEO from '../components/SEO'
 
 class NoteIndex extends React.Component {
   render() {
@@ -15,15 +15,7 @@ class NoteIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Helmet
-          title={`Notes | ${siteInfo.siteTitle}`}
-          meta={[
-            { name: 'description', content: siteInfo.siteDescription },
-            { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) }
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
+        <SEO titleText="Notes"/>
         <Bio
           title="Notes"
           description="Here are some of my development and UX notes"

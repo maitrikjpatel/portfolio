@@ -10,6 +10,7 @@ module.exports = {
     author: siteInfo.siteName,
     description: siteInfo.siteDescription,
     siteUrl: siteInfo.siteUrl,
+    image: siteInfo.siteImage,
   },
   pathPrefix: '/portfolio',
   plugins: [
