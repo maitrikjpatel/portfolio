@@ -20,7 +20,7 @@ const NotFoundPage = () => (
       <h1>404 - Oh Snap</h1>
       <h2>
         Couldn't find the page !!!<br/>
-        Chewie will guide you to <a href="/">home</a>
+        Chewie will guide you <a href="/">Home</a>
       </h2>
       <ImageWrap srcName="404Image" width="75"/>
     </div>
