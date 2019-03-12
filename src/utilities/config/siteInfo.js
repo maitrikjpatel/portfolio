@@ -1,22 +1,23 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  siteTitle: 'Maitrik Patel Portfolio', // Navigation and Site Title
-  siteTitleAlt: "Maitrik Patel's Portfolio - A Front-End Developer / UX Designer who designs and develops pixel perfect user interface, experiences and web applications.",
-  siteDescription: "Maitrik Patel's Portfolio - A Front-End Developer / UX Designer who designs and develops pixel perfect user interface, experiences and web applications.",
+  siteTitle: "Maitrik's Portfolio", // Navigation and Site Title
+  siteTitleAlt: "Maitrik's Portfolio - A Front-End Developer / UX Designer who designs and develops pixel perfect user interface, experiences and web applications.",
+  siteDescription: "Maitrik's Portfolio - A Front-End Developer / UX Designer who designs and develops pixel perfect user interface, experiences and web applications.",
   siteUrl: 'https://festive-banach-a55f7e.netlify.com/', // Domain of your site. No trailing slash!
-  siteName: 'Maitrik Patel', // Name of Developer
+  siteName: 'Maitrik', // Name of Developer
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: './src/Assets/favicon.png', // Used for SEO and manifest
+  siteImage: './src/Assets/siteImage.png', // Used for SEO and manifest
 
   // Manifest and Progress color
-  manifestShortName: 'MP-Portolfio',
+  manifestShortName: "Maitrik's Portfolio",
   manifestBackgroundColor: '#fafafa',
   manifestThemeColor: '#79e9d2',
   manifestDisplay: 'standalone',
 
   // Social Meta data
   userTwitter: '@maitrikjpatel', // Twitter Username
-  ogSiteName: 'Maitrik Patel Portfolio', // Facebook Site Name
+  ogSiteName: "Maitrik's Portfolio", // Facebook Site Name
   ogLanguage: 'en_EN',
   googleAnalyticsID: 'UA-38627749-1',
 

@@ -15,6 +15,9 @@ export default () => (
       ]}
     >
       <html lang="en" />
+      <meta charSet="utf-8" />
+      <meta property="og:image" content={siteInfo.siteImage} />
+      <meta name="image" content={siteInfo.siteImage} />
     </Helmet>
     <Bio
       title="Photos"
