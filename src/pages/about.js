@@ -13,6 +13,31 @@ import { Link } from 'gatsby'
 export default () => {
   const toolsList = siteInfo.toolsList;
   const skillsList = siteInfo.skillsList;
+
+  const topicSvg = (
+    <svg viewBox="0 0 55 55" className={styles.svg} role="img">
+      <path d="M45.297,21.946l9.656-5.517L27.477,0.825L0,16.429l9.656,5.517L0,27.429l9.656,5.517L0,38.429l27.477,15.698l27.476-15.698
+      l-9.656-5.483l9.656-5.517L45.297,21.946z M27.477,3.125l23.435,13.309l-23.435,13.39L4.041,16.434L27.477,3.125z M11.675,23.099
+      l15.802,9.028l15.802-9.028l7.633,4.335l-23.435,13.39L4.041,27.434L11.675,23.099z M50.912,38.434l-23.435,13.39L4.041,38.434
+      l7.634-4.335l15.802,9.028l15.802-9.028L50.912,38.434z"/>
+    </svg>
+  )
+
+  const toolSvg = (
+    <svg viewBox="0 0 512 512" className={styles.svg}>
+      <g>
+        <g>
+          <path d="M501,470.8l-57.3-163.3V41.2H69.4v260.4L11,470.8H501z M40.2,451l45.9-134.5h339.9L472.9,451H40.2z M89.2,61h333.6v234.6    H89.2V61z"/>
+          <polygon points="146.5,186.1 223.7,219.5 223.7,204.9 162.2,178.9 224.7,153.8 224.7,139.2 146.5,172.6   "/>
+          <polygon points="233.1,239.3 244.5,239.3 278.9,117.3 267.5,117.3   "/>
+          <polygon points="287.3,153.8 348.8,178.9 287.3,204.9 287.3,219.5 365.5,186.1 365.5,172.6 287.3,139.2   "/>
+        </g>
+      </g>
+    </svg>
+  )
+
+
+
   return (
     <Layout>
       <div className={styles.pageAbout}>
@@ -64,9 +89,9 @@ export default () => {
 
           <h3 className={styles.sectionTitle}>What I am good at</h3>
           <img src={AboutSkills} className={styles.aboutSkills} title="Good Skills"/>
-          <h4>Skills</h4>
+          <h4>{topicSvg} Skills</h4>
           <Tags tags={skillsList} />
-          <h4>Tools</h4>
+          <h4>{toolSvg} Tools</h4>
           <Tags tags={toolsList} />
 
 

@@ -16,8 +16,8 @@ const NotFoundPage = () => {
       <div style={{textAlign: "center"}}>
         <Bio title="Resume" />
         <Resume />
-        <p>If your browser does not support PDFs. Please download the PDF to view it : 
-          <a href={resumeUrl}> Download PDF</a>.
+        <p>If your browser does not support PDFs. Please download the Resume PDF to view it : 
+          <a href={resumeUrl}> Download Resume PDF</a>.
         </p>
         <br/>
       </div>
