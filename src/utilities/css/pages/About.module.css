@@ -32,6 +32,14 @@
   list-style-type: none;
 }
 
+.aboutSkills {
+  width: 90%;
+  height: auto;
+  margin: 25px 0;
+  left: 5%;
+  position: relative;
+}
+
 @media (min-width: 48rem) {
   .aboutContent {
     margin: var(--space-50) 0;

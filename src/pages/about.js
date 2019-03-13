@@ -8,6 +8,7 @@ import Bio from '../components/Bio'
 import Tags from '../components/Tags'
 import Testimonial from '../components/Testimonial'
 import resume from "../Assets/MaitrikResume.pdf"
+import AboutSkills from "../Assets/Images/SingleImages/AboutSkills.png"
 
 export default () => {
   const toolsList = siteInfo.toolsList;
@@ -86,6 +87,9 @@ export default () => {
           </p>
 
           <h3 className={styles.sectionTitle}>What I am good at</h3>
+
+          <img src={AboutSkills} className={styles.aboutSkills} title="Good Skills"/>
+
           <h4>Skills</h4>
           <Tags tags={skillsList} />
           <h4>Tools</h4>
