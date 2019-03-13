@@ -9,19 +9,17 @@ function Resume(props) {
   const resumeUrl = `${resume}#navpanes=0&scrollbar=0&Zoom=100%&view=Fit`
 
   return (  
-
-    // <object data={resumeUrl} type="application/pdf" width="100%" height="750px"></object>
+    
     // <embed src={resumeUrl} type="application/pdf" width="100%" height="750px"></embed>
+    // <object data={resumeUrl} type="application/pdf" width="100%" height="750px"></object>
     // <iframe width="100%" height="750px" src={resumeUrl} gesture="media"  allow="encrypted-media" allowfullscreen />
     
-    <div className={styles.ResumeWrapper}>
-      <embed 
-        className={styles.Resume}
-        type="application/pdf"
-        src={resumeUrl} 
-      >
-      </embed>
-    </div>
+    <embed 
+      className={styles.Resume}
+      type="application/pdf"
+      src={resumeUrl} 
+    > 
+    </embed>
   )
 }
 
