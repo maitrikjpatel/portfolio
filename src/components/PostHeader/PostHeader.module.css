@@ -26,6 +26,7 @@
 
 .PostSubTitle {
   margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .PostTitle {
@@ -39,8 +40,7 @@
 .PostDescription p {
   border-right: none;
   padding: 0;
-  margin: 0;
-  line-height: 40px;
+  margin: 0 0 20px 0;
 }
 
 .PostDottedWrapper {
