@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import resume from "../Assets/MaitrikResume.pdf"
 import Bio from '../components/Bio';
+import Resume from '../components/Resume';
 
 const NotFoundPage = () => {
    
@@ -14,23 +15,10 @@ const NotFoundPage = () => {
       
       <div style={{textAlign: "center"}}>
         <Bio title="Resume" />
-        {/* <object data={resumeUrl} type="application/pdf" width="100%" height="750px"></object> */}
-        {/* <embed src={resumeUrl} type="application/pdf"></embed> */}
-        {/* <iframe src={resumeUrl} gesture="media"  allow="encrypted-media" allowfullscreen > */}
-
-        <div style={{"position": "relative", "overflow": "hidden", "paddingTop": "56.25%"}}>
-          <embed 
-            style={{'position': 'absolute', 'top': '0', 'left': '0', 'width': '100%', 'height': '100%', 'border': '0'}}
-            type="application/pdf"
-            src={resumeUrl} 
-          >
-          </embed>
-        </div>
-
+        <Resume />
         <p>If your browser does not support PDFs. Please download the PDF to view it : 
           <a href={resumeUrl}> Download PDF</a>.
         </p>
-        <br/>
         <br/>
       </div>
     </Layout>
