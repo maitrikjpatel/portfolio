@@ -8,12 +8,12 @@
 
 .aboutContent > p {
   text-align: justify;
-  word-break: break-all;
   margin-bottom: var(--space-20); 
 }
 
 .aboutContent > p > a {
-  margin: 0 6px;
+  display: inline-block;
+  margin: 0 7px 0 0;
 }
 
 .sectionTitle {
