@@ -145,6 +145,16 @@ module.exports = {
     `gatsby-plugin-offline`,
     
     // Site map
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+
+    // Segment 
+    {
+      resolve: `gatsby-plugin-segment-js`,
+      options: {
+          prodKey: `v7OYUYtlsJ80Cs7a2Ay4wNPwjEZwMaxw`,
+
+          trackPage: true
+      }
+    }
   ],
 }
