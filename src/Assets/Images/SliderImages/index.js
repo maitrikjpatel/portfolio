@@ -630,5 +630,57 @@ export default {
         height: '740'
       }
     ]
+  },
+  Others: {
+    Images: [
+      {
+        SrcUrl: 'Others/Pixelresume.png',
+        Text: 'Pixelresume',
+        width: '889',
+        height: '614'
+      },
+      {
+      SrcUrl: 'Others/ImazeRegistration.png',
+        Text: 'ImazeRegistration',
+        width: '1365',
+        height: '727'
+      },
+      {
+      SrcUrl: 'Others/ImazeLogin.png',
+        Text: 'ImazeLogin',
+        width: '1365',
+        height: '729'
+      },
+      {
+      SrcUrl: 'Others/Enigma.png',
+        Text: 'Enigma',
+        width: '1365',
+        height: '728'
+      },
+      {
+      SrcUrl: 'Others/ImazeLandingPage.png',
+        Text: 'ImazeLandingPage',
+        width: '1365',
+        height: '731'
+      },
+      {
+      SrcUrl: 'Others/CsuFullertonIee.png',
+        Text: 'CsuFullertonIee',
+        width: '1592',
+        height: '1388'
+      },
+      {
+      SrcUrl: 'Others/CsuFullertonStudyAbroad.png',
+        Text: 'CsuFullertonStudyAbroad',
+        width: '1592',
+        height: '1388'
+      },
+      {
+      SrcUrl: 'Others/Alphonso.png',
+        Text: 'Alphonso',
+        width: '1560',
+        height: '923'
+      }
+    ]
   } 
 }
