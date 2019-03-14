@@ -147,14 +147,12 @@ module.exports = {
     // Site map
     `gatsby-plugin-sitemap`,
 
-    // Segment 
+    // FullStory 
     {
-      resolve: `gatsby-plugin-segment-js`,
+      resolve: `gatsby-plugin-fullstory`,
       options: {
-          prodKey: `v7OYUYtlsJ80Cs7a2Ay4wNPwjEZwMaxw`,
-
-          trackPage: true
-      }
-    }
+        fs_org: 'JY0WN',
+      },
+    },
   ],
 }
