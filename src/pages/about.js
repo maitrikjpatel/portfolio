@@ -65,7 +65,7 @@ export default () => {
 
         <div className={styles.aboutContent}>
 
-          <p>I’m a Design Technologist currently living in San Francisco Bay area, California. I stand on the sweet spot where design and code intersects. My comprehensive knowledge in design and technology allows me to cultivate productive teams in a synergic environment that meets the requirements of creatives and developers concurrently. I utilize UX / Front End Development best practices in agile workflow to cultivate elegant, intuitive and pixel perfect user interface designs and applications.</p>
+          <p>I’m a Design Technologist currently living in San Francisco Bay area, California. I stand at the sweet spot where design and code intersect. My comprehensive knowledge in design and technology allow me to cultivate productive teams in a synergic environment that meets the requirements of creative minds and developers concurrently. I practice industry recognized best practices in UX/FED to cultivate elegant, intuitive and pixel perfect user interface designs and applications using agile methodology.</p>
           <p>I am currently working at DocuSign as a senior UI Engineer to develop design system and design tooling to promote shared design language in mobile, products and marketing teams. I have been a part of design and development projects for many exceptional companies, including&nbsp;
             <a href="https://thewaltdisneycompany.com/" target="_blank">Disney,</a>
             <a href="http://www.sony.co.uk/" target="_blank">Sony,</a>
