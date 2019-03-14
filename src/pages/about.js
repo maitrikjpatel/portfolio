@@ -66,7 +66,7 @@ export default () => {
         <div className={styles.aboutContent}>
 
           <p>I’m a Design Technologist currently living in Bay Area, California. I stand on the sweet spot where design and code intersects. My comprehensive knowledge in design and technology allows me to cultivate productive teams in a synergic environment that meets the requirements of creatives and developers concurrently. I utilize UX / Front End Development best practices in agile workflow to cultivate elegant, intuitive and pixel perfect user interface designs and applications.</p>
-          <p>I am currently working at DocuSign as an senior UI Engineer to develop design system and design tooling to promote shared design language in mobile, products and marketing teams. I have been a part of design and development projects for many exceptional companies during those years, including&nbsp;
+          <p>I am currently working at DocuSign as a senior UI Engineer to develop design system and design tooling to promote shared design language in mobile, products and marketing teams. I have been a part of design and development projects for many exceptional companies, including&nbsp;
             <a href="https://thewaltdisneycompany.com/" target="_blank">Disney,</a>
             <a href="http://www.sony.co.uk/" target="_blank">Sony,</a>
             <a href="http://www.sapientnitro.com/" target="_blank">SapientNitro,</a>
@@ -109,12 +109,7 @@ export default () => {
           <h3 className={styles.sectionTitle}>What people say about me</h3>
           <Testimonial/>
 
-          <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization.</p>
-          <p>
-            Don't be a stranger! Give me a shout at&nbsp;
-            <a href="mailto:maitrik.dev@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">maitrik.dev[at]gmail[dot]com</a>
-            or find me at one of the social links below.
-          </p>
+          <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization. Feel free to reach out by sending me an <a href="mailto:maitrik.dev@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">Email</a></p>
         </div>
       </div>
     </Layout>
