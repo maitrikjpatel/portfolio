@@ -55,7 +55,7 @@ export default () => {
               </Link>
             </li>
             <li>
-              <a href="mailto:maitrik1419@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">maitrik1419[at]gmail[dot]com</a>
+              <a href="mailto:maitrik.dev@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">maitrik.dev[at]gmail[dot]com</a>
             </li>
             <li>
               <a href="tel:+14088393930">+1-408-839-3930</a>
@@ -112,8 +112,8 @@ export default () => {
           <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization.</p>
           <p>
             Don't be a stranger! Give me a shout at
-            <a href="mailto:maitrik1419@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">
-              maitrik1419[at]gmail[dot]com
+            <a href="mailto:maitrik.dev@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">
+              maitrik.dev[at]gmail[dot]com
             </a>
             or find me at one of the social links below.
           </p>
