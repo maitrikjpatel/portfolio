@@ -109,7 +109,7 @@ export default () => {
           <h3 className={styles.sectionTitle}>What people say about me</h3>
           <Testimonial/>
 
-          <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization. Feel free to reach out by sending me an <a href="mailto:maitrik.dev@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">Email</a> or using one of the links at the bottom of the page.</p>
+          <p>I am exploring for an opportunity to create an intuitive, elegant and a cutting-edge user experience for a promising product, a motivating mentor and an innovating organization. Feel free to reach out by sending me an <a href="mailto:maitrik.dev@gmail.com?subject=#LetsMakeFuture&body=Let's make beautiful things together.">Email</a>or using one of the links at the bottom of the page.</p>
         </div>
       </div>
     </Layout>
