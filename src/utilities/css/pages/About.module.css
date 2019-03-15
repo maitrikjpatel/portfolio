@@ -67,6 +67,7 @@
   margin: 25px 0;
   left: 5%;
   position: relative;
+  filter: grayscale(100%);
 }
 
 @media (min-width: 30rem) {
