@@ -6,14 +6,35 @@
   margin: var(--space-20) 0; 
 }
 
-.aboutContent > p {
-  text-align: justify;
+.aboutContentFirstSection {
+}
+
+.aboutContentText {
+  float: none;
+}
+
+.aboutContentText > p {
   margin-bottom: var(--space-20); 
 }
 
-.aboutContent > p > a {
+.aboutContentText > p > a {
   display: inline-block;
   margin: 0 7px 0 0;
+}
+
+.aboutContentText > p:first-child {
+  margin-top: 0;
+}
+
+
+.aboutContentPic {
+  width: 50%;
+  float: left;
+}
+
+.aboutProfile {
+  width: 90%;
+  margin: 0 30px 0 0;
 }
 
 .svg {
@@ -47,7 +68,15 @@
   position: relative;
 }
 
+@media (min-width: 30rem) {
+  .aboutContentPic {
+    width: 37%;
+    float: left;
+  }
+}
+
 @media (min-width: 48rem) {
+
   .aboutContent {
     margin: var(--space-50) 0;
   }
