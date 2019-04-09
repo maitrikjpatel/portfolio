@@ -31,7 +31,8 @@
 }
 
 .recommendations {
-  padding: 20px;
+  display: block;
+  padding: 20px 10px;
 }
 
 .recommendationRecco {
