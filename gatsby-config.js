@@ -151,7 +151,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-fullstory`,
       options: {
-        fs_org: 'JY0WN',
+        fs_org: siteInfo.fullstoryID,
       },
     },
   ],

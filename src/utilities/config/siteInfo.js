@@ -1,3 +1,6 @@
+// Please update this file as per your requirement. 
+// You must update fullstoryID and googleAnalyticsID as per your requirement. 
+
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
   siteTitle: "Maitrik's Portfolio", // Navigation and Site Title
@@ -16,10 +19,13 @@ module.exports = {
   manifestDisplay: 'standalone',
 
   // Social Meta data
-  userTwitter: '@maitrikjpatel', // Twitter Username
   ogSiteName: "Maitrik's Portfolio", // Facebook Site Name
   ogLanguage: 'en_EN',
   googleAnalyticsID: 'UA-38627749-1',
+
+  //  FullStory id 
+  fullstoryID: 'JY0WN',
+   
 
   toolsList : [
     'React',
