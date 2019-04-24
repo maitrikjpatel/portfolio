@@ -12,12 +12,13 @@ function SEO(props) {
   return (
     <Helmet
       title={siteTitle}
-
+     
       meta={[
         { charSet: "utf-8"},
         { name: 'description', content: siteInfo.siteDescription },
         { name: 'keywords', content: siteInfo.toolsList.concat(siteInfo.skillsList) },
         { name: "image", content:siteImage},
+        { name: 'google-site-verification', content: 'PoixIz8vjc-yvhRCJWhiWPFUei1BCSj0pN28g2NZR9M' }
 
         // Google / Search Engine Tags
         { itemprop:"name" , content: siteTitle },
