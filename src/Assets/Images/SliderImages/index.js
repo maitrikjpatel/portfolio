@@ -540,6 +540,12 @@ export default {
         Text: 'DocusignGreenscoreProduct',
         width: '1094 ',
         height: ' 545',
+      },
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreAfterSign.png',
+        Text: 'DocusignGreenscoreAfterSign',
+        width: '1296',
+        height: '885',
       }
     ]
   },
