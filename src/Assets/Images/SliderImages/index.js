@@ -529,12 +529,12 @@ export default {
   },
   DocusignGreenscoreProduct:{
     Images: [
-      { 
-        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreLandingPage.png',
-        Text: 'DocusignGreenscoreLandingPage',
-        width: '959 ',
-        height: '1114',
-      },
+      // { 
+      //   SrcUrl: 'DocusignGreenscore/DocusignGreenscoreLandingPage.png',
+      //   Text: 'DocusignGreenscoreLandingPage',
+      //   width: '959 ',
+      //   height: '1114',
+      // },
       { 
         SrcUrl: 'DocusignGreenscore/DocusignGreenscoreProduct.png',
         Text: 'DocusignGreenscoreProduct',
