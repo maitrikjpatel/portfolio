@@ -100,7 +100,7 @@
     content: "";
     display: inline-block;
     position: absolute;
-    width: 1px;
+    width: 1.5px;
     height: 30px;
     left: -20px;
     background-color:var(--color-gray5);
@@ -109,7 +109,7 @@
     content: "";
     display: inline-block;
     position: absolute;
-    width: 1px;
+    width: 1.5px;
     height: 30px;
     right: -20px;
     background-color:var(--color-gray5);
