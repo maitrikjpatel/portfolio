@@ -10,5 +10,5 @@ I might not get 100/100 in exam but I surely know how to get 100/100 for website
 
 ---
 
-## Running in development
+## Run in development
 `gatsby develop`
