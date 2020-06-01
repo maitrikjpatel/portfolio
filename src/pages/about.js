@@ -70,8 +70,9 @@ export default () => {
               <img src={AboutProfile} className={styles.aboutProfile} title="Good Skills"/>
             </div>          
             <div className={styles.aboutContentText}>
-              <p>I’m a Design Technologist currently living in San Francisco Bay area, California. I stand at the sweet spot where design and code intersect. My comprehensive knowledge in design and technology allow me to cultivate productive teams in a synergic environment that meets the requirements of creative minds and developers concurrently. I practice industry recognized best practices in UX/FED to cultivate elegant, intuitive and pixel perfect UI designs and applications using agile methodology.</p>
-              <p>I am currently working at DocuSign as a senior UI Engineer to develop design system and design tooling to promote shared design language in web, mobile and marketing teams. I have been a part of design and development projects for many exceptional companies, including&nbsp;
+              <p>I’m a Design Technologist currently living in the San Francisco Bay area, California. I stand at the sweet spot where design and code intersect. My comprehensive knowledge of design and technology allows me to cultivate productive teams in a synergic environment that meets the requirements of creative minds and developers concurrently. I practice industry-recognized best practices in UX/FED to cultivate elegant, intuitive, and pixel perfect UI designs and applications using an agile methodology.</p>
+
+              <p>I am currently working at DocuSign as a senior UI Engineer to develop a design system and design tooling to promote shared design language in web, mobile, and marketing teams. I have been a part of design and development projects for many exceptional companies, including&nbsp;
                 <a href="https://thewaltdisneycompany.com/" target="_blank">Disney,</a>
                 <a href="http://www.sapientnitro.com/" target="_blank">SapientNitro,</a>
                 <a href="http://www.sony.co.uk/" target="_blank">Sony,</a>
@@ -86,14 +87,13 @@ export default () => {
                 <a href="http://skillmil.com/" target="_blank">SkillMil.</a>
               </p>
               <p>
-                With a MS in computer science and 7 years of industry experience I still think there’s more for me to learn. I was an attendee at&nbsp;
+                With a Master's in computer science and 7 years of industry experience, I still think there’s more for me to learn. I was an attendee at&nbsp;
                 <a href="http://www.startupleadership.com/" target="_blank">Startup Leadership Program</a>
                 and&nbsp;
                 <a target="_blank" href="https://www.gsb.stanford.edu/programs/stanford-ignite">Stanford Ignite</a> 
                 program to gain in-depth knowledge about entrepreneurship and startup ecosystem. I want to combine technological and entrepreneurship knowledge to create tangible things that would change the world's outlook on how technology can improve lives.
               </p>
             </div>
-
           </div>
 
           <h3 className={styles.sectionTitle}>What I am good at</h3>
