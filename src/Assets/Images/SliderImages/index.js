@@ -590,16 +590,28 @@ export default {
   OliveProcess: {
     Images: [
       {
-        SrcUrl: 'DocusignOlive/TraditionalDesignSystemArchitect.png',
-        Text: 'TraditionalDesignSystemArchitect',
+        SrcUrl: 'DocusignOlive/TraditionalDesignSystemArchitectNew.png',
+        Text: 'TraditionalDesignSystemArchitectNew',
         width: '1190 ',
         height: '1684'
       },
       {
-        SrcUrl: 'DocusignOlive/DesignSystemArchitect.png',
-        Text: 'DesignSystemArchitect',
+        SrcUrl: 'DocusignOlive/DesignSystemArchitectNew.png',
+        Text: 'DesignSystemArchitectNew',
         width: '1600',
         height: '1190'
+      },
+      {
+        SrcUrl: 'DocusignOlive/FesPackages.png',
+        Text: 'FesPackages',
+        width: '1898',
+        height: '1074'
+      },
+      {
+        SrcUrl: 'DocusignOlive/FesChart.png',
+        Text: 'FesChart',
+        width: '2406',
+        height: '1990'
       }
     ]
   },
