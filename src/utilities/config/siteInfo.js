@@ -31,6 +31,7 @@ module.exports = {
     'React',
     'Angularjs',
     'Javascript es6',
+    'Vue',
     'SCSS',
     'CSS',
     'HTML',
@@ -84,8 +85,26 @@ module.exports = {
       recco: 'I had the benefit of meeting Maitrik while working together at Sony and have continued to stay in touch as a friend and colleague. Maitrik is an outstanding developer - extremely passionate about technology and the web. He is always on the cusp of cutting edge tools and best practices. His strive for perfection and attention to detail shines throughout his work and he never hesitant to tackle any task. Maitrik continually goes above and beyond to get the job done. Outside of work, he is one of the nicest guys I have ever met - modest and grounded, while always trying to improve and grow in all aspects of his life. I seriously hope to work with him again at some point and would strongly recommend anyone to have him join your team.',
     },
     { 
+      name:'Besada Nakhla',
+      role: 'Software Engineer at DocuSign',
+      time: 'November 9, 2020',
+      recco: "I've had the pleasure of working with Maitrik during his time at DocuSign. Maitrik is a very passionate developer who always thinks outside the box. He is incredibly talented, very knowledgeable, and has an eye for design. Maitrik would always generously share his time to answer questions and he did so with genuine intent. Any team would be lucky to have him!",
+    },
+    { 
+      name:'Adam Sartell',
+      role: 'Senior Software Engineer at DocuSign',
+      time: 'August 28, 2020',
+      recco: "It has been an absolute pleasure working with Maitrik over the past few years at DocuSign. We've worked together building component libraries, speaking at conferences, and even took first in a few hackathons. He's one of the most hardworking and dedicated engineers I know. He's a wealth of knowledge when it comes to web technology and UI design systems, to name a few. He's always learning and sharing with those around him. He's able to foster interpersonal relationships with empathy and charisma, making him an excellent colleague."
+    },
+    { 
+      name:'Jonathan Ruiz',
+      role: 'Senior Product Designer at DocuSign',
+      time: 'August 12, 2020',
+      recco: "During my time at DocuSign, I’ve had the opportunity to work with Maitrik on a couple of projects including a PX mini-conference website and the making of DocuSign’s new design system. Maitrik is the ideal UI engineer possessing both technical and design expertise. He is my top go-to-guy when I have any questions on building components, Storybook, design tokens and design systems architecture, among other things. Aside from our shared passion for creating scalable design systems, we also enjoy running and have gone for a couple of runs together. He is not only an exceptional teammate, but also a great overall individual. I am sure Maitrik would be a solid addition to any team and hope to have the opportunity to work with him again in the future.",
+    },
+    { 
       name:'Bun Ly',
-      role: 'Senior Software Engineer @Prosper Marketplace',
+      role: 'Senior Software Engineer at Prosper Marketplace',
       time: 'October 2, 2016',
       recco: 'Maitrik is very talented and professional Software Development specialist. With his energy and commitment, the team always finishes development ahead with quality and scalable. He is a very good friend and coworker, always ready to help. Our team was really lucky having him.',
     },

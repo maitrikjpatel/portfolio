@@ -529,12 +529,12 @@ export default {
   },
   DocusignGreenscoreProduct:{
     Images: [
-      // { 
-      //   SrcUrl: 'DocusignGreenscore/DocusignGreenscoreLandingPage.png',
-      //   Text: 'DocusignGreenscoreLandingPage',
-      //   width: '959 ',
-      //   height: '1114',
-      // },
+      { 
+        SrcUrl: 'DocusignGreenscore/DocusignGreenscoreLandingPage.png',
+        Text: 'DocusignGreenscoreLandingPage',
+        width: '959 ',
+        height: '1114',
+      },
       { 
         SrcUrl: 'DocusignGreenscore/DocusignGreenscoreProduct.png',
         Text: 'DocusignGreenscoreProduct',
@@ -615,6 +615,22 @@ export default {
       }
     ]
   },
+  DesignMultiverse: {
+    Images: [
+      {
+        SrcUrl: 'DocusignOlive/DocusignOliveWebsiteOnMac.png',
+        Text: 'DocusignOliveWebsiteOnMac',
+        width: '1600',
+        height: '1200'
+      },
+      {
+        SrcUrl: 'DocusignOlive/DocusignOliveWebWebMockUp.png',
+        Text: 'DocusignOliveWebWebMockUp',
+        width: '1600',
+        height: '1200'
+      }
+    ]
+  },
   DocusignWebReactModuleLibrary: {
     Images: [
       {
@@ -638,7 +654,7 @@ export default {
       {
         SrcUrl: 'DocusignWeb/PersonlizationBefore.png',
         Text: 'DocusignWebpageBeforePersonlization',
-        width: '999 ',
+        width: '999',
         height: '647'
       },
       {
