@@ -16,17 +16,11 @@ module.exports = {
   plugins: [
     // Google Fonts
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Quicksand`,
-            variants: ['300','400','500','700']
-          },
-          {
-            family: `IBM Plex Sans`,
-            variants: ['100','300','400','500','600','700']
-          },
+          'Quicksand\:300,400,500,700',
+          'IBM Plex Sans\:100,300,400,500,600,700'
         ],
       },
     },
