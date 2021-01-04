@@ -32,6 +32,7 @@ class BlogPostTemplate extends React.Component {
 
     const postColor = post.frontmatter.postColor
     const imageUrl = post.frontmatter.imageUrl
+    const ogImage = imageUrl.childImageSharp.fluid.src
 
     let postHeader
     if (category === 'work') {
@@ -79,7 +80,10 @@ class BlogPostTemplate extends React.Component {
     
     return (
       <Layout location={this.props.location}>
-        <SEO titleText={title} />
+        <SEO 
+          titleText={title} 
+          ogImage={ogImage}
+        />
 
         {postHeader}
 

@@ -49,14 +49,14 @@ class ImageWrap extends React.Component {
       titleText = splitCamelCase(srcName)
     }
     
-    console.log(windowWidth)
+    // console.log(windowWidth)
     let ImageWidth
     if( windowWidth <= 768) {
       ImageWidth = 100
     } else {
       ImageWidth = width
     }
-    console.log(ImageWidth)
+    // console.log(ImageWidth)
     return (
       <div style={{ width: `${ImageWidth}%`}} className={styles.ImageWrap} >
         <Img
