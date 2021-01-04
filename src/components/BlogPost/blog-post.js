@@ -34,8 +34,10 @@ class BlogPostTemplate extends React.Component {
 
     const postColor = post.frontmatter.postColor
     const imageUrl = post.frontmatter.imageUrl
-    const ogImage = imageUrl ? imageUrl.childImageSharp.fluid.src : siteImage
-
+    const ogImage = post.frontmatter.ogImageUrl 
+      ? post.frontmatter.ogImageUrl.childImageSharp.fluid.src 
+      : imageUrl ? imageUrl : siteImage
+    
     let postHeader
     if (category === 'work') {
       postHeader = (
@@ -122,6 +124,13 @@ export const pageQuery = graphql`
         topics
         link
         imageUrl {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+        ogImageUrl {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid_tracedSVG

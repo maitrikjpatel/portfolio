@@ -24,6 +24,7 @@ module.exports = {
         ],
       },
     },
+
     // Manifest 
     {
       resolve: `gatsby-plugin-manifest`,
@@ -68,9 +69,7 @@ module.exports = {
           }
         ]
       }
-    },   
-
- 
+    },
 
     // FileSystem for content pages
     {
@@ -122,7 +121,6 @@ module.exports = {
     // Markdown Sharp Image rendering
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-
 
     // HTML SEO Head
     `gatsby-plugin-react-helmet`,
