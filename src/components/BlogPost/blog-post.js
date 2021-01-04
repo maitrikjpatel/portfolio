@@ -12,6 +12,8 @@ import PostHeader from '../PostHeader'
 import styles from './blogPost.module.css'
 import MdRender from '../MdRender'
 
+import siteImage from '../../Assets/siteImage.png'
+
 class BlogPostTemplate extends React.Component {
   render() {
     const siteAuthor = get(this.props, 'data.site.siteMetadata.author')
@@ -32,7 +34,7 @@ class BlogPostTemplate extends React.Component {
 
     const postColor = post.frontmatter.postColor
     const imageUrl = post.frontmatter.imageUrl
-    const ogImage = imageUrl.childImageSharp.fluid.src
+    const ogImage = imageUrl ? imageUrl.childImageSharp.fluid.src : siteImage
 
     let postHeader
     if (category === 'work') {
