@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
     const link = post.frontmatter.link
 
     const postColor = post.frontmatter.postColor
-    const imageUrl = post.frontmatter.imageUrl
+    const imageUrl = post.frontmatter.cardImageUrl
     const ogImage = post.frontmatter.ogImageUrl 
       ? post.frontmatter.ogImageUrl.childImageSharp.fluid.src 
       : imageUrl ? imageUrl : siteImage
@@ -115,7 +115,7 @@ export const pageQuery = graphql`
         body
       }
       frontmatter {
-        date(formatString: "DD MMMM, YYYY")
+        date
         category
         title
         description
@@ -123,13 +123,7 @@ export const pageQuery = graphql`
         tools
         topics
         link
-        imageUrl {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
+        postColor
         ogImageUrl {
           childImageSharp {
             fluid(maxWidth: 1000) {
@@ -137,7 +131,13 @@ export const pageQuery = graphql`
             }
           }
         }
-        postColor
+        cardImageUrl {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     }
   }

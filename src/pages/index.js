@@ -27,7 +27,7 @@ class BlogIndex extends React.Component {
             const postColor = get(node, 'frontmatter.postColor')
             const imageUrl = get(
               node,
-              'frontmatter.imageUrl.childImageSharp.fluid'
+              'frontmatter.cardImageUrl.childImageSharp.fluid'
             )
 
             if (category == 'work') {
@@ -69,19 +69,19 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date
             category
             title
             role
             link
-            imageUrl {
+            postColor
+            cardImageUrl {
               childImageSharp {
                 fluid(maxWidth: 1000) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
-            postColor
           }
         }
       }
