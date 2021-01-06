@@ -65,7 +65,7 @@ export const noteQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date
             category
             topics
             title
