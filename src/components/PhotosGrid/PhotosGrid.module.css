@@ -3,7 +3,7 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
   grid-gap: var(--space-5);
   margin: var(--space-40) auto;
 }
@@ -100,13 +100,12 @@
 
 @media (max-width: 64rem) {
   .photosGrid {
-    grid-gap: var(--space-10);
+    grid-gap: var(--spac-5px);
     margin: var(--space-30) auto;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
   }
   .photosGridPhoto {
-    padding:  var(--space-5);
     border-width: 3px;
   }
   .photosGridTitle {
@@ -115,6 +114,7 @@
     height: var(--space-50);
     line-height: var(--space-40);
     font-size: var(--font-24);
+    margin-right: var(--space-5);
   }
   .photosGridPhoto:nth-of-type(1) {
     grid-column: 4;
