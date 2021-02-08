@@ -129,7 +129,7 @@
   .photosGridPhoto:nth-of-type(4) {
     grid-row: 2 / 4;
   }
-  photosGridPhoto--1rKiy:nth-of-type(6) {
+  photosGridPhoto:nth-of-type(6) {
     grid-row: 1 / 3;
   }
   .photosGridPhoto:nth-of-type(7) {
