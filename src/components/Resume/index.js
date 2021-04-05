@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Resume.module.css'
-import resume from "../../Assets/MaitrikResume.pdf"
+import resume from "../../Assets/Maitrik_Resume.pdf"
 
 function Resume(props) {
   const { ...restProps } = props

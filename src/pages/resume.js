@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import resume from "../Assets/MaitrikResume.pdf"
+import resume from "../Assets/Maitrik_Resume.pdf"
 import Bio from '../components/Bio';
 import Resume from '../components/Resume';
 
